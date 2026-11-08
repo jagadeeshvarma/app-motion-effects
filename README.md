@@ -93,6 +93,8 @@ test ! -e ~/.claude/skills/app-motion-effects && \
 
 For project-local use, copy the folder into the **target app’s** `.agents/skills/` (Codex) or `.claude/skills/` (Claude Code). Do not install the same skill independently into overlapping discovery locations. Refresh or start a new agent session and confirm discovery.
 
+For an existing installation, review the diff and keep a backup outside skill discovery directories before replacement. Preserve local customisations and restore the backup if verification fails.
+
 These locations follow [Codex skill documentation](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills) and [Claude Code skill documentation](https://code.claude.com/docs/en/skills). Client versions and managed settings may affect availability. Local Claude Code installation does not automatically install into Claude cloud or Cowork.
 
 **Another coding agent?** Use its documented Agent Skills directory, or give it the entrypoint directly:
@@ -312,6 +314,14 @@ The [source catalogue](skills/app-motion-effects/references/sources.md) groups r
 | Charts, 3D, sensory feedback and other frameworks | [Full catalogue](skills/app-motion-effects/references/sources.md) |
 
 The agent can research beyond this list or author a better-fitting implementation. Links are references, not endorsements, compatibility guarantees or licence grants. External code, assets, editors and runtimes may have different commercial and attribution terms. Web support does not imply native support.
+
+## Verified scope
+
+Version **2.0.1** hardens distribution and the playground while preserving the 2.0.0 runtime workflow. It adds no new agent or native capability claim.
+
+Codex project-local discovery and isolated execution were observed. Claude Code's documented format and disposable installation were checked; runtime testing was blocked by missing authentication. Other clients and frameworks are not certified by readable Markdown or catalogue links.
+
+The advanced **2.1.0 candidate is unreleased**. Its audit found a failed animation assertion and blocked native grading. Executable artifact checks and completed agent tasks are different results; neither authored demos nor screenshots prove an agent-wide improvement. [Evidence and limits](https://jagadeeshvarma.github.io/app-motion-effects/verification.html) · [Audit branch](https://github.com/jagadeeshvarma/app-motion-effects/tree/audit/verified-skill-maintenance).
 
 ## Develop and contribute
 

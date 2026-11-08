@@ -5,11 +5,17 @@
 - Added progressive native implementation and trust-boundary guidance, preserving the 63 categories and source catalogue.
 - Clarified focused activation and incremental truthful evidence under tool/time limits.
 - Built comparative web/Flutter fixtures, safe grading, independent rendered reviews and immutable output snapshots.
-- Capability release remains blocked by a final filter-animation assertion and strict native grading readiness; see docs/audit/SKILL_AUDIT.md.
+- Capability release remains blocked by a final filter-animation assertion, held-out evidence-honesty failures and strict native grading readiness; see docs/audit/SKILL_AUDIT.md.
 
-## 2.0.1 maintenance
+## 2.0.1
 
-Released separately from this candidate; distribution/example hardening with the original nine-file runtime workflow. See the protected maintenance branch and release-verification record.
+- Restricted release contents to an explicit nine-file manifest; reject unexpected files, symlinks and special files before replacing artifacts.
+- Contained local references within the installed package/repository and added reproducible packaging and safe installation checks.
+- Added local-only example CSP and browser request checks, including blocked synthetic beacon and remote-asset probes.
+- Restricted manual Pages publishing to main in workflow source.
+- Made the reusable prompt follow each target app’s visual contract and published evidence/compatibility limits.
+- Fixed narrow footer wrapping across platform font metrics and added a focused regression.
+- Preserved the 2.0.0 runtime workflow. The advanced 2.1.0 guidance remains unreleased and is not included.
 
 ## Full-screen examples and full-repo prompt · 2026-11-08
 
