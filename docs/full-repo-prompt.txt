@@ -56,7 +56,7 @@ Establish and verify the visual contract required by the skill.
 
 Use existing branding, tokens, typography, component geometry, iconography, layouts, copy conventions and approved interaction patterns.
 
-Do not introduce decorative eyebrow labels, redundant headings or unnecessary interface elements. Preserve functional field labels, accessible names and useful instructions.
+Follow the target app’s approved rules for headings, labels and information density. Do not import this skill website’s visual preferences into another product. Remove redundant elements only when justified by the app’s own contract; preserve functional field labels, accessible names and useful instructions.
 
 Tailor the motion direction to this product and its customers. Different journeys may need different emphasis while remaining one coherent application.
 

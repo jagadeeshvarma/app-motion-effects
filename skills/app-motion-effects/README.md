@@ -4,6 +4,8 @@ Portable Agent Skills package for implementing and verifying app animations, tra
 
 Version 2.0.0 makes product/customer context and a strict visual contract the basis for effect selection. It preserves suitable existing patterns, adapts mechanisms into the app's actual components/state/tokens and checks contextual fit as well as playback. It does not require novelty or a new visual direction.
 
+Version 2.0.1 is a maintenance release for package containment, local-reference validation and installation checks. The runtime workflow is unchanged from 2.0.0.
+
 ## Use
 
 Codex:

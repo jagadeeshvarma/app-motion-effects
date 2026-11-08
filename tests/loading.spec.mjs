@@ -25,7 +25,7 @@ test("hero explains the skill and examples open a full-viewport workspace", asyn
     page.getByRole("link", { name: "Download skill", exact: true }),
   ).toHaveAttribute(
     "href",
-    /releases\/download\/v2.0.0\/app-motion-effects-2.0.0.zip$/,
+    /releases\/download\/v2.0.1\/app-motion-effects-2.0.1.zip$/,
   );
   await page
     .getByRole("link", { name: "See the examples", exact: true })
@@ -491,3 +491,26 @@ for (const [width, height] of [
       "My recovery draft",
     );
   });
+
+test("footer links remain reachable at 320px with wider fallback metrics", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.goto("./");
+  await page.addStyleTag({
+    content: ".site-footer .button { font-family: monospace; }",
+  });
+  const footer = page.locator(".site-footer");
+  await footer.scrollIntoViewIfNeeded();
+  const links = footer.getByRole("link");
+  await expect(links).toHaveCount(3);
+  for (const link of await links.all()) {
+    await expect(link).toBeVisible();
+    const box = await link.boundingBox();
+    expect(box.x).toBeGreaterThanOrEqual(0);
+    expect(box.x + box.width).toBeLessThanOrEqual(320);
+  }
+  expect(
+    await page.evaluate(() => document.documentElement.scrollWidth),
+  ).toBeLessThanOrEqual(320);
+});

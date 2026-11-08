@@ -1,11 +1,11 @@
 {
   "name": "app-motion-effects-examples",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "description": "Development-only checks for the App Motion & Effects skill and static demos",
   "license": "MIT",
   "scripts": {
-    "test": "npm run format:check && node scripts/validate.mjs && playwright test",
+    "test": "npm run format:check && node scripts/validate.mjs && python3 tests/package-safety.py -q && python3 tests/install-smoke.py -q && playwright test",
     "test:structure": "node scripts/validate.mjs",
     "test:browser": "playwright test",
     "package": "python3 scripts/package.py",

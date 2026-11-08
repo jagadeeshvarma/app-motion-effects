@@ -36,3 +36,22 @@ Maintainers review and merge contributions. No CLA or mandatory purchase is requ
 ## Updating the full-repository prompt
 
 Edit `docs/full-repo-prompt.txt`, then run `npm run sync:prompt` and `npm run format`. This keeps the README code block and the page’s copyable prompt identical. GitHub supplies its own copy control for fenced code blocks; the static website implements the clipboard button and an honest manual fallback. Browser tests verify the full copied text.
+
+## Package and installation changes
+
+The reviewed runtime file list is `scripts/skill-manifest.json`. Add resources deliberately; unexpected files and symlinks fail packaging. `npm test` includes package containment and disposable installation regressions. Development scripts and test artefacts belong outside the installed skill.
+
+For an existing local skill, review the diff and keep a backup outside discovery directories before replacement. Confirm the intended version is discovered and restore the backup if verification fails. Preserve unrelated local customisations.
+
+## Maintainer releases
+
+Use semantic versions. Keep `SKILL.md` metadata, `package.json`, the lockfile, changelog and website download URL aligned. A distribution-only patch can preserve the runtime workflow; instruction changes require behavioural evidence as well as format checks. Do not describe blocked native or agent-runtime checks as passing.
+
+1. Prepare a focused PR from an isolated branch and record the release scope, checks and rollback. Main requires the current **Structure and browser checks** result and an up-to-date branch. Do not bypass these protections.
+2. Validate installation, runtime file manifest and relevant behavioural/visual gates. If a required capability gate fails, leave that candidate unreleased; separately verified maintenance may proceed with its narrower claims.
+3. Merge through the protected PR workflow. In a clean checkout of the actual merge commit, run `npm ci`, the browser installation command above, `npm test` and `npm run package`. Confirm the archive version, `dist/integrity.json`, `dist/SHA256SUMS` and intended file list.
+4. Use the existing GitHub Releases flow to create an immutable `v<version>` tag at that verified commit and attach the versioned ZIP, `integrity.json` and `SHA256SUMS`. Release notes must identify tested scope and material limitations. Download the published assets again and verify their hashes. Never silently replace assets under an existing release.
+5. The Pages workflow builds and deploys only main. Wait for its actual success, then open the live homepage, examples, verification page and download. A pushed commit or successful build alone is not a verified deployment.
+6. Record commit, CI, release and live-verification identifiers. Roll back a local installation from its preserved backup or previous immutable ZIP. For the website, submit a revert through the same protected checks rather than force-pushing or bypassing the environment.
+
+GitHub access and release authority must come from the maintainer's current session. Installing the reusable skill grants no permission to publish or deploy anyone's application.

@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; frame-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="color-scheme" content="light" />
     <meta
@@ -39,13 +43,12 @@
           <div class="hero-actions">
             <a
               class="button primary"
-              href="https://github.com/jagadeeshvarma/app-motion-effects/releases/download/v2.0.0/app-motion-effects-2.0.0.zip"
+              href="https://github.com/jagadeeshvarma/app-motion-effects/releases/download/v2.0.1/app-motion-effects-2.0.1.zip"
               >Download skill</a
             ><a class="button outlined" href="#playground">See the examples</a>
           </div>
           <p class="compatibility">
-            For Codex, Claude Code and compatible coding agents. Open source,
-            MIT licensed.
+            Portable Agent Skills format. Open source, MIT licensed.
           </p>
         </div>
         <div class="hero-study">
@@ -290,7 +293,7 @@ Establish and verify the visual contract required by the skill.
 
 Use existing branding, tokens, typography, component geometry, iconography, layouts, copy conventions and approved interaction patterns.
 
-Do not introduce decorative eyebrow labels, redundant headings or unnecessary interface elements. Preserve functional field labels, accessible names and useful instructions.
+Follow the target app’s approved rules for headings, labels and information density. Do not import this skill website’s visual preferences into another product. Remove redundant elements only when justified by the app’s own contract; preserve functional field labels, accessible names and useful instructions.
 
 Tailor the motion direction to this product and its customers. Different journeys may need different emphasis while remaining one coherent application.
 
@@ -376,6 +379,7 @@ Start now and carry this full application-wide pass through to completion.
     <footer class="site-footer">
       <span>App Motion & Effects. A little more considered.</span>
       <div>
+        <a class="button quiet" href="verification.html">Verification</a>
         <a
           class="button quiet"
           href="https://github.com/jagadeeshvarma/app-motion-effects/blob/main/CONTRIBUTING.md"
