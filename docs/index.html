@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="description"
-      content="Try App Motion & Effects: a product-aware skill for coding agents. Interactive before/after examples with reduced motion and no backend."
+      content="Try six clear before-and-after examples: loading, slow connections, offline recovery, uploading, saving and direct manipulation. A product-aware skill for coding agents."
     />
     <meta name="color-scheme" content="light" />
     <title>App Motion & Effects — Interactive examples</title>
@@ -13,11 +13,9 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <a class="skip" href="#playground">Skip to interactive examples</a>
+    <a class="skip" href="#playground">Skip to examples</a>
     <header class="site-header">
-      <a class="wordmark" href="./" aria-label="App Motion & Effects home"
-        ><span class="mark" aria-hidden="true">↗</span> App Motion & Effects</a
-      >
+      <a class="wordmark" href="./">App Motion & Effects</a>
       <nav aria-label="Main navigation">
         <a href="#install">Install</a
         ><a href="https://github.com/jagadeeshvarma/app-motion-effects"
@@ -27,221 +25,160 @@
     </header>
     <main>
       <section class="intro">
-        <p class="eyebrow">A product-aware skill for coding agents</p>
-        <h1>Motion that belongs<br />in your app.</h1>
-        <p class="lede">
-          Understand the customer. Preserve the brand. Add movement only where
-          it makes the interaction better.
-        </p>
-        <div class="hero-links">
-          <a class="primary" href="#playground"
-            >Try the examples <span aria-hidden="true">↓</span></a
-          ><a
+        <h1>Small details.<br />Better experiences.</h1>
+        <div>
+          <p>
+            Try everyday moments with and without useful motion. The same
+            content, the same wait, a clearer experience.
+          </p>
+          <a
             href="https://github.com/jagadeeshvarma/app-motion-effects#quick-start"
-            >Get the skill ↗</a
+            >Get the skill for your coding agent ↗</a
           >
         </div>
-        <ul class="facts" aria-label="Package features">
-          <li>Codex · Claude Code · compatible agents</li>
-          <li>63 technical categories</li>
-          <li>Zero skill runtime dependencies</li>
-        </ul>
       </section>
       <section
         id="playground"
         class="playground"
-        aria-labelledby="playground-title"
+        aria-label="Interactive examples"
       >
-        <div class="section-top">
-          <div>
-            <p class="eyebrow">See the difference</p>
-            <h2 id="playground-title">Same skill. Different decisions.</h2>
+        <nav class="example-nav" aria-label="Choose an example">
+          <button type="button" data-example="loading" aria-pressed="true">
+            <strong>Loading content</strong>
+          </button>
+          <button type="button" data-example="slow" aria-pressed="false">
+            <strong>Slow connection</strong>
+          </button>
+          <button type="button" data-example="offline" aria-pressed="false">
+            <strong>Lost connection</strong>
+          </button>
+          <button type="button" data-example="upload" aria-pressed="false">
+            <strong>Uploading a file</strong>
+          </button>
+          <button type="button" data-example="dispatch" aria-pressed="false">
+            <strong>Saving changes</strong>
+          </button>
+          <button type="button" data-example="studio" aria-pressed="false">
+            <strong>Moving an object</strong>
+          </button>
+        </nav>
+        <div class="demo-area">
+          <div class="explanation">
+            <div>
+              <h2 id="example-title">A clearer wait.</h2>
+              <p id="example-benefit">
+                A blank area gives no clue what is coming. A skeleton holds the
+                layout while the same content loads.
+              </p>
+            </div>
           </div>
-          <span class="local-badge">Synthetic data · no backend</span>
-        </div>
-        <div class="toolbar">
-          <div class="segmented" role="group" aria-label="Choose example">
-            <button type="button" data-example="studio" aria-pressed="true">
-              Creative canvas</button
-            ><button type="button" data-example="dispatch" aria-pressed="false">
-              Business workflow
+          <div class="run-controls">
+            <button type="button" class="primary" id="replay" disabled>
+              Load projects</button
+            ><button type="button" id="reconnect" hidden>
+              Restore connection
+            </button>
+            <div class="review-options">
+              <label><input id="reduce" type="checkbox" /> Reduce motion</label
+              ><label class="narrow-option"
+                ><input id="mobile" type="checkbox" /> Narrow preview</label
+              >
+            </div>
+          </div>
+          <p id="instructions" class="instructions">
+            Click Load projects. Both sides take 2.4 seconds. Watch the right
+            side keep its shape, then reveal the content.
+          </p>
+          <div
+            class="mobile-comparison"
+            role="group"
+            aria-label="Preview version"
+          >
+            <button type="button" data-panel="before" aria-pressed="false">
+              Before</button
+            ><button type="button" data-panel="after" aria-pressed="true">
+              After
             </button>
           </div>
-          <div class="review-options">
-            <label><input id="reduce" type="checkbox" /> Reduce motion</label
-            ><label><input id="mobile" type="checkbox" /> Narrow preview</label>
+          <div class="comparison" id="comparison" data-mobile-panel="after">
+            <section class="example">
+              <div class="frame-caption">
+                <strong>Before</strong
+                ><span id="before-label">An empty wait</span>
+              </div>
+              <iframe
+                id="before"
+                title="Loading content before improvement"
+                src="demos/feedback.html?scenario=loading&amp;variant=before"
+              ></iframe
+              ><a
+                id="before-source"
+                href="https://github.com/jagadeeshvarma/app-motion-effects/blob/main/docs/demos/feedback.js"
+                >View source ↗</a
+              >
+            </section>
+            <section class="example">
+              <div class="frame-caption">
+                <strong>After</strong
+                ><span id="after-label">A layout that stays in place</span>
+              </div>
+              <iframe
+                id="after"
+                title="Loading content after improvement"
+                src="demos/feedback.html?scenario=loading&amp;variant=after"
+              ></iframe
+              ><a
+                id="after-source"
+                href="https://github.com/jagadeeshvarma/app-motion-effects/blob/main/docs/demos/feedback.js"
+                >View source ↗</a
+              >
+            </section>
           </div>
-        </div>
-        <div class="explanation">
-          <div>
-            <h3 id="example-title">Keep precision. Explain the return.</h3>
-            <p id="example-benefit">
-              Dragging stays immediate. Reset takes 180 ms, follows a clear path
-              and can be interrupted. No bounce. No added decoration.
+          <p id="review-status" class="review-status" role="status">
+            Ready. Start the example to compare both sides.
+          </p>
+          <div class="takeaway">
+            <h3>What to notice</h3>
+            <p id="notice">
+              The wait is not shorter. It is easier to understand, and the page
+              does not jump when the projects arrive.
             </p>
-          </div>
-          <button type="button" class="primary" id="replay">
-            Compare reset <span aria-hidden="true">↗</span>
-          </button>
-        </div>
-        <p id="instructions" class="instructions">
-          Drag the object, or focus it and use arrow keys. Shift + arrow moves
-          one unit. Type a caption and reset: your draft stays.
-        </p>
-        <div class="comparison" id="comparison">
-          <section class="example">
-            <div class="frame-caption">
-              <strong>Before</strong
-              ><span id="before-label">Immediate reset</span>
-            </div>
-            <iframe
-              id="before"
-              title="Creative canvas before improvement"
-              src="demos/studio-before.html"
-            ></iframe
-            ><a
-              id="before-source"
-              href="https://github.com/jagadeeshvarma/app-motion-effects/blob/main/docs/demos/studio-before.html"
-              >View before source ↗</a
-            >
-          </section>
-          <section class="example">
-            <div class="frame-caption">
-              <strong>After</strong
-              ><span id="after-label">Interruptible continuity</span>
-            </div>
-            <iframe
-              id="after"
-              title="Creative canvas after improvement"
-              src="demos/studio-after.html"
-            ></iframe
-            ><a
-              id="after-source"
-              href="https://github.com/jagadeeshvarma/app-motion-effects/blob/main/docs/demos/studio-after.html"
-              >View after source ↗</a
-            >
-          </section>
-        </div>
-        <p id="review-status" class="review-status" role="status">
-          System reduced-motion preferences are always respected by the improved
-          examples.
-        </p>
-        <div class="decision-grid">
-          <div>
-            <h3>Why this fits</h3>
-            <p id="fit">
-              Creative work needs direct control. A short return path preserves
-              spatial continuity without slowing manipulation.
-            </p>
-          </div>
-          <div>
-            <h3>What stays</h3>
-            <p id="preserved">
-              Paper palette, typography, canvas geometry, input labels and
-              caption state. Existing pointer and keyboard workflows remain.
-            </p>
-          </div>
-          <div>
-            <h3>How it is built</h3>
             <p id="mechanism">
-              Original SVG + requestAnimationFrame implementation. No animation
-              engine needed. Reduced motion resets immediately.
+              CSS skeleton pulse and a short content reveal. Reduced motion
+              keeps a static skeleton. No animation library.
             </p>
           </div>
+          <p class="simulation-note">
+            All waits, connections and uploads are simulated here. Nothing is
+            sent. System reduced-motion settings are respected. Switching
+            examples restarts the previews.
+          </p>
         </div>
-        <details class="recordings">
-          <summary>Watch recorded playback</summary>
-          <p>
-            Recordings from the original local fixture verification. Live
-            controls above are interactive. Both are synthetic examples.
-          </p>
-          <div class="video-grid">
-            <figure>
-              <video
-                controls
-                playsinline
-                preload="none"
-                poster="media/studio-after-desktop.png"
-                src="media/studio-playback.mp4"
-                aria-label="Creative canvas reset recording"
-              ></video>
-              <figcaption>Creative canvas · reset continuity</figcaption>
-            </figure>
-            <figure>
-              <video
-                controls
-                playsinline
-                preload="none"
-                poster="media/dispatch-after-desktop.png"
-                src="media/dispatch-playback.mp4"
-                aria-label="Business workflow save recording"
-              ></video>
-              <figcaption>Business workflow · save feedback</figcaption>
-            </figure>
-          </div>
-        </details>
-        <p class="scope-note">
-          Examples demonstrate two bounded web interactions, not every category
-          or agent runtime. The before versions intentionally retain baseline
-          limitations. Native hardware, screen readers and real services are not
-          exercised here. Changing examples restarts both previews.
-        </p>
-      </section>
-      <section class="principles" aria-label="How the skill works">
-        <article>
-          <span class="number">01 / Understand</span>
-          <h2>The job comes first.</h2>
-          <p>
-            Establish customers, task frequency, risk and devices before
-            choosing an effect. No invented personas or industry stereotypes.
-          </p>
-        </article>
-        <article>
-          <span class="number">02 / Adapt</span>
-          <h2>Your design stays yours.</h2>
-          <p>
-            Use existing tokens, geometry, typography and interaction patterns.
-            Reuse a suitable mechanism, then integrate it with real state.
-          </p>
-        </article>
-        <article>
-          <span class="number">03 / Verify</span>
-          <h2>Play it. Interrupt it. Check it.</h2>
-          <p>
-            Test drafts, focus, repeated input, error recovery and reduced
-            motion. A successful build does not prove a good interaction.
-          </p>
-        </article>
       </section>
       <section id="install" class="install">
         <div>
-          <p class="eyebrow">Bring it to your project</p>
-          <h2>Start with a focused request.</h2>
+          <h2>Use it in your app.</h2>
           <p>
-            Install the skill folder using the repository instructions, then
-            invoke it in your coding agent. The skill grants no release
-            permissions.
+            The skill starts with your customers, workflows and existing design.
+            It chooses a suitable mechanism, preserves your branding and tests
+            the result.
           </p>
           <a
             href="https://github.com/jagadeeshvarma/app-motion-effects#quick-start"
-            >Installation and full documentation ↗</a
+            >Installation and documentation ↗</a
           >
         </div>
-        <div>
-          <div class="code-label">Codex prompt</div>
-          <pre><code>Use $app-motion-effects to improve only
-this form’s save feedback. Preserve the
-existing design and business behaviour.
-Verify pending, error, interruption and
-reduced motion. Do not deploy.</code></pre>
-        </div>
+        <pre><code>Use $app-motion-effects to improve loading,
+slow connections and recovery in this app.
+Preserve our design and business behaviour.
+Build and verify a preview. Do not deploy.</code></pre>
       </section>
     </main>
     <footer>
-      <span>App Motion & Effects · MIT licence</span
+      <span>MIT licensed · Codex, Claude Code and compatible agents</span
       ><a
         href="https://github.com/jagadeeshvarma/app-motion-effects/blob/main/CONTRIBUTING.md"
-        >Contribute an improvement ↗</a
+        >Contribute ↗</a
       >
     </footer>
   </body>

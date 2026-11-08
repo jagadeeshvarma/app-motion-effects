@@ -16,12 +16,16 @@ try {
   await page
     .locator("#after")
     .contentFrame()
-    .getByLabel("Composition caption")
+    .getByRole("list", { name: "Projects" })
     .waitFor();
   await page.screenshot({
     path: resolve("docs/media/site-desktop.png"),
     fullPage: false,
   });
+  await page
+    .getByRole("button", { name: "Load projects", exact: true })
+    .click();
+  await page.frameLocator("#after").locator(".skeleton").waitFor();
   await page
     .locator("#playground")
     .screenshot({ path: resolve("docs/media/playground-desktop.png") });
@@ -42,6 +46,40 @@ try {
   await mobile.screenshot({
     path: resolve("docs/media/playground-mobile.png"),
   });
+  await mobile.close();
+  for (const [scenario, name] of [
+    ["slow", "slow-connection"],
+    ["offline", "offline-recovery"],
+    ["upload", "upload-progress"],
+  ]) {
+    const review = await browser.newPage({
+      viewport: { width: 1280, height: 1000 },
+      deviceScaleFactor: 1,
+    });
+    const base = process.env.PREVIEW_URL || "http://127.0.0.1:4173/";
+    await review.goto(base + "?example=" + scenario, {
+      waitUntil: "networkidle",
+    });
+    const after = review.frameLocator("#after");
+    if (scenario === "offline")
+      await after
+        .getByLabel("Project note")
+        .fill("Keep my draft while reconnecting.");
+    await review.locator("#replay").click();
+    if (scenario === "slow")
+      await after.locator("#notice").waitFor({ state: "visible" });
+    if (scenario === "offline")
+      await after.getByRole("button", { name: "Try again" }).waitFor();
+    if (scenario === "upload") {
+      await after.getByRole("button", { name: "Pause", exact: true }).waitFor();
+      await review.waitForTimeout(600);
+      await after.getByRole("button", { name: "Pause", exact: true }).click();
+    }
+    await review
+      .locator("#playground")
+      .screenshot({ path: resolve(`docs/media/${name}.png`) });
+    await review.close();
+  }
   console.log(
     "Captured actual rendered desktop, mobile and playground screenshots.",
   );

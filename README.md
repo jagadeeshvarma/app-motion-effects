@@ -33,20 +33,24 @@ Sometimes the right decision is to keep the existing interaction or add no anima
 
 ## See it in action
 
-[**Open the interactive playground**](https://jagadeeshvarma.github.io/app-motion-effects/) and switch between the two examples. Compare before/after, replay a shared action, narrow the previews and enable reduced motion. The gallery controls are separate from the example interfaces.
+[**Open the interactive playground**](https://jagadeeshvarma.github.io/app-motion-effects/) and choose one of six everyday situations. Start with **Loading content** and click **Load projects**. Both sides take 2.4 seconds: the difference is immediately visible.
 
-| Example | What changes | What remains |
+| Example | Try this | What improves |
 | --- | --- | --- |
-| **Creative canvas** | A 180 ms, interruptible return to the original position. Direct dragging stays immediate. | Paper palette, typography, object geometry, keyboard precision and the caption draft. |
-| **Business workflow** | Subtle pending feedback, stable save control, truthful snapshot/draft status and persistent failure recovery. | Compact layout, neutral palette, labels, save timing and existing form state. |
+| [Loading content](https://jagadeeshvarma.github.io/app-motion-effects/?example=loading#playground) | Click **Load projects**. | A skeleton preserves the content layout, followed by a short reveal. |
+| [Slow connection](https://jagadeeshvarma.github.io/app-motion-effects/?example=slow#playground) | Start a six-second load; wait or cancel. | A delayed explanation, useful cancellation and protection from late responses. |
+| [Lost connection](https://jagadeeshvarma.github.io/app-motion-effects/?example=offline#playground) | Type a note, disconnect, retry and reconnect. | Last loaded content stays visible and the note survives recovery. |
+| [Uploading a file](https://jagadeeshvarma.github.io/app-motion-effects/?example=upload#playground) | Start, pause, resume or cancel the demo upload. | Known progress, direct controls and confirmed completion. |
+| [Saving changes](https://jagadeeshvarma.github.io/app-motion-effects/?example=dispatch#playground) | Keep typing during a save, or simulate a failure. | Truthful draft/snapshot feedback and persistent recovery instructions. |
+| [Moving an object](https://jagadeeshvarma.github.io/app-motion-effects/?example=studio#playground) | Reset the object, then interrupt its return. | A short, continuous return without slowing direct manipulation. |
 
-**Try this:** move the canvas object and select Reset. Interrupt its return with an arrow key. Then switch to Business workflow, save a note and keep typing during the save. Enable a simulated failure and retry.
+The review shell uses a restrained layout with no decorative eyebrow labels. Desktop shows both versions side by side. Mobile starts with the improved version and provides a **Before / After** switch. Reduced-motion and narrow-preview controls preserve the current work.
 
-[![Recorded canvas reset playback](docs/media/studio-playback.gif)](https://jagadeeshvarma.github.io/app-motion-effects/#playground)
+[![Actual loading comparison playback](docs/media/loading-playback.gif)](https://jagadeeshvarma.github.io/app-motion-effects/#playground)
 
-*Actual recorded fixture playback. [Canvas MP4](docs/media/studio-playback.mp4) · [Save feedback MP4](docs/media/dispatch-playback.mp4). The live examples also work without video playback.*
+*Actual recorded browser playback: [Loading MP4](docs/media/loading-playback.mp4) · [Canvas MP4](docs/media/studio-playback.mp4) · [Save feedback MP4](docs/media/dispatch-playback.mp4).*
 
-Both examples use synthetic content and original HTML/CSS/JS/SVG. No backend, analytics, external fonts or paid assets. They illustrate two bounded interactions; they are not a promise that every category, native platform or agent has been tested. [Evidence and limits](docs/VALIDATION.md).
+All examples use synthetic content and original HTML/CSS/JS/SVG. Waits, connection loss and upload chunks are simulated; no connection is actually slowed and nothing is uploaded. No backend, analytics, external fonts or paid assets. These are bounded web interactions, not a promise that every category, native platform or agent has been tested. [Evidence and limits](docs/VALIDATION.md).
 
 ## Quick start
 

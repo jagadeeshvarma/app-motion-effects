@@ -55,7 +55,9 @@ for (const path of files) {
   for (const ref of refs) {
     if (/^(?:https?:|mailto:|data:|#)/.test(ref)) continue;
     assert.ok(
-      existsSync(resolve(dirname(path), decodeURIComponent(ref.split("#")[0]))),
+      existsSync(
+        resolve(dirname(path), decodeURIComponent(ref.split(/[?#]/)[0])),
+      ),
       `Broken local link ${ref} in ${path}`,
     );
     links++;
