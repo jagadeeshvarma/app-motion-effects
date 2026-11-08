@@ -1,6 +1,6 @@
 # Maintainer audit
 
-Status: **audit evaluated; advanced capability release BLOCKED**. Independently verified maintenance 2.0.1 was merged, published and verified live separately; publication state is recorded in `release-verification.json`. Baseline source: `ce5f55a8c2a9b4319a76d793b46eef9a41d5a541`, released skill `v2.0.0`. The preceding website update was completed separately in PR #7 and verified live before this audit began.
+Status: **audit evaluated; original capability acceptance FAIL; owner authorised release with known limitations**. The subsequent owner instruction is recorded in [release authorisation](release-authorization-2.1.0.json). Required GitHub CI remains enforced. Frozen assertions and measured FAIL/BLOCKED outcomes are unchanged. Independently verified maintenance 2.0.1 was merged, published and verified live separately; publication state is recorded in `release-verification.json`. Baseline source: `ce5f55a8c2a9b4319a76d793b46eef9a41d5a541`, released skill `v2.0.0`. The preceding website update was completed separately in PR #7 and verified live before this audit began.
 
 ## Scope and contract
 
@@ -47,7 +47,7 @@ A browser test can establish a rendered web assertion; it cannot establish nativ
 
 The audit branch is isolated from protected main. Existing required CI, strict up-to-date checks and administrator enforcement remain enabled. Pages is restricted to main in both source and saved environment settings. No new paid service, domain or infrastructure is required.
 
-A capability release requires the frozen behavioural and native gates, independent review, matching documentation, package integrity and final-candidate verification. If they remain blocked, independently verified maintenance may be released separately with precise scope; incomplete capability work must remain identified as such. Rollback uses the previous immutable skill release and prior Pages commit through the normal checked workflow. No application production change is part of this audit.
+The original audit policy required the frozen behavioural and native gates, independent review, matching documentation, package integrity and final-candidate verification. The owner subsequently authorised the2.1.0 release despite the documented capability limitations; this is an explicit one-off release decision, not a passed audit or weaker assertion. If they remain blocked, independently verified maintenance may be released separately with precise scope; incomplete capability work must remain identified as such. Rollback uses the previous immutable skill release and prior Pages commit through the normal checked workflow. No application production change is part of this audit.
 
 ## Measured result
 
@@ -77,10 +77,10 @@ All owned simulators/emulators, private adb ports and 16 recorded process groups
 
 ## Maintenance versus capability release
 
-2.0.1 contains the original nine runtime files and unchanged 2.0.0 workflow, apart from version/readme maintenance metadata. It carries only independently tested distribution/link/install/example-isolation/workflow and truthful-documentation fixes. The eleven-file 2.1 candidate, native/trust guidance and evaluation snapshots stay on the audit branch; they are not silently included in the stable patch.
+2.0.1 contains the original nine runtime files and unchanged 2.0.0 workflow, apart from version/readme maintenance metadata. It carries only independently tested distribution/link/install/example-isolation/workflow and truthful-documentation fixes. The eleven-file2.1.0 release subsequently includes the native/trust guidance by explicit owner authorisation; it is separate from that maintenance patch. Evaluation snapshots are repository evidence and remain excluded from installable archives.
 
 The maintenance gate requires 27 package, 2 installation and 33 browser checks plus formatting/structure, exact 9-file reproducible archives, protected CI and actual live verification. The audit branch additionally passes 53 infrastructure tests, 13 activation self-tests and native adapter regressions. Structural passes do not repair the failed capability gate.
 
-To unblock capability release: repair and re-evaluate I through a browser-capable measured workflow; prevent unsupported reported checks and rerun the affected evidence-honesty gate; establish a trusted relocated SDK-tool cache and permitted architecture metadata adapter inside the strict grader; rerun C/D under all three conditions and the frozen/supplementary native protocols; authenticate Claude before claiming its runtime; rerun affected final-candidate gates. Retain the current failures and publish any new protocol/candidate version explicitly.
+To satisfy the original capability acceptance criteria (still unmet): repair and re-evaluate I through a browser-capable measured workflow; prevent unsupported reported checks and rerun the affected evidence-honesty gate; establish a trusted relocated SDK-tool cache and permitted architecture metadata adapter inside the strict grader; rerun C/D under all three conditions and the frozen/supplementary native protocols; authenticate Claude before claiming its runtime; rerun affected final-candidate gates. Retain the current failures and publish any new protocol/candidate version explicitly.
 
 Commit/PR/release/live identifiers and actual final states are in [release verification](release-verification.json). No staged, pushed or merely built artifact is called live.

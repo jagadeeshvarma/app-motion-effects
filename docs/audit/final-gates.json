@@ -1,5 +1,5 @@
 {
-  "advancedCapabilityRelease": "BLOCKED",
+  "advancedCapabilityRelease": "AUTHORISED WITH KNOWN LIMITATIONS; PENDING CHECKED MERGE AND PUBLICATION",
   "gates": {
     "AC01": "PASS",
     "AC02": "PASS",
@@ -21,5 +21,8 @@
   "nativeCleanComparison": "BLOCKED",
   "noOutputRepairs": true,
   "localCheckEnvironment": "PASS: local Chrome via PLAYWRIGHT_CHANNEL=chrome with loopback/browser permission; default sandbox bind and bundled Chromium startup failures retained as environment limits",
-  "maintenanceRelease": "PASS: protected merge, exact final-commit checks, published nine-file ZIP with downloaded hashes, Pages deployment and33 live browser checks"
+  "maintenanceRelease": "PASS: protected merge, exact final-commit checks, published nine-file ZIP with downloaded hashes, Pages deployment and33 live browser checks",
+  "originalAuditAcceptance": "FAIL",
+  "releaseDecision": "release-authorization-2.1.0.json",
+  "frozenGateResultsUnchanged": true
 }
