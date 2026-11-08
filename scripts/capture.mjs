@@ -25,14 +25,23 @@ try {
   await page
     .locator("#playground")
     .screenshot({ path: resolve("docs/media/playground-desktop.png") });
-  await page.setViewportSize({ width: 390, height: 844 });
-  await page.evaluate(() => window.scrollTo(0, 0));
-  await page.screenshot({
+  // A fresh page avoids compositor remnants after a tall element capture.
+  await page.close();
+  const mobile = await browser.newPage({
+    viewport: { width: 390, height: 844 },
+    deviceScaleFactor: 1,
+  });
+  await mobile.goto(process.env.PREVIEW_URL || "http://127.0.0.1:4173", {
+    waitUntil: "networkidle",
+  });
+  await mobile.screenshot({
     path: resolve("docs/media/site-mobile.png"),
     fullPage: false,
   });
-  await page.locator("#playground").scrollIntoViewIfNeeded();
-  await page.screenshot({ path: resolve("docs/media/playground-mobile.png") });
+  await mobile.locator("#playground").scrollIntoViewIfNeeded();
+  await mobile.screenshot({
+    path: resolve("docs/media/playground-mobile.png"),
+  });
   console.log(
     "Captured actual rendered desktop, mobile and playground screenshots.",
   );
