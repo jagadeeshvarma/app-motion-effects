@@ -1,0 +1,23 @@
+name: Propose an improvement
+description: A contextual interaction, portability or source-selection improvement
+title: "Idea: "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Customer task and problem
+      description: Explain why the current guidance is insufficient. Avoid private app data.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change and fit
+      description: Describe the improvement and why it belongs in a reusable skill.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Sources and verification
+      description: Official links, licence considerations, contrasting scenarios or reproducible evidence.

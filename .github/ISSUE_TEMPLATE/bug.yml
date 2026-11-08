@@ -1,0 +1,26 @@
+name: Report a bug
+description: A reproducible skill decision or example interaction problem
+title: "Bug: "
+body:
+  - type: markdown
+    attributes:
+      value: Use synthetic examples. Do not post credentials, private app data or security exploit details.
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and expected behaviour
+      description: Agent/version, framework, customer task and relevant design constraints.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction and observed result
+      description: Minimal steps, affected version/files and what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and limitations
+      description: Safe screenshots, replay steps or test results; note unverified platforms.

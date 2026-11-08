@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>Studio board demo</title
+  ><style>
+    :root {
+      --canvas: #f6efe5;
+      --paper: #fffaf4;
+      --ink: #362239;
+      --accent: #d86b4b;
+      --line: #8f7884;
+      --radius: 8px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font: 16px/1.5 system-ui;
+    }
+    main {
+      max-width: 900px;
+      margin: 28px auto;
+      padding: 20px;
+    }
+    h1 {
+      font:
+        32px/1.2 Georgia,
+        serif;
+      margin: 0 0 20px;
+    }
+    .tools {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    button {
+      font: inherit;
+      min-height: 44px;
+      background: var(--ink);
+      color: var(--paper);
+      padding: 10px 16px;
+      border: 1px solid var(--ink);
+      border-radius: var(--radius);
+    }
+    button:focus-visible,
+    input:focus-visible,
+    rect:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+    }
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      touch-action: none;
+    }
+    #art {
+      fill: var(--accent);
+      stroke: var(--ink);
+      stroke-width: 2;
+      cursor: grab;
+    }
+    #art.dragging {
+      cursor: grabbing;
+      stroke-width: 3;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      font: inherit;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      color: var(--ink);
+    }
+    small {
+      display: block;
+      margin-top: 20px;
+      color: var(--ink);
+    }
+    #position {
+      font-variant-numeric: tabular-nums;
+    }
+  </style>
+  <main>
+    <h1>Studio board</h1>
+    <div class="tools">
+      <button id="reset">Reset object</button
+      ><output id="position" aria-live="off">x 100, y 90</output>
+    </div>
+    <svg viewBox="0 0 720 360" aria-label="Composition canvas">
+      <rect
+        id="art"
+        x="100"
+        y="90"
+        width="150"
+        height="120"
+        rx="16"
+        tabindex="0"
+        role="button"
+        aria-label="Coral object. Drag or use arrow keys to move."
+      ></rect></svg
+    ><label for="caption">Composition caption</label
+    ><input id="caption" value="Evening study" /><small
+      >Local synthetic demonstration. Nothing is sent.</small
+    >
+  </main>
+  <script>
+    const svg = document.querySelector("svg");
+    const art = document.querySelector("#art");
+    const position = document.querySelector("#position");
+    const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+    const home = { x: 100, y: 90 };
+    const resetDuration = 180;
+    let x = home.x,
+      y = home.y,
+      drag = null,
+      returning = null;
+
+    // Direct manipulation always writes the current position immediately.
+    function place(nx, ny) {
+      x = Math.max(0, Math.min(570, nx));
+      y = Math.max(0, Math.min(240, ny));
+      art.setAttribute("x", x);
+      art.setAttribute("y", y);
+      position.value = `x ${Math.round(x)}, y ${Math.round(y)}`;
+    }
+    function point(event) {
+      return new DOMPoint(event.clientX, event.clientY).matrixTransform(
+        svg.getScreenCTM().inverse(),
+      );
+    }
+    function stopReturn() {
+      if (!returning) return;
+      cancelAnimationFrame(returning.frame);
+      returning = null;
+    }
+    function releaseDrag() {
+      if (!drag) return;
+      const id = drag.id;
+      drag = null;
+      art.classList.remove("dragging");
+      if (art.hasPointerCapture(id)) art.releasePointerCapture(id);
+    }
+    function movePointer(event) {
+      if (!drag || drag.id !== event.pointerId) return;
+      const p = point(event);
+      place(p.x - drag.dx, p.y - drag.dy);
+    }
+    art.addEventListener("pointerdown", (event) => {
+      if (drag || event.button !== 0) return;
+      event.preventDefault();
+      stopReturn();
+      const p = point(event);
+      drag = { id: event.pointerId, dx: p.x - x, dy: p.y - y };
+      art.setPointerCapture(event.pointerId);
+      art.classList.add("dragging");
+      art.focus({ preventScroll: true });
+    });
+    art.addEventListener("pointermove", movePointer);
+    art.addEventListener("pointerup", (event) => {
+      if (drag?.id !== event.pointerId) return;
+      movePointer(event); // Include the release sample, even without a final move event.
+      releaseDrag();
+    });
+    for (const type of ["pointercancel", "lostpointercapture"]) {
+      art.addEventListener(type, (event) => {
+        if (drag?.id === event.pointerId) releaseDrag();
+      });
+    }
+    art.addEventListener("keydown", (event) => {
+      const directions = {
+        ArrowLeft: [-1, 0],
+        ArrowRight: [1, 0],
+        ArrowUp: [0, -1],
+        ArrowDown: [0, 1],
+      };
+      if (!directions[event.key]) return;
+      event.preventDefault();
+      releaseDrag();
+      stopReturn();
+      const [dx, dy] = directions[event.key],
+        step = event.shiftKey ? 1 : 10;
+      place(x + dx * step, y + dy * step);
+    });
+    function finishReturn() {
+      if (!returning) return;
+      stopReturn();
+      place(home.x, home.y);
+    }
+    function reset() {
+      releaseDrag();
+      if (
+        reducedMotion.matches ||
+        window.reviewReducedMotion ||
+        document.hidden
+      ) {
+        stopReturn();
+        place(home.x, home.y);
+        return;
+      }
+      // Repeated reset clicks keep the same return, rather than prolonging it.
+      if (returning || (x === home.x && y === home.y)) return;
+      const start = { x, y, time: performance.now() };
+      const tick = (now) => {
+        const progress = Math.min(
+          1,
+          Math.max(0, (now - start.time) / resetDuration),
+        );
+        const eased = 1 - (1 - progress) ** 3;
+        place(
+          start.x + (home.x - start.x) * eased,
+          start.y + (home.y - start.y) * eased,
+        );
+        if (progress < 1) returning.frame = requestAnimationFrame(tick);
+        else {
+          returning = null;
+          place(home.x, home.y);
+        }
+      };
+      returning = { frame: requestAnimationFrame(tick) };
+    }
+    document.querySelector("#reset").addEventListener("click", reset);
+    reducedMotion.addEventListener("change", (event) => {
+      if (event.matches) finishReturn();
+    });
+    window.addEventListener("blur", releaseDrag);
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        releaseDrag();
+        finishReturn();
+      }
+    });
+    window.addEventListener("pagehide", () => {
+      releaseDrag();
+      finishReturn();
+    });
+    window.demoPosition = () => ({ x, y });
+  </script>
+  <style>
+    html[data-review-reduced="true"] #feedback[data-state] {
+      animation: none;
+    }
+  </style>
+  <script>
+    // Same-origin, parent-only review controls. No requests or persisted data.
+    window.reviewReducedMotion = false;
+    let reviewReplayTimer;
+    for (const type of ["pointerdown", "keydown", "input"]) {
+      document.addEventListener(type, () => clearTimeout(reviewReplayTimer));
+    }
+    window.addEventListener("message", (event) => {
+      if (
+        event.source !== parent ||
+        event.origin !== location.origin ||
+        event.data?.type !== "app-motion-demo"
+      )
+        return;
+      window.reviewReducedMotion = Boolean(event.data.reduced);
+      document.documentElement.dataset.reviewReduced = String(
+        window.reviewReducedMotion,
+      );
+      if (window.reviewReducedMotion) finishReturn();
+      if (event.data.action !== "replay") return;
+      clearTimeout(reviewReplayTimer);
+      releaseDrag();
+      stopReturn();
+      place(380, 150);
+      reviewReplayTimer = setTimeout(
+        () => document.querySelector("#reset").click(),
+        400,
+      );
+    });
+  </script>
+</html>

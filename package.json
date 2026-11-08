@@ -1,0 +1,24 @@
+{
+  "name": "app-motion-effects-examples",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Development-only checks for the App Motion & Effects skill and static demos",
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run format:check && node scripts/validate.mjs && playwright test",
+    "test:structure": "node scripts/validate.mjs",
+    "test:browser": "playwright test",
+    "package": "python3 scripts/package.py",
+    "serve": "python3 -m http.server 4173 --directory docs",
+    "screenshots": "node scripts/capture.mjs",
+    "format": "prettier --write \"docs/**/*.{html,css,js}\" \"scripts/*.mjs\" \"tests/*.mjs\" \"*.{json,mjs}\"",
+    "format:check": "prettier --check \"docs/**/*.{html,css,js}\" \"scripts/*.mjs\" \"tests/*.mjs\" \"*.{json,mjs}\""
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "prettier": "3.9.10"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
