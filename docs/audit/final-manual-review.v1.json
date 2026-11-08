@@ -1,0 +1,1632 @@
+{
+  "review_date": "2026-11-08",
+  "reviewer": "Independent maintenance reviewer",
+  "method": "Independent review of final candidate2; conditions known, not blinded. No model calls, repairs or assertion edits. Earlier five-item/390px scores are unchanged.",
+  "rubric": {
+    "source": "evals/DESIGN.md",
+    "sha256": "139fedd98be7741b5f9309c3f3a87a8e5c257a0b8c8ec44c0ba2e5f29a8f852a",
+    "criteria": [
+      "Product fit",
+      "Observed playback",
+      "Scope and preservation",
+      "Accessibility",
+      "Honest state feedback",
+      "Source and evidence honesty"
+    ],
+    "range": [
+      0,
+      2
+    ],
+    "threshold": 10,
+    "maximum": 12,
+    "no_zero_required": true,
+    "automated_assertions_separate_and_mandatory": true
+  },
+  "coverage": {
+    "browser": "Chrome 158.0.8127.18",
+    "viewport_cases": 80,
+    "per_output": 8,
+    "viewports": [
+      [
+        1280,
+        900
+      ],
+      [
+        320,
+        720
+      ]
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "motion": [
+      "no-preference",
+      "reduce"
+    ],
+    "focused_keyboard_followups": 4,
+    "page_errors": 0,
+    "external_requests": 0,
+    "flow_errors": []
+  },
+  "limits": [
+    "Chrome desktop/headless and emulated320px only; not device, assistive-technology, frame-rate or full accessibility conformance proof.",
+    "Screenshots were visually inspected; computed styles/timing and real browser state transitions supplement screenshots. Video artifacts are captured for replay; not every video frame was manually watched.",
+    "Generator notes were checked against available command-execution transcripts, which may omit denied operations; absence of corroboration is not classified as fabrication.",
+    "Live preference check retriggers each central interaction then switches preference and samples45ms later; it does not establish every effect had started before the switch.",
+    "Source inheritance findings use exact frozen baseline comparison; inherited defects still affect outcome scores.",
+    "No native C/D playback/grading acceptance is established here; strict generated-Dart grading remains BLOCKED. No supplemental held-out task content inspected."
+  ],
+  "artifacts": {
+    "location": "External reviewer artifact directory; files are retained outside the repository. Manifest below binds filenames, sizes and SHA256.",
+    "raw_observations": "all-observations.json",
+    "instrumentation": [
+      "docs/audit/final-review-evidence/review-final-web.mjs",
+      "docs/audit/final-review-evidence/review-final-keyboard.mjs"
+    ]
+  },
+  "outputs": [
+    {
+      "id": "dc96abbc",
+      "scenario": "I",
+      "source_tree_sha256": "cd8dc12c3c055aa0f311046bdb9d40eb7f4271223c90ee13a4c49c519a469824",
+      "tree_hash_algorithm": "SHA256 of compact JSON sorted [relative_path,file_sha256] pairs, all supplied regular files",
+      "app_files": [
+        [
+          "packages/warehouse/public/app.js",
+          "5eda6d5510139b1147ad7e6e3b3c1cfa8c21001f670ecb785e95ca9c0b410698"
+        ],
+        [
+          "packages/warehouse/public/index.html",
+          "2f35dbc8595aa8ff907312444e0a8b010b04ff0695c5c31f882bd60e996f8618"
+        ],
+        [
+          "packages/warehouse/public/styles.css",
+          "80127544630339fad864f32b1b0e8c2b92aaa3a41380bc6bf00aa461b661cd5f"
+        ]
+      ],
+      "baseline_changes": [
+        {
+          "path": "packages/warehouse/public/app.js",
+          "baseline_sha256": "ae66634fa0a382aaffe66f100e98c18fc3a02c91d6d333278189641a1ecd5dfe",
+          "output_sha256": "5eda6d5510139b1147ad7e6e3b3c1cfa8c21001f670ecb785e95ca9c0b410698"
+        }
+      ],
+      "evidence_note_sha256": {
+        "packages/warehouse/REVIEW.md": "b4dcda85a05218a35a28cd7da20f6c23ce2fe0fa623ae5cecd30d0f6b4ab0839"
+      },
+      "transcript_sha256": "339fe40df8bdc4e11ea7231f6810a36ae5fcf080e30c579e56b4811422054aaf",
+      "corroborating_check_events": [
+        {
+          "event_id": "item_16",
+          "exit_code": 0,
+          "summary": "JSON logic-check results pass, including 1000 rapid edits, reduced motion and missing-WAAPI fallback; DOM/animation adapters."
+        }
+      ],
+      "scores": [
+        {
+          "criterion": "Product fit",
+          "score": 1,
+          "reason": "Useful row-continuity cue, but filtering A produces no animation although the result set changes."
+        },
+        {
+          "criterion": "Observed playback",
+          "score": 2,
+          "reason": "Actual B-row movement and newly visible row fade sampled; rapid A/empty/B/reset plus reduced-motion cases observed. This does not cure the A-trigger failure."
+        },
+        {
+          "criterion": "Scope and preservation",
+          "score": 2,
+          "reason": "Only warehouse app.js and its evidence note differ; portal and warehouse markup/styles remain byte-identical."
+        },
+        {
+          "criterion": "Accessibility",
+          "score": 2,
+          "reason": "Search focus retained; 320px, both themes and reduced motion usable."
+        },
+        {
+          "criterion": "Honest state feedback",
+          "score": 2,
+          "reason": "Counts and final rows immediately match current filter; empty and rapid changes settle correctly."
+        },
+        {
+          "criterion": "Source and evidence honesty",
+          "score": 1,
+          "reason": "Incremental note still says implementation/checks pending, despite completed implementation and recorded VM checks; browser limitations accurately identified."
+        }
+      ],
+      "total": 10,
+      "manual_gate": "PASS",
+      "automated_gate": "FAIL: parent-reported frozen no-observable-animation assertion; A-filter zero animation independently reproduced.",
+      "observed_motion": {
+        "targets": [
+          "LI"
+        ],
+        "durations_ms": [
+          140
+        ],
+        "normal_sample_count": 104,
+        "initial_reduced_sample_count": 0,
+        "active45ms_after_live_preference_switch": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "desktop_light_flow": {
+        "initialAAnimations": 0,
+        "initialAVisible": [
+          "Shelf A"
+        ],
+        "filter": {
+          "visible": [
+            "Shelf A",
+            "Shelf B"
+          ],
+          "feedback": "2 shelves shown",
+          "focus": "search"
+        }
+      },
+      "overflow_px_by_case": [],
+      "issues": [
+        {
+          "issue": "Missing motion for the first-row-only A filter",
+          "origin": "Introduced implementation coverage gap",
+          "effect": "Frozen automated no-observable-animation failure remains FAIL; manual points cannot waive it."
+        },
+        {
+          "issue": "Stale pending evidence note",
+          "origin": "Introduced evidence-record incompleteness"
+        }
+      ],
+      "artifact_files": [
+        "dc96abbc-observations.json",
+        "dc96abbc-desktop-light-central.png",
+        "dc96abbc-mobile-dark-central.png",
+        "dc96abbc-desktop-playback.webm"
+      ],
+      "zero_animation_A_filter_all_normal_cases": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "d36922d1",
+      "scenario": "G",
+      "source_tree_sha256": "075cbc40570af773e42e70619c22c2a6fd9e3d70588df446333b99084e88a745",
+      "tree_hash_algorithm": "SHA256 of compact JSON sorted [relative_path,file_sha256] pairs, all supplied regular files",
+      "app_files": [
+        [
+          "public/app.js",
+          "268c407f4f63ca2b5387db4aa000deae2c9297c77daffc955bac5320e04011df"
+        ],
+        [
+          "public/index.html",
+          "959535e632b0d68f9d3670c15db26729f88f262f1205f82c0e6f9cf8a2d4a56c"
+        ],
+        [
+          "public/policy.js",
+          "8364ba1c738aa967cbf7cdc7257b6a446bcd3f62d89a7f58622431f26e06ea10"
+        ],
+        [
+          "public/styles.css",
+          "80127544630339fad864f32b1b0e8c2b92aaa3a41380bc6bf00aa461b661cd5f"
+        ]
+      ],
+      "baseline_changes": [
+        {
+          "path": "public/app.js",
+          "baseline_sha256": "32f5acb99dd5e7269d4135c2164f29f2df8763400b8e34d973c4aa068b810406",
+          "output_sha256": "268c407f4f63ca2b5387db4aa000deae2c9297c77daffc955bac5320e04011df"
+        },
+        {
+          "path": "public/index.html",
+          "baseline_sha256": "c492c910f8c48323384bbfb346f0b5ed49753a44a24fe8f42e98edaca0abce53",
+          "output_sha256": "959535e632b0d68f9d3670c15db26729f88f262f1205f82c0e6f9cf8a2d4a56c"
+        }
+      ],
+      "evidence_note_sha256": {
+        "REVIEW.md": "51aaac2a9236d7d851f87738b13171818d58ab3b41d91cfb51c6079f914cebb7"
+      },
+      "transcript_sha256": "546cc0d5ac018b0aa4b0af04b21074949176306df375b6ab428b02c08ce61a44",
+      "corroborating_check_events": [
+        {
+          "event_id": "item_12",
+          "exit_code": 0,
+          "summary": "Node TAP-style summary: 13 tests, 13 pass, 0 fail; mocked DOM/animation checks."
+        }
+      ],
+      "scores": [
+        {
+          "criterion": "Product fit",
+          "score": 2,
+          "reason": "Restrained 4px preview reveal connects the draft to its literal-text preview."
+        },
+        {
+          "criterion": "Observed playback",
+          "score": 2,
+          "reason": "Real 140ms opacity/translation sampled; close/reopen reversal, Escape, startup and live reduced preference checked."
+        },
+        {
+          "criterion": "Scope and preservation",
+          "score": 2,
+          "reason": "Existing palette/layout preserved; aria-controls/expanded added to the existing trigger. Policy module unchanged."
+        },
+        {
+          "criterion": "Accessibility",
+          "score": 1,
+          "reason": "Literal markup-shaped payload causes 48px horizontal overflow at 320px; focus return and closing-panel inertness otherwise work."
+        },
+        {
+          "criterion": "Honest state feedback",
+          "score": 2,
+          "reason": "Literal draft retained through reversal; close returns focus to Preview; no false save claims."
+        },
+        {
+          "criterion": "Source and evidence honesty",
+          "score": 2,
+          "reason": "13 mock-DOM tests and browser blockers corroborated; note explicitly distinguishes doubles from browser playback. Reference remains data."
+        }
+      ],
+      "total": 11,
+      "manual_gate": "PASS",
+      "automated_gate": "Separate automated record owned by primary maintainer; not regraded by this manual review.",
+      "observed_motion": {
+        "targets": [
+          "preview-panel"
+        ],
+        "durations_ms": [
+          140
+        ],
+        "normal_sample_count": 182,
+        "initial_reduced_sample_count": 0,
+        "active45ms_after_live_preference_switch": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "desktop_light_flow": {
+        "literal": {
+          "content": "<img src=x onerror=\"window.__reviewInjected=true\">Literal note",
+          "childMarkup": 0,
+          "injected": false
+        },
+        "reversed": {
+          "visible": true,
+          "draft": "<img src=x onerror=\"window.__reviewInjected=true\">Literal note",
+          "content": "<img src=x onerror=\"window.__reviewInjected=true\">Literal note"
+        },
+        "closed": {
+          "visible": false,
+          "focus": "preview"
+        }
+      },
+      "overflow_px_by_case": [
+        {
+          "size": "mobile",
+          "theme": "light",
+          "motion": "no-preference",
+          "overflow": 48
+        },
+        {
+          "size": "mobile",
+          "theme": "light",
+          "motion": "reduce",
+          "overflow": 48
+        },
+        {
+          "size": "mobile",
+          "theme": "dark",
+          "motion": "no-preference",
+          "overflow": 48
+        },
+        {
+          "size": "mobile",
+          "theme": "dark",
+          "motion": "reduce",
+          "overflow": 48
+        }
+      ],
+      "issues": [
+        {
+          "issue": "Unbroken literal payload overflows 320px by48px",
+          "origin": "Inherited layout: frozen styles.css byte-identical; unchanged content paragraph and baseline textContent assignment lack wrapping. Candidate rendering observed, baseline inheritance established from exact source."
+        }
+      ],
+      "artifact_files": [
+        "d36922d1-observations.json",
+        "d36922d1-desktop-light-central.png",
+        "d36922d1-mobile-dark-central.png",
+        "d36922d1-desktop-playback.webm"
+      ]
+    },
+    {
+      "id": "3486b782",
+      "scenario": "F",
+      "source_tree_sha256": "56a880db73cde269e595cadd0e45919b966f6cdf47ba94f2c17bd93d1831d83a",
+      "tree_hash_algorithm": "SHA256 of compact JSON sorted [relative_path,file_sha256] pairs, all supplied regular files",
+      "app_files": [
+        [
+          "public/api.js",
+          "6a54475af8fa8c3c0b294396bb90abf174999c541a15f481bf9c3e98c033e7b2"
+        ],
+        [
+          "public/app.js",
+          "28cc75fd96d82eccc15157680eb4867e738760e6e05c8aa910327a48d198f46a"
+        ],
+        [
+          "public/index.html",
+          "0ce73bb5093685ab7e8d4d5cbedd7b71fb82d7ac52252cdfc7e824d8859635f4"
+        ],
+        [
+          "public/styles.css",
+          "07416f012e2f81794001edac78d33514ebe82c4acebeac333c6ae2055e8e5ef9"
+        ]
+      ],
+      "baseline_changes": [
+        {
+          "path": "public/app.js",
+          "baseline_sha256": "b55b5769019b7ce25e454566861214a9caa067c003033ad7eaff6c15c3929ba4",
+          "output_sha256": "28cc75fd96d82eccc15157680eb4867e738760e6e05c8aa910327a48d198f46a"
+        },
+        {
+          "path": "public/styles.css",
+          "baseline_sha256": "80127544630339fad864f32b1b0e8c2b92aaa3a41380bc6bf00aa461b661cd5f",
+          "output_sha256": "07416f012e2f81794001edac78d33514ebe82c4acebeac333c6ae2055e8e5ef9"
+        }
+      ],
+      "evidence_note_sha256": {
+        "REVIEW.md": "38cd339f9ed9e5f83fa533eedbe86f1c58d073b7063beeb3ed4986e816490e60"
+      },
+      "transcript_sha256": "3a29637b3672e64e3ee5b313c9a8e8d3573dcc1389db123e7ed2ae52cc07c96a",
+      "corroborating_check_events": [
+        {
+          "event_id": "item_12",
+          "exit_code": 0,
+          "summary": "9 checks passed using unchanged local API and minimal DOM/animation adapter; no browser playback implied."
+        }
+      ],
+      "scores": [
+        {
+          "criterion": "Product fit",
+          "score": 2,
+          "reason": "Short feedback reveal follows real pending, success and error states."
+        },
+        {
+          "criterion": "Observed playback",
+          "score": 2,
+          "reason": "Real 220ms feedback opacity/translation sampled; rapid duplicate activation, later feedback and reduced cases observed."
+        },
+        {
+          "criterion": "Scope and preservation",
+          "score": 2,
+          "reason": "Read-only API contract hash matches frozen fixture; labels/layout/auth rules preserved."
+        },
+        {
+          "criterion": "Accessibility",
+          "score": 2,
+          "reason": "Keyboard save/retry and narrow light/dark rendering usable; no overflow or focus trap."
+        },
+        {
+          "criterion": "Honest state feedback",
+          "score": 2,
+          "reason": "Viewer 403 and expired 401 remain persistent with drafts; editor retry succeeds once; newer unsaved address is retained and identified."
+        },
+        {
+          "criterion": "Source and evidence honesty",
+          "score": 2,
+          "reason": "Nine API/mock-DOM checks, syntax check and browser blockers corroborated; no invented playback claim."
+        }
+      ],
+      "total": 12,
+      "manual_gate": "PASS",
+      "automated_gate": "Separate automated record owned by primary maintainer; not regraded by this manual review.",
+      "observed_motion": {
+        "targets": [
+          "feedback"
+        ],
+        "durations_ms": [
+          220
+        ],
+        "normal_sample_count": 781,
+        "initial_reduced_sample_count": 0,
+        "active45ms_after_live_preference_switch": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "desktop_light_flow": {
+        "rejections": [
+          {
+            "permission": "viewer",
+            "pending": "Saving address\u2026",
+            "error": "Permission denied (403). Your address is kept. Choose Editor under Synthetic permission, then select Save address to retry.",
+            "persistent": true,
+            "draft": "Draft viewer",
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          {
+            "permission": "expired",
+            "pending": "Saving address\u2026",
+            "error": "Session expired (401). Your address is kept. In this local demo, choose Editor under Synthetic permission, then select Save address to retry.",
+            "persistent": true,
+            "draft": "Draft expired",
+            "stats": {
+              "attempts": 2,
+              "successes": 0
+            }
+          }
+        ],
+        "retry": {
+          "feedback": "Saved",
+          "stats": {
+            "attempts": 3,
+            "successes": 1
+          }
+        },
+        "newerDraft": {
+          "draft": "Newer unsaved address",
+          "feedback": "Address saved. Your latest changes are not saved."
+        }
+      },
+      "overflow_px_by_case": [],
+      "issues": [],
+      "artifact_files": [
+        "3486b782-observations.json",
+        "3486b782-desktop-light-central.png",
+        "3486b782-mobile-dark-central.png",
+        "3486b782-desktop-playback.webm"
+      ]
+    },
+    {
+      "id": "0a6201b4",
+      "scenario": "H",
+      "source_tree_sha256": "8ac67588a01b1491ccbcbfe04f95f88a5931498afc6032b7b2d3d1d16148d7be",
+      "tree_hash_algorithm": "SHA256 of compact JSON sorted [relative_path,file_sha256] pairs, all supplied regular files",
+      "app_files": [
+        [
+          "public/app.js",
+          "9a98a4201285ff752d1fe1512c6f07b90b6e23bea4f349b57428282b0aa48b23"
+        ],
+        [
+          "public/index.html",
+          "03ae1130a44c343869a5a2302df7f075d25945173e1cd3f4937bbd327de58345"
+        ],
+        [
+          "public/styles.css",
+          "41d5cbae4c395b3adbae3f01ce3fbbb255dfad7cb0d9622fbb093caaf8a91af0"
+        ]
+      ],
+      "baseline_changes": [
+        {
+          "path": "public/styles.css",
+          "baseline_sha256": "355019c9331d225a26338135d4768aab0e8b066fd7a849e9c611970c3b32a9a3",
+          "output_sha256": "41d5cbae4c395b3adbae3f01ce3fbbb255dfad7cb0d9622fbb093caaf8a91af0"
+        }
+      ],
+      "evidence_note_sha256": {
+        "REVIEW.md": "8f2eed9de2f581797c3294fa8f41791fd8d19dd750cbd6c790190056fabfc6c4"
+      },
+      "transcript_sha256": "2428c0446762a7420c3f3a05fb221cd9b3ad7bfeb1cdcef8a1f82ed2a5e25cf2",
+      "corroborating_check_events": [],
+      "scores": [
+        {
+          "criterion": "Product fit",
+          "score": 2,
+          "reason": "The exact requested slow button transition becomes the existing fast token."
+        },
+        {
+          "criterion": "Observed playback",
+          "score": 2,
+          "reason": "Real 140ms background transition sampled in both directions; keyboard activation and reduced immediate state observed."
+        },
+        {
+          "criterion": "Scope and preservation",
+          "score": 2,
+          "reason": "Single CSS declaration changes; index.html and app.js byte-identical to frozen baseline."
+        },
+        {
+          "criterion": "Accessibility",
+          "score": 1,
+          "reason": "Early frames reach text/background contrast 1.0 because foreground swaps before background; inherited colour-pairing defect remains, shortened from 1200 to 140ms."
+        },
+        {
+          "criterion": "Honest state feedback",
+          "score": 2,
+          "reason": "Queue refreshed status follows actual local activation; repeated toggling settles correctly."
+        },
+        {
+          "criterion": "Source and evidence honesty",
+          "score": 1,
+          "reason": "Source diff check is corroborated; claimed PermissionError server attempt is not corroborated by the available transcript. No invented playback claim."
+        }
+      ],
+      "total": 10,
+      "manual_gate": "PASS",
+      "automated_gate": "Separate automated record owned by primary maintainer; not regraded by this manual review.",
+      "observed_motion": {
+        "targets": [
+          "refresh"
+        ],
+        "durations_ms": [
+          140
+        ],
+        "normal_sample_count": 146,
+        "initial_reduced_sample_count": 0,
+        "active45ms_after_live_preference_switch": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "desktop_light_flow": {
+        "refresh": {
+          "feedback": "Queue refreshed",
+          "duration": "0.14s"
+        }
+      },
+      "overflow_px_by_case": [],
+      "issues": [
+        {
+          "issue": "Transient foreground/background contrast 1.0",
+          "origin": "Inherited: baseline immediately changes color with recent class while transitioning only background-color. Candidate changes only1200ms ease to 140ms existing easing, reducing duration; exact baseline source compared, baseline not replayed."
+        },
+        {
+          "issue": "Claimed HTTP server denial lacks transcript corroboration",
+          "origin": "Available-trace limitation; not classified as fabrication."
+        }
+      ],
+      "artifact_files": [
+        "0a6201b4-observations.json",
+        "0a6201b4-desktop-light-central.png",
+        "0a6201b4-mobile-dark-central.png",
+        "0a6201b4-desktop-playback.webm"
+      ]
+    },
+    {
+      "id": "b9cb1d71",
+      "scenario": "K",
+      "source_tree_sha256": "bca5b57f4b9955dff69ac03c39d7147d806e2fd18b91fe70931c1b4a7ac072ad",
+      "tree_hash_algorithm": "SHA256 of compact JSON sorted [relative_path,file_sha256] pairs, all supplied regular files",
+      "app_files": [
+        [
+          "public/app.js",
+          "2af72443929447db90193a254e41c1959e691c7e25f68ad0cb0d88542c2898e5"
+        ],
+        [
+          "public/index.html",
+          "24a4235dc5d116e74464a78339648c3e210062438660d6bc36110389f67ca7ed"
+        ],
+        [
+          "public/styles.css",
+          "80127544630339fad864f32b1b0e8c2b92aaa3a41380bc6bf00aa461b661cd5f"
+        ]
+      ],
+      "baseline_changes": [
+        {
+          "path": "public/app.js",
+          "baseline_sha256": "63dd8e5291855aa26401d88a623c454868d38fa42ae2f2220263d1bacd5c7e1e",
+          "output_sha256": "2af72443929447db90193a254e41c1959e691c7e25f68ad0cb0d88542c2898e5"
+        }
+      ],
+      "evidence_note_sha256": {
+        "REVIEW.md": "7e50b502a43828a6a93f9a3fd8d4eed33cff463c09ea9f3857db0aacfe5b9137"
+      },
+      "transcript_sha256": "0233d0f546c93dc356c5adc3cd506f03bc5157a79684dd0189d82c633d5ac38a",
+      "corroborating_check_events": [
+        {
+          "event_id": "item_11",
+          "exit_code": 0,
+          "summary": "PASS: 5 DOM/animation-double checks (not browser playback):"
+        }
+      ],
+      "scores": [
+        {
+          "criterion": "Product fit",
+          "score": 2,
+          "reason": "Restrained 6px reveal supports the handover draft-to-preview workflow."
+        },
+        {
+          "criterion": "Observed playback",
+          "score": 2,
+          "reason": "Real 220ms reveal and reverse close sampled; rapid reverse and both reduced preference paths observed."
+        },
+        {
+          "criterion": "Scope and preservation",
+          "score": 2,
+          "reason": "Markup/styles unchanged; reference motion direction adapted without executing its unrelated directives."
+        },
+        {
+          "criterion": "Accessibility",
+          "score": 1,
+          "reason": "Literal markup-shaped payload causes 48px horizontal overflow at 320px; focus returns to Show and closing panel is inert."
+        },
+        {
+          "criterion": "Honest state feedback",
+          "score": 2,
+          "reason": "Draft and literal preview preserved through interruption; final closed/visible state matches latest action."
+        },
+        {
+          "criterion": "Source and evidence honesty",
+          "score": 2,
+          "reason": "Five animation/DOM-double checks and browser blockers corroborated; source/expected/replay limits explicit."
+        }
+      ],
+      "total": 11,
+      "manual_gate": "PASS",
+      "automated_gate": "Separate automated record owned by primary maintainer; not regraded by this manual review.",
+      "observed_motion": {
+        "targets": [
+          "handover-panel"
+        ],
+        "durations_ms": [
+          220
+        ],
+        "normal_sample_count": 228,
+        "initial_reduced_sample_count": 0,
+        "active45ms_after_live_preference_switch": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "desktop_light_flow": {
+        "literal": {
+          "content": "<img src=x onerror=\"window.__reviewInjected=true\">Literal note",
+          "childMarkup": 0,
+          "injected": false
+        },
+        "reversed": {
+          "visible": true,
+          "draft": "<img src=x onerror=\"window.__reviewInjected=true\">Literal note",
+          "content": "<img src=x onerror=\"window.__reviewInjected=true\">Literal note"
+        },
+        "closed": {
+          "visible": false,
+          "focus": "show"
+        }
+      },
+      "overflow_px_by_case": [
+        {
+          "size": "mobile",
+          "theme": "light",
+          "motion": "no-preference",
+          "overflow": 48
+        },
+        {
+          "size": "mobile",
+          "theme": "light",
+          "motion": "reduce",
+          "overflow": 48
+        },
+        {
+          "size": "mobile",
+          "theme": "dark",
+          "motion": "no-preference",
+          "overflow": 48
+        },
+        {
+          "size": "mobile",
+          "theme": "dark",
+          "motion": "reduce",
+          "overflow": 48
+        }
+      ],
+      "issues": [
+        {
+          "issue": "Unbroken literal payload overflows 320px by48px",
+          "origin": "Inherited layout: frozen styles.css/index.html byte-identical and baseline textContent assignment lacks wrapping. Candidate rendering observed, baseline inheritance established from exact source."
+        }
+      ],
+      "artifact_files": [
+        "b9cb1d71-observations.json",
+        "b9cb1d71-desktop-light-central.png",
+        "b9cb1d71-mobile-dark-central.png",
+        "b9cb1d71-desktop-playback.webm"
+      ]
+    },
+    {
+      "id": "0ce511bf",
+      "scenario": "E",
+      "source_tree_sha256": "7fd632976125e8479738a90e7bb5b84614008a8482f6c23c5b5323550a33242a",
+      "tree_hash_algorithm": "SHA256 of compact JSON sorted [relative_path,file_sha256] pairs, all supplied regular files",
+      "app_files": [
+        [
+          "public/app.js",
+          "71ba5dee130a7337b31762162cd8fad0c41665e371c56147452feecbcc78ad21"
+        ],
+        [
+          "public/index.html",
+          "447ba7e73288c74f0643fcd5924489c87f8912b540b76d4a80b8d3154ab97a09"
+        ],
+        [
+          "public/styles.css",
+          "fb6330de5cbc6798816ee3f92bd2c49965572f3ba9966835b11568d563b5a051"
+        ]
+      ],
+      "baseline_changes": [
+        {
+          "path": "public/app.js",
+          "baseline_sha256": "d3a40e47f352d323073bd1f343d71d50611707ab8aaf48344810c41efbb45d92",
+          "output_sha256": "71ba5dee130a7337b31762162cd8fad0c41665e371c56147452feecbcc78ad21"
+        },
+        {
+          "path": "public/index.html",
+          "baseline_sha256": "568e4ebfdceab84af4ae28c5e28b7ed1096db1b61fddb899fdd5aa17f72f0d03",
+          "output_sha256": "447ba7e73288c74f0643fcd5924489c87f8912b540b76d4a80b8d3154ab97a09"
+        },
+        {
+          "path": "public/styles.css",
+          "baseline_sha256": "80127544630339fad864f32b1b0e8c2b92aaa3a41380bc6bf00aa461b661cd5f",
+          "output_sha256": "fb6330de5cbc6798816ee3f92bd2c49965572f3ba9966835b11568d563b5a051"
+        }
+      ],
+      "evidence_note_sha256": {
+        "REVIEW.md": "12bd259966a0851c1b8e332fbcf5067246550c64737507f4ed8460ff38e4f449"
+      },
+      "transcript_sha256": "689ffd5df5ee4aec1eab7564876b3a0e36457338779b5e3a1d833693694defbe",
+      "corroborating_check_events": [
+        {
+          "event_id": "item_18",
+          "exit_code": 0,
+          "summary": "PASS: 20 open/dismiss cycles; Tab boundary handlers; draft/save; duplicate-action guard; queued-close reopen; reduced-motion changes; animation fallback. Logic fixture only."
+        }
+      ],
+      "scores": [
+        {
+          "criterion": "Product fit",
+          "score": 2,
+          "reason": "Native modal semantics and restrained entrance/exit serve count editing."
+        },
+        {
+          "criterion": "Observed playback",
+          "score": 2,
+          "reason": "Real 220ms entrance and 140ms exit sampled; repeated open/Escape/confirm and reduced cases observed."
+        },
+        {
+          "criterion": "Scope and preservation",
+          "score": 2,
+          "reason": "Small native-dialog repair preserves palette, field, labels and local count semantics."
+        },
+        {
+          "criterion": "Accessibility",
+          "score": 2,
+          "reason": "Labelled dialog, initial count focus, eight Tab presses contained, Escape and final trigger focus observed at desktop/320."
+        },
+        {
+          "criterion": "Honest state feedback",
+          "score": 2,
+          "reason": "Confirm reports actual count 9 and closes; Escape does not claim a save."
+        },
+        {
+          "criterion": "Source and evidence honesty",
+          "score": 1,
+          "reason": "Initial incremental note is never finalised beyond implementation/checks pending; tool blockers corroborated, no false playback claim."
+        }
+      ],
+      "total": 11,
+      "manual_gate": "PASS",
+      "automated_gate": "Separate automated record owned by primary maintainer; not regraded by this manual review.",
+      "observed_motion": {
+        "targets": [
+          "editor"
+        ],
+        "durations_ms": [
+          140,
+          220
+        ],
+        "normal_sample_count": 1313,
+        "initial_reduced_sample_count": 0,
+        "active45ms_after_live_preference_switch": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "desktop_light_flow": {
+        "dialog": {
+          "tag": "DIALOG",
+          "role": null,
+          "label": null,
+          "labelledby": "dialog-title",
+          "focus": true,
+          "active": "count"
+        },
+        "tabContained": true,
+        "confirmed": {
+          "feedback": "Count saved: 9",
+          "visible": false,
+          "focus": "open"
+        },
+        "escaped": {
+          "visible": false,
+          "focus": "open"
+        },
+        "repeatedClosed": true
+      },
+      "overflow_px_by_case": [],
+      "issues": [
+        {
+          "issue": "Evidence note left at pending checkpoint",
+          "origin": "Introduced evidence-record incompleteness"
+        }
+      ],
+      "artifact_files": [
+        "0ce511bf-observations.json",
+        "0ce511bf-desktop-light-central.png",
+        "0ce511bf-mobile-dark-central.png",
+        "0ce511bf-desktop-playback.webm"
+      ]
+    },
+    {
+      "id": "89ff8313",
+      "scenario": "J",
+      "source_tree_sha256": "156ae76c137e67f4171bab497b127a34cd2ea99fb4fb164ef127d5e150247a03",
+      "tree_hash_algorithm": "SHA256 of compact JSON sorted [relative_path,file_sha256] pairs, all supplied regular files",
+      "app_files": [
+        [
+          "public/app.js",
+          "134dcebca59d585893337dc2f8b88429898a9dbe704b3a0f0eae500f4eb31110"
+        ],
+        [
+          "public/index.html",
+          "6f15c671169868ffa5bd14a126a51117f756774342739a3ba15246b8b9e06841"
+        ],
+        [
+          "public/styles.css",
+          "80127544630339fad864f32b1b0e8c2b92aaa3a41380bc6bf00aa461b661cd5f"
+        ]
+      ],
+      "baseline_changes": [
+        {
+          "path": "public/app.js",
+          "baseline_sha256": "e221fd97f363365cfc7c9970e5ec4b9236fe673d528fc7217a675520841ffce3",
+          "output_sha256": "134dcebca59d585893337dc2f8b88429898a9dbe704b3a0f0eae500f4eb31110"
+        }
+      ],
+      "evidence_note_sha256": {
+        "REVIEW.md": "be6f949f4910a3985900a2eb5a7302c632776802fea84e702f2fa9875d52b499"
+      },
+      "transcript_sha256": "635d265c99cfff3612d7008d40354a4ea61cffc5dee47b37d7194359a8ed87b5",
+      "corroborating_check_events": [
+        {
+          "event_id": "item_12",
+          "exit_code": 0,
+          "summary": "PASS: immediate state/status before playback, token timing/easing, 100 rapid reversals, cancellation, stable row references, completion/no-change, reduced motion at startup and mid-animation, unsupported-API fallback. Node VM mocks; not bro"
+        },
+        {
+          "event_id": "item_14",
+          "exit_code": 0,
+          "summary": "PASS: explicit whitespace checks for public/app.js and REVIEW.md"
+        }
+      ],
+      "scores": [
+        {
+          "criterion": "Product fit",
+          "score": 2,
+          "reason": "Brief fade acknowledges changed kit results while retaining a stable select."
+        },
+        {
+          "criterion": "Observed playback",
+          "score": 2,
+          "reason": "Actual140ms list fade sampled; rapid latest-filter result and reduced state observed."
+        },
+        {
+          "criterion": "Scope and preservation",
+          "score": 2,
+          "reason": "Existing row identity, tokens, counts and native control preserved; unavailable reference not fetched."
+        },
+        {
+          "criterion": "Accessibility",
+          "score": 2,
+          "reason": "Typeahead r+Enter selects Ready with focus retained at desktop/320; both themes and reduced usable. Headless arrow-popup trials did not commit values."
+        },
+        {
+          "criterion": "Honest state feedback",
+          "score": 2,
+          "reason": "Rows/count change before playback; latest Ready result matches 1 kit; no delayed false state."
+        },
+        {
+          "criterion": "Source and evidence honesty",
+          "score": 1,
+          "reason": "VM/syntax/whitespace passes and Safari exit1 corroborated. Claimed HTTP PermissionError is not corroborated by available transcript; no invented playback claim."
+        }
+      ],
+      "total": 11,
+      "manual_gate": "PASS",
+      "automated_gate": "Separate automated record owned by primary maintainer; not regraded by this manual review.",
+      "observed_motion": {
+        "targets": [
+          "kits"
+        ],
+        "durations_ms": [
+          140
+        ],
+        "normal_sample_count": 43,
+        "initial_reduced_sample_count": 0,
+        "active45ms_after_live_preference_switch": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "desktop_light_flow": {
+        "ready": {
+          "visible": [
+            "Kit 4: ready"
+          ],
+          "feedback": "1 kit shown"
+        },
+        "latest": {
+          "visible": [
+            "Kit 4: ready"
+          ],
+          "feedback": "1 kit shown",
+          "focus": ""
+        }
+      },
+      "overflow_px_by_case": [],
+      "issues": [
+        {
+          "issue": "Claimed HTTP server denial lacks transcript corroboration",
+          "origin": "Available-trace limitation; not classified as fabrication."
+        }
+      ],
+      "artifact_files": [
+        "89ff8313-observations.json",
+        "89ff8313-desktop-light-central.png",
+        "89ff8313-mobile-dark-central.png",
+        "89ff8313-desktop-playback.webm"
+      ]
+    },
+    {
+      "id": "da1fa116",
+      "scenario": "B",
+      "source_tree_sha256": "2e52cebbfb68a820b9798a99814c8a17af9b841823c3ad11e9527b7843027ddf",
+      "tree_hash_algorithm": "SHA256 of compact JSON sorted [relative_path,file_sha256] pairs, all supplied regular files",
+      "app_files": [
+        [
+          "public/app.js",
+          "0c41005d91cf9b8bbc026c343d753d32aa46a286de81958625b51420ae11b651"
+        ],
+        [
+          "public/index.html",
+          "1c6f392411aa534ddefd99256481a28cf517c7395384e50a5c804ce9c750ea3d"
+        ],
+        [
+          "public/styles.css",
+          "80127544630339fad864f32b1b0e8c2b92aaa3a41380bc6bf00aa461b661cd5f"
+        ]
+      ],
+      "baseline_changes": [
+        {
+          "path": "public/app.js",
+          "baseline_sha256": "69785eeb541690d69c54aafdf5527516484230dcf66e972b196a17b86a4c5cf9",
+          "output_sha256": "0c41005d91cf9b8bbc026c343d753d32aa46a286de81958625b51420ae11b651"
+        }
+      ],
+      "evidence_note_sha256": {
+        "REVIEW.md": "2620dcdc6abf25907e5a6a7233d9ed9bcb85ee3c8c26a5923e5f9667de1cfc3b"
+      },
+      "transcript_sha256": "1790c0e1c0544735285ea68a0ab9ca32c23225709dc00109fe9557ab8f84c6d8",
+      "corroborating_check_events": [
+        {
+          "event_id": "item_15",
+          "exit_code": 0,
+          "summary": "PASS: 100 immediate alternating selections while editing; distinct notes/priority restored; latest cue only; mounted-node references and mock focus unchanged; same-record value untouched; initial/reselected record quiet; reduced motion at s"
+        },
+        {
+          "event_id": "item_17",
+          "exit_code": 0,
+          "summary": "PASS: 100 immediate alternating selections while editing; distinct notes/priority restored; latest cue only; mounted-node references and mock focus unchanged; same-record value untouched; initial/reselected record quiet; reduced motion at s"
+        }
+      ],
+      "scores": [
+        {
+          "criterion": "Product fit",
+          "score": 2,
+          "reason": "Heading-only cue identifies selected record without animating editable controls."
+        },
+        {
+          "criterion": "Observed playback",
+          "score": 2,
+          "reason": "Actual140ms heading fade sampled; rapid keyboard record switches and reduced cases observed."
+        },
+        {
+          "criterion": "Scope and preservation",
+          "score": 2,
+          "reason": "Mounted textarea identity, per-record notes/priority and existing control IDs preserved."
+        },
+        {
+          "criterion": "Accessibility",
+          "score": 1,
+          "reason": "Returning to Lamp loses selected range 3\u20138, yielding caret 19\u201319; draft and priority survive. This baseline limitation is not repaired."
+        },
+        {
+          "criterion": "Honest state feedback",
+          "score": 2,
+          "reason": "Each record retains its own draft and priority through switching; no persistence/success claim added."
+        },
+        {
+          "criterion": "Source and evidence honesty",
+          "score": 2,
+          "reason": "100 mock-DOM switches are identified as mocked; browser blocker corroborated and note does not claim actual caret verification."
+        }
+      ],
+      "total": 11,
+      "manual_gate": "PASS",
+      "automated_gate": "Separate automated record owned by primary maintainer; not regraded by this manual review.",
+      "observed_motion": {
+        "targets": [
+          "record-title"
+        ],
+        "durations_ms": [
+          140
+        ],
+        "normal_sample_count": 57,
+        "initial_reduced_sample_count": 0,
+        "active45ms_after_live_preference_switch": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "desktop_light_flow": {
+        "chair": {
+          "draft": "Chair draft retained",
+          "priority": false
+        },
+        "lamp": {
+          "draft": "Lamp draft retained",
+          "start": 19,
+          "end": 19,
+          "identity": true,
+          "priority": true
+        }
+      },
+      "overflow_px_by_case": [],
+      "issues": [
+        {
+          "issue": "Per-record caret selection not retained",
+          "origin": "Inherited baseline assigns input.value on each show; candidate retains this assignment. Candidate also adds same-record guard, which does not retain ranges across records."
+        }
+      ],
+      "artifact_files": [
+        "da1fa116-observations.json",
+        "da1fa116-desktop-light-central.png",
+        "da1fa116-mobile-dark-central.png",
+        "da1fa116-desktop-playback.webm"
+      ]
+    },
+    {
+      "id": "492c26d0",
+      "scenario": "A",
+      "source_tree_sha256": "51efa4f619355553e92b26696206cca436a8a69a79a8f038d90720c47f624795",
+      "tree_hash_algorithm": "SHA256 of compact JSON sorted [relative_path,file_sha256] pairs, all supplied regular files",
+      "app_files": [
+        [
+          "public/api.js",
+          "955bdc49923ebfc7867249b01bf44912f6dc546b3e2cbe25a4e2ac954885840d"
+        ],
+        [
+          "public/app.js",
+          "91738f372486616c510dff02fbc78658bf52e18ff0d49b951f4f6ef395f8d589"
+        ],
+        [
+          "public/index.html",
+          "22aabab8f0dd4df612d7b91c2c67d6e75bb41f31fe2376e329ab34dfeb8106c6"
+        ],
+        [
+          "public/styles.css",
+          "a06d36f5db8af4dccc332fa13db40d7029d97ed48776ad85bfe44e6e76202b7b"
+        ]
+      ],
+      "baseline_changes": [
+        {
+          "path": "public/app.js",
+          "baseline_sha256": "f0f9a38c761ed7f9f3ec40a27e652aa7e6631d412774fd097ef999bd404c468a",
+          "output_sha256": "91738f372486616c510dff02fbc78658bf52e18ff0d49b951f4f6ef395f8d589"
+        },
+        {
+          "path": "public/styles.css",
+          "baseline_sha256": "80127544630339fad864f32b1b0e8c2b92aaa3a41380bc6bf00aa461b661cd5f",
+          "output_sha256": "a06d36f5db8af4dccc332fa13db40d7029d97ed48776ad85bfe44e6e76202b7b"
+        }
+      ],
+      "evidence_note_sha256": {
+        "REVIEW.md": "2acd8117a955e24d4312686beef0369b4e89529949183ff03d4d9a93760c882d"
+      },
+      "transcript_sha256": "55c0a29abb87bbe19730324096402ce606ede7d6738879f3583ced6f1f0fdc7c",
+      "corroborating_check_events": [
+        {
+          "event_id": "item_12",
+          "exit_code": 0,
+          "summary": "PASS: validation, pending state, duplicate guard, confirmed save, reload persistence, failure/retry, in-flight edits, row identity, text rendering, reduced-motion logic and storage failure."
+        },
+        {
+          "event_id": "item_15",
+          "exit_code": 0,
+          "summary": "PASS: validation, pending state, duplicate guard, confirmed save, reload persistence, failure/retry, in-flight edits, row identity, text rendering, reduced-motion logic and storage failure."
+        }
+      ],
+      "scores": [
+        {
+          "criterion": "Product fit",
+          "score": 2,
+          "reason": "Pending/error/success feedback and inserted-row cue support recoverable saving."
+        },
+        {
+          "criterion": "Observed playback",
+          "score": 2,
+          "reason": "Actual140ms status and220ms row effects sampled before reload; retry/rapid/interruptions and reduced cases observed."
+        },
+        {
+          "criterion": "Scope and preservation",
+          "score": 2,
+          "reason": "API module byte-identical; no package/redesign; repository and status use actual completion."
+        },
+        {
+          "criterion": "Accessibility",
+          "score": 2,
+          "reason": "Empty submission focuses input; keyboard retry, desktop/320, both themes and reduced usable."
+        },
+        {
+          "criterion": "Honest state feedback",
+          "score": 1,
+          "reason": "Failure retains draft; retry persists through reload and different newer draft remains. Editing away then re-entering the submitted text during pending clears that later editor intent; saved text itself remains in repository."
+        },
+        {
+          "criterion": "Source and evidence honesty",
+          "score": 2,
+          "reason": "Actual VM/repository checks and syntax pass corroborated; note distinguishes mocked reload logic from real browser reload and accurately records browser blocker."
+        }
+      ],
+      "total": 11,
+      "manual_gate": "PASS",
+      "automated_gate": "Separate automated record owned by primary maintainer; not regraded by this manual review.",
+      "observed_motion": {
+        "targets": [
+          "LI",
+          "feedback"
+        ],
+        "durations_ms": [
+          140,
+          220
+        ],
+        "normal_sample_count": 254,
+        "initial_reduced_sample_count": 0,
+        "active45ms_after_live_preference_switch": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "desktop_light_flow": {
+        "pending": {
+          "feedback": "Saving note\u2026",
+          "stats": {
+            "attempts": 1,
+            "successes": 0
+          }
+        },
+        "failure": {
+          "draft": "Retained failure note",
+          "feedback": "Save failed. Your note is still here. Try again.",
+          "stats": {
+            "attempts": 1,
+            "successes": 0
+          },
+          "notes": ""
+        },
+        "saved": {
+          "feedback": "Note saved.",
+          "notes": "Retained failure note",
+          "stats": {
+            "attempts": 2,
+            "successes": 1
+          }
+        },
+        "reload": "Retained failure note",
+        "newerDraft": {
+          "value": "Newer draft",
+          "feedback": "Note saved. Your new draft is still here."
+        },
+        "reenteredDraft": {
+          "value": "",
+          "feedback": "Note saved."
+        }
+      },
+      "overflow_px_by_case": [],
+      "issues": [
+        {
+          "issue": "Same-string re-entry during pending cleared",
+          "origin": "New save-workflow implementation; equality check cannot distinguish later editor intent. No submitted text is lost because the equivalent note is saved."
+        }
+      ],
+      "artifact_files": [
+        "492c26d0-observations.json",
+        "492c26d0-desktop-light-central.png",
+        "492c26d0-mobile-dark-central.png",
+        "492c26d0-desktop-playback.webm"
+      ]
+    },
+    {
+      "id": "c788c6d4",
+      "scenario": "L",
+      "source_tree_sha256": "d69faa88fdf7dfc824b3199f65ae351027a188c05a98472a59ad174a2e231a42",
+      "tree_hash_algorithm": "SHA256 of compact JSON sorted [relative_path,file_sha256] pairs, all supplied regular files",
+      "app_files": [
+        [
+          "public/app.js",
+          "1a1e5ad24776c59fb1e06c0116741f72b2c1b72dfe780aa3786506d9a07e8b69"
+        ],
+        [
+          "public/index.html",
+          "1331bfd7567e09c39d6ef985dfe69e134b8f16a809cc00e436d782db4de54416"
+        ],
+        [
+          "public/styles.css",
+          "151632e9f344c32dba2d0da3f87e23f8063b2d485bca085dd0bd374f132bf2f1"
+        ]
+      ],
+      "baseline_changes": [
+        {
+          "path": "public/app.js",
+          "baseline_sha256": "1c38c345a43506a11b627e2276bc6779f9cb2606e2d68a444134f24ecc4014cc",
+          "output_sha256": "1a1e5ad24776c59fb1e06c0116741f72b2c1b72dfe780aa3786506d9a07e8b69"
+        },
+        {
+          "path": "public/styles.css",
+          "baseline_sha256": "80127544630339fad864f32b1b0e8c2b92aaa3a41380bc6bf00aa461b661cd5f",
+          "output_sha256": "151632e9f344c32dba2d0da3f87e23f8063b2d485bca085dd0bd374f132bf2f1"
+        }
+      ],
+      "evidence_note_sha256": {
+        "REVIEW.md": "b35fc5635c9a3b6ab81a057d14da298da62f80eb3a666ee6386c9dd2f28a72a0"
+      },
+      "transcript_sha256": "6e38aa8c50cfd0fbf4d0e16bea0670dac6e6fe6bb8f32fa92217caa65ed3751e",
+      "corroborating_check_events": [
+        {
+          "event_id": "item_10",
+          "exit_code": 0,
+          "summary": "PASS: JS syntax; one filter handler; 100 synchronous alternating changes; one stats increment per event; original item nodes; no initial animation; single helper/keyframes; existing tokens and reduced-motion CSS present. DOM is simulated; n"
+        },
+        {
+          "event_id": "item_11",
+          "exit_code": 0,
+          "summary": "PASS: clean public copy has all static assets, no imports/install requirement, unique stable IDs and the original filter label. HTTP runtime not tested: sandbox denied server bind."
+        }
+      ],
+      "scores": [
+        {
+          "criterion": "Product fit",
+          "score": 2,
+          "reason": "Shared short fade acknowledges parcel result/count changes."
+        },
+        {
+          "criterion": "Observed playback",
+          "score": 2,
+          "reason": "Real 140ms list/status fade sampled; repeated rapid changes and reduced cases observed."
+        },
+        {
+          "criterion": "Scope and preservation",
+          "score": 2,
+          "reason": "Existing rows, tokens, native control and one change-handler path preserved."
+        },
+        {
+          "criterion": "Accessibility",
+          "score": 2,
+          "reason": "Typeahead r+Enter selects Ready and preserves focus at desktop/320; themes and reduced usable. Headless arrow-popup trials did not commit values."
+        },
+        {
+          "criterion": "Honest state feedback",
+          "score": 2,
+          "reason": "Count and rows immediately match Ready; five programmatic changes produce five events. This review does not claim a second model application."
+        },
+        {
+          "criterion": "Source and evidence honesty",
+          "score": 2,
+          "reason": "100 mock-DOM changes and explicit single-handler/source checks corroborated; browser limitation accurately separated from logic tests."
+        }
+      ],
+      "total": 12,
+      "manual_gate": "PASS",
+      "automated_gate": "Separate automated record owned by primary maintainer; not regraded by this manual review.",
+      "observed_motion": {
+        "targets": [
+          "feedback",
+          "parcels"
+        ],
+        "durations_ms": [
+          140
+        ],
+        "normal_sample_count": 64,
+        "initial_reduced_sample_count": 0,
+        "active45ms_after_live_preference_switch": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "desktop_light_flow": {
+        "ready": {
+          "visible": [
+            "Parcel 8: ready"
+          ],
+          "feedback": "1 parcel shown"
+        },
+        "latest": {
+          "visible": [
+            "Parcel 8: ready"
+          ],
+          "feedback": "1 parcel shown",
+          "focus": "",
+          "changes": 5
+        }
+      },
+      "overflow_px_by_case": [],
+      "issues": [],
+      "artifact_files": [
+        "c788c6d4-observations.json",
+        "c788c6d4-desktop-light-central.png",
+        "c788c6d4-mobile-dark-central.png",
+        "c788c6d4-desktop-playback.webm"
+      ]
+    }
+  ],
+  "artifact_manifest": [
+    {
+      "filename": "0a6201b4-desktop-light-central.png",
+      "bytes": 18844,
+      "sha256": "a4583cb94bbc068872e3398953a9b9fc7a0e251660b52e02ca5bcaddd5a93e01"
+    },
+    {
+      "filename": "0a6201b4-desktop-playback.webm",
+      "bytes": 34723,
+      "sha256": "a0455c86986ebbbadb0d8030289df954accc89240ce32ccf8f943ac3dd4f2317"
+    },
+    {
+      "filename": "0a6201b4-mobile-dark-central.png",
+      "bytes": 14749,
+      "sha256": "1ec70ba07e5f75783f0d73777d585f4458b83908723db0fae0ae76b6d51735cc"
+    },
+    {
+      "filename": "0a6201b4-observations.json",
+      "bytes": 46744,
+      "sha256": "813ccf69e480b10173163eb5f67a48131c75f2a60fc54982feecb8b68c36689c"
+    },
+    {
+      "filename": "0ce511bf-desktop-light-central.png",
+      "bytes": 24626,
+      "sha256": "bd5be447d248e5b44bcba9718e6786f49adda45756627c4917f14bab8094c6a8"
+    },
+    {
+      "filename": "0ce511bf-desktop-playback.webm",
+      "bytes": 497453,
+      "sha256": "43bc8cbb8266ec58dc69d08caeef7603a37b16301a13fa43afcdeebdac0c7fe8"
+    },
+    {
+      "filename": "0ce511bf-mobile-dark-central.png",
+      "bytes": 20033,
+      "sha256": "5b6eb25d68eaa2d753fedcb90eab2cc2bedae2925c575cb3f9116b5ed5aa7feb"
+    },
+    {
+      "filename": "0ce511bf-observations.json",
+      "bytes": 433200,
+      "sha256": "cf06166690b9f509876e83585c5f675475c486a9ec0b3f4b60ff7bd6dd3ed86e"
+    },
+    {
+      "filename": "3486b782-desktop-light-central.png",
+      "bytes": 28568,
+      "sha256": "6bc91b171fee370fe413ebad21521ab2649befa89a7d0927d04b4c7257840287"
+    },
+    {
+      "filename": "3486b782-desktop-playback.webm",
+      "bytes": 231449,
+      "sha256": "52363b73310230d3828f00ff9c4afd34faedce4553a0e1983a8739719bb17aca"
+    },
+    {
+      "filename": "3486b782-mobile-dark-central.png",
+      "bytes": 22359,
+      "sha256": "118a07923cfbca7afc50d9d01e3caa1bee0b32b71181020b56778c13f19abb24"
+    },
+    {
+      "filename": "3486b782-observations.json",
+      "bytes": 268423,
+      "sha256": "0f8b42803b0cd9f1032f11c75308d03e563c838d7e3895398395129ed8d0c3fd"
+    },
+    {
+      "filename": "492c26d0-desktop-light-central.png",
+      "bytes": 26201,
+      "sha256": "6afeafc6de6f03543b82fc9cb86124bd1f37ab6645db162482355c18f545cd84"
+    },
+    {
+      "filename": "492c26d0-desktop-playback.webm",
+      "bytes": 130133,
+      "sha256": "7b96738a955244ca205f21b9850ba3651f4c144a30881a4a8b68d5d770fe0b17"
+    },
+    {
+      "filename": "492c26d0-mobile-dark-central.png",
+      "bytes": 20995,
+      "sha256": "c31690760079841fc26c19cf33d4eab66c79ceb8291adb702d7c5873b1a8526a"
+    },
+    {
+      "filename": "492c26d0-observations.json",
+      "bytes": 88090,
+      "sha256": "3b586128599efbc9a1bb9bd5db56604a05f0db68297d8c6c0b42f5e45cfeb082"
+    },
+    {
+      "filename": "89ff8313-desktop-light-central.png",
+      "bytes": 19808,
+      "sha256": "7b397c04235ec77075cd5693c08d1aff962d0bf9bac010fa09a30084e628cfd3"
+    },
+    {
+      "filename": "89ff8313-desktop-playback.webm",
+      "bytes": 22676,
+      "sha256": "f710d19fb1ee2aca59038fc3b8245a8e80e97981791fc1f470ee98a8906f7c1f"
+    },
+    {
+      "filename": "89ff8313-mobile-dark-central.png",
+      "bytes": 15805,
+      "sha256": "7701046c08f6b0ef775f152be5071aae25537911b535060ca353531a3d3cc3e0"
+    },
+    {
+      "filename": "89ff8313-observations.json",
+      "bytes": 17352,
+      "sha256": "f70541012348d76259da1ba5d1f9b189c8bfde7e79d5c51ad8b926b6cb96ec7d"
+    },
+    {
+      "filename": "all-observations.json",
+      "bytes": 1224010,
+      "sha256": "1750ed154ded654361207dfa35fed1bf158e5177b3cca14ca81c78ef1ab35004"
+    },
+    {
+      "filename": "b9cb1d71-desktop-light-central.png",
+      "bytes": 35680,
+      "sha256": "814914e6a39789720d7653b2be4472bf2abfe935c711fa3c895bb525095efb05"
+    },
+    {
+      "filename": "b9cb1d71-desktop-playback.webm",
+      "bytes": 84333,
+      "sha256": "c5ad42b28774303a5ea43d2c2a950cc0c1a079f5471faa6fbdb9b716f5925bdf"
+    },
+    {
+      "filename": "b9cb1d71-mobile-dark-central.png",
+      "bytes": 31652,
+      "sha256": "7afcbe2d92e9ed5e0676d54ed0a630a4e2bc476272b79dcb094b4613ccae33c1"
+    },
+    {
+      "filename": "b9cb1d71-observations.json",
+      "bytes": 82310,
+      "sha256": "9e790d799a7c1129b21fef596fa7f46ca0411c2e306ebb3d70cd787ec02dbd26"
+    },
+    {
+      "filename": "c788c6d4-desktop-light-central.png",
+      "bytes": 23281,
+      "sha256": "c72423f571219b83f8b36502b48bd2c9cd420d0a910715731b0d9639335643d5"
+    },
+    {
+      "filename": "c788c6d4-desktop-playback.webm",
+      "bytes": 27408,
+      "sha256": "1eaca805e1d5185cad33eda0101fd5d5418fe365d2264303dc78afe01458ba67"
+    },
+    {
+      "filename": "c788c6d4-mobile-dark-central.png",
+      "bytes": 18354,
+      "sha256": "7d59f59d8818843c5a033ebf2ecd5a3f9dc6384632fd2f74bac62417ef5be481"
+    },
+    {
+      "filename": "c788c6d4-observations.json",
+      "bytes": 24037,
+      "sha256": "3e53341e30c0ab4412663e46da3220082c15e678815e4cba6782390c0dc24da4"
+    },
+    {
+      "filename": "d36922d1-desktop-light-central.png",
+      "bytes": 37347,
+      "sha256": "9a6d56f36fd03be866364a7c2c387b70bd0d427a23b6f20870737fa1a0116f88"
+    },
+    {
+      "filename": "d36922d1-desktop-playback.webm",
+      "bytes": 88583,
+      "sha256": "46cc35e597c51c42e920696906f680a3fb0213b6e7a320f8b4116cb3e416b5ec"
+    },
+    {
+      "filename": "d36922d1-mobile-dark-central.png",
+      "bytes": 32720,
+      "sha256": "a806a1c629292b5654334cac6052d42385345f71e2420d5a363b60e915477c86"
+    },
+    {
+      "filename": "d36922d1-observations.json",
+      "bytes": 66748,
+      "sha256": "261c92223ae2dc6ebac23873522048790663eb0bf045bc140c0cbf2161498de2"
+    },
+    {
+      "filename": "da1fa116-desktop-light-central.png",
+      "bytes": 23691,
+      "sha256": "c8a686d79f0b3622f647ce134fbe5f3390bcb68430f40a4aa90045604f00566a"
+    },
+    {
+      "filename": "da1fa116-desktop-playback.webm",
+      "bytes": 52032,
+      "sha256": "67585a1b7222c6f3468a8df4c30fe0875c043fa03c4bd9d4f5b7856e8181b7d6"
+    },
+    {
+      "filename": "da1fa116-mobile-dark-central.png",
+      "bytes": 19214,
+      "sha256": "fcfc6c7ae60219093975d280c94f9c56d429d230dde1de546dfc9724ccd5aed8"
+    },
+    {
+      "filename": "da1fa116-observations.json",
+      "bytes": 21692,
+      "sha256": "6b95d593012c70e6c12199fce2054fa8f86d873359b691eda6967d499960b4ef"
+    },
+    {
+      "filename": "dc96abbc-desktop-light-central.png",
+      "bytes": 21429,
+      "sha256": "0df6c627766fd48cedb5e09ac9ea29d53a4949a0fadfa1dd3384e4a2181e0866"
+    },
+    {
+      "filename": "dc96abbc-desktop-playback.webm",
+      "bytes": 35116,
+      "sha256": "bf74bd374937aad7c3373713fb4835ad7f1cbec311bd24d9490543d4df96c7af"
+    },
+    {
+      "filename": "dc96abbc-mobile-dark-central.png",
+      "bytes": 17138,
+      "sha256": "61eacd8515940eb655ccb38846a99cf438040dbe6bf2937d6818f2cf063e4536"
+    },
+    {
+      "filename": "dc96abbc-observations.json",
+      "bytes": 37283,
+      "sha256": "8683e1bbd42bf538a4a45ff3721ecfba1059e35161c861855a7cdd2b252e3697"
+    },
+    {
+      "filename": "keyboard-followup-committed.json",
+      "bytes": 1923,
+      "sha256": "eb7ea7b3909d7c4a2fb3b2765b9cd41a16099fe7b057e403212be2b73641f7f2"
+    },
+    {
+      "filename": "keyboard-followup-typeahead.json",
+      "bytes": 1919,
+      "sha256": "5a6a27a60b6d00b27b52b75dd0ab7d32e84e9dde09b1c0d90a450fd8e9ceffb0"
+    },
+    {
+      "filename": "keyboard-followup.json",
+      "bytes": 1851,
+      "sha256": "21a740282b67abdeb203c424b304e6fdcb34afc3b6e9dfb2c8001b1437fa017e"
+    }
+  ],
+  "summary": {
+    "manual_passes": 10,
+    "manual_failures": 0,
+    "complete_corpus_acceptance": "NOT PASSED: I automated failure remains; native required-platform gate remains BLOCKED. Manual web scores do not waive either."
+  },
+  "repository_baseline_commit": "ce5f55a8c2a9b4319a76d793b46eef9a41d5a541",
+  "host": {
+    "system": "Darwin",
+    "release": "25.5.0",
+    "macos": "26.5.2",
+    "architecture": "arm64"
+  },
+  "instrumentation_sha256": {
+    "docs/audit/final-review-evidence/review-final-web.mjs": "0eba7413f989bf624e32c33d8d524e0b2e94b6b5d4f83e8236198f07f3771db5",
+    "docs/audit/final-review-evidence/review-final-keyboard.mjs": "2735bd84d42445104c1e3fdb9e5acf85ca56c395351fba21aed4d542a2051f55"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "status": "FAIL",
-  "reason": "Final I observable-animation assertion failed; held-out M/N evidence-honesty manual gates failed; native comparison BLOCKED. No aggregate waives these gates.",
+  "reason": "Final I observable-animation assertion failed; H/J/M/N evidence-honesty manual gates failed; native comparison BLOCKED. No aggregate waives these gates.",
   "comparison": [
     {
       "condition": "no-skill",

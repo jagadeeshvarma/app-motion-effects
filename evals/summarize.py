@@ -104,7 +104,7 @@ def main():
                 'condition_integrity': data.get('condition_integrity', 'NOT RUN in prototype harness'),
                 'native_provisional': native_provisional,
                 'eligibility_note': 'Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.' if native_provisional else 'Observed result; retain all failures. Candidate versions/cohorts are separate.',
-                'manual_status': 'NOT RUN', 'measurements': measured,
+                'measurements': measured,
                 'monetary_cost': None,
             }
             runs.append(row)
@@ -127,6 +127,8 @@ def main():
                               'Interrupted-turn token usage is unknown. Monetary telemetry is unavailable, not zero.',
                               'Elapsed times include provider/tool latency; heterogeneous tasks, host load and small samples do not establish causal performance improvement.',
                               'Prototype and audited harness versions, grading amendments and candidate snapshots are distinguished; original raw records are not overwritten.'],
+        'manualEvidencePolicy': 'Independent manual scores are separate, with distinct rubric/blinding limits; they do not overwrite executable results or process completion.',
+        'manualEvidenceReports': ['docs/audit/independent-outcomes.json', 'docs/audit/final-manual-review.json', 'docs/audit/heldout-manual-review.json'],
         'groups': groups, 'runs': runs,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)

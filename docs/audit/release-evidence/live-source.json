@@ -1,0 +1,44 @@
+[
+  {
+    "path": "index.html",
+    "httpStatus": 200,
+    "sha256": "8f04cc98171ebe5cc5602e73028a89210754ccdb06508ccd6879841a83306b46",
+    "status": "PASS"
+  },
+  {
+    "path": "styles.css",
+    "httpStatus": 200,
+    "sha256": "efc8724b87ae04479524f677a2d416923860ff752a43b8a96c7d8c517ee93fce",
+    "status": "PASS"
+  },
+  {
+    "path": "verification.html",
+    "httpStatus": 200,
+    "sha256": "92ccf238dd6f5881d1d1270afc620f516e5bd3409b38910b249d32a5191bbbd3",
+    "status": "PASS"
+  },
+  {
+    "path": "verification.css",
+    "httpStatus": 200,
+    "sha256": "a6afc3306600f9f69c0a55bc35fa57989e052f610ac2e6f31c8874ea341b884f",
+    "status": "PASS"
+  },
+  {
+    "path": "full-repo-prompt.txt",
+    "httpStatus": 200,
+    "sha256": "72f02e284ca4d4e75578ec35781470303167c778f4f803acc08dde008a19dbaa",
+    "status": "PASS"
+  },
+  {
+    "path": "demos/interaction.html",
+    "httpStatus": 200,
+    "sha256": "36fa81c6b9a6403989d33c45890cf0b9403bc157ded9d18f3a8917e12f64871b",
+    "status": "PASS"
+  },
+  {
+    "path": "demos/interaction.js",
+    "httpStatus": 200,
+    "sha256": "9072b90c320d5390b140032a3963467b4f47a427590252067713d90ca2795225",
+    "status": "PASS"
+  }
+]

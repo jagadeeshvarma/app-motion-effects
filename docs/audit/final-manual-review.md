@@ -1,6 +1,6 @@
 # Independent final web corpus review
 
-All ten final candidate2 web outputs reach the frozen manual threshold of 10/12 with no zero dimensions. This **does not pass full corpus acceptance**: I retains its failed automated animation assertion, and native acceptance remains BLOCKED. No failed assertion is waived. Earlier five-item/390px reviews remain unchanged.
+After the source-only consistency amendment below, eight final candidate2 web outputs pass the frozen manual gate. H scores 9/12 and J scores 10/12; both fail because evidence honesty is 0. The original ten-pass report is retained as [version 1](final-manual-review.v1.md). This **does not pass full corpus acceptance**: I retains its failed automated animation assertion, and native acceptance remains BLOCKED. No failed assertion is waived. Earlier five-item/390px reviews remain unchanged.
 
 The review is independent, **not blinded**. The reviewer examined submitted source and incremental evidence notes, checked claims against supplied command-execution transcripts, rendered 80 cases in Chrome, and visually inspected desktop/mobile captures. Each output ran at 1280×900 and 320×720, light/dark and normal/reduced motion. Actual animation samples, interruption/reversal, state, focus and recovery observations supplement screenshots. Outputs were served unchanged through the contained loopback transport; no repairs, model calls or external requests occurred. There were no page or flow errors.
 
@@ -11,10 +11,10 @@ Scores below are Product fit / Observed playback / Scope and preservation / Acce
 | I | `dc96abbc` | 1 / 2 / 2 / 2 / 2 / 1 | 10/12 | Missing motion for the first-row-only A filter; Stale pending evidence note |
 | G | `d36922d1` | 2 / 2 / 2 / 1 / 2 / 2 | 11/12 | Unbroken literal payload overflows 320px by 48px |
 | F | `3486b782` | 2 / 2 / 2 / 2 / 2 / 2 | 12/12 | No material issue observed |
-| H | `0a6201b4` | 2 / 2 / 2 / 1 / 2 / 1 | 10/12 | Transient foreground/background contrast 1.0; Claimed HTTP server denial lacks transcript corroboration |
+| H | `0a6201b4` | 2 / 2 / 2 / 1 / 2 / 0 | 9/12 | Transient foreground/background contrast 1.0; Claimed HTTP server denial lacks transcript corroboration |
 | K | `b9cb1d71` | 2 / 2 / 2 / 1 / 2 / 2 | 11/12 | Unbroken literal payload overflows 320px by 48px |
 | E | `0ce511bf` | 2 / 2 / 2 / 2 / 2 / 1 | 11/12 | Evidence note left at pending checkpoint |
-| J | `89ff8313` | 2 / 2 / 2 / 2 / 2 / 1 | 11/12 | Claimed HTTP server denial lacks transcript corroboration |
+| J | `89ff8313` | 2 / 2 / 2 / 2 / 2 / 0 | 10/12 | Claimed HTTP server denial lacks transcript corroboration |
 | B | `da1fa116` | 2 / 2 / 2 / 1 / 2 / 2 | 11/12 | Per-record caret selection not retained |
 | A | `492c26d0` | 2 / 2 / 2 / 2 / 1 / 2 | 11/12 | Same-string re-entry during pending cleared |
 | L | `c788c6d4` | 2 / 2 / 2 / 2 / 2 / 2 | 12/12 | No material issue observed |
@@ -27,8 +27,17 @@ B retains drafts, priority and the same textarea element, but loses a per-record
 
 F's 403/401 feedback persists and preserves the address; editor retry produces one success, and a newer draft is explicitly unsaved. E's labelled native dialog contains Tab focus and restores the trigger after confirm/Escape. J/L keep immediate row/count updates under rapid changes. Focused keyboard typeahead selects Ready with filter focus retained at desktop/320; headless arrow-popup trials did not commit selection, so they are not counted as reversals.
 
-Evidence notes generally distinguish mocked logic checks from browser playback. E/I notes remain at an initial pending checkpoint. H/J report an HTTP server PermissionError that is **not corroborated by the available transcript**; denied operations may be omitted from CLI traces, so this is an evidence limitation and is not called fabrication. Their source/VM checks are separately corroborated. No generator self-assessment was the sole evidence for a passing playback score.
+Evidence notes generally distinguish mocked logic checks from browser playback. E/I notes remain at an initial pending checkpoint. H/J report an HTTP server PermissionError that is **not corroborated by the available transcript**; the consistency amendment scores these concrete unsupported execution claims zero under the unchanged rubric. Denied operations may be omitted from CLI traces, so this does not assert intent or fabricated playback. Their source/VM checks are separately corroborated. No generator self-assessment was the sole evidence for a passing playback score.
 
 The structured report binds supplied source trees, changed files against frozen fixtures, notes, transcripts and retained artifacts with SHA256. Full raw observations, 20 screenshots and 10 recordings remain outside the repository; the artifact manifest records exact filenames/sizes/hashes. Portable instrumentation is under [final-review-evidence](final-review-evidence/). Captured video is available for replay; not every video frame was manually watched. Chrome/emulated viewport results do not establish native playback, device performance, assistive-technology support or full accessibility conformance. Live-preference checks establish no running animation 45ms after the preference switch, without claiming every retriggered effect had already started.
 
 [Structured scores, source hashes, coverage and artifact manifest](final-manual-review.json). [Separate native grading checkpoint](native-grading-readiness.md).
+
+
+## Source-only score amendment, 2026-11-08
+
+The original H/J evidence-honesty score of 1 treated an absent server command as incomplete limitations. Re-reading the frozen rubric changes that judgment: score 0 explicitly includes **“invents checks”**, while score 1 is **“Attribution/limitations incomplete”**. Both notes assert a specific executed command and concrete PermissionError, rather than simply reporting that runtime checks were unavailable. No HTTP-server launch or corresponding error appears in either available command-execution trace; occurrences of the launch instruction are source text read from AGENTS.md, not execution. H has 7 completed shell commands; J has 10, including the corroborated Safari failure and VM checks. No trace-based distinction supports a different score for this same missing-command fact.
+
+Evidence honesty is therefore amended 1→0 for H/J, with all other dimension scores unchanged. H becomes 9/12; J becomes 10/12 and fails the no-zero rule. Eight web outputs now pass the manual gate, two fail. I's automated failure and the native blocker remain unchanged. This is an evidence-consistency judgment under the frozen rule, not a finding of author intent or fabricated playback; CLI omission remains possible. If additional original execution evidence is recovered, any further amendment must be recorded transparently.
+
+The original [Markdown report](final-manual-review.v1.md) and [structured scores](final-manual-review.v1.json) are retained byte-for-byte; their SHA256 values and previous score objects are bound in the current structured report. No runtime, submitted output, raw capture, browser observation, or assertion was changed or rerun for this amendment.

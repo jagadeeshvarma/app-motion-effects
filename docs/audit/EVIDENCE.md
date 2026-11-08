@@ -26,3 +26,5 @@ python3 -m http.server 8000 --directory evals/outputs-final/A/public
 I uses `evals/outputs-final/I/packages/warehouse/public`. Its automated animation failure remains FAIL. M/N runtime snapshots are also retained; they were held out until generation finished. Native pilot recordings remain exploratory and outside the clean comparison.
 
 Held-out M/N: [manual review](heldout-manual-review.md), [capture manifest](final-evidence/heldout-MN/manifest.json), [M playback](final-evidence/heldout-MN/M-desktop-light-normal-playback.webm), [N playback](final-evidence/heldout-MN/N-320-dark-normal-playback.webm). Runtime PASS does not waive their failed manual evidence-honesty gates or agent timeouts.
+
+Published maintenance2.0.1: [actual live Chrome comparison](release-evidence/motion-live-201.jpg), [verification page](release-evidence/motion-live-201-verification.jpg), [source identity](release-evidence/live-source.json), [release record](release-verification.json). These captures document the maintenance site, separately from unreleased candidate outputs.

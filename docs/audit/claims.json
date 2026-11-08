@@ -4,7 +4,7 @@
       "claim": "Product-aware motion direction and strict visual contract",
       "implementation": "SKILL.md + adaptation.md",
       "status": "PARTIALLY VERIFIED",
-      "evidence": "Pinned source review, contrasting decision scenarios and independently rendered final web outputs; final manual held-out evidence-honesty gates fail.",
+      "evidence": "Pinned source review, contrasting decision scenarios and independently rendered final web outputs; H/J/M/N manual evidence-honesty gates fail.",
       "limit": "No guarantee of identical design judgement or universal fit"
     },
     {

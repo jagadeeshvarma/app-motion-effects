@@ -391,8 +391,9 @@
       "id": "QA-002",
       "severity": "medium",
       "category": "behavioural-evaluation",
-      "title": "Held-out outputs reported a command failure absent from their execution traces",
+      "title": "Generated outputs reported command failures absent from their retained execution traces",
       "affected_files": [
+        "docs/audit/final-manual-review.md",
         "docs/audit/heldout-manual-review.md",
         "skills/app-motion-effects/SKILL.md"
       ],
@@ -408,9 +409,13 @@
       "status": "FAIL; CAPABILITY RELEASE BLOCKED",
       "evidence": [
         "docs/audit/heldout-manual-review.md",
-        "docs/audit/heldout-manual-review.json"
+        "docs/audit/heldout-manual-review.json",
+        "docs/audit/final-manual-review.json",
+        "docs/audit/final-manual-review.v1.json"
       ],
       "evaluated_output_locations": [
+        "H/REVIEW.md",
+        "J/REVIEW.md",
         "M/REVIEW.md:15",
         "N/REVIEW.md:14"
       ]
@@ -434,10 +439,11 @@
         "Existing browser assertions remain unchanged."
       ],
       "dependencies": [],
-      "status": "FIXED; FINAL CI PENDING",
+      "status": "FIXED",
       "evidence": [
         "GitHub Actions42515179053 and42515264881 failure traces",
-        "tests/loading.spec.mjs footer regression"
+        "tests/loading.spec.mjs footer regression",
+        "Final PR/main/Pages checks and33 live browser checks PASS; release-verification.json"
       ]
     }
   ]

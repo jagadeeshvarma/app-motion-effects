@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedUtc": "2026-11-08T19:21:04.014258+00:00",
+  "generatedUtc": "2026-11-08T19:40:30.427811+00:00",
   "model": "gpt-6.1-sol",
   "reasoning": "high",
   "timeoutSeconds": 240,
@@ -11,6 +11,12 @@
     "Interrupted-turn token usage is unknown. Monetary telemetry is unavailable, not zero.",
     "Elapsed times include provider/tool latency; heterogeneous tasks, host load and small samples do not establish causal performance improvement.",
     "Prototype and audited harness versions, grading amendments and candidate snapshots are distinguished; original raw records are not overwritten."
+  ],
+  "manualEvidencePolicy": "Independent manual scores are separate, with distinct rubric/blinding limits; they do not overwrite executable results or process completion.",
+  "manualEvidenceReports": [
+    "docs/audit/independent-outcomes.json",
+    "docs/audit/final-manual-review.json",
+    "docs/audit/heldout-manual-review.json"
   ],
   "groups": [
     {
@@ -298,7 +304,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 13,
@@ -353,7 +358,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 15,
@@ -403,7 +407,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": true,
       "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 16,
@@ -450,7 +453,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 15,
@@ -503,7 +505,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 7,
@@ -546,7 +547,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 12,
@@ -598,7 +598,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": true,
       "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 12
@@ -649,7 +648,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 20,
@@ -696,7 +694,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 12,
@@ -749,7 +746,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 14,
@@ -807,7 +803,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 20,
@@ -854,7 +849,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 11,
@@ -897,7 +891,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 16,
@@ -955,7 +948,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": true,
       "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 15,
@@ -1002,7 +994,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 12,
@@ -1057,7 +1048,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 13,
@@ -1100,7 +1090,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 18,
@@ -1153,7 +1142,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 13,
@@ -1196,7 +1184,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 8,
@@ -1251,7 +1238,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 10,
@@ -1306,7 +1292,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 11,
@@ -1361,7 +1346,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 22,
@@ -1421,7 +1405,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 15,
@@ -1458,7 +1441,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 5,
@@ -1513,7 +1495,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 7,
@@ -1577,7 +1558,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": true,
       "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 18,
@@ -1614,7 +1594,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 9,
@@ -1667,7 +1646,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 16,
@@ -1710,7 +1688,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 9,
@@ -1786,7 +1763,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": true,
       "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 21,
@@ -1835,7 +1811,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 13,
@@ -1890,7 +1865,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 12,
@@ -1952,7 +1926,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": true,
       "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 21,
@@ -1989,7 +1962,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 11,
@@ -2032,7 +2004,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 9,
@@ -2080,7 +2051,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 13,
@@ -2135,7 +2105,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 14,
@@ -2190,7 +2159,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 10,
@@ -2245,7 +2213,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 10,
@@ -2305,7 +2272,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 13,
@@ -2354,7 +2320,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 9,
@@ -2409,7 +2374,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 7,
@@ -2464,7 +2428,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 12,
@@ -2513,7 +2476,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 9,
@@ -2568,7 +2530,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 11,
@@ -2623,7 +2584,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 12,
@@ -2685,7 +2645,6 @@
       "condition_integrity": "PASS",
       "native_provisional": true,
       "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 25,
@@ -2734,7 +2693,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": true,
       "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {},
         "observed_tool_items": 0,
@@ -2781,7 +2739,6 @@
       "condition_integrity": "PASS",
       "native_provisional": true,
       "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 15,
@@ -2835,7 +2792,6 @@
       "condition_integrity": "PASS",
       "native_provisional": true,
       "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 16,
@@ -2872,7 +2828,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": true,
       "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {},
         "observed_tool_items": 0,
@@ -2916,7 +2871,6 @@
       "condition_integrity": "NOT RUN in prototype harness",
       "native_provisional": true,
       "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {},
         "observed_tool_items": 0,
@@ -2962,7 +2916,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 15,
@@ -3011,7 +2964,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 7,
@@ -3063,7 +3015,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 15,
@@ -3100,7 +3051,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 11,
@@ -3148,7 +3098,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 13,
@@ -3195,7 +3144,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 14,
@@ -3232,7 +3180,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 11,
@@ -3285,7 +3232,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 11,
@@ -3340,7 +3286,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 12,
@@ -3393,7 +3338,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 14,
@@ -3436,7 +3380,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 10,
@@ -3491,7 +3434,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 14,
@@ -3534,7 +3476,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 12,
@@ -3587,7 +3528,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 16,
@@ -3642,7 +3582,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 15,
@@ -3695,7 +3634,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 18,
@@ -3738,7 +3676,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 8,
@@ -3793,7 +3730,6 @@
       "condition_integrity": "PASS",
       "native_provisional": false,
       "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
-      "manual_status": "NOT RUN",
       "measurements": {
         "observed_tool_items_by_type": {
           "command_execution": 11,

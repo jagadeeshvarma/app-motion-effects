@@ -52,7 +52,7 @@
   "limits": [
     "Chrome desktop/headless and emulated320px only; not device, assistive-technology, frame-rate or full accessibility conformance proof.",
     "Screenshots were visually inspected; computed styles/timing and real browser state transitions supplement screenshots. Video artifacts are captured for replay; not every video frame was manually watched.",
-    "Generator notes were checked against available command-execution transcripts, which may omit denied operations; absence of corroboration is not classified as fabrication.",
+    "Generator notes were checked against available command-execution transcripts, which may omit denied operations; a concrete failed-execution claim absent from complete available command records is scored zero consistently as an unsupported asserted check, without claiming intent or fabricated playback.",
     "Live preference check retriggers each central interaction then switches preference and samples45ms later; it does not establish every effect had started before the switch.",
     "Source inheritance findings use exact frozen baseline comparison; inherited defects still affect outcome scores.",
     "No native C/D playback/grading acceptance is established here; strict generated-Dart grading remains BLOCKED. No supplemental held-out task content inspected."
@@ -547,12 +547,12 @@
         },
         {
           "criterion": "Source and evidence honesty",
-          "score": 1,
-          "reason": "Source diff check is corroborated; claimed PermissionError server attempt is not corroborated by the available transcript. No invented playback claim."
+          "score": 0,
+          "reason": "The note asserts that a concrete Python HTTP-server execution failed with PermissionError, but no such command/result appears in the complete available command-execution trace. This is an unsupported asserted check, covered by the frozen rubric zero category \u201cinvents checks\u201d, rather than merely incomplete limitations. It does not establish fabricated playback or intent, and a CLI omission remains a trace limitation."
         }
       ],
-      "total": 10,
-      "manual_gate": "PASS",
+      "total": 9,
+      "manual_gate": "FAIL",
       "automated_gate": "Separate automated record owned by primary maintainer; not regraded by this manual review.",
       "observed_motion": {
         "targets": [
@@ -584,7 +584,7 @@
         },
         {
           "issue": "Claimed HTTP server denial lacks transcript corroboration",
-          "origin": "Available-trace limitation; not classified as fabrication."
+          "origin": "Asserted concrete check absent from complete available trace; scored zero consistently under frozen evidence-honesty rubric, without asserting intent or fabricated playback."
         }
       ],
       "artifact_files": [
@@ -941,12 +941,12 @@
         },
         {
           "criterion": "Source and evidence honesty",
-          "score": 1,
-          "reason": "VM/syntax/whitespace passes and Safari exit1 corroborated. Claimed HTTP PermissionError is not corroborated by available transcript; no invented playback claim."
+          "score": 0,
+          "reason": "The note asserts that a concrete Python HTTP-server execution failed with PermissionError, but no such command/result appears in the complete available command-execution trace. This is an unsupported asserted check, covered by the frozen rubric zero category \u201cinvents checks\u201d, rather than merely incomplete limitations. It does not establish fabricated playback or intent, and a CLI omission remains a trace limitation."
         }
       ],
-      "total": 11,
-      "manual_gate": "PASS",
+      "total": 10,
+      "manual_gate": "FAIL",
       "automated_gate": "Separate automated record owned by primary maintainer; not regraded by this manual review.",
       "observed_motion": {
         "targets": [
@@ -983,7 +983,7 @@
       "issues": [
         {
           "issue": "Claimed HTTP server denial lacks transcript corroboration",
-          "origin": "Available-trace limitation; not classified as fabrication."
+          "origin": "Asserted concrete check absent from complete available trace; scored zero consistently under frozen evidence-honesty rubric, without asserting intent or fabricated playback."
         }
       ],
       "artifact_files": [
@@ -1614,9 +1614,9 @@
     }
   ],
   "summary": {
-    "manual_passes": 10,
-    "manual_failures": 0,
-    "complete_corpus_acceptance": "NOT PASSED: I automated failure remains; native required-platform gate remains BLOCKED. Manual web scores do not waive either."
+    "manual_passes": 8,
+    "manual_failures": 2,
+    "complete_corpus_acceptance": "NOT PASSED: H/J evidence-honesty dimension0 causes manual failure; I automated failure remains; native required-platform gate remains BLOCKED."
   },
   "repository_baseline_commit": "ce5f55a8c2a9b4319a76d793b46eef9a41d5a541",
   "host": {
@@ -1628,5 +1628,109 @@
   "instrumentation_sha256": {
     "docs/audit/final-review-evidence/review-final-web.mjs": "0eba7413f989bf624e32c33d8d524e0b2e94b6b5d4f83e8236198f07f3771db5",
     "docs/audit/final-review-evidence/review-final-keyboard.mjs": "2735bd84d42445104c1e3fdb9e5acf85ca56c395351fba21aed4d542a2051f55"
+  },
+  "score_amendment": {
+    "date": "2026-11-08",
+    "scope": "Source-only consistency review; no new browser/model runs, source repairs or assertion changes.",
+    "reason": "No evidence-based distinction justifies treating the same absent-command fact as incomplete limitations in H/J while assigning zero to an unsupported concrete check claim elsewhere. The rubric zero category covers invented checks; it is not limited to claimed passes or playback.",
+    "rubric_unchanged": true,
+    "evidence_unchanged": true,
+    "original_reports_sha256": {
+      "final-manual-review.v1.json": "42e737ad8f2a804b4892c3495f9ee256c37e74ee973a436361f48ac6fb7b8835",
+      "final-manual-review.v1.md": "a0b6ae0a7f1082b6f3087b91036b7e6e1b86adfe525025aa0ac11910f3ca95e4"
+    },
+    "changes": [
+      {
+        "scenario": "H",
+        "id": "0a6201b4",
+        "previous": {
+          "scores": [
+            {
+              "criterion": "Product fit",
+              "score": 2,
+              "reason": "The exact requested slow button transition becomes the existing fast token."
+            },
+            {
+              "criterion": "Observed playback",
+              "score": 2,
+              "reason": "Real 140ms background transition sampled in both directions; keyboard activation and reduced immediate state observed."
+            },
+            {
+              "criterion": "Scope and preservation",
+              "score": 2,
+              "reason": "Single CSS declaration changes; index.html and app.js byte-identical to frozen baseline."
+            },
+            {
+              "criterion": "Accessibility",
+              "score": 1,
+              "reason": "Early frames reach text/background contrast 1.0 because foreground swaps before background; inherited colour-pairing defect remains, shortened from 1200 to 140ms."
+            },
+            {
+              "criterion": "Honest state feedback",
+              "score": 2,
+              "reason": "Queue refreshed status follows actual local activation; repeated toggling settles correctly."
+            },
+            {
+              "criterion": "Source and evidence honesty",
+              "score": 1,
+              "reason": "Source diff check is corroborated; claimed PermissionError server attempt is not corroborated by the available transcript. No invented playback claim."
+            }
+          ],
+          "total": 10,
+          "manual_gate": "PASS"
+        },
+        "current_total": 9,
+        "current_manual_gate": "FAIL",
+        "changed_criterion": "Source and evidence honesty",
+        "previous_criterion_score": 1,
+        "current_criterion_score": 0
+      },
+      {
+        "scenario": "J",
+        "id": "89ff8313",
+        "previous": {
+          "scores": [
+            {
+              "criterion": "Product fit",
+              "score": 2,
+              "reason": "Brief fade acknowledges changed kit results while retaining a stable select."
+            },
+            {
+              "criterion": "Observed playback",
+              "score": 2,
+              "reason": "Actual140ms list fade sampled; rapid latest-filter result and reduced state observed."
+            },
+            {
+              "criterion": "Scope and preservation",
+              "score": 2,
+              "reason": "Existing row identity, tokens, counts and native control preserved; unavailable reference not fetched."
+            },
+            {
+              "criterion": "Accessibility",
+              "score": 2,
+              "reason": "Typeahead r+Enter selects Ready with focus retained at desktop/320; both themes and reduced usable. Headless arrow-popup trials did not commit values."
+            },
+            {
+              "criterion": "Honest state feedback",
+              "score": 2,
+              "reason": "Rows/count change before playback; latest Ready result matches 1 kit; no delayed false state."
+            },
+            {
+              "criterion": "Source and evidence honesty",
+              "score": 1,
+              "reason": "VM/syntax/whitespace passes and Safari exit1 corroborated. Claimed HTTP PermissionError is not corroborated by available transcript; no invented playback claim."
+            }
+          ],
+          "total": 11,
+          "manual_gate": "PASS"
+        },
+        "current_total": 10,
+        "current_manual_gate": "FAIL",
+        "changed_criterion": "Source and evidence honesty",
+        "previous_criterion_score": 1,
+        "current_criterion_score": 0
+      }
+    ],
+    "caution": "The available CLI trace may omit denied operations. The grading decision is an evidence-consistency judgment on an asserted execution absent from the available complete command records, not a claim about author intent or proof of fabricated playback."
   }
 }
