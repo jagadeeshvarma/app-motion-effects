@@ -1,19 +1,83 @@
 {
   "schemaVersion": 1,
   "version": "2.1.0",
-  "status": "PENDING",
+  "status": "PASS",
+  "scope": "Owner-authorised distribution, publication and website verification; original capability acceptance is still FAIL",
+  "verifiedUtc": "2026-11-08T20:01:45.600163+00:00",
   "previousReleaseRecord": "release-verification-2.0.1.json",
   "ownerAuthorisation": "release-authorization-2.1.0.json",
   "originalAuditAcceptance": "FAIL",
   "knownLimitations": [
     "I observable-animation assertion FAIL",
-    "H/J/M/N evidence-honesty reviews FAIL",
-    "Native comparative grading BLOCKED",
+    "H/J/M/N evidence-honesty manual gates FAIL",
+    "Strict native comparative grading BLOCKED",
     "Claude runtime testing BLOCKED by absent authentication"
   ],
-  "sourceRuntimeFreezeSHA256": "0b2d445f0e75dde2b075c507c02b71ef437e9009b0d411231737c735471f45f3",
-  "requiredGitHubCI": "ENFORCED; no bypass",
-  "merged": false,
-  "published": false,
-  "live": false
+  "runtimeFreezeSHA256": "0b2d445f0e75dde2b075c507c02b71ef437e9009b0d411231737c735471f45f3",
+  "releaseCommit": "57a7b6194f0af43cba92a49f5f962e19c688ded5",
+  "mergePullRequest": "https://github.com/jagadeeshvarma/app-motion-effects/pull/8",
+  "merged": true,
+  "published": true,
+  "live": true,
+  "release": "https://github.com/jagadeeshvarma/app-motion-effects/releases/tag/v2.1.0",
+  "publishedAt": "2026-11-08T19:58:20Z",
+  "runtimeFiles": 11,
+  "archiveSHA256": "3175167ee82f6920b1b158a739562a8fafb3e63fbdb59bab92bdd074f9f770ef",
+  "integritySHA256": "7cee332f54b27a47cb3a8d854f90ccf47b50563d582ae6cf7ccb86aad2f04d51",
+  "downloadedAssetsAndPerFileHashes": "PASS",
+  "skillFormatValidation": {
+    "status": "PASS",
+    "validator": "Official skill-creator quick_validate.py",
+    "prerequisite": "System Python lacked PyYAML; isolated uv PyYAML6.0.2 environment passed. No new runtime dependency."
+  },
+  "engineeringChecks": {
+    "formatAndStructure": "PASS",
+    "packagingTests": 27,
+    "installationTests": 2,
+    "harnessTests": 53,
+    "nativeAdapterTests": 10,
+    "activationSelfTests": 13,
+    "browserTests": 33,
+    "renderedReleasePage": "PASS at320/1440px with light/dark preferences; no overflow or page errors"
+  },
+  "CI": {
+    "requiredPR": {
+      "status": "PASS",
+      "url": "https://github.com/jagadeeshvarma/app-motion-effects/actions/runs/42517392558"
+    },
+    "main": {
+      "status": "PASS",
+      "url": "https://github.com/jagadeeshvarma/app-motion-effects/actions/runs/42517603545"
+    },
+    "Pages": {
+      "status": "PASS",
+      "url": "https://github.com/jagadeeshvarma/app-motion-effects/actions/runs/42517603407"
+    }
+  },
+  "protections": {
+    "requiredCIBypassed": false,
+    "branchProtectionChanged": false,
+    "nativeGradingWeakened": false,
+    "frozenResultsChanged": false,
+    "futureApplicationReleaseAuthorityAdded": false
+  },
+  "website": "https://jagadeeshvarma.github.io/app-motion-effects/",
+  "liveVerification": {
+    "status": "PASS",
+    "browserTests": 33,
+    "byteIdenticalPublicSourceRoutes": 7,
+    "sourceManifest": "release-evidence-2.1.0/live-source.json",
+    "ChromeScreenshot": "release-evidence-2.1.0/live-verification.jpg"
+  },
+  "existingLocalInstallations": {
+    "status": "BLOCKED",
+    "version": "2.0.0",
+    "changed": false,
+    "reason": "Replacing existing global skill folders requires separate explicit local installation authorisation. GitHub publication is unaffected.",
+    "temporaryInstallationRegressionTests": "PASS; disposable fixtures only"
+  },
+  "rollback": {
+    "skill": "Previous immutable v2.0.1 ZIP or existing unchanged local copy",
+    "website": "Protected checked revert of PR8; previous release source ef239bd78341ee4ab9c5e781b2e7f5a28cf6c2e5"
+  }
 }

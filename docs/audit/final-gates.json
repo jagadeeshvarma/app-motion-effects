@@ -1,5 +1,5 @@
 {
-  "advancedCapabilityRelease": "AUTHORISED WITH KNOWN LIMITATIONS; PENDING CHECKED MERGE AND PUBLICATION",
+  "advancedCapabilityRelease": "PUBLISHED by explicit owner exception; original capability acceptance remains FAIL",
   "gates": {
     "AC01": "PASS",
     "AC02": "PASS",
@@ -24,5 +24,6 @@
   "maintenanceRelease": "PASS: protected merge, exact final-commit checks, published nine-file ZIP with downloaded hashes, Pages deployment and33 live browser checks",
   "originalAuditAcceptance": "FAIL",
   "releaseDecision": "release-authorization-2.1.0.json",
-  "frozenGateResultsUnchanged": true
+  "frozenGateResultsUnchanged": true,
+  "releaseVerification": "release-verification.json"
 }

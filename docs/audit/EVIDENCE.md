@@ -28,3 +28,5 @@ I uses `evals/outputs-final/I/packages/warehouse/public`. Its automated animatio
 Held-out M/N: [manual review](heldout-manual-review.md), [capture manifest](final-evidence/heldout-MN/manifest.json), [M playback](final-evidence/heldout-MN/M-desktop-light-normal-playback.webm), [N playback](final-evidence/heldout-MN/N-320-dark-normal-playback.webm). Runtime PASS does not waive their failed manual evidence-honesty gates or agent timeouts.
 
 Published maintenance2.0.1: [actual live Chrome comparison](release-evidence/motion-live-201.jpg), [verification page](release-evidence/motion-live-201-verification.jpg), [source identity](release-evidence/live-source.json), [release record](release-verification.json). These captures document the maintenance site, separately from unreleased candidate outputs.
+
+Published2.1.0: [actual live release page](release-evidence-2.1.0/live-verification.jpg), [public source hashes](release-evidence-2.1.0/live-source.json), [release verification](release-verification.json). Publication follows explicit owner acceptance of the unchanged evaluation limitations. Existing local installations remain unchanged pending separate authorisation.

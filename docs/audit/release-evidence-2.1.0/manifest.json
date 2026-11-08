@@ -1,0 +1,13 @@
+{
+  "source": "Actual published2.1.0 Chrome verification screenshot, unedited",
+  "files": {
+    "live-source.json": {
+      "bytes": 1175,
+      "sha256": "21fb7d65fcd662cf6fbd6bc6a446254e7e23def3432a5b537cd1ad0652dd3fbd"
+    },
+    "live-verification.jpg": {
+      "bytes": 100230,
+      "sha256": "90d6942f9b7e296ca068f6bd2927f0261465586b6d8a3711555f4f324baf219a"
+    }
+  }
+}
