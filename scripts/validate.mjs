@@ -36,7 +36,9 @@ const files = [
   join(root, "CONTRIBUTING.md"),
   join(root, "THIRD_PARTY_NOTICES.md"),
   ...walk(skill),
-  ...walk(join(root, "docs")).filter((p) => /\.(?:md|html|css|js)$/.test(p)),
+  ...walk(join(root, "docs")).filter((p) =>
+    /\.(?:md|txt|html|css|js)$/.test(p),
+  ),
 ];
 let links = 0;
 for (const path of files) {
@@ -87,4 +89,17 @@ for (const name of ["studio", "dispatch"])
   }
 console.log(
   `Structure passed: v${version}, ${ids.size} category IDs, ${links} valid local references, portable files and synthetic demos.`,
+);
+
+const simulator = readFileSync(join(root, "docs/demos/interaction.js"), "utf8");
+assert.ok(
+  !/\b(?:fetch|XMLHttpRequest|WebSocket)\s*\(/.test(simulator),
+  "The interaction simulator must stay local",
+);
+const canonical = readFileSync(join(root, "docs/full-repo-prompt.txt"), "utf8");
+assert.ok(
+  readFileSync(join(root, "README.md"), "utf8").includes(
+    "```text\n" + canonical + "```",
+  ),
+  "README prompt differs from canonical text",
 );

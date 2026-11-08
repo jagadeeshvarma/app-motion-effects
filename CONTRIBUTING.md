@@ -32,3 +32,7 @@ For Linux browser setup, use `npx playwright install --with-deps chromium`. Prev
 Provide before/after renders and replay steps for visual changes. Skill-decision changes benefit from contrasting context scenarios; label proposal reviews separately from executed app tests. Do not claim a native runtime or agent was tested unless it was.
 
 Maintainers review and merge contributions. No CLA or mandatory purchase is required. By submitting a contribution, you agree to license it under this repository’s MIT licence and confirm you have the right to contribute it. Follow the [code of conduct](CODE_OF_CONDUCT.md).
+
+## Updating the full-repository prompt
+
+Edit `docs/full-repo-prompt.txt`, then run `npm run sync:prompt` and `npm run format`. This keeps the README code block and the page’s copyable prompt identical. GitHub supplies its own copy control for fenced code blocks; the static website implements the clipboard button and an honest manual fallback. Browser tests verify the full copied text.

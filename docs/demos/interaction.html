@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Interactive motion example</title>
+    <link rel="stylesheet" href="interaction.css" />
+    <script type="module" src="interaction.js"></script>
+  </head>
+  <body>
+    <main id="demo" class="demo-card">
+      <div class="view-head">
+        <h1 id="heading">Projects</h1>
+        <span id="context"></span>
+      </div>
+      <div id="notice" hidden></div>
+      <div id="content"></div>
+      <div id="actions" class="task-actions"></div>
+      <p id="status" role="status" aria-live="polite">Ready to try.</p>
+    </main>
+    <dialog id="details" aria-labelledby="details-title">
+      <div class="panel-heading">
+        <h2 id="details-title">Project details</h2>
+        <button type="button" id="close-panel" aria-label="Close details">
+          ✕
+        </button>
+      </div>
+      <p class="panel-name">Studio website</p>
+      <dl>
+        <div>
+          <dt>Status</dt>
+          <dd>In progress</dd>
+        </div>
+        <div>
+          <dt>Next milestone</dt>
+          <dd>Design review</dd>
+        </div>
+        <div>
+          <dt>Files</dt>
+          <dd>Three documents</dd>
+        </div>
+      </dl>
+      <label for="panel-note">Project note</label
+      ><textarea id="panel-note" rows="3">
+Review the first design on Friday.</textarea>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden>
+      <div class="toast-icon" aria-hidden="true"></div>
+      <div>
+        <strong>Project saved</strong>
+        <p>Your changes are up to date.</p>
+      </div>
+      <button type="button" id="close-toast" aria-label="Dismiss notification">
+        ✕
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,6 +1,15 @@
 # Changelog
 
-## Website improvements · 2026-11-08
+## Full-screen examples and full-repo prompt · 2026-11-08
+
+- Added a meaningful hero with direct skill download and examples buttons.
+- Rebuilt the examples as a full-viewport workbench with a left menu, a large After view and optional Before/Compare modes.
+- Added ten common interactions and replaced the subtle saving example with visible waiting, confirmation and failure recovery.
+- Added one canonical full-repo invocation prompt to the README and website, with clipboard copying and a manual fallback.
+- Added real screenshots/recordings and expanded browser verification, including mobile layouts and complete prompt integrity.
+- Kept the installable skill and its v2.0.0 release unchanged.
+
+## Earlier website improvements · 2026-11-08
 
 - Added loading, slow-connection, connection-loss and upload examples alongside the existing save and canvas fixtures.
 - Simplified the gallery with direct controls, a mobile Before/After switch and no decorative eyebrow labels.
