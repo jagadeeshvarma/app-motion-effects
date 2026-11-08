@@ -1,0 +1,90 @@
+.verification-page {
+  width: min(960px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 88px 0 100px;
+}
+.verification-page h1 {
+  font-size: clamp(38px, 7vw, 70px);
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+  font-weight: 500;
+  margin: 0 0 30px;
+}
+.verification-lead {
+  font-size: clamp(19px, 2.5vw, 25px);
+  line-height: 1.5;
+  max-width: 750px;
+}
+.verification-page p {
+  max-width: 750px;
+}
+.verification-list {
+  margin: 50px 0;
+  border-top: 1px solid var(--line);
+}
+.verification-list > div {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 28px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+.verification-list dt {
+  font-weight: 650;
+}
+.verification-list dd {
+  margin: 0;
+  color: var(--muted);
+}
+.verification-page section {
+  margin: 40px 0;
+}
+.verification-page h2 {
+  font-size: 22px;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+.verification-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 40px;
+}
+@media (max-width: 600px) {
+  .verification-page {
+    padding-top: 48px;
+  }
+  .verification-list > div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 20px 0;
+  }
+  .verification-actions > a {
+    width: 100%;
+  }
+}
+
+.verification-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 25px 0;
+}
+.verification-table th,
+.verification-table td {
+  text-align: left;
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+.verification-table th:first-child {
+  width: 42%;
+}
+.verification-table caption {
+  caption-side: bottom;
+  text-align: left;
+  padding: 12px 8px;
+  color: var(--muted);
+}

@@ -2,7 +2,7 @@
 name: app-motion-effects
 description: Design, implement and visually verify app-specific animations, transitions, microinteractions and effects based on the product, its customers and workflows, strictly within its existing brand and visual system. Use for application-wide motion passes or focused interaction improvements in existing web, native mobile or desktop apps.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
 ---
 
 # App Motion & Effects

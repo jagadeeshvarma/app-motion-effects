@@ -36,3 +36,9 @@ Maintainers review and merge contributions. No CLA or mandatory purchase is requ
 ## Updating the full-repository prompt
 
 Edit `docs/full-repo-prompt.txt`, then run `npm run sync:prompt` and `npm run format`. This keeps the README code block and the page’s copyable prompt identical. GitHub supplies its own copy control for fenced code blocks; the static website implements the clipboard button and an honest manual fallback. Browser tests verify the full copied text.
+
+## Package and installation changes
+
+The reviewed runtime file list is `scripts/skill-manifest.json`. Add resources deliberately; unexpected files and symlinks fail packaging. `npm test` includes package containment and disposable installation regressions. Development scripts and test artefacts belong outside the installed skill.
+
+For an existing local skill, review the diff and keep a backup outside discovery directories before replacement. Confirm the intended version is discovered and restore the backup if verification fails. Preserve unrelated local customisations.
