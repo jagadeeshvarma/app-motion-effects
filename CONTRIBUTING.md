@@ -44,3 +44,16 @@ The reviewed runtime file list is `scripts/skill-manifest.json`. Add a resource 
 Behavioural changes should include equal-budget fresh-context comparisons against the previous skill and an agent without it when practical. Keep graders outside the evaluated context, freeze criteria first, use synthetic data, and report blocked tools rather than counting them as passes. Web/mobile guidance, builds and actual native playback are different evidence levels. The reproducible corpus is documented in `evals/README.md`; running model evaluations uses authenticated quota and is intentionally not an ordinary contribution CI prerequisite.
 
 For an existing local skill, review the diff and make a backup before replacement. Keep the backup outside discovery directories to avoid loading two versions. Confirm the intended version is discovered; restore the backup if verification fails. Do not overwrite unrelated local customisations.
+
+## Maintainer releases
+
+Use semantic versions. Keep `SKILL.md` metadata, `package.json`, the lockfile, changelog and website download URL aligned. A distribution-only patch can preserve the runtime workflow; instruction changes require behavioural evidence as well as format checks. Do not describe blocked native or agent-runtime checks as passing.
+
+1. Prepare a focused PR from an isolated branch and record the release scope, checks and rollback. Main requires the current **Structure and browser checks** result and an up-to-date branch. Do not bypass these protections.
+2. Validate installation, runtime file manifest and relevant behavioural/visual gates. If a required capability gate fails, leave that candidate unreleased; separately verified maintenance may proceed with its narrower claims.
+3. Merge through the protected PR workflow. In a clean checkout of the actual merge commit, run `npm ci`, the browser installation command above, `npm test` and `npm run package`. Confirm the archive version, `dist/integrity.json`, `dist/SHA256SUMS` and intended file list.
+4. Use the existing GitHub Releases flow to create an immutable `v<version>` tag at that verified commit and attach the versioned ZIP, `integrity.json` and `SHA256SUMS`. Release notes must identify tested scope and material limitations. Download the published assets again and verify their hashes. Never silently replace assets under an existing release.
+5. The Pages workflow builds and deploys only main. Wait for its actual success, then open the live homepage, examples, verification page and download. A pushed commit or successful build alone is not a verified deployment.
+6. Record commit, CI, release and live-verification identifiers. Roll back a local installation from its preserved backup or previous immutable ZIP. For the website, submit a revert through the same protected checks rather than force-pushing or bypassing the environment.
+
+GitHub access and release authority must come from the maintainer's current session. Installing the reusable skill grants no permission to publish or deploy anyone's application.

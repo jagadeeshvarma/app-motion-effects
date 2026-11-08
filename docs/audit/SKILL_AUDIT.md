@@ -23,6 +23,8 @@ All 54 maintained text files at baseline were independently source-reviewed. The
 | ME-002 | Native implementation checks were too general | Progressive shared/native stack guidance, including distinct iOS/Android reduced-motion APIs |
 | ME-003 | Trust guidance needed operational detail | Preserve text rendering, inspect source commands, constrain demo traffic and retain host permissions |
 
+The added verification footer link introduced a320px Linux font-metric overflow (SR-006), caught by hosted CI after local Chrome passed. The footer now wraps within its container; a wider-font regression supplements the existing responsive checks.
+
 No critical/high defect was confirmed by the source review. This is a bounded result, not a complete-security claim. Detailed baseline reproductions are in the [independent source review](source-review.md); current status, root cause, impact and acceptance tests are in [findings.json](findings.json).
 
 The skill remains dependency-free, with the same name, invocation and installation paths. Detailed native/trust guidance is loaded only when relevant. Existing taxonomy and source groups are retained. The installable archive excludes this audit and all evaluation fixtures.
@@ -77,7 +79,7 @@ All owned simulators/emulators, private adb ports and 16 recorded process groups
 
 2.0.1 contains the original nine runtime files and unchanged 2.0.0 workflow, apart from version/readme maintenance metadata. It carries only independently tested distribution/link/install/example-isolation/workflow and truthful-documentation fixes. The eleven-file 2.1 candidate, native/trust guidance and evaluation snapshots stay on the audit branch; they are not silently included in the stable patch.
 
-The maintenance gate requires 27 package, 2 installation and 32 browser checks plus formatting/structure, exact 9-file reproducible archives, protected CI and actual live verification. The audit branch additionally passes 53 infrastructure tests, 13 activation self-tests and native adapter regressions. Structural passes do not repair the failed capability gate.
+The maintenance gate requires 27 package, 2 installation and 33 browser checks plus formatting/structure, exact 9-file reproducible archives, protected CI and actual live verification. The audit branch additionally passes 53 infrastructure tests, 13 activation self-tests and native adapter regressions. Structural passes do not repair the failed capability gate.
 
 To unblock capability release: repair and re-evaluate I through a browser-capable measured workflow; prevent unsupported reported checks and rerun the affected evidence-honesty gate; establish a trusted relocated SDK-tool cache and permitted architecture metadata adapter inside the strict grader; rerun C/D under all three conditions and the frozen/supplementary native protocols; authenticate Claude before claiming its runtime; rerun affected final-candidate gates. Retain the current failures and publish any new protocol/candidate version explicitly.
 

@@ -414,6 +414,31 @@
         "M/REVIEW.md:15",
         "N/REVIEW.md:14"
       ]
+    },
+    {
+      "id": "SR-006",
+      "severity": "low",
+      "category": "regression",
+      "title": "Added verification footer link overflowed 320px on Linux",
+      "affected_files": [
+        "docs/index.html",
+        "docs/styles.css",
+        "tests/loading.spec.mjs"
+      ],
+      "root_cause": "The added third footer action remained in a nonwrapping flex row whose intrinsic width exceeded the viewport under Linux font metrics.",
+      "developer_impact": "The new maintenance page link introduced horizontal scrolling on narrow screens; local macOS system-font checks alone missed it.",
+      "proposed_fix": "Wrap the footer action row within its container and exercise wider fallback font metrics without hiding overflow.",
+      "acceptance_test": [
+        "All ten example layouts fit at320px in hosted Chromium.",
+        "All three footer links are visible and within the320px viewport using wider monospace metrics.",
+        "Existing browser assertions remain unchanged."
+      ],
+      "dependencies": [],
+      "status": "FIXED; FINAL CI PENDING",
+      "evidence": [
+        "GitHub Actions42515179053 and42515264881 failure traces",
+        "tests/loading.spec.mjs footer regression"
+      ]
     }
   ]
 }

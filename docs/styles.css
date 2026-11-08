@@ -467,6 +467,8 @@ button:disabled {
 }
 .site-footer > div {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
   gap: 5px;
 }
 @media (min-width: 1800px) {

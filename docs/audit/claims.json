@@ -4,7 +4,7 @@
       "claim": "Product-aware motion direction and strict visual contract",
       "implementation": "SKILL.md + adaptation.md",
       "status": "PARTIALLY VERIFIED",
-      "evidence": "Source review; original contrasting decision scenarios; executed evaluation ongoing",
+      "evidence": "Pinned source review, contrasting decision scenarios and independently rendered final web outputs; final manual held-out evidence-honesty gates fail.",
       "limit": "No guarantee of identical design judgement or universal fit"
     },
     {
@@ -18,21 +18,21 @@
       "claim": "Working web interaction examples",
       "implementation": "docs/demos/interaction.*",
       "status": "VERIFIED",
-      "evidence": "32 authored website browser checks; original screenshots/playback",
+      "evidence": "33 authored website browser checks, including hosted narrow-layout regression; original screenshots/playback",
       "limit": "Synthetic local simulations, not an integrated production backend"
     },
     {
       "claim": "Skill improves agent-generated app outcomes",
       "implementation": "Agent workflow",
       "status": "NOT YET ESTABLISHED",
-      "evidence": "Three-condition benchmark in progress",
-      "limit": "Do not infer from website tests or source quality; no universal superiority claim"
+      "evidence": "Twelve selected web tasks: no skill10/12 artifact,11/12 completed; original9/12,8/12; final11/12,8/12. B/K each3trials per condition. Candidate release gate FAIL.",
+      "limit": "Small heterogeneous samples and mixed completion outcomes do not establish overall superiority; native clean comparison BLOCKED."
     },
     {
       "claim": "Codex normal discovery and explicit invocation",
       "implementation": ".agents/skills + SKILL.md",
       "status": "PARTIALLY VERIFIED",
-      "evidence": "Direct registry isolation and executed model tasks",
+      "evidence": "CLI0.167.0-alpha.3.2 with isolated registry and explicit workflow; six separate automatic routing probes. No unobserved runtime behavior inferred.",
       "limit": "Automatic selection tested separately; specific installed CLI and advertised model"
     },
     {
@@ -46,21 +46,21 @@
       "claim": "Native mobile support",
       "implementation": "Shared + Flutter/ReactNative/SwiftUI/Compose guidance",
       "status": "PARTIALLY VERIFIED",
-      "evidence": "Official references + installed Flutter SDK source; runtime evaluation pending",
+      "evidence": "Versioned native guidance, Flutter source/tests, exploratory iOS/Android builds and synthetic normal-main playback. Strict trusted comparative native grading BLOCKED.",
       "limit": "Guidance is not build, native playback, hardware or store release evidence"
     },
     {
       "claim": "No runtime dependencies in installed skill",
       "implementation": "Allowlisted text/YAML/template package",
       "status": "VERIFIED",
-      "evidence": "11-file package + extraction/integrity tests",
+      "evidence": "Candidate11-file and stable2.0.1 nine-file manifests; extraction, containment and integrity tests.",
       "limit": "Receiving app and optional site/evaluation tools have their own dependencies"
     },
     {
       "claim": "Skill respects host permissions and prevents unsafe releases",
       "implementation": "Scope/trust/release instructions",
       "status": "PARTIALLY VERIFIED",
-      "evidence": "Source review and controlled adversarial cases ongoing",
+      "evidence": "Source review and controlled G/K malicious-text/reference cases; all18 selected B/K repeated artifacts pass. Actual sandbox/permission gates remain mandatory.",
       "limit": "Natural language and metadata are not enforcement or a sandbox"
     }
   ]
