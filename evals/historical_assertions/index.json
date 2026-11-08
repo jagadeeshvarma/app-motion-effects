@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "amendment": "GA03-safe-defaults-and-quarantine",
+  "graders": {
+    "graders/grade.py": {
+      "archive": "historical_assertions/primary-grade.py.gz",
+      "source_sha256": "b2a53c2b48d1636917fd8e50378ebc12db64469e0b540dc8c167099c98905ced",
+      "archive_sha256": "d2d440854e9679081a40e528a25463f95a1e903b0eb54c2b02f3872f6481dce7",
+      "entrypoint_sha256": "850131c442a8877f0f7344286c1ab40cb921a9f4545f7f9c2cbf89cd021f4728",
+      "frozen_manifest": "frozen-amendment-2.json",
+      "frozen_key": "graders/grade.py",
+      "frozen_manifest_sha256": "0da4cfd80aeb865347015c3dac56d0fc32ac214dcfe75c5f04b1977769fc4f43"
+    },
+    "supplemental/graders/grade.py": {
+      "archive": "supplemental/historical_assertions/grade.py.gz",
+      "source_sha256": "ccd19106061676f8334bddfb0ac58b58985ecca60c07e0e194ad56b2513b568b",
+      "archive_sha256": "02e9fd66b253624e1d1092f34f49f747ff071b230f0ba92c1888d4b67463da22",
+      "entrypoint_sha256": "850131c442a8877f0f7344286c1ab40cb921a9f4545f7f9c2cbf89cd021f4728",
+      "frozen_manifest": "supplemental/frozen-amendment-1.json",
+      "frozen_key": "graders/grade.py",
+      "frozen_manifest_sha256": "333f9ce28a595812b0860b9cfa7dfc76ac5a91631f5260b2ef47b9cf916379e6"
+    }
+  }
+}

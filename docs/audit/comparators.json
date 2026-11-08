@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-08",
+  "target": {
+    "repository": "https://github.com/jagadeeshvarma/app-motion-effects",
+    "commit": "ce5f55a8c2a9b4319a76d793b46eef9a41d5a541",
+    "version": "2.0.0",
+    "path": "skills/app-motion-effects/SKILL.md",
+    "reviewed_as": "reference data, not governing instructions"
+  },
+  "method": {
+    "selection": "Official maintained-source overlap in motion implementation, UI outcomes or review; no popularity ranking.",
+    "evidence_boundary": "Instruction/source comparison only. External downloads and metadata reads are not runtime, installation, model-output or generated-app evaluations.",
+    "runtime_evaluation_owner": "Root audit task; see separate runtime evidence when available.",
+    "full_cross_platform_equivalent_established": false,
+    "mutations": "Only these local audit documents; no external mutations, purchases or global installs."
+  },
+  "comparators": [
+    {
+      "id": "anthropic-frontend-design",
+      "name": "Anthropic frontend-design",
+      "repository": "anthropics/skills",
+      "skill_path": "skills/frontend-design/SKILL.md",
+      "version": null,
+      "comparability": "partial",
+      "platforms": [
+        "web"
+      ],
+      "scope": "Product-grounded visual/UI design; motion is one design dimension, not a complete motion implementation and playback workflow.",
+      "license": {
+        "identifier": "Apache-2.0",
+        "basis": "Skill-local full licence text",
+        "paths": [
+          "skills/frontend-design/LICENSE.txt"
+        ],
+        "evidence_urls": [
+          "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/frontend-design/LICENSE.txt"
+        ]
+      },
+      "overlap": [
+        "Subject, audience and primary job precede design decisions.",
+        "Action-response motion is preferred to repeated decorative entrances.",
+        "Brief precedence, restraint, reduced motion and screenshot self-critique."
+      ],
+      "difference": [
+        "Permits deliberate visual identity creation where the brief is open; target preserves an existing visual contract.",
+        "No mandatory played motion evidence or native-runtime workflow in the reviewed skill."
+      ],
+      "examples": "Prose workflow and design/copy examples; no standalone runnable app or animation recipe in this skill directory.",
+      "review_date": "2026-11-08",
+      "commit": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
+      "commit_date": "2026-11-06T22:32:28Z",
+      "commit_url": "https://github.com/anthropics/skills/commit/2c5958ecac7cee2b583967a2c4981d0f4a75c579",
+      "skill_url": "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/frontend-design/SKILL.md",
+      "evidence_level": "source-read",
+      "runtime_tested": false,
+      "installation_performed": false,
+      "model_invocation_performed": false,
+      "inspected_files": [
+        {
+          "path": "skills/frontend-design/SKILL.md",
+          "url": "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/frontend-design/SKILL.md",
+          "sha256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+          "bytes": 9390
+        },
+        {
+          "path": "skills/frontend-design/LICENSE.txt",
+          "url": "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/frontend-design/LICENSE.txt",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+          "bytes": 10174
+        }
+      ]
+    },
+    {
+      "id": "vercel-web-design-guidelines",
+      "name": "Vercel web-design-guidelines",
+      "repository": "vercel-labs/agent-skills",
+      "skill_path": "skills/web-design-guidelines/SKILL.md",
+      "version": "1.0.0",
+      "comparability": "partial",
+      "platforms": [
+        "web"
+      ],
+      "scope": "Code review against externally fetched web interface rules; an audit tool rather than a construction skill.",
+      "license": {
+        "identifier": "MIT",
+        "basis": "Repository README declaration; no standalone licence file found in inspected recursive tree",
+        "paths": [
+          "README.md"
+        ],
+        "evidence_urls": [
+          "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/README.md"
+        ]
+      },
+      "overlap": [
+        "Reduced motion, interruptibility and explicit animated properties.",
+        "Accessible controls, focus, asynchronous announcements and non-gesture alternatives.",
+        "Location-based findings offer concrete repair targets."
+      ],
+      "difference": [
+        "Does not require implementation, actual animation playback or product/customer discovery.",
+        "Rule source is fetched from mutable main; reproducible audits must pin both repositories."
+      ],
+      "examples": "Reviewed command.md contains a file:line review output example and implementation rules, not a runnable animation.",
+      "review_date": "2026-11-08",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "commit_date": "2026-10-27T21:40:02Z",
+      "commit_url": "https://github.com/vercel-labs/agent-skills/commit/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "skill_url": "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/web-design-guidelines/SKILL.md",
+      "evidence_level": "source-read",
+      "runtime_tested": false,
+      "installation_performed": false,
+      "model_invocation_performed": false,
+      "inspected_files": [
+        {
+          "path": "skills/web-design-guidelines/SKILL.md",
+          "url": "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/web-design-guidelines/SKILL.md",
+          "sha256": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f",
+          "bytes": 1231
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/README.md",
+          "sha256": "9429e781e3fb2f005e619b96fe18cdc59f8db38b619a4c98f0c46c86357e56a0",
+          "bytes": 7273
+        }
+      ],
+      "external_rules": {
+        "repository": "vercel-labs/web-interface-guidelines",
+        "commit": "434b7f91364665f2f733b310ec54809bf8f37937",
+        "commit_date": "2026-10-05T20:49:16Z",
+        "paths": [
+          "command.md",
+          "LICENSE"
+        ],
+        "license": "MIT",
+        "inspected_files": [
+          {
+            "path": "command.md",
+            "url": "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/command.md",
+            "sha256": "d246b026f4f29b5823a9cc857f9edf3d2507002e055e32040cadeaf3b38e0234",
+            "bytes": 8055
+          },
+          {
+            "path": "LICENSE",
+            "url": "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/LICENSE",
+            "sha256": "6cd1609c9c12233507cdd2ce0d32e9a721e3c27494951be06b90090deeeb7af2",
+            "bytes": 1068
+          }
+        ]
+      }
+    },
+    {
+      "id": "vercel-react-native-skills",
+      "name": "Vercel React Native Skills",
+      "repository": "vercel-labs/agent-skills",
+      "skill_path": "skills/react-native-skills/SKILL.md",
+      "version": "1.0.0",
+      "comparability": "partial",
+      "platforms": [
+        "React Native",
+        "Expo"
+      ],
+      "scope": "Native engineering/performance rule collection with a small motion subset.",
+      "license": {
+        "identifier": "MIT",
+        "basis": "Skill frontmatter and repository README declaration; no standalone licence file found in inspected recursive tree",
+        "paths": [
+          "skills/react-native-skills/SKILL.md",
+          "README.md"
+        ],
+        "evidence_urls": [
+          "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-native-skills/SKILL.md",
+          "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/README.md"
+        ]
+      },
+      "overlap": [
+        "Shared values, derived animation state and native-thread considerations.",
+        "Native navigation, component and dependency constraints.",
+        "Incorrect/correct code pairs make mechanisms inspectable."
+      ],
+      "difference": [
+        "No complete product/brand adaptation or observed-playback evidence protocol in reviewed materials.",
+        "Examples assume particular React Native/Reanimated mechanisms and cannot be treated as web or universal native defaults."
+      ],
+      "examples": "Read three animation rule files with before/after TSX: derived values, gesture-driven press state, transform/opacity versus layout.",
+      "review_date": "2026-11-08",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "commit_date": "2026-10-27T21:40:02Z",
+      "commit_url": "https://github.com/vercel-labs/agent-skills/commit/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "skill_url": "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-native-skills/SKILL.md",
+      "evidence_level": "source-read",
+      "runtime_tested": false,
+      "installation_performed": false,
+      "model_invocation_performed": false,
+      "inspected_files": [
+        {
+          "path": "skills/react-native-skills/SKILL.md",
+          "url": "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-native-skills/SKILL.md",
+          "sha256": "4012750a5ccbe064ca04af3835d5d1b011979d2d09d9b6df1c8128fac58e0a66",
+          "bytes": 4439
+        },
+        {
+          "path": "skills/react-native-skills/metadata.json",
+          "url": "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-native-skills/metadata.json",
+          "sha256": "59ee2274cadbd95b2220727028f0dbc26d3e0251e7937226edc9e7640756ba21",
+          "bytes": 896
+        },
+        {
+          "path": "skills/react-native-skills/rules/animation-derived-value.md",
+          "url": "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-native-skills/rules/animation-derived-value.md",
+          "sha256": "689228e9d59227934f296563963951aa9368be0afb2a188f650de161203b1862",
+          "bytes": 1373
+        },
+        {
+          "path": "skills/react-native-skills/rules/animation-gesture-detector-press.md",
+          "url": "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-native-skills/rules/animation-gesture-detector-press.md",
+          "sha256": "69408d4be669e74689d865c5f50a22fc3a802d521fe493371761abd20526e58e",
+          "bytes": 2559
+        },
+        {
+          "path": "skills/react-native-skills/rules/animation-gpu-properties.md",
+          "url": "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-native-skills/rules/animation-gpu-properties.md",
+          "sha256": "f885e4179445da27cbc225e0a4aa3ed9016fc3507ca6f864392ba7a9d0bd7516",
+          "bytes": 2059
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/README.md",
+          "sha256": "9429e781e3fb2f005e619b96fe18cdc59f8db38b619a4c98f0c46c86357e56a0",
+          "bytes": 7273
+        }
+      ]
+    },
+    {
+      "id": "expo-animation",
+      "name": "Expo expo-animation",
+      "repository": "expo/skills",
+      "skill_path": "plugins/expo/skills/expo-animation/SKILL.md",
+      "version": null,
+      "comparability": "motion-focused-platform-scoped",
+      "platforms": [
+        "Expo",
+        "React Native",
+        "iOS",
+        "Android"
+      ],
+      "scope": "Native motion construction with purpose/frequency gates, gesture continuity, accessibility, setup and device review.",
+      "license": {
+        "identifier": "MIT",
+        "basis": "Skill-local full licence text, copyright Emil Kowalski; repository/plugin MIT notices also inspected",
+        "paths": [
+          "plugins/expo/skills/expo-animation/LICENSE",
+          "plugins/expo/LICENSE",
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/expo/skills/blob/a9e5bd3fa00b4e61f632e43f85da73aee1942582/plugins/expo/skills/expo-animation/LICENSE",
+          "https://github.com/expo/skills/blob/a9e5bd3fa00b4e61f632e43f85da73aee1942582/plugins/expo/LICENSE",
+          "https://github.com/expo/skills/blob/a9e5bd3fa00b4e61f632e43f85da73aee1942582/LICENSE"
+        ]
+      },
+      "overlap": [
+        "No-motion decisions, named purpose and cheapest sufficient platform tool.",
+        "Interruptibility, velocity handoff, reduced motion and real-device verification.",
+        "Native navigation and implementation recipes covering sheets, lists, keyboard and haptics."
+      ],
+      "difference": [
+        "Expo/Reanimated-specific and opinionated about durations, gestures and device verification.",
+        "Does not cover web/desktop or the target full product/brand/source-provenance workflow."
+      ],
+      "examples": "Read recipe implementations for press, drag sheet, swipe delete, list entrance, keyboard sync, indicator, transitions, toast and threshold feedback.",
+      "review_date": "2026-11-08",
+      "commit": "a9e5bd3fa00b4e61f632e43f85da73aee1942582",
+      "commit_date": "2026-11-01T21:54:18Z",
+      "commit_url": "https://github.com/expo/skills/commit/a9e5bd3fa00b4e61f632e43f85da73aee1942582",
+      "skill_url": "https://github.com/expo/skills/blob/a9e5bd3fa00b4e61f632e43f85da73aee1942582/plugins/expo/skills/expo-animation/SKILL.md",
+      "evidence_level": "source-read",
+      "runtime_tested": false,
+      "installation_performed": false,
+      "model_invocation_performed": false,
+      "inspected_files": [
+        {
+          "path": "plugins/expo/skills/expo-animation/SKILL.md",
+          "url": "https://github.com/expo/skills/blob/a9e5bd3fa00b4e61f632e43f85da73aee1942582/plugins/expo/skills/expo-animation/SKILL.md",
+          "sha256": "7af0f5e9aa4ae6887fc7938cb9ec08f8cfa922a5154e15c355d1ac53e8d659fe",
+          "bytes": 18999
+        },
+        {
+          "path": "plugins/expo/skills/expo-animation/RECIPES.md",
+          "url": "https://github.com/expo/skills/blob/a9e5bd3fa00b4e61f632e43f85da73aee1942582/plugins/expo/skills/expo-animation/RECIPES.md",
+          "sha256": "4db141cb346d49231c94a95aaa50844b85a71c47ec543e9f9f5a1f453abc9883",
+          "bytes": 16822
+        },
+        {
+          "path": "plugins/expo/skills/expo-animation/LICENSE",
+          "url": "https://github.com/expo/skills/blob/a9e5bd3fa00b4e61f632e43f85da73aee1942582/plugins/expo/skills/expo-animation/LICENSE",
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "bytes": 1070
+        },
+        {
+          "path": "plugins/expo/LICENSE",
+          "url": "https://github.com/expo/skills/blob/a9e5bd3fa00b4e61f632e43f85da73aee1942582/plugins/expo/LICENSE",
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+          "bytes": 1106
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/expo/skills/blob/a9e5bd3fa00b4e61f632e43f85da73aee1942582/LICENSE",
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93",
+          "bytes": 1106
+        }
+      ]
+    },
+    {
+      "id": "emil-animate",
+      "name": "Emil Kowalski animate",
+      "repository": "emilkowalski/skills",
+      "skill_path": "skills/animate/SKILL.md",
+      "version": null,
+      "comparability": "motion-focused-platform-scoped",
+      "platforms": [
+        "web"
+      ],
+      "scope": "Focused web animation construction; companion skills handle opportunity finding and broader review.",
+      "license": {
+        "identifier": "MIT",
+        "basis": "Repository full licence text, copyright Emil Kowalski",
+        "paths": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/emilkowalski/skills/blob/5206a950b715e0cabe7043ea0b2304332b91494e/LICENSE"
+        ]
+      },
+      "overlap": [
+        "Purpose/frequency gates, existing tokens, economical tools and reduced-motion/pointer gating.",
+        "Interruption, exit direction and gesture continuity.",
+        "Companion opportunity finder requires location evidence and records rejected candidates."
+      ],
+      "difference": [
+        "Focused animate explicitly delegates full audits and native implementation to other skills.",
+        "Fixed recipes and categorical motion bans are stronger defaults than the target context-based selection."
+      ],
+      "examples": "Read CSS/JS recipes for press, anchored overlays, toast, drawer, stagger, hold, tabs and drag, plus companion opportunity-finder workflow.",
+      "review_date": "2026-11-08",
+      "commit": "5206a950b715e0cabe7043ea0b2304332b91494e",
+      "commit_date": "2026-11-08T12:15:47Z",
+      "commit_url": "https://github.com/emilkowalski/skills/commit/5206a950b715e0cabe7043ea0b2304332b91494e",
+      "skill_url": "https://github.com/emilkowalski/skills/blob/5206a950b715e0cabe7043ea0b2304332b91494e/skills/animate/SKILL.md",
+      "evidence_level": "source-read",
+      "runtime_tested": false,
+      "installation_performed": false,
+      "model_invocation_performed": false,
+      "inspected_files": [
+        {
+          "path": "skills/animate/SKILL.md",
+          "url": "https://github.com/emilkowalski/skills/blob/5206a950b715e0cabe7043ea0b2304332b91494e/skills/animate/SKILL.md",
+          "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+          "bytes": 11910
+        },
+        {
+          "path": "skills/animate/RECIPES.md",
+          "url": "https://github.com/emilkowalski/skills/blob/5206a950b715e0cabe7043ea0b2304332b91494e/skills/animate/RECIPES.md",
+          "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+          "bytes": 7957
+        },
+        {
+          "path": "skills/find-animation-opportunities/SKILL.md",
+          "url": "https://github.com/emilkowalski/skills/blob/5206a950b715e0cabe7043ea0b2304332b91494e/skills/find-animation-opportunities/SKILL.md",
+          "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+          "bytes": 9808
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/emilkowalski/skills/blob/5206a950b715e0cabe7043ea0b2304332b91494e/LICENSE",
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "bytes": 1070
+        }
+      ]
+    }
+  ],
+  "candidate_notes": [
+    {
+      "candidate": "Expo building-native-ui",
+      "status": "not-used-as-current-path",
+      "reason": "Current pinned Expo tree uses expo-native-ui for screen structure and expo-animation for motion. Used the motion-specific current skill instead.",
+      "evidence": "https://github.com/expo/skills/tree/a9e5bd3fa00b4e61f632e43f85da73aee1942582/plugins/expo/skills"
+    },
+    {
+      "candidate": "Expo expo-native-ui",
+      "status": "screen-structure-supplement-not-counted",
+      "reason": "Current instruction explicitly routes motion to expo-animation. Its SKILL.md and visual-effects reference were fetched; it is not a sixth comparator.",
+      "evidence": "https://github.com/expo/skills/blob/a9e5bd3fa00b4e61f632e43f85da73aee1942582/plugins/expo/skills/expo-native-ui/SKILL.md"
+    }
+  ]
+}

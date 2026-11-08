@@ -36,9 +36,9 @@
         different things. Here is the distinction.
       </p>
       <p id="release-status">
-        Version 2.0.1 is distribution maintenance: safer packaging, installation
-        and example isolation. Its runtime workflow is unchanged from 2.0.0. The
-        advanced 2.1.0 candidate is unreleased.
+        Version 2.1.0 adds audit-driven skill guidance. The owner authorised
+        release with known evaluation limitations. Failed and blocked checks
+        remain recorded; publication does not turn them into passing results.
       </p>
       <dl class="verification-list">
         <div>
@@ -68,9 +68,10 @@
         <div>
           <dt>Native mobile</dt>
           <dd>
-            This maintenance release adds no native capability claim. Native
-            build, grading and host limitations remain part of the unreleased
-            advanced candidate review.
+            Native implementation guidance is included. Exploratory Flutter
+            builds and iOS/Android playback occurred, but clean comparative
+            native grading remains blocked. Other native stacks are guidance,
+            not verified runtime support.
           </dd>
         </div>
         <div>
@@ -84,9 +85,10 @@
       <section aria-labelledby="comparison-title">
         <h2 id="comparison-title">Measured comparison</h2>
         <p id="comparison-status">
-          The candidate did not meet every release gate. A final
-          filter-animation assertion failed; two held-out outputs also failed
-          evidence-honesty review. Strict native grading remains blocked.
+          The frozen audit did not meet every capability gate: one animation
+          assertion and four evidence-honesty reviews failed. Strict native
+          grading remains blocked. These findings were accepted as known
+          limitations for this release; no overall superiority is claimed.
         </p>
         <table class="verification-table">
           <caption>
@@ -111,7 +113,7 @@
               <td>8 / 12</td>
             </tr>
             <tr>
-              <th scope="row">2.1 candidate</th>
+              <th scope="row">2.1.0</th>
               <td>11 / 12</td>
               <td>8 / 12</td>
             </tr>
@@ -143,7 +145,7 @@
       <div class="verification-actions">
         <a
           class="button outlined"
-          href="https://github.com/jagadeeshvarma/app-motion-effects/blob/audit/verified-skill-maintenance/docs/audit/SKILL_AUDIT.md"
+          href="https://github.com/jagadeeshvarma/app-motion-effects/blob/main/docs/audit/SKILL_AUDIT.md"
           >Audit and methodology</a
         >
         <a class="button primary" href="./#playground">Try the examples</a>

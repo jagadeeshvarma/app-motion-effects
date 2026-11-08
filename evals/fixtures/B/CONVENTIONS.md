@@ -1,0 +1,1 @@
+Repair workers switch records frequently, often with keyboard only. Keep the inspector mounted and drafts per record. The current solid colours, plain controls, labels, order and 140/220ms motion tokens are approved. Do not add navigation, illustration, sound or ambient effects.

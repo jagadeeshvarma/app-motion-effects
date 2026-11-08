@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-08",
+  "rubricSource": "acceptance.json visualRubric frozen five-item 0\u20132 scale",
+  "reviewer": "Independent maintainer_comparison agent; did not generate reviewed outputs",
+  "blinding": {
+    "outputConditionsUnknown": false,
+    "privateMappingRead": false,
+    "originalEvalResultsRead": false,
+    "transcriptsRead": false,
+    "globalSkillsReadDuringOutcomeReview": false,
+    "generatorReviewFilesRead": false,
+    "tasksRead": [
+      "A",
+      "B"
+    ],
+    "initialFourConditionsHidden": true,
+    "laterBatchDisclosure": "Labels withheld; later-batch condition may be inferred from scheduling."
+  },
+  "method": {
+    "browser": "Google Chrome 158.0.8127.18 through Playwright(channel=chrome,headless=true)",
+    "viewports": {
+      "desktop": "1280\u00d7900",
+      "mobile": "390\u00d7844, touch-enabled browser emulation"
+    },
+    "appearances": [
+      "light",
+      "dark"
+    ],
+    "motionPreferences": [
+      "no-preference",
+      "reduce"
+    ],
+    "casesPerOutput": 8,
+    "interactionEvidence": "Independent browser actions, repository attempt/success counters, DOM identity, drafts/selection, computed animation progression, actual screenshot inspection and recorded playback; source inspected separately.",
+    "rawEvidence": [
+      "independent-evidence/observations-first-four.json",
+      "independent-evidence/motion-followup.json",
+      "independent-evidence/observations-942b4b00.json",
+      "independent-evidence/motion-followup-942b4b00.json",
+      "independent-evidence/observations-bbd34f48.json",
+      "independent-evidence/motion-followup-bbd34f48.json"
+    ],
+    "instrumentationNote": "First pass sampled animations before reload but its A-page sampler was lost at reload. Focused follow-up independently captures A playback before reload and verifies live reduced-motion after 40ms. Immediate post-emulation animation counts in first pass are not treated as reduced-motion failures.",
+    "totalCases": 48,
+    "pendingReadOnlyHandling": "For later-batch A, instrumentation detects a read-only field and attempts actual keyboard input immediately; it does not let fill() auto-wait until after the save before reporting a pending-edit result. Editable-output protocol and initial recorded scores remain unchanged."
+  },
+  "limitations": [
+    "Six anonymised outputs across only two development tasks; initial four conditions genuinely hidden, later-batch condition may be inferred from scheduling. No broad skill-effectiveness conclusion.",
+    "Mobile is Chrome responsive/touch emulation, not native or real mobile hardware.",
+    "No screen-reader audio, 200% text/zoom, forced-colour, Safari/Firefox, frame-rate or battery measurements.",
+    "Keyboard paths were exercised, including Enter record selection and visible focus; no claim of complete accessibility conformance.",
+    "Rubric uses coarse 0/1/2 judgement; one-point differences reflect the stated conditional editing issues rather than failure of the core workflow.",
+    "No repairs were made to reviewed outputs."
+  ],
+  "outputs": [
+    {
+      "output": "3fc0a8e6",
+      "task": "B",
+      "rubric": [
+        {
+          "item": "Product/task fit",
+          "score": 2,
+          "reason": "Record identity is clarified without delaying the frequent repair workflow."
+        },
+        {
+          "item": "Brand/convention preservation",
+          "score": 2,
+          "reason": "Approved plain controls, labels, colours and 140ms token remain intact."
+        },
+        {
+          "item": "Truthful feedback and interruption",
+          "score": 2,
+          "reason": "Rapid selection immediately updates the correct draft/priority; stale heading cues are cancelled."
+        },
+        {
+          "item": "Accessible clarity and input behaviour",
+          "score": 2,
+          "reason": "Keyboard selection, mounted form, per-record draft and saved text selection all survived."
+        },
+        {
+          "item": "Coherent motion and proportionate implementation",
+          "score": 2,
+          "reason": "Only the heading fades from 0.55 to 1 over 140ms; no form motion, repeated same-record cue or reduced-motion playback."
+        }
+      ],
+      "total": 10,
+      "meets8Of10Threshold": true,
+      "criticalAccessibilityOrSecurityFailureObserved": false,
+      "visibleMotion": "Observed heading opacity progress from 0.55 through intermediate values to 1 over 140ms; fields remain still.",
+      "issues": [],
+      "observedCases": 8,
+      "pageErrors": [],
+      "horizontalOverflowObserved": false,
+      "reducedMotionFollowup": {
+        "initialReducedSamples": 0,
+        "livePreferenceAfter40ms": {
+          "matches": true,
+          "active": 0
+        }
+      },
+      "publicFileSHA256": {
+        "index.html": "1c6f392411aa534ddefd99256481a28cf517c7395384e50a5c804ce9c750ea3d",
+        "styles.css": "80127544630339fad864f32b1b0e8c2b92aaa3a41380bc6bf00aa461b661cd5f",
+        "app.js": "05cdf9c022749fbea123075f874d49e4c76326d91fcbb3d86b2c85be715eff06"
+      },
+      "evidence": [
+        "independent-evidence/3fc0a8e6-desktop-light-no-preference-mid.png",
+        "independent-evidence/3fc0a8e6-desktop-dark-reduce-final.png",
+        "independent-evidence/3fc0a8e6-mobile-light-no-preference-final.png",
+        "independent-evidence/3fc0a8e6-mobile-dark-reduce-final.png",
+        "independent-evidence/3fc0a8e6-desktop-playback.webm"
+      ],
+      "reviewBatch": "initial-four"
+    },
+    {
+      "output": "ca146e90",
+      "task": "A",
+      "rubric": [
+        {
+          "item": "Product/task fit",
+          "score": 2,
+          "reason": "Creates and persists packing notes with pending, failure, retry and saved feedback in the existing screen."
+        },
+        {
+          "item": "Brand/convention preservation",
+          "score": 2,
+          "reason": "Uses existing surface/accent/easing and 140/220ms tokens; plain layout and controls remain."
+        },
+        {
+          "item": "Truthful feedback and interruption",
+          "score": 1,
+          "reason": "Core failure/retry and different pending draft are safe; an edit-away-and-back during pending save is cleared because detection compares text equality only."
+        },
+        {
+          "item": "Accessible clarity and input behaviour",
+          "score": 2,
+          "reason": "Labels, keyboard action, visible focus and polite status remain; empty input returns focus to the note."
+        },
+        {
+          "item": "Coherent motion and proportionate implementation",
+          "score": 2,
+          "reason": "Short feedback fade and 3px note arrival are proportionate; reduced motion removes playback and success follows repository resolution."
+        }
+      ],
+      "total": 9,
+      "meets8Of10Threshold": true,
+      "criticalAccessibilityOrSecurityFailureObserved": false,
+      "visibleMotion": "Observed save-button opacity transition, feedback fade and new-note opacity/3px translate progression;140/220ms token durations.",
+      "issues": [
+        {
+          "severity": "minor-conditional",
+          "criterion": "Truthful feedback and interruption",
+          "reproduction": "Type Reentered text, start Save note, edit to Different text, then edit back to Reentered text before the 320ms save resolves.",
+          "observed": "The textarea is cleared after success in all eight theme/viewport/motion conditions. A different newer string is preserved.",
+          "impact": "Newer editing intent is not tracked independently of value equality. Submitted content is saved, so this is not observed repository data loss.",
+          "source": "public/app.js:45"
+        }
+      ],
+      "observedCases": 8,
+      "pageErrors": [],
+      "horizontalOverflowObserved": false,
+      "reducedMotionFollowup": {
+        "initialReducedSamples": 0,
+        "livePreferenceAfter40ms": {
+          "matches": true,
+          "active": 0
+        }
+      },
+      "publicFileSHA256": {
+        "index.html": "22aabab8f0dd4df612d7b91c2c67d6e75bb41f31fe2376e329ab34dfeb8106c6",
+        "styles.css": "0fe1cb68c598def3404c8979186ebf238914a72ba8d7466f06eb08df94210e96",
+        "api.js": "955bdc49923ebfc7867249b01bf44912f6dc546b3e2cbe25a4e2ac954885840d",
+        "app.js": "47f164d5238a8e82da614982fe71eef4724540227ee39641bfa11858aef47918"
+      },
+      "evidence": [
+        "independent-evidence/ca146e90-desktop-light-no-preference-mid.png",
+        "independent-evidence/ca146e90-desktop-dark-reduce-final.png",
+        "independent-evidence/ca146e90-mobile-light-no-preference-final.png",
+        "independent-evidence/ca146e90-mobile-dark-reduce-final.png",
+        "independent-evidence/ca146e90-desktop-playback.webm",
+        "independent-evidence/ca146e90-mobile-dark-no-preference-error.png"
+      ],
+      "reviewBatch": "initial-four"
+    },
+    {
+      "output": "27d19673",
+      "task": "B",
+      "rubric": [
+        {
+          "item": "Product/task fit",
+          "score": 2,
+          "reason": "Brief inspector cue helps identify selected repair while retaining the same workflow."
+        },
+        {
+          "item": "Brand/convention preservation",
+          "score": 2,
+          "reason": "Plain controls, approved labels/order, solid colours and 220ms token remain."
+        },
+        {
+          "item": "Truthful feedback and interruption",
+          "score": 2,
+          "reason": "Rapid keyboard switching cancels previous cue and synchronously restores each record draft/priority."
+        },
+        {
+          "item": "Accessible clarity and input behaviour",
+          "score": 1,
+          "reason": "Mounted form and keyboard paths are preserved, but per-record caret/selection is not restored when returning to a record."
+        },
+        {
+          "item": "Coherent motion and proportionate implementation",
+          "score": 2,
+          "reason": "Inspector opacity/4px translation is short and restrained; reduced motion and live preference changes cancel it."
+        }
+      ],
+      "total": 9,
+      "meets8Of10Threshold": true,
+      "criticalAccessibilityOrSecurityFailureObserved": false,
+      "visibleMotion": "Observed entire inspector opacity 0.75\u21921 and translateY 4px\u21920 over 220ms; current content is updated before playback.",
+      "issues": [
+        {
+          "severity": "minor-conditional",
+          "criterion": "Accessible clarity and input behaviour",
+          "reproduction": "In Lamp notes set selection 3\u20138, switch to Chair, edit Chair, then return to Lamp.",
+          "observed": "Lamp text and priority survive and both form nodes stay identical, but selection returns at19\u201319 (end of Lamp draft retained), rather than 3\u20138, in all eight conditions.",
+          "impact": "An editing user must recover their position after switching records; no draft content loss or keyboard blockage was observed.",
+          "source": "public/app.js:13"
+        }
+      ],
+      "observedCases": 8,
+      "pageErrors": [],
+      "horizontalOverflowObserved": false,
+      "reducedMotionFollowup": {
+        "initialReducedSamples": 0,
+        "livePreferenceAfter40ms": {
+          "matches": true,
+          "active": 0
+        }
+      },
+      "publicFileSHA256": {
+        "index.html": "1c6f392411aa534ddefd99256481a28cf517c7395384e50a5c804ce9c750ea3d",
+        "styles.css": "80127544630339fad864f32b1b0e8c2b92aaa3a41380bc6bf00aa461b661cd5f",
+        "app.js": "ca0a29604509538ffada8eb4ae6d86f3a1b427788de4e3c617120b0dfbdd86d8"
+      },
+      "evidence": [
+        "independent-evidence/27d19673-desktop-light-no-preference-mid.png",
+        "independent-evidence/27d19673-desktop-dark-reduce-final.png",
+        "independent-evidence/27d19673-mobile-light-no-preference-final.png",
+        "independent-evidence/27d19673-mobile-dark-reduce-final.png",
+        "independent-evidence/27d19673-desktop-playback.webm"
+      ],
+      "reviewBatch": "initial-four"
+    },
+    {
+      "output": "759978a7",
+      "task": "A",
+      "rubric": [
+        {
+          "item": "Product/task fit",
+          "score": 2,
+          "reason": "Completes local packing-note creation, reload persistence, pending/failure/retry and repeated-input protection."
+        },
+        {
+          "item": "Brand/convention preservation",
+          "score": 2,
+          "reason": "Uses existing plain controls, labels and 140/220ms tokens without redesign."
+        },
+        {
+          "item": "Truthful feedback and interruption",
+          "score": 2,
+          "reason": "Success follows repository resolution; failures retain drafts; revision-based comparison retains even edit-away-and-back pending drafts."
+        },
+        {
+          "item": "Accessible clarity and input behaviour",
+          "score": 2,
+          "reason": "Labelled note, polite atomic status, error association, invalid state and keyboard focus behaviour are retained."
+        },
+        {
+          "item": "Coherent motion and proportionate implementation",
+          "score": 2,
+          "reason": "Feedback and new-note opacity fades are short, coherent and removed for reduced motion."
+        }
+      ],
+      "total": 10,
+      "meets8Of10Threshold": true,
+      "criticalAccessibilityOrSecurityFailureObserved": false,
+      "visibleMotion": "Observed feedback span and new-note opacity0.55\u21921 at 140/220ms; no translation or looping.",
+      "issues": [
+        {
+          "severity": "behaviour-note-not-deducted",
+          "criterion": "Product/task fit",
+          "reproduction": "Check Simulate failed save and press Save note.",
+          "observed": "The failure checkbox is consumed once and immediately becomes unchecked; next Save note retries directly.",
+          "impact": "Task does not specify a persistent versus one-shot switch, so this was treated as an allowed demonstration behaviour, not a failed requirement.",
+          "source": "public/app.js:45"
+        }
+      ],
+      "observedCases": 8,
+      "pageErrors": [],
+      "horizontalOverflowObserved": false,
+      "reducedMotionFollowup": {
+        "initialReducedSamples": 0,
+        "livePreferenceAfter40ms": {
+          "matches": true,
+          "active": 0
+        }
+      },
+      "publicFileSHA256": {
+        "index.html": "09389d56fa95d64ccdd76d317209205d2db2b67e2c23e296ce0b483f127fbbda",
+        "styles.css": "013f2ecbbce34c452fddc43b7b5dc14bf20fd9fc2aeafb401514d7adc1157b78",
+        "api.js": "955bdc49923ebfc7867249b01bf44912f6dc546b3e2cbe25a4e2ac954885840d",
+        "app.js": "414668b30346809c512a1ccfcf9c1605d2af321e84d11c140fa70e0732501d73"
+      },
+      "evidence": [
+        "independent-evidence/759978a7-desktop-light-no-preference-mid.png",
+        "independent-evidence/759978a7-desktop-dark-reduce-final.png",
+        "independent-evidence/759978a7-mobile-light-no-preference-final.png",
+        "independent-evidence/759978a7-mobile-dark-reduce-final.png",
+        "independent-evidence/759978a7-desktop-playback.webm",
+        "independent-evidence/759978a7-mobile-dark-no-preference-error.png"
+      ],
+      "reviewBatch": "initial-four"
+    },
+    {
+      "output": "942b4b00",
+      "task": "B",
+      "reviewBatch": "later-batch",
+      "blindingDisclosure": "Labels withheld; later-batch condition may be inferred from scheduling.",
+      "rubric": [
+        {
+          "item": "Product/task fit",
+          "score": 2,
+          "reason": "Brief heading cue clarifies repair selection within the existing frequent switching workflow."
+        },
+        {
+          "item": "Brand/convention preservation",
+          "score": 2,
+          "reason": "Approved plain layout, controls, labels, colours and 140ms token are preserved."
+        },
+        {
+          "item": "Truthful feedback and interruption",
+          "score": 2,
+          "reason": "Rapid selection cancels previous playback; drafts, priority and mounted form remain correct."
+        },
+        {
+          "item": "Accessible clarity and input behaviour",
+          "score": 1,
+          "reason": "Keyboard selection and mounted controls remain usable, but returning to a record loses the earlier text selection/caret."
+        },
+        {
+          "item": "Coherent motion and proportionate implementation",
+          "score": 2,
+          "reason": "Only the heading fades and translates 3px over 140ms; fields remain still, and reduced motion cancels the cue."
+        }
+      ],
+      "total": 9,
+      "meets8Of10Threshold": true,
+      "criticalAccessibilityOrSecurityFailureObserved": false,
+      "visibleMotion": "Observed heading opacity 0.65\u21921 and translateY 3px\u21920 over 140ms. Editing controls remain still.",
+      "issues": [
+        {
+          "severity": "minor-conditional",
+          "criterion": "Accessible clarity and input behaviour",
+          "reproduction": "Select Lamp note characters 3\u20138, switch to Chair and edit, then return to Lamp.",
+          "observed": "The Lamp draft and priority return and form nodes retain identity, but selection is at 19\u201319 rather than 3\u20138 in all eight cases. A separate check confirms both records retain their own edited draft and priority.",
+          "impact": "Users resuming editing must recover their previous position; no text loss or keyboard blockage was observed.",
+          "source": "public/app.js:26"
+        }
+      ],
+      "observedCases": 8,
+      "pageErrors": [],
+      "horizontalOverflowObserved": false,
+      "reducedMotionFollowup": {
+        "initialReducedSamples": 0,
+        "livePreferenceAfter40ms": {
+          "matches": true,
+          "active": 0
+        }
+      },
+      "publicFileSHA256": {
+        "index.html": "1c6f392411aa534ddefd99256481a28cf517c7395384e50a5c804ce9c750ea3d",
+        "styles.css": "80127544630339fad864f32b1b0e8c2b92aaa3a41380bc6bf00aa461b661cd5f",
+        "app.js": "d33a785177b34c6eabcef7b5c64daf51bc1066460ed0a46eb5c8d0c8d2b2215c"
+      },
+      "evidence": [
+        "independent-evidence/942b4b00-desktop-light-no-preference-mid.png",
+        "independent-evidence/942b4b00-desktop-dark-reduce-final.png",
+        "independent-evidence/942b4b00-mobile-light-no-preference-final.png",
+        "independent-evidence/942b4b00-mobile-dark-reduce-final.png",
+        "independent-evidence/942b4b00-desktop-playback.webm",
+        "independent-evidence/per-record-942b4b00.json"
+      ]
+    },
+    {
+      "output": "bbd34f48",
+      "task": "A",
+      "reviewBatch": "later-batch",
+      "blindingDisclosure": "Labels withheld; later-batch condition may be inferred from scheduling.",
+      "rubric": [
+        {
+          "item": "Product/task fit",
+          "score": 2,
+          "reason": "Creates, retries and persists packing notes in the same screen; saved notes survive reload."
+        },
+        {
+          "item": "Brand/convention preservation",
+          "score": 2,
+          "reason": "Preserves the existing plain controls, labels, colours and 140/220ms motion tokens."
+        },
+        {
+          "item": "Truthful feedback and interruption",
+          "score": 2,
+          "reason": "Pending/failure/success match repository results; repeated presses cause one request. Read-only pending state blocks real newer editing rather than silently losing it."
+        },
+        {
+          "item": "Accessible clarity and input behaviour",
+          "score": 2,
+          "reason": "Visible focus remains on the busy save button; labels, polite atomic feedback and note description remain usable, and failure retains the draft."
+        },
+        {
+          "item": "Coherent motion and proportionate implementation",
+          "score": 2,
+          "reason": "Observed short feedback and note opacity fades are restrained, state-driven and removed under reduced motion."
+        }
+      ],
+      "total": 10,
+      "meets8Of10Threshold": true,
+      "criticalAccessibilityOrSecurityFailureObserved": false,
+      "visibleMotion": "Observed feedback opacity 0.55\u21921 over 140ms and new-note opacity 0\u21921 over 220ms, without translation or loops.",
+      "issues": [
+        {
+          "severity": "behaviour-note-not-deducted",
+          "criterion": "Truthful feedback and interruption",
+          "reproduction": "Try editing to a new value, or away and back to the original value, during the pending save.",
+          "observed": "The textarea is read-only until repository completion. Actual keyboard edit attempts are blocked in all eight cases, so no newer user draft is created. Success clears only the submitted text; failure retains it.",
+          "impact": "Concurrent typing is temporarily unavailable. The task does not require concurrent editing, so no deduction was made and this is not described as preserving an accepted newer draft.",
+          "source": "public/app.js:37"
+        },
+        {
+          "severity": "behaviour-note-not-deducted",
+          "criterion": "Accessible clarity and input behaviour",
+          "reproduction": "Activate Save note, then repeat activation while Saving is shown.",
+          "observed": "The focusable save button uses aria-disabled and a synchronous pending guard instead of native disabled. Focus remains on save and repository attempts remain one.",
+          "impact": "The script must continue enforcing the guard; no duplicate submission was observed.",
+          "source": "public/app.js:41"
+        }
+      ],
+      "observedCases": 8,
+      "pageErrors": [],
+      "horizontalOverflowObserved": false,
+      "reducedMotionFollowup": {
+        "initialReducedSamples": 0,
+        "livePreferenceAfter40ms": {
+          "matches": true,
+          "active": 0
+        }
+      },
+      "publicFileSHA256": {
+        "index.html": "09389d56fa95d64ccdd76d317209205d2db2b67e2c23e296ce0b483f127fbbda",
+        "styles.css": "9b69025fd4e1c8df5657b85aecf71e9ec780edb094feed4c681f65bd417fd040",
+        "api.js": "955bdc49923ebfc7867249b01bf44912f6dc546b3e2cbe25a4e2ac954885840d",
+        "app.js": "96f9be465311c038877ca33d002d24151192f713173da3b58caf9ab20b53997c"
+      },
+      "evidence": [
+        "independent-evidence/bbd34f48-desktop-light-no-preference-mid.png",
+        "independent-evidence/bbd34f48-desktop-dark-reduce-final.png",
+        "independent-evidence/bbd34f48-mobile-light-no-preference-final.png",
+        "independent-evidence/bbd34f48-mobile-dark-reduce-final.png",
+        "independent-evidence/bbd34f48-desktop-playback.webm",
+        "independent-evidence/bbd34f48-mobile-dark-no-preference-error.png"
+      ]
+    }
+  ]
+}

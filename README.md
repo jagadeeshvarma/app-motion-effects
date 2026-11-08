@@ -18,6 +18,8 @@ MIT licensed · 63 technical categories · 31 source groups · No skill runtime 
 
 [![Interactive before/after playground](docs/media/playground-desktop.png)](https://jagadeeshvarma.github.io/app-motion-effects/)
 
+**Version 2.1.0 incorporates the audit-driven skill improvements.** The owner authorised release with known evaluation limitations: one motion assertion and four evidence-honesty reviews failed; strict native comparative grading and Claude runtime testing remain blocked. This is not a fully verified capability claim. [Measured audit](docs/audit/SKILL_AUDIT.md) · [Rendered evidence](docs/audit/EVIDENCE.md) · [Unchanged runnable outputs](evals/outputs-final/README.md).
+
 ## What it does
 
 An operations console, a learning app and a creative canvas need different movement. This skill starts with the customer’s task, the consequences of mistakes and the app’s existing design rules. It then selects and implements an appropriate mechanism, verifies actual playback and checks that the original workflow still works.
@@ -315,11 +317,11 @@ The agent can research beyond this list or author a better-fitting implementatio
 
 ## Verified scope
 
-Version **2.0.1** hardens distribution and the playground while preserving the 2.0.0 runtime workflow. It adds no new agent or native capability claim.
+Version **2.1.0** adds progressive native implementation and trust-boundary guidance, focused activation and incremental evidence recording. It retains the product-aware visual contract and the hardened distribution from 2.0.1.
 
 Codex project-local discovery and isolated execution were observed. Claude Code's documented format and disposable installation were checked; runtime testing was blocked by missing authentication. Other clients and frameworks are not certified by readable Markdown or catalogue links.
 
-The advanced **2.1.0 candidate is unreleased**. Its audit found a failed animation assertion and blocked native grading. Executable artifact checks and completed agent tasks are different results; neither authored demos nor screenshots prove an agent-wide improvement. [Evidence and limits](https://jagadeeshvarma.github.io/app-motion-effects/verification.html) · [Audit branch](https://github.com/jagadeeshvarma/app-motion-effects/tree/audit/verified-skill-maintenance).
+**Known limitations:** the frozen 2.1.0 audit found one failed animation assertion, four failed evidence-honesty reviews and blocked native grading. The owner explicitly authorised publication with these limitations; the failed/blocked results remain unchanged. Executable artifact checks and completed agent tasks are different results; neither authored demos nor screenshots prove an agent-wide improvement. [Evidence and limits](https://jagadeeshvarma.github.io/app-motion-effects/verification.html) · [Audit and release decision](docs/audit/SKILL_AUDIT.md).
 
 ## Develop and contribute
 

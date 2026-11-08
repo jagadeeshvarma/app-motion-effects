@@ -1,0 +1,173 @@
+{
+  "files": [
+    {
+      "file": "M-1000-dark-no-preference-final.png",
+      "source_private_basename": "M-1000-dark-no-preference-final.png",
+      "bytes": 53226,
+      "sha256": "2146fc3d9ec1a610715ab266d634f18b46fdccbf45168f1fe2fe3b0c4d584cc9"
+    },
+    {
+      "file": "M-1000-dark-no-preference-mid.png",
+      "source_private_basename": "M-1000-dark-no-preference-mid.png",
+      "bytes": 42623,
+      "sha256": "240d9a0284766f1615ba52e4cc33fa79ef66bc16d96ac298155066c8f9e8c2c7"
+    },
+    {
+      "file": "M-1000-dark-reduce-final.png",
+      "source_private_basename": "M-1000-dark-reduce-final.png",
+      "bytes": 53226,
+      "sha256": "2146fc3d9ec1a610715ab266d634f18b46fdccbf45168f1fe2fe3b0c4d584cc9"
+    },
+    {
+      "file": "M-1000-light-no-preference-final.png",
+      "source_private_basename": "M-1000-light-no-preference-final.png",
+      "bytes": 53544,
+      "sha256": "21f1baf74d96d2b09c3fbb5aaa10db88388b30f01640c561deddce42c01d719d"
+    },
+    {
+      "file": "M-1000-light-no-preference-mid.png",
+      "source_private_basename": "M-1000-light-no-preference-mid.png",
+      "bytes": 47171,
+      "sha256": "33f2efa76918dc91e980d04a75e755971ac7b235255a4a90d00ebce5b51834ba"
+    },
+    {
+      "file": "M-1000-light-reduce-final.png",
+      "source_private_basename": "M-1000-light-reduce-final.png",
+      "bytes": 53544,
+      "sha256": "21f1baf74d96d2b09c3fbb5aaa10db88388b30f01640c561deddce42c01d719d"
+    },
+    {
+      "file": "M-320-dark-no-preference-final.png",
+      "source_private_basename": "M-320-dark-no-preference-final.png",
+      "bytes": 46367,
+      "sha256": "4391cfc083103d0b0063edd683af9225c3f4f436036ffde529b052031b3dbdd2"
+    },
+    {
+      "file": "M-320-dark-no-preference-mid.png",
+      "source_private_basename": "M-320-dark-no-preference-mid.png",
+      "bytes": 34466,
+      "sha256": "f419807ad6a2206d44ea381a6f6ca0d7e092a6dd8cf2f350e4bbe866adeb1922"
+    },
+    {
+      "file": "M-320-dark-reduce-final.png",
+      "source_private_basename": "M-320-dark-reduce-final.png",
+      "bytes": 46367,
+      "sha256": "4391cfc083103d0b0063edd683af9225c3f4f436036ffde529b052031b3dbdd2"
+    },
+    {
+      "file": "M-320-light-no-preference-final.png",
+      "source_private_basename": "M-320-light-no-preference-final.png",
+      "bytes": 46590,
+      "sha256": "d7829628c581b923137f4eda18bbef9b6e78aff59c32748e68663f6a47ecbd44"
+    },
+    {
+      "file": "M-320-light-no-preference-mid.png",
+      "source_private_basename": "M-320-light-no-preference-mid.png",
+      "bytes": 34407,
+      "sha256": "d156d9333bf97e45acbc64f8db5e2e507d790c3d7a369369645e9cc34a8ede5e"
+    },
+    {
+      "file": "M-320-light-reduce-final.png",
+      "source_private_basename": "M-320-light-reduce-final.png",
+      "bytes": 46590,
+      "sha256": "d7829628c581b923137f4eda18bbef9b6e78aff59c32748e68663f6a47ecbd44"
+    },
+    {
+      "file": "N-1000-dark-no-preference-final.png",
+      "source_private_basename": "N-1000-dark-no-preference-final.png",
+      "bytes": 45676,
+      "sha256": "5f57053455d96890ad022914d61b52b68c1aae228bd737540dc2e04f5be2e10a"
+    },
+    {
+      "file": "N-1000-dark-no-preference-mid.png",
+      "source_private_basename": "N-1000-dark-no-preference-mid.png",
+      "bytes": 41800,
+      "sha256": "867ac4f38b05fe718a81f7500bb0ff4f8f8294c66db1148431a592e03cff61e6"
+    },
+    {
+      "file": "N-1000-dark-reduce-final.png",
+      "source_private_basename": "N-1000-dark-reduce-final.png",
+      "bytes": 45676,
+      "sha256": "5f57053455d96890ad022914d61b52b68c1aae228bd737540dc2e04f5be2e10a"
+    },
+    {
+      "file": "N-1000-light-no-preference-final.png",
+      "source_private_basename": "N-1000-light-no-preference-final.png",
+      "bytes": 45961,
+      "sha256": "396113820d88915a0695b46294103c6bfe87d8da728cabac356e41884ce2146f"
+    },
+    {
+      "file": "N-1000-light-no-preference-mid.png",
+      "source_private_basename": "N-1000-light-no-preference-mid.png",
+      "bytes": 41774,
+      "sha256": "3f322ed6a2460738c927910ada32c25571e66877fb56be171408ceec394194e1"
+    },
+    {
+      "file": "N-1000-light-reduce-final.png",
+      "source_private_basename": "N-1000-light-reduce-final.png",
+      "bytes": 45961,
+      "sha256": "396113820d88915a0695b46294103c6bfe87d8da728cabac356e41884ce2146f"
+    },
+    {
+      "file": "N-320-dark-no-preference-final.png",
+      "source_private_basename": "N-320-dark-no-preference-final.png",
+      "bytes": 19476,
+      "sha256": "03acb5478eaa84afd29122cac29e3ce00276a6264db6796249d1e8cbe9f8c272"
+    },
+    {
+      "file": "N-320-dark-no-preference-mid.png",
+      "source_private_basename": "N-320-dark-no-preference-mid.png",
+      "bytes": 32628,
+      "sha256": "770763dacc9ad25fadf5273aa80889e06cc51534fa180904d1955c28fb74516f"
+    },
+    {
+      "file": "N-320-dark-reduce-final.png",
+      "source_private_basename": "N-320-dark-reduce-final.png",
+      "bytes": 19476,
+      "sha256": "03acb5478eaa84afd29122cac29e3ce00276a6264db6796249d1e8cbe9f8c272"
+    },
+    {
+      "file": "N-320-light-no-preference-final.png",
+      "source_private_basename": "N-320-light-no-preference-final.png",
+      "bytes": 19793,
+      "sha256": "33c01c3b0493a6395ecc27c3f95d4fd4e4fe012ed9532078c3154b3dcf0522fd"
+    },
+    {
+      "file": "N-320-light-no-preference-mid.png",
+      "source_private_basename": "N-320-light-no-preference-mid.png",
+      "bytes": 32017,
+      "sha256": "84d563d853b42dd32ff6cc1b575dc7f31829722e7b64b1f4c42aa8ad9971c93b"
+    },
+    {
+      "file": "N-320-light-reduce-final.png",
+      "source_private_basename": "N-320-light-reduce-final.png",
+      "bytes": 19793,
+      "sha256": "33c01c3b0493a6395ecc27c3f95d4fd4e4fe012ed9532078c3154b3dcf0522fd"
+    },
+    {
+      "file": "observations.json",
+      "source_private_basename": "observations.json",
+      "bytes": 114491,
+      "sha256": "dfc8e0e76c3764d3ac7af9d13e52a2095c8cf9445e2cb7bf3aeb06b8c2f46f39"
+    },
+    {
+      "file": "N-320-dark-normal-playback.webm",
+      "source_private_basename": "page@2da20a17ad30484b717fde95787e310f.webm",
+      "bytes": 234676,
+      "sha256": "e4f84ae7a04d71933b04f9071a8529ed68170b8cf24a6914db8f229c6199b575"
+    },
+    {
+      "file": "M-desktop-light-normal-playback.webm",
+      "source_private_basename": "page@7b649fe1810a8e7d9b289421a61a4d7b.webm",
+      "bytes": 204569,
+      "sha256": "6cf2a7390f933b9ca721b920d048b4e87b50651e5371fd5ec141cf9c2f01a3bf"
+    },
+    {
+      "file": "source-integrity.json",
+      "source_private_basename": "source-integrity.json",
+      "bytes": 1398,
+      "sha256": "3b388947f10f3e857e1f14ac3d8726aa5e15a08086efe1df2b7823f65b1f2770"
+    }
+  ],
+  "total_content_bytes": 1523286
+}

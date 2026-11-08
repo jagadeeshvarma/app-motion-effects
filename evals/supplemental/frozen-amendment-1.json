@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "phase": "after-candidate-freeze-before-supplemental-outputs",
+  "candidate_freeze_sha256": "ef8a65d8bdfd7f41be3a727d2f9161ccb219ecd4eefc048b74aaa5776baa00ff",
+  "supersedes": "b519f5840a56c4ad60bfef9fdb295a8655542d4be092dba18c17356f019ab89c",
+  "sha256": "972a15df13b0008cfe0013049a856f5071742d7533d501c5b9389e4d7f8bc15f",
+  "files": {
+    "AMENDMENTS.md": "af470a0de720fc8ead3e77dc2a14ace9fcb8bec3878db20b1ff9aa91431fb078",
+    "FROZEN_DESIGN.md": "d41a4cd1e55da5ce94cd44f6010bf119866a7228759909d75abdc8ea6e9d504f",
+    "fixtures/M/AGENTS.md": "401c0e8b6b883a6159dfa6dcc954890bee67dcb33c32e97474ab1d04b9e40672",
+    "fixtures/M/public/app.js": "726d4076b48328cea65ae7a47a4356f32ae838defa9c2a7f3cdea8f3ebd46cb3",
+    "fixtures/M/public/index.html": "b89056629c2cab8bfa89fb80da9ef36ee87a9cdaae805c63740ccd1ef7cb8e7d",
+    "fixtures/M/public/model.js": "6ab4bab642b111b9d54d2a25f525c44ab5f0bb5c27bef54951289267d23d110a",
+    "fixtures/M/public/styles.css": "596ddba2a3a2535d3bfb09c5daf69bf9b915d4453b17242f0060d12d16081142",
+    "fixtures/N/AGENTS.md": "401c0e8b6b883a6159dfa6dcc954890bee67dcb33c32e97474ab1d04b9e40672",
+    "fixtures/N/public/app.js": "4ca0f71b9f4e69ecb1860c70f156a9be9bf1a98052c3de868284519a24256871",
+    "fixtures/N/public/index.html": "e0c8f9e93df79415b3fed7e3130a01e2e9210b0f91e592cf40c74fa8f92b4419",
+    "fixtures/N/public/receipts.js": "7d68bba4a733c3a7d3624919c4845f060f26f7e9e4ff0df9c36610a4c1461199",
+    "fixtures/N/public/styles.css": "e889695647056ad097253e87ec62f5417e9d676ac967cdd315d115277b3ec104",
+    "graders/grade.py": "ccd19106061676f8334bddfb0ac58b58985ecca60c07e0e194ad56b2513b568b",
+    "graders/web.mjs": "6991049faad11d1b7aba6b7e4e51ad3471db9e8f16b9f99697f57ed585291893",
+    "scenarios.json": "c30dcf0d2a5e25d252242615c25e35d17541c6b929c1d1cf000e6eff46b48e98",
+    "tasks/M.md": "9d4ac88ebf3148df8c75b7e189690e0813914829e0a211d66010591e9612e0c5",
+    "tasks/N.md": "034ef7bd8c359d8b6f10577bab75fa0bc04990a309c4ef586faa6e2fd97f0a9a",
+    "tools/freeze.py": "5ae49da76a61394881949f5108edb4557274a2cb3a6e0b458023ff7017a77987",
+    "tools/prepare.py": "c8cd5dcb4f650edb09e2fec2c7701ccf8c5032468db86514272c7ffeb948e0bb",
+    "tools/validate.py": "c100d3c39c3e3794d9896d25acf16e357c917d1e3a07be6b539d2cc338457ace"
+  }
+}

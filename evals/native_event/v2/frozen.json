@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "protocol": "supplementary-event-controlled-native-v2",
+  "frozen_at_unix": 1794162273.5766249,
+  "files": {
+    "C.dart": "aa180057902344db256050eee8190e67ccb3361edbc4fe92496de82ee8c93b0b",
+    "D.dart": "10f14c5226777fcd7a1bccb3fce033936d530f0b59aea5f8b68e96330d0374e0"
+  },
+  "prior_version": "../frozen.json retained unchanged",
+  "change_reason": "Independent protocol review: truthful offline/permission UI prechecks may avoid a backend call. Accept zero or one denied request, require a held request for authorised online success. Core stale-cancel challenge unchanged.",
+  "backend_semantics": "Test-only subclasses preserve existing public API and response semantics; explicitly controlled Completers replace only wall-clock scheduling.",
+  "source_mutation": false,
+  "frozen_graders_replaced": false,
+  "criteria": "Supplementary native event/UI evidence only; no real-timer/performance proof and no silent replacement of raw frozen grades or native failures.",
+  "negative_controls": {
+    "C": "Incomplete source must fail missing workflow.",
+    "D": "Known stale-callback source must fail after old cancelled request resolves while newer request remains held."
+  }
+}

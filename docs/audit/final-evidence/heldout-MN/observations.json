@@ -1,0 +1,4816 @@
+{
+  "reviewer": "independent maintainer source/runtime reviewer",
+  "condition_blinded": false,
+  "source_repaired": false,
+  "cases": [
+    {
+      "id": "M",
+      "label": "M-1000-light-no-preference",
+      "width": 1000,
+      "height": 760,
+      "colorScheme": "light",
+      "reducedMotion": "no-preference",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "duringMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": [
+            {
+              "duration": 220,
+              "target": "row-valve"
+            },
+            {
+              "duration": 220,
+              "target": "row-pump"
+            }
+          ]
+        },
+        "frames": [
+          {
+            "t": 0.4999999880790824,
+            "y": 365.265625,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 17.099999988079077,
+            "y": 365.265625,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 33.799999988079065,
+            "y": 312.810791015625,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 50.39999998807906,
+            "y": 265.7132263183594,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 67.09999998807908,
+            "y": 233.14842224121094,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 83.69999998807907,
+            "y": 212.97531127929688,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 100.39999998807906,
+            "y": 199.9444122314453,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 116.99999998807908,
+            "y": 191.2587890625,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 133.69999998807907,
+            "y": 185.22589111328125,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 150.39999998807906,
+            "y": 181.0142822265625,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 167.09999998807905,
+            "y": 178.0885009765625,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 183.7999999880791,
+            "y": 176.1079559326172,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 200.49999998807908,
+            "y": 174.84495544433594,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 217.09999998807905,
+            "y": 174.1436767578125,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 233.7999999880791,
+            "y": 173.88182067871094,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 250.39999998807906,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 267.09999998807905,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 283.69999998807907,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 300.39999998807906,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 317.09999998807905,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 333.69999998807907,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 350.3999999880791,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 367.09999998807905,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 383.69999998807907,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 400.3999999880791,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 416.999999988079,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 433.69999998807907,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "afterMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": []
+        },
+        "state": {
+          "value": "Independent selected draft",
+          "checked": true,
+          "inputIdentity": true,
+          "rowIdentity": true,
+          "selection": [
+            2,
+            11,
+            "backward"
+          ],
+          "upDisabled": true,
+          "active": "down-pump"
+        },
+        "interrupted": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 2",
+          "receiptCount": 0,
+          "order": [
+            "valve",
+            "pump",
+            "meter"
+          ],
+          "motion": []
+        },
+        "moves": 4,
+        "persistedOrder": [
+          "valve",
+          "pump",
+          "meter"
+        ],
+        "persistedOrderMatches": true,
+        "finalOverflow": false
+      },
+      "status": "observed",
+      "video": "page@7b649fe1810a8e7d9b289421a61a4d7b.webm"
+    },
+    {
+      "id": "M",
+      "label": "M-1000-light-reduce",
+      "width": 1000,
+      "height": 760,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "duringMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": []
+        },
+        "frames": [
+          {
+            "t": 2,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 35.30000000000001,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 52,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 68.69999999999999,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 85.30000000000001,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 102,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 118.69999999999999,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 135.39999999999998,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 152,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 168.7,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 185.3,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 202,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 218.60000000000002,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 235.3,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 252,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 268.6,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 285.3,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 302,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 318.7,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 335.3,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 352,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 368.70000000000005,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 385.29999999999995,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 402,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 418.6,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 435.29999999999995,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "afterMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": []
+        },
+        "state": {
+          "value": "Independent selected draft",
+          "checked": true,
+          "inputIdentity": true,
+          "rowIdentity": true,
+          "selection": [
+            2,
+            11,
+            "backward"
+          ],
+          "upDisabled": true,
+          "active": "down-pump"
+        },
+        "interrupted": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 2",
+          "receiptCount": 0,
+          "order": [
+            "valve",
+            "pump",
+            "meter"
+          ],
+          "motion": []
+        },
+        "moves": 4,
+        "persistedOrder": [
+          "valve",
+          "pump",
+          "meter"
+        ],
+        "persistedOrderMatches": true,
+        "finalOverflow": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "M",
+      "label": "M-1000-dark-no-preference",
+      "width": 1000,
+      "height": 760,
+      "colorScheme": "dark",
+      "reducedMotion": "no-preference",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "duringMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": [
+            {
+              "duration": 220,
+              "target": "row-valve"
+            },
+            {
+              "duration": 220,
+              "target": "row-pump"
+            }
+          ]
+        },
+        "frames": [
+          {
+            "t": 2.966000023841872,
+            "y": 365.265625,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 19.600000023841858,
+            "y": 365.265625,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 36.20000002384185,
+            "y": 313.139892578125,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 52.90000002384187,
+            "y": 265.725341796875,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 69.60000002384186,
+            "y": 233.15603637695312,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 86.30000002384185,
+            "y": 212.8843231201172,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 103.00000002384186,
+            "y": 199.88458251953125,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 119.60000002384186,
+            "y": 191.21788024902344,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 136.20000002384188,
+            "y": 185.22738647460938,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 152.90000002384187,
+            "y": 181.0153350830078,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 169.60000002384186,
+            "y": 178.08921813964844,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 186.30000002384185,
+            "y": 176.10842895507812,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 203.00000002384184,
+            "y": 174.84524536132812,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 219.60000002384186,
+            "y": 174.14381408691406,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 236.20000002384188,
+            "y": 173.88226318359375,
+            "x": 132,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 252.90000002384187,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 269.60000002384186,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 286.2000000238419,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 302.90000002384187,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 319.60000002384186,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 336.30000002384185,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 352.90000002384187,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 369.60000002384186,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 386.3000000238419,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 403.00000002384184,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 419.60000002384186,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 436.2000000238419,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "afterMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": []
+        },
+        "state": {
+          "value": "Independent selected draft",
+          "checked": true,
+          "inputIdentity": true,
+          "rowIdentity": true,
+          "selection": [
+            2,
+            11,
+            "backward"
+          ],
+          "upDisabled": true,
+          "active": "down-pump"
+        },
+        "interrupted": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 2",
+          "receiptCount": 0,
+          "order": [
+            "valve",
+            "pump",
+            "meter"
+          ],
+          "motion": []
+        },
+        "moves": 4,
+        "persistedOrder": [
+          "valve",
+          "pump",
+          "meter"
+        ],
+        "persistedOrderMatches": true,
+        "finalOverflow": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "M",
+      "label": "M-1000-dark-reduce",
+      "width": 1000,
+      "height": 760,
+      "colorScheme": "dark",
+      "reducedMotion": "reduce",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "duringMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": []
+        },
+        "frames": [
+          {
+            "t": 1.8000000000000114,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 18.400000000000006,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 35.099999999999994,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 51.69999999999999,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 68.4,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 85.1,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 101.69999999999999,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 118.4,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 135.10000000000002,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 151.7,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 168.39999999999998,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 185.10000000000002,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 201.7,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 218.39999999999998,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 235,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 251.7,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 268.4,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 285,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 301.7,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 318.4,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 335,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 351.7,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 368.4,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 385,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 401.70000000000005,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 418.4,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 435.1,
+            "y": 173.875,
+            "x": 132,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "afterMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": []
+        },
+        "state": {
+          "value": "Independent selected draft",
+          "checked": true,
+          "inputIdentity": true,
+          "rowIdentity": true,
+          "selection": [
+            2,
+            11,
+            "backward"
+          ],
+          "upDisabled": true,
+          "active": "down-pump"
+        },
+        "interrupted": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 2",
+          "receiptCount": 0,
+          "order": [
+            "valve",
+            "pump",
+            "meter"
+          ],
+          "motion": []
+        },
+        "moves": 4,
+        "persistedOrder": [
+          "valve",
+          "pump",
+          "meter"
+        ],
+        "persistedOrderMatches": true,
+        "finalOverflow": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "M",
+      "label": "M-320-light-no-preference",
+      "width": 320,
+      "height": 760,
+      "colorScheme": "light",
+      "reducedMotion": "no-preference",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "duringMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": [
+            {
+              "duration": 220,
+              "target": "row-valve"
+            },
+            {
+              "duration": 220,
+              "target": "row-pump"
+            }
+          ]
+        },
+        "frames": [
+          {
+            "t": 5.700000011920935,
+            "y": 434.265625,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 39.00000001192092,
+            "y": 434.265625,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 55.700000011920906,
+            "y": 381.8076477050781,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 72.30000001192093,
+            "y": 334.7108154296875,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 89.00000001192092,
+            "y": 302.14691162109375,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 105.7000000119209,
+            "y": 281.87860107421875,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 122.30000001192093,
+            "y": 268.94378662109375,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 139.00000001192092,
+            "y": 260.2153015136719,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 155.7000000119209,
+            "y": 254.19561767578125,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 172.40000001192095,
+            "y": 249.99314880371094,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 188.90000001192095,
+            "y": 247.102783203125,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 205.60000001192094,
+            "y": 245.11740112304688,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 222.30000001192093,
+            "y": 243.85067749023438,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 239.00000001192092,
+            "y": 243.14364624023438,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 255.60000001192094,
+            "y": 242.8822479248047,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 272.30000001192093,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 289.0000000119209,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 305.7000000119209,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 322.30000001192093,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 339.000000011921,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 355.7000000119209,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 372.30000001192093,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 389.000000011921,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 405.7000000119209,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 422.30000001192093,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "afterMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": []
+        },
+        "state": {
+          "value": "Independent selected draft",
+          "checked": true,
+          "inputIdentity": true,
+          "rowIdentity": true,
+          "selection": [
+            2,
+            11,
+            "backward"
+          ],
+          "upDisabled": true,
+          "active": "down-pump"
+        },
+        "interrupted": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 2",
+          "receiptCount": 0,
+          "order": [
+            "valve",
+            "pump",
+            "meter"
+          ],
+          "motion": []
+        },
+        "moves": 4,
+        "persistedOrder": [
+          "valve",
+          "pump",
+          "meter"
+        ],
+        "persistedOrderMatches": true,
+        "finalOverflow": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "M",
+      "label": "M-320-light-reduce",
+      "width": 320,
+      "height": 760,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "duringMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": []
+        },
+        "frames": [
+          {
+            "t": -0.13400002384184972,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 16.399999976158142,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 33.09999997615813,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 49.79999997615815,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 66.39999997615814,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 83.09999997615813,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 99.79999997615815,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 116.49999997615816,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 133.09999997615813,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 149.79999997615812,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 166.49999997615816,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 183.09999997615813,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 199.79999997615812,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 216.39999997615814,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 233.09999997615813,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 249.69999997615815,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 266.39999997615814,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 283.09999997615813,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 299.7999999761581,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 316.39999997615814,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 333.09999997615813,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 349.7999999761581,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 366.39999997615814,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 383.0999999761582,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 399.6999999761581,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 416.49999997615816,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 433.0999999761582,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "afterMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": []
+        },
+        "state": {
+          "value": "Independent selected draft",
+          "checked": true,
+          "inputIdentity": true,
+          "rowIdentity": true,
+          "selection": [
+            2,
+            11,
+            "backward"
+          ],
+          "upDisabled": true,
+          "active": "down-pump"
+        },
+        "interrupted": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 2",
+          "receiptCount": 0,
+          "order": [
+            "valve",
+            "pump",
+            "meter"
+          ],
+          "motion": []
+        },
+        "moves": 4,
+        "persistedOrder": [
+          "valve",
+          "pump",
+          "meter"
+        ],
+        "persistedOrderMatches": true,
+        "finalOverflow": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "M",
+      "label": "M-320-dark-no-preference",
+      "width": 320,
+      "height": 760,
+      "colorScheme": "dark",
+      "reducedMotion": "no-preference",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "duringMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": [
+            {
+              "duration": 220,
+              "target": "row-valve"
+            },
+            {
+              "duration": 220,
+              "target": "row-pump"
+            }
+          ]
+        },
+        "frames": [
+          {
+            "t": 5.3000000357627925,
+            "y": 434.265625,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 21.900000035762787,
+            "y": 434.265625,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 38.600000035762775,
+            "y": 381.79510498046875,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 55.2000000357628,
+            "y": 334.70111083984375,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 71.90000003576279,
+            "y": 302.14080810546875,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 88.50000003576278,
+            "y": 281.97052001953125,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 105.2000000357628,
+            "y": 268.9412536621094,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 121.90000003576279,
+            "y": 260.2135925292969,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 138.50000003576278,
+            "y": 254.22439575195312,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 155.2000000357628,
+            "y": 250.01324462890625,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 171.9000000357628,
+            "y": 247.08778381347656,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 188.60000003576278,
+            "y": 245.10748291015625,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 205.2000000357628,
+            "y": 243.85043334960938,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 221.9000000357628,
+            "y": 243.14353942871094,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 238.5000000357628,
+            "y": 242.88221740722656,
+            "x": 16,
+            "opacity": 1,
+            "running": true
+          },
+          {
+            "t": 255.2000000357628,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 271.9000000357628,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 288.6000000357628,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 305.2000000357628,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 321.80000003576276,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 338.6000000357628,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 355.2000000357628,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 371.9000000357628,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 388.5000000357628,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 405.20000003576274,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 421.9000000357628,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "afterMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": []
+        },
+        "state": {
+          "value": "Independent selected draft",
+          "checked": true,
+          "inputIdentity": true,
+          "rowIdentity": true,
+          "selection": [
+            2,
+            11,
+            "backward"
+          ],
+          "upDisabled": true,
+          "active": "down-pump"
+        },
+        "interrupted": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 2",
+          "receiptCount": 0,
+          "order": [
+            "valve",
+            "pump",
+            "meter"
+          ],
+          "motion": []
+        },
+        "moves": 4,
+        "persistedOrder": [
+          "valve",
+          "pump",
+          "meter"
+        ],
+        "persistedOrderMatches": true,
+        "finalOverflow": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "M",
+      "label": "M-320-dark-reduce",
+      "width": 320,
+      "height": 760,
+      "colorScheme": "dark",
+      "reducedMotion": "reduce",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "duringMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": []
+        },
+        "frames": [
+          {
+            "t": 3.065999964237207,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 19.699999964237207,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 36.399999964237225,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 52.99999996423722,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 69.69999996423721,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 86.39999996423722,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 102.99999996423722,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 119.59999996423721,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 136.39999996423722,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 152.9999999642372,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 169.5999999642372,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 186.2999999642372,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 203.0999999642372,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 219.69999996423724,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 236.39999996423722,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 252.9999999642372,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 269.5999999642372,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 286.2999999642372,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 302.9999999642372,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 319.69999996423724,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 336.3999999642372,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 352.9999999642372,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 369.5999999642372,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 386.3999999642372,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 402.9999999642372,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 419.69999996423724,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 436.29999996423726,
+            "y": 242.875,
+            "x": 16,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "afterMove": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 1",
+          "receiptCount": 0,
+          "order": [
+            "pump",
+            "valve",
+            "meter"
+          ],
+          "motion": []
+        },
+        "state": {
+          "value": "Independent selected draft",
+          "checked": true,
+          "inputIdentity": true,
+          "rowIdentity": true,
+          "selection": [
+            2,
+            11,
+            "backward"
+          ],
+          "upDisabled": true,
+          "active": "down-pump"
+        },
+        "interrupted": {
+          "active": "down-pump",
+          "scroll": 0,
+          "overflow": "",
+          "feedback": "Task moved to position 2",
+          "receiptCount": 0,
+          "order": [
+            "valve",
+            "pump",
+            "meter"
+          ],
+          "motion": []
+        },
+        "moves": 4,
+        "persistedOrder": [
+          "valve",
+          "pump",
+          "meter"
+        ],
+        "persistedOrderMatches": true,
+        "finalOverflow": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "N",
+      "label": "N-1000-light-no-preference",
+      "width": 1000,
+      "height": 760,
+      "colorScheme": "light",
+      "reducedMotion": "no-preference",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "beforeOpen": {
+          "open": false,
+          "active": "BODY",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "frames": [
+          {
+            "t": 1.8999999880790739,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 18.599999988079077,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 35.19999998807907,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 51.899999988079074,
+            "y": 0,
+            "x": 598,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 68.49999998807908,
+            "y": 0,
+            "x": 598,
+            "opacity": 0,
+            "running": true
+          },
+          {
+            "t": 85.29999998807907,
+            "y": 0,
+            "x": 594.15380859375,
+            "opacity": 0.274727,
+            "running": true
+          },
+          {
+            "t": 101.89999998807906,
+            "y": 0,
+            "x": 590.7107543945312,
+            "opacity": 0.520659,
+            "running": true
+          },
+          {
+            "t": 118.49999998807908,
+            "y": 0,
+            "x": 588.3424682617188,
+            "opacity": 0.689823,
+            "running": true
+          },
+          {
+            "t": 135.29999998807907,
+            "y": 0,
+            "x": 586.850341796875,
+            "opacity": 0.796404,
+            "running": true
+          },
+          {
+            "t": 335.2999999880791,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 351.89999998807906,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 368.59999998807905,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 385.19999998807907,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 401.89999998807906,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 418.59999998807905,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 435.19999998807907,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "open": {
+          "open": true,
+          "active": "unpaid",
+          "scroll": 250,
+          "overflow": "hidden",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "tabStops": [
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "unpaid",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          }
+        ],
+        "immediateApply": {
+          "open": true,
+          "active": "apply",
+          "scroll": 250,
+          "overflow": "hidden",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": [
+            {
+              "duration": 140,
+              "target": "panel"
+            },
+            {
+              "duration": 140,
+              "target": "panel"
+            }
+          ]
+        },
+        "liveReductionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelDraftDiscarded": true,
+        "escapeClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelledAnimationClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noTransitionEventClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noMotionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "dialogFits": true,
+        "finalClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "finalOverflow": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "N",
+      "label": "N-1000-light-reduce",
+      "width": 1000,
+      "height": 760,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "beforeOpen": {
+          "open": false,
+          "active": "BODY",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "frames": [
+          {
+            "t": 12.700000011920935,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 29.400000011920923,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 46.00000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 62.700000011920935,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 79.40000001192092,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 96.00000001192092,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 112.70000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 129.30000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 146.00000001192092,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 162.70000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 179.30000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 196.00000001192092,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 212.60000001192094,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 229.40000001192095,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 246.00000001192092,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 262.7000000119209,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 279.40000001192095,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 296.0000000119209,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 312.60000001192094,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 329.30000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 345.90000001192095,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 362.7000000119209,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 379.30000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 396.0000000119209,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 412.7000000119209,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 429.30000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "open": {
+          "open": true,
+          "active": "unpaid",
+          "scroll": 250,
+          "overflow": "hidden",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "tabStops": [
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "unpaid",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          }
+        ],
+        "immediateApply": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "liveReductionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelDraftDiscarded": true,
+        "escapeClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelledAnimationClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noTransitionEventClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noMotionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "dialogFits": true,
+        "finalClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "finalOverflow": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "N",
+      "label": "N-1000-dark-no-preference",
+      "width": 1000,
+      "height": 760,
+      "colorScheme": "dark",
+      "reducedMotion": "no-preference",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "beforeOpen": {
+          "open": false,
+          "active": "BODY",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "frames": [
+          {
+            "t": 14.800000011920929,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 31.500000011920932,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 48.200000011920935,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 64.80000001192093,
+            "y": 0,
+            "x": 598,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 81.40000001192092,
+            "y": 0,
+            "x": 598,
+            "opacity": 0,
+            "running": true
+          },
+          {
+            "t": 98.20000001192093,
+            "y": 0,
+            "x": 598,
+            "opacity": 0,
+            "running": true
+          },
+          {
+            "t": 114.80000001192093,
+            "y": 0,
+            "x": 594.16943359375,
+            "opacity": 0.273614,
+            "running": true
+          },
+          {
+            "t": 131.50000001192092,
+            "y": 0,
+            "x": 590.7051391601562,
+            "opacity": 0.521063,
+            "running": true
+          },
+          {
+            "t": 148.10000001192094,
+            "y": 0,
+            "x": 588.3389282226562,
+            "opacity": 0.690078,
+            "running": true
+          },
+          {
+            "t": 164.80000001192093,
+            "y": 0,
+            "x": 586.8551025390625,
+            "opacity": 0.796065,
+            "running": true
+          },
+          {
+            "t": 181.40000001192095,
+            "y": 0,
+            "x": 585.9082641601562,
+            "opacity": 0.863697,
+            "running": true
+          },
+          {
+            "t": 198.2000000119209,
+            "y": 0,
+            "x": 585.2661743164062,
+            "opacity": 0.909558,
+            "running": true
+          },
+          {
+            "t": 214.7000000119209,
+            "y": 0,
+            "x": 584.8309326171875,
+            "opacity": 0.940649,
+            "running": true
+          },
+          {
+            "t": 231.40000001192095,
+            "y": 0,
+            "x": 584.5226440429688,
+            "opacity": 0.962667,
+            "running": true
+          },
+          {
+            "t": 248.10000001192094,
+            "y": 0,
+            "x": 584.3085327148438,
+            "opacity": 0.977964,
+            "running": true
+          },
+          {
+            "t": 264.80000001192093,
+            "y": 0,
+            "x": 584.1635131835938,
+            "opacity": 0.988319,
+            "running": true
+          },
+          {
+            "t": 281.40000001192095,
+            "y": 0,
+            "x": 584.0714721679688,
+            "opacity": 0.994893,
+            "running": true
+          },
+          {
+            "t": 298.10000001192094,
+            "y": 0,
+            "x": 584.0197143554688,
+            "opacity": 0.998592,
+            "running": true
+          },
+          {
+            "t": 314.80000001192093,
+            "y": 0,
+            "x": 584.00048828125,
+            "opacity": 0.999964,
+            "running": true
+          },
+          {
+            "t": 331.5000000119209,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 348.10000001192094,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 364.80000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 381.5000000119209,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 398.10000001192094,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 414.80000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 431.500000011921,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "open": {
+          "open": true,
+          "active": "unpaid",
+          "scroll": 250,
+          "overflow": "hidden",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "tabStops": [
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "unpaid",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          }
+        ],
+        "immediateApply": {
+          "open": true,
+          "active": "apply",
+          "scroll": 250,
+          "overflow": "hidden",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": [
+            {
+              "duration": 140,
+              "target": "panel"
+            },
+            {
+              "duration": 140,
+              "target": "panel"
+            }
+          ]
+        },
+        "liveReductionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelDraftDiscarded": true,
+        "escapeClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelledAnimationClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noTransitionEventClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noMotionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "dialogFits": true,
+        "finalClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "finalOverflow": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "N",
+      "label": "N-1000-dark-reduce",
+      "width": 1000,
+      "height": 760,
+      "colorScheme": "dark",
+      "reducedMotion": "reduce",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "beforeOpen": {
+          "open": false,
+          "active": "BODY",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "frames": [
+          {
+            "t": 3.7000000119209346,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 20.400000011920923,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 37.00000001192093,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 53.600000011920926,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 70.30000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 87.00000001192092,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 103.60000001192094,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 120.30000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 137.00000001192092,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 153.60000001192094,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 170.30000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 187.00000001192092,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 203.7000000119209,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 220.30000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 237.00000001192092,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 253.7000000119209,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 270.30000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 287.0000000119209,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 303.7000000119209,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 320.30000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 337.0000000119209,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 353.60000001192094,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 370.30000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 386.90000001192095,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 403.60000001192094,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 420.30000001192093,
+            "y": 0,
+            "x": 584,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "open": {
+          "open": true,
+          "active": "unpaid",
+          "scroll": 250,
+          "overflow": "hidden",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "tabStops": [
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "unpaid",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          }
+        ],
+        "immediateApply": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "liveReductionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelDraftDiscarded": true,
+        "escapeClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelledAnimationClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noTransitionEventClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noMotionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "dialogFits": true,
+        "finalClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "finalOverflow": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "N",
+      "label": "N-320-light-no-preference",
+      "width": 320,
+      "height": 760,
+      "colorScheme": "light",
+      "reducedMotion": "no-preference",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "beforeOpen": {
+          "open": false,
+          "active": "BODY",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "frames": [
+          {
+            "t": 10.19999997615814,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 26.799999976158148,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 43.499999976158136,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 60.19999997615815,
+            "y": 0,
+            "x": 46,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 76.89999997615814,
+            "y": 0,
+            "x": 46,
+            "opacity": 0,
+            "running": true
+          },
+          {
+            "t": 93.49999997615814,
+            "y": 0,
+            "x": 42.1746826171875,
+            "opacity": 0.273237,
+            "running": true
+          },
+          {
+            "t": 110.19999997615815,
+            "y": 0,
+            "x": 38.70918273925781,
+            "opacity": 0.520773,
+            "running": true
+          },
+          {
+            "t": 126.89999997615814,
+            "y": 0,
+            "x": 36.330326080322266,
+            "opacity": 0.690691,
+            "running": true
+          },
+          {
+            "t": 143.49999997615814,
+            "y": 0,
+            "x": 34.85670471191406,
+            "opacity": 0.79595,
+            "running": true
+          },
+          {
+            "t": 160.19999997615815,
+            "y": 0,
+            "x": 33.90468978881836,
+            "opacity": 0.863951,
+            "running": true
+          },
+          {
+            "t": 176.89999997615814,
+            "y": 0,
+            "x": 33.26691436767578,
+            "opacity": 0.909506,
+            "running": true
+          },
+          {
+            "t": 193.49999997615816,
+            "y": 0,
+            "x": 32.82923126220703,
+            "opacity": 0.940769,
+            "running": true
+          },
+          {
+            "t": 210.19999997615815,
+            "y": 0,
+            "x": 32.521480560302734,
+            "opacity": 0.962751,
+            "running": true
+          },
+          {
+            "t": 226.89999997615814,
+            "y": 0,
+            "x": 32.30769729614258,
+            "opacity": 0.978022,
+            "running": true
+          },
+          {
+            "t": 243.49999997615816,
+            "y": 0,
+            "x": 32.163692474365234,
+            "opacity": 0.988308,
+            "running": true
+          },
+          {
+            "t": 260.19999997615815,
+            "y": 0,
+            "x": 32.0711669921875,
+            "opacity": 0.994917,
+            "running": true
+          },
+          {
+            "t": 276.7999999761581,
+            "y": 0,
+            "x": 32.01976013183594,
+            "opacity": 0.998589,
+            "running": true
+          },
+          {
+            "t": 293.49999997615816,
+            "y": 0,
+            "x": 32.00051498413086,
+            "opacity": 0.999963,
+            "running": true
+          },
+          {
+            "t": 310.19999997615815,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 326.7999999761581,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 343.49999997615816,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 360.19999997615815,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 376.7999999761581,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 393.59999997615813,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 410.19999997615815,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 426.7999999761581,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "open": {
+          "open": true,
+          "active": "unpaid",
+          "scroll": 250,
+          "overflow": "hidden",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "tabStops": [
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "unpaid",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          }
+        ],
+        "immediateApply": {
+          "open": true,
+          "active": "apply",
+          "scroll": 250,
+          "overflow": "hidden",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": [
+            {
+              "duration": 140,
+              "target": "panel"
+            },
+            {
+              "duration": 140,
+              "target": "panel"
+            }
+          ]
+        },
+        "liveReductionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelDraftDiscarded": true,
+        "escapeClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelledAnimationClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noTransitionEventClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noMotionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "dialogFits": true,
+        "finalClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "finalOverflow": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "N",
+      "label": "N-320-light-reduce",
+      "width": 320,
+      "height": 760,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "beforeOpen": {
+          "open": false,
+          "active": "BODY",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "frames": [
+          {
+            "t": -0.09999997615813072,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 16.500000023841864,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 33.20000002384185,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 49.90000002384187,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 83.20000002384185,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 99.80000002384185,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 116.60000002384186,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 133.20000002384188,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 149.90000002384187,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 166.60000002384186,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 183.20000002384188,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 199.90000002384187,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 216.60000002384186,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 233.20000002384188,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 249.90000002384187,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 266.50000002384184,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 283.2000000238419,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 299.90000002384187,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 316.60000002384186,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 333.2000000238419,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 349.90000002384187,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 366.50000002384184,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 383.2000000238419,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 399.9000000238418,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 416.50000002384184,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 433.2000000238419,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "open": {
+          "open": true,
+          "active": "unpaid",
+          "scroll": 250,
+          "overflow": "hidden",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "tabStops": [
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "unpaid",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          }
+        ],
+        "immediateApply": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "liveReductionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelDraftDiscarded": true,
+        "escapeClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelledAnimationClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noTransitionEventClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noMotionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "dialogFits": true,
+        "finalClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "finalOverflow": false
+      },
+      "status": "observed"
+    },
+    {
+      "id": "N",
+      "label": "N-320-dark-no-preference",
+      "width": 320,
+      "height": 760,
+      "colorScheme": "dark",
+      "reducedMotion": "no-preference",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "beforeOpen": {
+          "open": false,
+          "active": "BODY",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "frames": [
+          {
+            "t": 4.799999999999997,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 21.5,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 38.099999999999994,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 54.80000000000001,
+            "y": 0,
+            "x": 46,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 71.5,
+            "y": 0,
+            "x": 46,
+            "opacity": 0,
+            "running": true
+          },
+          {
+            "t": 88.1,
+            "y": 0,
+            "x": 42.170326232910156,
+            "opacity": 0.273548,
+            "running": true
+          },
+          {
+            "t": 104.80000000000001,
+            "y": 0,
+            "x": 38.70582580566406,
+            "opacity": 0.521013,
+            "running": true
+          },
+          {
+            "t": 121.4,
+            "y": 0,
+            "x": 36.33934783935547,
+            "opacity": 0.690046,
+            "running": true
+          },
+          {
+            "t": 138.1,
+            "y": 0,
+            "x": 34.855377197265625,
+            "opacity": 0.796045,
+            "running": true
+          },
+          {
+            "t": 154.7,
+            "y": 0,
+            "x": 33.908424377441406,
+            "opacity": 0.863684,
+            "running": true
+          },
+          {
+            "t": 171.5,
+            "y": 0,
+            "x": 33.26631546020508,
+            "opacity": 0.909549,
+            "running": true
+          },
+          {
+            "t": 188.10000000000002,
+            "y": 0,
+            "x": 32.82881164550781,
+            "opacity": 0.940799,
+            "running": true
+          },
+          {
+            "t": 204.7,
+            "y": 0,
+            "x": 32.52272033691406,
+            "opacity": 0.962663,
+            "running": true
+          },
+          {
+            "t": 221.39999999999998,
+            "y": 0,
+            "x": 32.30855178833008,
+            "opacity": 0.977961,
+            "running": true
+          },
+          {
+            "t": 238.10000000000002,
+            "y": 0,
+            "x": 32.1635627746582,
+            "opacity": 0.988317,
+            "running": true
+          },
+          {
+            "t": 254.7,
+            "y": 0,
+            "x": 32.071510314941406,
+            "opacity": 0.994892,
+            "running": true
+          },
+          {
+            "t": 271.4,
+            "y": 0,
+            "x": 32.019718170166016,
+            "opacity": 0.998591,
+            "running": true
+          },
+          {
+            "t": 288.1,
+            "y": 0,
+            "x": 32.00050735473633,
+            "opacity": 0.999964,
+            "running": true
+          },
+          {
+            "t": 304.8,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 321.4,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 338.1,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 354.8,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 371.4,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 388.1,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 404.8,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 421.5,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "open": {
+          "open": true,
+          "active": "unpaid",
+          "scroll": 250,
+          "overflow": "hidden",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "tabStops": [
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "unpaid",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          }
+        ],
+        "immediateApply": {
+          "open": true,
+          "active": "apply",
+          "scroll": 250,
+          "overflow": "hidden",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": [
+            {
+              "duration": 140,
+              "target": "panel"
+            },
+            {
+              "duration": 140,
+              "target": "panel"
+            }
+          ]
+        },
+        "liveReductionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelDraftDiscarded": true,
+        "escapeClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelledAnimationClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noTransitionEventClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noMotionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "dialogFits": true,
+        "finalClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "finalOverflow": false
+      },
+      "status": "observed",
+      "video": "page@2da20a17ad30484b717fde95787e310f.webm"
+    },
+    {
+      "id": "N",
+      "label": "N-320-dark-reduce",
+      "width": 320,
+      "height": 760,
+      "colorScheme": "dark",
+      "reducedMotion": "reduce",
+      "external": [],
+      "pageErrors": [],
+      "observations": {
+        "initialOverflow": false,
+        "beforeOpen": {
+          "open": false,
+          "active": "BODY",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "frames": [
+          {
+            "t": 1.4000000000000057,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 18,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 34.7,
+            "y": 0,
+            "x": 0,
+            "opacity": 0,
+            "running": false
+          },
+          {
+            "t": 51.400000000000006,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 68.1,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 84.69999999999999,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 101.30000000000001,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 118,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 134.6,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 151.3,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 168,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 184.60000000000002,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 201.39999999999998,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 218,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 234.60000000000002,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 251.3,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 268,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 284.7,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 301.3,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 318,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 334.6,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 351.3,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 368,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 384.6,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 401.3,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 418,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          },
+          {
+            "t": 434.6,
+            "y": 0,
+            "x": 32,
+            "opacity": 1,
+            "running": false
+          }
+        ],
+        "open": {
+          "open": true,
+          "active": "unpaid",
+          "scroll": 250,
+          "overflow": "hidden",
+          "feedback": "All receipts",
+          "receiptCount": 18,
+          "order": [],
+          "motion": []
+        },
+        "tabStops": [
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "unpaid",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "BODY",
+            "inDialog": false,
+            "browserSentinel": true
+          },
+          {
+            "active": "cancel",
+            "inDialog": true,
+            "browserSentinel": false
+          },
+          {
+            "active": "apply",
+            "inDialog": true,
+            "browserSentinel": false
+          }
+        ],
+        "immediateApply": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "liveReductionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelDraftDiscarded": true,
+        "escapeClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "cancelledAnimationClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noTransitionEventClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "noMotionClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "dialogFits": true,
+        "finalClosed": {
+          "open": false,
+          "active": "filters",
+          "scroll": 250,
+          "overflow": "",
+          "feedback": "Unpaid receipts",
+          "receiptCount": 9,
+          "order": [],
+          "motion": []
+        },
+        "finalOverflow": false
+      },
+      "status": "observed"
+    }
+  ],
+  "errors": [],
+  "browser": "158.0.8127.18"
+}

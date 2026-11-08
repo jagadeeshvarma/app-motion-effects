@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.1.0
+
+- Added progressive native implementation and trust-boundary guidance, preserving the 63 categories and source catalogue.
+- Clarified focused activation and incremental truthful evidence under tool/time limits.
+- Built comparative web/Flutter fixtures, safe grading, independent rendered reviews and immutable output snapshots.
+- Released by explicit owner authorisation with known limitations: one animation assertion and four evidence-honesty reviews failed; strict native grading and Claude runtime testing remain blocked. Original results are retained; this release does not claim fully verified capability. See docs/audit/SKILL_AUDIT.md.
+
 ## 2.0.1
 
 - Restricted release contents to an explicit nine-file manifest; reject unexpected files, symlinks and special files before replacing artifacts.

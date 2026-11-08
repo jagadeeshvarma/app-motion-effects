@@ -1,0 +1,72 @@
+{
+  "scope": "Manual behaviour interpretation of6fresh routing contexts, separate from implementation grading. No model-generated self-assessment is the sole evidence; output content, file hashes and loading traces inspected.",
+  "results": [
+    {
+      "id": "positive-motion",
+      "rawStatus": "PASS",
+      "status": "PASS",
+      "interpretation": "Target body read observed; scoped source-only audit, no file edits.",
+      "observedTargetRead": true,
+      "observedCompanionRead": false,
+      "changedPaths": [],
+      "elapsedSeconds": 28.017,
+      "taskSHA256": "8093a8f5ee9c200a809ffe810288b92cb4f94068859e44708f42a8cc09339feb"
+    },
+    {
+      "id": "positive-feedback",
+      "rawStatus": "PASS",
+      "status": "PASS",
+      "interpretation": "Target body read observed; accurate unfinished-save findings, no file edits.",
+      "observedTargetRead": true,
+      "observedCompanionRead": false,
+      "changedPaths": [],
+      "elapsedSeconds": 21.957,
+      "taskSHA256": "b680eaa4f8a6deadc3867ec2d4f030170ca51301eb4042ae474287b2db53bce3"
+    },
+    {
+      "id": "negative-copy",
+      "rawStatus": "REVIEW REQUIRED",
+      "status": "PASS",
+      "interpretation": "Only requested labels returned; no target body read observed and no edits. Internal inactivity is not directly provable.",
+      "observedTargetRead": false,
+      "observedCompanionRead": false,
+      "changedPaths": [],
+      "elapsedSeconds": 9.224,
+      "taskSHA256": "d6fc8c3a2fe26ee5be5ef80dda4ad212c85c49c8f7f5d4bc3faec8f1ff3efd6c"
+    },
+    {
+      "id": "negative-data",
+      "rawStatus": "REVIEW REQUIRED",
+      "status": "PASS",
+      "interpretation": "Requested data shape explained; no target body read observed and no edits. Internal inactivity is not directly provable.",
+      "observedTargetRead": false,
+      "observedCompanionRead": false,
+      "changedPaths": [],
+      "elapsedSeconds": 14.804,
+      "taskSHA256": "1f800106aa0d02e73cf90cdff3ff6d85e21a8902989030569b6d91ef84aa6384"
+    },
+    {
+      "id": "ambiguous-sluggish",
+      "rawStatus": "NOT APPLICABLE",
+      "status": "PASS",
+      "interpretation": "Target body read; diagnosis stayed qualified/source-only, no forced effect or edits. Claimed denied server startup is not promoted to independently verified execution.",
+      "observedTargetRead": true,
+      "observedCompanionRead": false,
+      "changedPaths": [],
+      "elapsedSeconds": 43.493,
+      "taskSHA256": "0a0cbf8a451fbe0c24f1274278a734852aba4cd893ac94656f438b1111bfca2b"
+    },
+    {
+      "id": "overlap-form",
+      "rawStatus": "REVIEW REQUIRED",
+      "status": "NOT APPLICABLE",
+      "interpretation": "Companion body read; target body not observed. Task stayed scoped without duplicate work. This is one controlled co-read observation, not general composition proof.",
+      "observedTargetRead": false,
+      "observedCompanionRead": true,
+      "changedPaths": [],
+      "elapsedSeconds": 29.129,
+      "taskSHA256": "33633b9dbd67bacb3e1d2cc23d168e042ead712e15eadded573fc947eee3042f"
+    }
+  ],
+  "limits": "Read evidence is observable trace evidence, not proof of every hidden host action. No general automatic-discovery/composition guarantee."
+}

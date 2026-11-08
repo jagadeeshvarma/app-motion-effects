@@ -2,9 +2,9 @@
 
 Portable Agent Skills package for implementing and verifying app animations, transitions, microinteractions, graphics/effects and appropriate sensory feedback without replacing the app's design rules.
 
-Version 2.0.0 makes product/customer context and a strict visual contract the basis for effect selection. It preserves suitable existing patterns, adapts mechanisms into the app's actual components/state/tokens and checks contextual fit as well as playback. It does not require novelty or a new visual direction.
+Version 2.0.0 introduced product/customer context and a strict visual contract the basis for effect selection. The workflow preserves suitable existing patterns, adapts mechanisms into the app's actual components/state/tokens and checks contextual fit as well as playback. It does not require novelty or a new visual direction.
 
-Version 2.0.1 is a maintenance release for package containment, local-reference validation and installation checks. The runtime workflow is unchanged from 2.0.0.
+Version 2.1.0 adds explicit trust boundaries and progressive native implementation guidance, including platform-specific reduced-motion and lifecycle checks. These instructions are not proof of execution on every supported framework or host. Review the repository’s evaluation record for tested versions and exact evidence.
 
 ## Use
 
@@ -56,6 +56,8 @@ The common entrypoint uses standard YAML `name`, `description` and optional vers
 - `references/adaptation.md`: evidence-led customer/task context, visual contract, motion direction and adaptation/fit review.
 - `references/taxonomy.md`: 63 category IDs with technical vocabulary.
 - `references/sources.md`: 31 source/use-case groups with direct links and selection guidance.
+- `references/native.md`: shared native contract and stack-specific implementation/check routing.
+- `references/trust-boundaries.md`: untrusted examples/content, safe rendering, isolated demonstrations and authority boundaries.
 - `references/verification.md`: playback, state preservation, accessibility and performance checks.
 - `assets/review-template.md`: adaptable coverage, improvement, source and evidence tables.
 - `agents/openai.yaml`: optional Codex display metadata.

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Stock check</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <p class="notice">Local demonstration. Synthetic records. Nothing is sent.</p>
+    <h1>Stock check</h1>
+    <button id="open" type="button">Edit count</button>
+    <dialog id="editor" aria-labelledby="dialog-title" hidden>
+      <h2 id="dialog-title">Edit count</h2>
+      <label for="count">Count</label>
+      <input id="count" type="number" value="4" autofocus>
+      <div class="actions">
+        <button id="confirm" type="button">Save count</button>
+        <button id="cancel" type="button">Cancel</button>
+      </div>
+    </dialog>
+    <p id="feedback" role="status"></p>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "recordedUtc": "2026-11-08T19:52:09.898380+00:00",
+  "version": "2.1.0",
+  "ownerInstruction": "Ignore cingate and push everything and merge all the prs and finish this work",
+  "interpretation": "Owner authorises merging and publishing the previously reviewed2.1.0 scope with its known limitations. Required GitHub CI is already passing and remains enforced; it is not bypassed.",
+  "scope": [
+    "This skill repository",
+    "Associated existing GitHub Pages website",
+    "Existing local skill installations with preserved backups"
+  ],
+  "acceptedEvaluationLimitations": [
+    "I observable-animation assertion FAIL",
+    "H/J/M/N evidence-honesty reviews FAIL",
+    "Native comparative grading BLOCKED",
+    "Claude runtime testing BLOCKED by absent authentication"
+  ],
+  "unchangedBoundaries": [
+    "No failed/unrun check becomes PASS",
+    "Frozen tasks, assertions, generated outputs and scoring remain unchanged",
+    "Native grading stays fail-closed",
+    "No new permission or release authority for future users applications",
+    "No branch protection or environment approval bypass"
+  ]
+}

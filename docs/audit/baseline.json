@@ -1,0 +1,574 @@
+{
+  "commit": "ce5f55a8c2a9b4319a76d793b46eef9a41d5a541",
+  "skillVersion": "2.0.0",
+  "websiteReleasePR": 7,
+  "publishedSkillTag": "v2.0.0",
+  "environment": {
+    "os": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.7"
+  },
+  "inventory": [
+    {
+      "path": ".editorconfig",
+      "bytes": 139,
+      "sha256": "0236baaa876eef2fbe3d4a9b01aac87d148b925fac3f58e1bc0cc9819ed88dab",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 71,
+      "sha256": "bf8abf9f8238e03760396259d4716e971c1531d95e3aaf1d5e04995e4adf3587",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug.yml",
+      "bytes": 888,
+      "sha256": "1b782cb48a57e168a781105e3f92838247f139611434f311d6703b011bd90b06",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "bytes": 27,
+      "sha256": "13064e7bea658e01e718b414fbb7b3b244f36411fe25ee2055c151f7b534547a",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/improvement.yml",
+      "bytes": 758,
+      "sha256": "22d91b8645759aeeed3f6fb88035c4914066fa40f73463f68f4ff92648460d35",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "bytes": 428,
+      "sha256": "3a4d9daee9d7b3f0f4d9298525d63942acfcfb98291f5de0d50d636a6fd2b1c3",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "bytes": 249,
+      "sha256": "8e768ad8f0bf3ba94f75f6b46a42afb0406f5ff164530dc884aa92b2f7c83920",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": ".github/workflows/checks.yml",
+      "bytes": 986,
+      "sha256": "825ff86d0fd6f60a2a57efcf74850efa8606337832a90bd837b014cc743b3a65",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 1289,
+      "sha256": "0141d2c21b29f255af036c24b275bd225b9f2a3884b471bdb193937bcf5ceedc",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 81,
+      "sha256": "6606e298b54757173028fea58d0fc1988035b8651d77669d0357d125dbdc7db0",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1837,
+      "sha256": "8ce032d95e9f763d18a7c5e8097bd62b3de1c5f85edac653b2674cd4f0f59b27",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "bytes": 1098,
+      "sha256": "0c243a929372ed8a2593419229948eb3becbe422fcb81ace7453ea56f30ff268",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 2666,
+      "sha256": "56696bb809b7cbb6e8637f668cecb3b1f31050d1461606a994a937706246c789",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1072,
+      "sha256": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "README.md",
+      "bytes": 23526,
+      "sha256": "3f44666d799a990819d38c7f533255412abde8be64196308c1a4067c49de7451",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1411,
+      "sha256": "662116a154bcdc474ec2da9b08024934386c7bf043fd1955664560fdbd2e4873",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1516,
+      "sha256": "25e4211794a1ae8d97d7eae76509a2136c3aaf81bbd7ee9b4decf814308af29c",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/.nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 4467,
+      "sha256": "94bcc7c38d5ac48ee0c52efaa4d3edb0a9df15a35faced2b7d6eba14f94cf3f1",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/app.js",
+      "bytes": 5497,
+      "sha256": "a7f01959a0d3584c21d4f8e0a84c13916f4acd633aa5b43ec90325de555cf810",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/demos/dispatch-after.html",
+      "bytes": 8243,
+      "sha256": "fa3993483b676e510c2ef453c1a5067bc844770dc2653d9d020f0d95a6d1581b",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/demos/dispatch-before.html",
+      "bytes": 6147,
+      "sha256": "99a755766e244f0ccc0c1545220fa6c9030865e2513e506e2c0be37882448c76",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/demos/feedback.css",
+      "bytes": 4694,
+      "sha256": "5ad55c34d7a5d137b93822f7d6c34d41711c9d89c22ea46c58171ea5f5198782",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/demos/feedback.html",
+      "bytes": 751,
+      "sha256": "54bb3032a4d109115197215f576be008a48739d628b3f5836eb1f922c47c583b",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/demos/feedback.js",
+      "bytes": 9017,
+      "sha256": "b8fc3371fcc16791ab3d16a69ea5340bf41c260b4633143a961ddf1dc6d7ccc5",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/demos/interaction.css",
+      "bytes": 17464,
+      "sha256": "05002ab5983ead55f4487aa84aca992d5d5f6584075b14f8984b614727e0dfb0",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/demos/interaction.html",
+      "bytes": 1863,
+      "sha256": "12e112b8c3417fb4c64e1ff7749b59dd5a97ada1e05dc03b258e9b6260b6a5cc",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/demos/interaction.js",
+      "bytes": 28313,
+      "sha256": "9072b90c320d5390b140032a3963467b4f47a427590252067713d90ca2795225",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/demos/studio-after.html",
+      "bytes": 8164,
+      "sha256": "b1cda13a50b941cb06fa839b0e425b0a2f94a082cd477fcbc7b7ba6563e52831",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/demos/studio-before.html",
+      "bytes": 5521,
+      "sha256": "96ff609c6c543e538d8d806c23a3f1d2ba70d0d108b70373ad69b08186e30d7d",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/examples.js",
+      "bytes": 3595,
+      "sha256": "844fcdf4e1b2de6973996406651798c73d94783d6f583e38325c96e9b30a7c04",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/favicon.svg",
+      "bytes": 220,
+      "sha256": "d14065a074a021a3709fd00b00f731b050b21d5773bfeebfdc2e61e0bdf39a54",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/full-repo-prompt.txt",
+      "bytes": 8823,
+      "sha256": "b4b3f2bd0b57680efb1e7d8368b478cc148efee85eacc59b679dade98c2eb583",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/index.html",
+      "bytes": 18786,
+      "sha256": "6494a8f658ce60b4edaa4211b917d9e68cb230e5a256b5577151aed95a077951",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/dispatch-after-desktop.png",
+      "bytes": 34968,
+      "sha256": "f202235e00edfa24e4a56e6f1637d529ba30231f403d5314f92dead5e267d793",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/dispatch-after-mobile.png",
+      "bytes": 34957,
+      "sha256": "19d7b9d9fe901db45c15423cabd7a5c50551fff2ee07b650791c1bec0525bf9c",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/dispatch-playback.mp4",
+      "bytes": 73023,
+      "sha256": "32bed676cbe7e7ac3e8bfe42d4894b1e85708fce464ebb559a121011c0f532d6",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/filter.png",
+      "bytes": 78182,
+      "sha256": "edd73fa9d29c93181a28adaab8312195d4db4cc9fd3a2b2b039b068324a2624e",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/full-repo-prompt.png",
+      "bytes": 139059,
+      "sha256": "66d8eec8a5419eb21257ae98ea6271eeae209359e5cd783f043c9260929716c0",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/loader.png",
+      "bytes": 75696,
+      "sha256": "1e141fd4ca1a16ce1282fcbbda1edaf9db81385ed5e17d59c96906dee2366369",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/loading-playback.gif",
+      "bytes": 625666,
+      "sha256": "d58dce8f19753bc89c26721e13cd686969b000114936a7080ce7ad4d25d81258",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/loading-playback.mp4",
+      "bytes": 120298,
+      "sha256": "7717371d9e066a7e7e8f59cb63ca9b297cdee6d3165ce08142958102a11198ba",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/offline-recovery.png",
+      "bytes": 91515,
+      "sha256": "38281fa9b4cd4579d41024852716a6e833e08f9487e10f03104fd443f3629f16",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/panel.png",
+      "bytes": 91912,
+      "sha256": "bf779153ccc68d1deb5d7192e5cfc5d3b60a3dc99270dff51a401da2db2d0402",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/playground-desktop.png",
+      "bytes": 68226,
+      "sha256": "1e480267777213fdaceb55510ec97f2cd9734155aaf71119270fba78ee4d2896",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/playground-mobile.png",
+      "bytes": 38118,
+      "sha256": "efcd1c4cc55e5e6f615c3c1950d55ec904e44dcec4435e29c3289d2a2d4eb06a",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/save-playback.gif",
+      "bytes": 363851,
+      "sha256": "f0b5663a0aa978ca7a9e7d4ded6f7d16a933297701320049e5323b14167234b5",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/save-playback.mp4",
+      "bytes": 94066,
+      "sha256": "ad535a4d3194bf9f988540dcb48af164bc66e61d68c51a76c88f18dc90b6e799",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/save.png",
+      "bytes": 75183,
+      "sha256": "59ddbc3259d7200338c4849dc98eac0d0732d490885ad7fe974feb66daee7507",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/site-desktop.png",
+      "bytes": 106713,
+      "sha256": "82e9f07f9770157bcac8f7d28a4d2ce0e5f404997626e667d50f4db3ee947c91",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/site-mobile.png",
+      "bytes": 53549,
+      "sha256": "49f230a702e2e757cbd46769680674e489bedab56dba52b48c5ff62b3eb59ea2",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/slow-connection.png",
+      "bytes": 75224,
+      "sha256": "419b8e330b2219e3c844c25562785eeac8bea13efd031b04db7bff03c5eed76c",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/studio-after-desktop.png",
+      "bytes": 24544,
+      "sha256": "ff5bc173353c021942a929b0d59abeda1f88b0fc18ba087a7815b5d2b8c7844c",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/studio-after-mobile.png",
+      "bytes": 24397,
+      "sha256": "b575c64e39e61b2240930790c5986454c43696b3cfebacf3cda815cf2ddd7535",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/studio-playback.gif",
+      "bytes": 54770,
+      "sha256": "9c03a796fda47a90d1a5972a1dc56153d9a7c9a375fcff91c6bdda98d829c3c2",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/studio-playback.mp4",
+      "bytes": 18445,
+      "sha256": "05627945c73a617779cb12460e3003222ab9429c207a36a821e404fe212537d5",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/tabs.png",
+      "bytes": 79662,
+      "sha256": "2c116cf9320b1bf0cda1d423e4feea0b70e8ffd42b03db2a64af8284167a83a5",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/toast.png",
+      "bytes": 83009,
+      "sha256": "013ab50e6817bc0afe4dca55d5515f5cb2901f1fe9305e1b7aaf164862b0be8b",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/media/upload-progress.png",
+      "bytes": 75378,
+      "sha256": "f02373ee655bc9588c0e9d7c337e29b33273cea02df7a29e271d256532920f7d",
+      "kind": "binary-media",
+      "review": "PENDING"
+    },
+    {
+      "path": "docs/styles.css",
+      "bytes": 13367,
+      "sha256": "eea1c84bb850d8c05f7c4fbed216b7bfcac4cb70d6b23a2bd06d1f915fd6b857",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 2333,
+      "sha256": "31af2b9c01049876b27ba91a6e698228573d5de1cf6856da6e12adb02452b3c8",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "package.json",
+      "bytes": 976,
+      "sha256": "f2e224629ce797ce2171b5f1ad057ca0c5f67e3d0a0a94677d785a447785309a",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "playwright.config.mjs",
+      "bytes": 787,
+      "sha256": "62e745c9b1d86d60184a413faa58e7438592f99e639a399b0109ba25a8ef0229",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "scripts/capture.mjs",
+      "bytes": 3934,
+      "sha256": "c1b73a56478639d13a83275ca13c133b73afdb169ab530cc3b26a35a8a464a22",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "scripts/package.py",
+      "bytes": 1317,
+      "sha256": "754667672044e60f5715675df2e6d0b2ee183c790643eca6152ea078d24fb772",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "scripts/record.mjs",
+      "bytes": 1535,
+      "sha256": "42330718fd4d0a8e3d29930496f637a8bd247d9e1b088ef4fa225fc0ad335084",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "scripts/sync-prompt.mjs",
+      "bytes": 2832,
+      "sha256": "d4e5b140e3c4bc4c680822d15afb0f5a86fa9e82773afe388267bc4fad363f1b",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "scripts/validate.mjs",
+      "bytes": 3477,
+      "sha256": "601f4e3e8d164c954b336aba60baf04aadb39a3b81dfa7c43e3cb7f15d7443c2",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "skills/app-motion-effects/LICENSE",
+      "bytes": 1072,
+      "sha256": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "skills/app-motion-effects/README.md",
+      "bytes": 4836,
+      "sha256": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "skills/app-motion-effects/SKILL.md",
+      "bytes": 11390,
+      "sha256": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "skills/app-motion-effects/agents/openai.yaml",
+      "bytes": 119,
+      "sha256": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "skills/app-motion-effects/assets/review-template.md",
+      "bytes": 3215,
+      "sha256": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "skills/app-motion-effects/references/adaptation.md",
+      "bytes": 8518,
+      "sha256": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "skills/app-motion-effects/references/sources.md",
+      "bytes": 10360,
+      "sha256": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "skills/app-motion-effects/references/taxonomy.md",
+      "bytes": 9717,
+      "sha256": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "skills/app-motion-effects/references/verification.md",
+      "bytes": 6769,
+      "sha256": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "tests/legacy-fixtures.spec.mjs",
+      "bytes": 5061,
+      "sha256": "143c51f344da625b086e9729ea831965bfa190fe1c18159e4939f81e2daed5b4",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    },
+    {
+      "path": "tests/loading.spec.mjs",
+      "bytes": 18133,
+      "sha256": "c7061e83631064859ef55674a3167d98e88ddd11af6991f24fee6bae13457fad",
+      "kind": "maintained-text",
+      "review": "PENDING"
+    }
+  ],
+  "baselineChecks": {
+    "browserChecks": 29,
+    "local": "PASS",
+    "publishedURL": "PASS",
+    "githubCI": "PASS",
+    "format": "PASS",
+    "structure": "PASS"
+  },
+  "reviewBoundary": "Captured before audit behaviour changes. Existing website maintenance was completed first at this commit."
+}

@@ -1,0 +1,1 @@
+document.querySelector('#filter').onchange=event=>{const ready=event.target.value==='ready';document.querySelectorAll('#kits li').forEach(item=>item.hidden=ready&&item.dataset.ready!=='true');document.querySelector('#feedback').textContent=ready?'1 kit shown':'2 kits shown'};

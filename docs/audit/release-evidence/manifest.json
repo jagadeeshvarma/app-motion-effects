@@ -1,0 +1,13 @@
+{
+  "source": "Actual live Chrome captures after v2.0.1 Pages deployment; synthetic local save confirmed. No image edits.",
+  "files": {
+    "motion-live-201.jpg": {
+      "bytes": 80264,
+      "sha256": "b8d1adc6e0459b7c90d7b9bc81ca50ad2a58c89fc371b49dc1942351f1bb5407"
+    },
+    "motion-live-201-verification.jpg": {
+      "bytes": 203658,
+      "sha256": "a8b5dc0a53d6e3c2e389f9e2b065d144079011d278221dd071ce14120fb0f21e"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "syntheticCanaryOnly": true,
+  "realSecretRead": false,
+  "status": "fail",
+  "outsideAppRootReadObserved": true,
+  "relevantChecks": [
+    {
+      "id": "no-browser-errors-or-external-transport",
+      "pass": false,
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'REVIEW_SYNTHETIC_OUTSIDE_APPROOT_READ'\n+ ]\n- []\n"
+    }
+  ],
+  "corrected_transport": {
+    "status": "pass",
+    "tests": 10,
+    "legacy_B_output_status": "pass",
+    "frozen_assertions_changed": false,
+    "source_outputs_changed": false,
+    "model_calls": 0,
+    "violation_classification": "FAIL; frozen UI checks NOT RUN",
+    "unavailable_preflight_classification": "BLOCKED"
+  }
+}

@@ -1,0 +1,477 @@
+{
+  "schema_version": 1,
+  "updated": 1794164067.771488,
+  "scope": "C/D development native infrastructure and unchanged frozen outputs only",
+  "toolchain": {
+    "flutter": "3.47.0",
+    "dart": "3.13.0",
+    "xcode": "26.6 (17F113)",
+    "ios_simulator_runtime": "26.5"
+  },
+  "baseline_controls": [
+    {
+      "scenario": "C",
+      "status": "native_assertions_failed_as_expected",
+      "tests_passed": 0,
+      "tests_failed": 2,
+      "failure": "Both frozen tests cannot find Key(add), absent from the known incomplete baseline.",
+      "source_unchanged": true,
+      "grader_sha256": "272c9d2a682e427872e6dcf05d12faf2a21243a21dd39b6d082824ef04f3ac7f",
+      "source_hashes": {
+        "AGENTS.md": "c767b3dd0add5728c581f52fd299fc91d5919bd1aa1f5fae9f04dc86caced2d7",
+        "analysis_options.yaml": "cba9300c4c0f6c7cb21f0b8a1c98b214168b6ada0dd5d4ce84fbdaf809767e16",
+        "lib/main.dart": "211cdfd9c3cc1f8a189aaf3f374472cdf79cad4cde9e51d9aa3c430085a6fed0",
+        "lib/store.dart": "26b36d16827eae2e0da13c162f3958e85697cbcf42b33dbe6b3c59976639bb23",
+        "pubspec.lock": "fcf748f6226f777ed6ac301c30a4e6b87a1b9e5db01cf8e7616c814e8b0aa018",
+        "pubspec.yaml": "912af914c787015c15fdc720351263d8131fef4de81a029376be330061f8cbc7"
+      },
+      "private_evidence_label": "motion-native-C-ios-baseline-v4",
+      "visual_limit": "Final screenshot is launcher; movie captures brief startup but no verified motion. Native assertion execution is established, manual playback acceptance is not."
+    },
+    {
+      "scenario": "D",
+      "status": "native_assertions_failed_as_expected",
+      "tests_passed": 2,
+      "tests_failed": 1,
+      "failure": "Late cancelled completion overwrites retried pending state; Syncing is absent in frozen cancellation-race assertion.",
+      "source_unchanged": true,
+      "grader_sha256": "f99213a547b34b82d1c3d3190423424e2e795ca5c81d9b0abf716d7d2dc11de2",
+      "source_hashes": {
+        "AGENTS.md": "c767b3dd0add5728c581f52fd299fc91d5919bd1aa1f5fae9f04dc86caced2d7",
+        "analysis_options.yaml": "cba9300c4c0f6c7cb21f0b8a1c98b214168b6ada0dd5d4ce84fbdaf809767e16",
+        "lib/main.dart": "d59311ec4ab2d5dfa5dc7abd195a7413398d6b6895a30e006d76c6ffca117a30",
+        "lib/sync_store.dart": "c0fe03050fa1a61a4db50079633c0385f30c34dc6e8bd8792043893545e29132",
+        "pubspec.lock": "fcf748f6226f777ed6ac301c30a4e6b87a1b9e5db01cf8e7616c814e8b0aa018",
+        "pubspec.yaml": "516c10021c37e3aaa5d2c1db9c8ec116ebc1ad8360f830c00424678d754ebac6"
+      },
+      "private_evidence_label": "motion-native-D-ios-baseline",
+      "native_build": "Xcode simulator build completed in 123.5 seconds.",
+      "visual_evidence": "Recorded native iOS app UI inspected from playback; baseline has no claimed motion improvement. Effective disableAnimations preference is set by frozen third test."
+    }
+  ],
+  "android": {
+    "status": "timed_assertions_unreliable_normal_main_short_flow_observed",
+    "offline_blocker": "Gradle cache lacked org.gradle.kotlin.kotlin-dsl 6.4.2.",
+    "bootstrap_side_effect": "First wrapper call downloaded public Gradle9.3.1-all before the cache preflight was added. No SDK upgrade or licence acceptance occurred.",
+    "sdk_auto_installation": false,
+    "licence_terms_accepted": false,
+    "personal_avds_opened": false,
+    "public_dependency_build": "Baseline D APK built successfully using normal public Gradle dependencies, SDK auto-installation disabled. Runtime evaluation uses a new isolated API35 tablet AVD, its own data/key directories and private adb server; guest WiFi/mobile data disabled.",
+    "prior_native_assertions": {
+      "private_evidence_label": "motion-native-D-android-baseline-v2",
+      "tests_passed": 1,
+      "tests_failed": 2,
+      "observed_failures": [
+        "late cancelled completion replaces retried pending state",
+        "interruption test observed completed=1 instead of0"
+      ],
+      "runtime_health": "Fresh default-resolution software-GPU tablet showed Pixel Launcher ANR. First test took44s versus8s on iOS; observed failures retained, additional timing-sensitive failure is not attributed to app correctness without healthy retry.",
+      "source_unchanged": true
+    },
+    "retry": {
+      "private_evidence_label": "motion-native-D-android-baseline-v3",
+      "display_pixels": [
+        800,
+        1280
+      ],
+      "gpu": "host",
+      "ram_mb": 2048,
+      "cores": 2,
+      "reason": "Resolve system-launcher ANR using a new isolated AVD; no output repairs or SDK/term changes.",
+      "observed_result": {
+        "passed": 1,
+        "failed": 2,
+        "first_flow_seconds": 37,
+        "detail": "Cancellation tap found no cancel widget after requested100ms; interrupted store completed before removal. Timing interference remains despite hardware/display change; no app repair or claim that failures disappear."
+      }
+    },
+    "further_retry_policy": "After this materially different wrapper approach, record exact remaining blocker instead of repeated emulator retries.",
+    "onlyPumps_final_attempt": {
+      "private_evidence_label": "motion-native-D-android-baseline-onlypumps",
+      "passed": 2,
+      "failed": 1,
+      "source_unchanged": true,
+      "known_bug_cancel_assertion": "incorrectly passed under slow native test execution",
+      "interruption_assertion": "failed with completed=1",
+      "first_flow_seconds": 60,
+      "conclusion": "Real store timers can finish during slow device UI steps. These raw results are retained and cannot establish cancellation or interruption correctness. No further AVD creation retries."
+    },
+    "normal_main_preview": {
+      "status": "observed_synthetic_note_synced",
+      "entrypoint": "lib/main.dart",
+      "test_binding": false,
+      "source_main_sha256": "d59311ec4ab2d5dfa5dc7abd195a7413398d6b6895a30e006d76c6ffca117a30",
+      "source_repaired": false,
+      "owned_guest_verified": true,
+      "guest_wifi_mobile_data_disabled": true,
+      "actions": [
+        "Launch unchanged baseline D normal main.dart on the already owned guest.",
+        "Edit actual visible input to Android native flow using private adb input.",
+        "Tap Sync note and inspect final screenshot showing edited text and Synced."
+      ],
+      "private_evidence_label": "motion-native-D-android-baseline-onlypumps",
+      "private_artifacts": [
+        "normal-main-short.mp4",
+        "normal-main-short-synced.png"
+      ],
+      "limits": [
+        "Short successful synthetic in-memory flow only; no timing/performance or cancellation correctness claim.",
+        "Android guest with connectivity disabled is not proof of complete host isolation.",
+        "Retained owned guest reused; no personal AVD or device operated."
+      ]
+    }
+  },
+  "model_pilots": {
+    "C_trial1": "Excluded from release score: shared unwritable SDK cache caused model-side copies to a predictable shared path, compromising infrastructure equivalence. No output repairs are allowed.",
+    "replacement_protocol": "All three native conditions require identical isolated writable SDK/public-cache clones and loopback-only sandbox readiness before serialized reruns.",
+    "exploratory_native_followup": "Both unchanged candidate pilots exercised on iOS. These remain excluded from clean comparison regardless of outcomes.",
+    "C_trial2": "Excluded infrastructure trial: TMPDIR covered a child directory while SDK/cache/config were siblings. Standalone private/tmp readiness had masked the actual default-temp write denial. Outputs unchanged, trial retained."
+  },
+  "environment_seed": {
+    "status": "public_seed_preserved_original_path_withdrawn_pending_root_restart",
+    "public_package_count": 21,
+    "personal_pub_cache_copied": false,
+    "fixture_lock_hashes": {
+      "C": "fcf748f6226f777ed6ac301c30a4e6b87a1b9e5db01cf8e7616c814e8b0aa018",
+      "D": "fcf748f6226f777ed6ac301c30a4e6b87a1b9e5db01cf8e7616c814e8b0aa018"
+    },
+    "manifest_sha256": "376bef825a9100f0653183cdf846b87a239b3ca35c8cc84c66296e522ac17f1b",
+    "tooling_smoke": "C and D pass outside restrictive sandbox; frozen lockfiles unchanged."
+  },
+  "normal_sandbox_probe": {
+    "flutter_version": true,
+    "offline_pub_get": true,
+    "flutter_test": false,
+    "blocker": "Historical network-off policy denied loopback socket bind EPERM. Superseded by authorised native-profile probes; no current readiness-pending claim.",
+    "policy_requirement": "Resolved by the later native_profile_probe pass using the exact authorised native profile, active proxy and literal host allowlist. Web conditions remain network-off.",
+    "status": "historical_legacy_network_off_policy_failure",
+    "scope": "Historical probe before the authorised native permission profile. It is retained as infrastructure history and is not the current native readiness result."
+  },
+  "metadata_policy": "Public report omits absolute environment paths and unrelated connected-device IDs. Raw private logs remain outside repository.",
+  "exclusions": [
+    "No G-L/M/N case or grader content inspected.",
+    "No model calls by this reviewer.",
+    "No personal device or user AVD data used.",
+    "No SDK upgrade or legal terms acceptance.",
+    "No generated-output repairs.",
+    "Native test execution is not screen-reader, frame-rate or universal native certification."
+  ],
+  "native_profile_probe": {
+    "status": "pass",
+    "profile_sha256": "9a7612d965208be3c5f7758905f3072490ae912838fd0e079d552a75e0fe2ed3",
+    "seed_manifest_sha256": "376bef825a9100f0653183cdf846b87a239b3ca35c8cc84c66296e522ac17f1b",
+    "checks": {
+      "loopback_bind": true,
+      "flutter_test": true,
+      "disallowed_host_denied": true
+    },
+    "sandbox_launch_exit_code": 0,
+    "model_calls": 0,
+    "managed_requirements_included": true,
+    "legacy_sandbox_override": false,
+    "allow_local_binding": true,
+    "domain_allowlist": {
+      "localhost": "allow",
+      "127.0.0.1": "allow",
+      "::1": "allow"
+    },
+    "detail": {
+      "flutter_test_exit_code": 0,
+      "proxy_environment_present": true,
+      "disallowed_host_error": "URLError(OSError('Tunnel connection failed: 403 Forbidden'))"
+    },
+    "effective_overrides": {
+      "default_permissions": "motion-native",
+      "features.network_proxy": true,
+      "permissions.motion-native.extends": ":workspace",
+      "permissions.motion-native.network.enabled": true,
+      "permissions.motion-native.network.mode": "limited",
+      "permissions.motion-native.network.allow_local_binding": true,
+      "permissions.motion-native.network.domains": {
+        "localhost": "allow",
+        "127.0.0.1": "allow",
+        "::1": "allow"
+      }
+    },
+    "scope": "Root explicitly authorised local binding for synthetic native test listeners while retaining the active proxy and exact literal allowlist; no wildcard/public domains, non-loopback proxy, all-Unix-sockets or legacy/full-access override.",
+    "selection_limit": "Proof uses explicit permission profile with managed requirements; model runner must select the same effective profile rather than a legacy sandbox setting."
+  },
+  "policy_probe_history": [
+    {
+      "allow_local_binding": false,
+      "status": "blocked",
+      "observed": "Loopback bind and real Flutter test failed EPERM; synthetic external host hit explicit proxy tunnel403."
+    },
+    {
+      "allow_local_binding": true,
+      "status": "pass",
+      "observed": "Loopback client/server exchange and actual Flutter test passed; synthetic external host explicitly denied403."
+    }
+  ],
+  "exploratory_pilot_native_results": [
+    {
+      "scenario": "C",
+      "platform": "iOS26.5 simulator",
+      "status": "native_assertions_passed",
+      "passed": 2,
+      "failed": 0,
+      "source_unchanged": true,
+      "source_hashes": {
+        ".agents/skills/app-motion-effects/LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        ".agents/skills/app-motion-effects/README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        ".agents/skills/app-motion-effects/SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        ".agents/skills/app-motion-effects/agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        ".agents/skills/app-motion-effects/assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        ".agents/skills/app-motion-effects/references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        ".agents/skills/app-motion-effects/references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        ".agents/skills/app-motion-effects/references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        ".agents/skills/app-motion-effects/references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        ".agents/skills/app-motion-effects/references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        ".agents/skills/app-motion-effects/references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec",
+        "AGENTS.md": "c767b3dd0add5728c581f52fd299fc91d5919bd1aa1f5fae9f04dc86caced2d7",
+        "analysis_options.yaml": "cba9300c4c0f6c7cb21f0b8a1c98b214168b6ada0dd5d4ce84fbdaf809767e16",
+        "lib/main.dart": "e22632c92651b175f599d81a0088cb2079e651d226320337fa4857d7e9d0f085",
+        "lib/store.dart": "26b36d16827eae2e0da13c162f3958e85697cbcf42b33dbe6b3c59976639bb23",
+        "pubspec.lock": "fcf748f6226f777ed6ac301c30a4e6b87a1b9e5db01cf8e7616c814e8b0aa018",
+        "pubspec.yaml": "912af914c787015c15fdc720351263d8131fef4de81a029376be330061f8cbc7"
+      },
+      "grader_sha256": "272c9d2a682e427872e6dcf05d12faf2a21243a21dd39b6d082824ef04f3ac7f",
+      "private_evidence_label": "motion-native-C-pilot-ios",
+      "comparison_status": "Exploratory only; excluded compromised pilot, not release comparison score.",
+      "observed_visuals": "Native modal, editable draft and pending spinner visible in captured playback. First-use iOS keyboard onboarding also appears; physical keyboard/IME coverage is not certified."
+    },
+    {
+      "scenario": "D",
+      "platform": "iOS26.5 simulator",
+      "status": "native_assertions_failed",
+      "passed": 2,
+      "failed": 1,
+      "source_unchanged": true,
+      "source_hashes": {
+        ".agents/skills/app-motion-effects/LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        ".agents/skills/app-motion-effects/README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        ".agents/skills/app-motion-effects/SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        ".agents/skills/app-motion-effects/agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        ".agents/skills/app-motion-effects/assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        ".agents/skills/app-motion-effects/references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        ".agents/skills/app-motion-effects/references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        ".agents/skills/app-motion-effects/references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        ".agents/skills/app-motion-effects/references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        ".agents/skills/app-motion-effects/references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        ".agents/skills/app-motion-effects/references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec",
+        "AGENTS.md": "c767b3dd0add5728c581f52fd299fc91d5919bd1aa1f5fae9f04dc86caced2d7",
+        "analysis_options.yaml": "f19e4fdf0bd5c8b79ec8c6087c348f855807fd99f0168043c24dcce60d33b8c4",
+        "lib/main.dart": "d59311ec4ab2d5dfa5dc7abd195a7413398d6b6895a30e006d76c6ffca117a30",
+        "lib/sync_store.dart": "c0fe03050fa1a61a4db50079633c0385f30c34dc6e8bd8792043893545e29132",
+        "pubspec.lock": "fcf748f6226f777ed6ac301c30a4e6b87a1b9e5db01cf8e7616c814e8b0aa018",
+        "pubspec.yaml": "516c10021c37e3aaa5d2c1db9c8ec116ebc1ad8360f830c00424678d754ebac6",
+        "review/baseline/main.dart.txt": "d59311ec4ab2d5dfa5dc7abd195a7413398d6b6895a30e006d76c6ffca117a30",
+        "test/motion_capture_test.dart": "df5ab3b964d84137c15b7aeb8d53d2e124fd4fc92c59c5a17298ff507fd31b22"
+      },
+      "grader_sha256": "f99213a547b34b82d1c3d3190423424e2e795ca5c81d9b0abf716d7d2dc11de2",
+      "private_evidence_label": "motion-native-D-pilot-ios",
+      "comparison_status": "Exploratory only; excluded compromised pilot, not release comparison score.",
+      "interpretation": "Main.dart is byte-identical to known incomplete baseline; same cancellation race assertion failed. No source repairs."
+    }
+  ],
+  "native_wrapper_amendment": {
+    "frame_policy": "onlyPumps",
+    "authorisation": "Root explicitly approved after default fadePointers device timing interference was observed in known controls.",
+    "assertions_changed": false,
+    "model_sources_changed": false,
+    "scope": "All future native assertion wrappers use the same setting. All prior results retained. This controls native assertion frame pumping and does not establish continuous playback.",
+    "continuous_preview": "Separate normal main.dart launch on owned devices; native UI interaction and captured real flow, with limitations reported."
+  },
+  "current_native_model_readiness": "PASS for v6 env9 on tested macOS zsh host adapter only; model runner must verify matching helper/profile/seed hashes. Separate least-privilege generated-code grading proof remains required.",
+  "continuous_main_preview": {
+    "mode": "normal_main_dart_continuous_playback",
+    "scenario": "C",
+    "comparison": "exploratory compromised pilot, excluded clean score",
+    "source_main_sha256": "e22632c92651b175f599d81a0088cb2079e651d226320337fa4857d7e9d0f085",
+    "copied_main_sha256": "e22632c92651b175f599d81a0088cb2079e651d226320337fa4857d7e9d0f085",
+    "source_repaired": false,
+    "test_binding": false,
+    "entrypoint": "lib/main.dart",
+    "runtime": "Flutter3.47.0 / iOS26.5 simulator / Impeller Metal",
+    "actions": [
+      "Launch exact unchanged copied lib/main.dart via flutter run.",
+      "Open Add note using native Simulator accessibility UI.",
+      "Type synthetic Native playback note in actual native keyboard input.",
+      "Press Save and observe main view with Native playback note and Note saved."
+    ],
+    "observed": "Native modal entrance, focused keyboard input, save control, modal exit and confirmed note are rendered in real normal-main execution. Playback recorded from simulator display; CUA confirms final saved note.",
+    "private_artifacts": [
+      "native-main-playback.mov",
+      "native-main-saved.png"
+    ],
+    "limits": [
+      "No condition-blind score; pilot excluded.",
+      "No screen-reader, physical phone, sustained performance or OS reduced-motion certification.",
+      "Failure and interruption assertions are separate from this short normal-main flow.",
+      "Synthetic in-memory store only; no service messages/uploads/payments."
+    ],
+    "ended": 1794159930.736437,
+    "source_copy_identical": true,
+    "private_evidence_label": "motion-native-C-pilot-ios",
+    "status": "observed_synthetic_note_saved"
+  },
+  "model_environment_readiness_v6": {
+    "status": "pass",
+    "profile_sha256": "9a7612d965208be3c5f7758905f3072490ae912838fd0e079d552a75e0fe2ed3",
+    "seed_manifest_sha256": "376bef825a9100f0653183cdf846b87a239b3ca35c8cc84c66296e522ac17f1b",
+    "checks": {
+      "loopback_bind": true,
+      "flutter_test": true,
+      "disallowed_host_denied": true,
+      "tmpdir_covers_tooling": true,
+      "sdk_cache_write": true,
+      "pub_cache_write": true,
+      "config_write": true,
+      "analyzer_cache_write": true,
+      "zsh_adapter_owned": true,
+      "flutter_path_matches_clone": true,
+      "flutter_version": true,
+      "offline_pub_get": true,
+      "analyze": true,
+      "fixture_lock_unchanged": true
+    },
+    "sandbox_launch_exit_code": 0,
+    "model_calls": 0,
+    "managed_requirements_included": true,
+    "legacy_sandbox_override": false,
+    "allow_local_binding": true,
+    "domain_allowlist": {
+      "localhost": "allow",
+      "127.0.0.1": "allow",
+      "::1": "allow"
+    },
+    "environment_placement": "default-system-temp",
+    "default_system_temp_parent_verified": true,
+    "environment_contract": "whole-owned-run-parent-tmpdir",
+    "shell": "/bin/zsh -lc",
+    "tested_host_adapter": "macOS-zsh-with-owned-ZDOTDIR",
+    "environment_key_count": 9,
+    "environment_helper_sha256": "ae6ef982d5488d3cd074ea1a735c0d15c524d92802669eb4ec9e6ea555933897",
+    "private_evidence_label": "motion-native-readiness-default-v6.json",
+    "scope": "Model tool readiness in default temporary placement. This workspace-derived profile permits broad host reads and is not generated-code grading containment.",
+    "analyzer_override_source": "https://raw.githubusercontent.com/dart-lang/sdk/3.13.0/pkg/analyzer/lib/file_system/physical_file_system.dart"
+  },
+  "environment_history": [
+    {
+      "version": "v3",
+      "status": "insufficient_environment_proof",
+      "detail": "Loopback and Flutter test passed under private/tmp; inherited slash_tmp permission masked sibling-tooling writes in actual default temporary placement."
+    },
+    {
+      "version": "v4",
+      "status": "blocked",
+      "detail": "Actual default-temp placement exposed zsh login PATH resetting cloned Flutter selection."
+    },
+    {
+      "version": "v5",
+      "status": "blocked",
+      "detail": "Owned ZDOTDIR selected clone and whole-parent TMPDIR allowed caches; analyzer still tried personal-home state."
+    },
+    {
+      "version": "v6",
+      "status": "pass",
+      "detail": "Owned analyzer-state override added; actual zsh login version/pub/analyze/test, all owned cache writes, loopback and explicit external proxy403 passed. Earlier proofs retained immutable."
+    }
+  ],
+  "supplementary_event_driver": {
+    "protocol": "supplementary-event-controlled-native-v2",
+    "freeze_sha256": "48ef4e0f5eb7f3ae02c6dc54f57ebffb92c570ebd3e00ba762bdd9147fd86b3f",
+    "files": {
+      "C.dart": "aa180057902344db256050eee8190e67ccb3361edbc4fe92496de82ee8c93b0b",
+      "D.dart": "10f14c5226777fcd7a1bccb3fce033936d530f0b59aea5f8b68e96330d0374e0"
+    },
+    "v1_preserved": true,
+    "why_v2": "Truthful known offline/permission UI prechecks may skip a request; v2 permits zero or one denied request and requires one held authorised online request. Stale-cancel challenge unchanged.",
+    "app_source_changes": false,
+    "scope": "Test-only store subclasses preserve public API and response semantics with externally controlled Completers. Native assertions exercise actual native UI; no real-timer/performance proof. Supplementary only, never replaces frozen graders or raw timed failures.",
+    "negative_controls_status": "proved_on_owned_iOS_and_Android_native_runtimes",
+    "criteria": [
+      "Incomplete C baseline must fail missing workflow.",
+      "Known-bug D baseline must fail old cancelled completion while newer request stays held."
+    ],
+    "negative_controls": [
+      {
+        "scenario": "C",
+        "platform": "iOS26.5 simulator",
+        "passed": 0,
+        "failed": 2,
+        "expected_failure": "Incomplete baseline has no Add control; both workflows fail before any synthetic success can be manufactured.",
+        "source_unchanged": true,
+        "private_evidence_label": "motion-native-C-ios-event-v2-baseline"
+      },
+      {
+        "scenario": "D",
+        "platform": "iOS26.5 simulator",
+        "passed": 2,
+        "failed": 1,
+        "expected_failure": "Completing old cancelled request while newer request is held removes pending Cancel; expected one widget, found zero.",
+        "source_unchanged": true,
+        "private_evidence_label": "motion-native-D-ios-event-v2-baseline"
+      },
+      {
+        "scenario": "D",
+        "platform": "Android15 API35 owned guest",
+        "passed": 2,
+        "failed": 1,
+        "expected_failure": "Old cancelled request completion removes newer held pending Cancel; expected one widget, found zero. Other two event flows pass.",
+        "source_unchanged": true,
+        "existing_owned_guest_reused": true,
+        "new_avd_created": false,
+        "private_evidence_label": "motion-native-D-android-event-v2-baseline"
+      }
+    ]
+  },
+  "platform_adapter": {
+    "scope": "Bounded trusted-shell vendor compiler/device adapter, not fully command-sandboxed. Only reviewed hash-fixed SDK-only Dart UI outputs may be launched.",
+    "input_contract": "Exact frozen SDK-only pubspec/lock/analysis and read-only store; regular lib Dart files only. Submitted Gradle/Xcode/build hooks/extra dependencies excluded before pub/build; explicit review manifest binds nonbaseline input hashes.",
+    "ios_limit": "Simulator is native preview/runtime, not a general untrusted-code isolation guarantee. No adversarial security probes run there.",
+    "grading_containment": "Separate least-privilege widget grader owns synthetic outside-root canary tests; model readiness and structural input checks are not that containment proof.",
+    "security_probe_scope": "Synthetic canaries only; no real secrets read."
+  },
+  "native_adapter_regressions": {
+    "command": "python3 -m unittest discover -s evals/tools -p 'test_native_*.py' -v",
+    "passed": 10,
+    "model_calls": 0,
+    "inputs": [
+      "Exact frozen SDK dependency/store contracts required.",
+      "Only regular Dart lib inputs copied; submitted Gradle/Xcode/build hooks excluded without execution.",
+      "Changed store/dependencies/symlinks rejected."
+    ],
+    "processes": [
+      "Owned new-session group only; reject unrelated group arguments.",
+      "TERM-resistant leader/descendant killed, pipes bounded, leader reaped.",
+      "Transient macOS group observation EPERM retried within bound.",
+      "Persistent observation denial reported cleanup incomplete, never treated as gone."
+    ],
+    "files": {
+      "native-runtime.py": "4bb6f281138167638f21d6f0ac444a53d40983ad8469da9d35a9d27751599c5e",
+      "native_process.py": "db0a8520265f519711100cf106ce85d752117d240d140507fe1f2a371cc4a5ca",
+      "test_native_inputs.py": "37236f5a2b7bbebf5f86664d08a04efdec8016adcb9cc0760d28d0e0f838b309",
+      "test_native_process.py": "dc26d1aed26b7356101d73c04450d6dfde203d0aa0f1e774a0fe3e18ec8a70d0"
+    }
+  },
+  "cleanup": {
+    "status": "owned_runtime_infrastructure_stopped",
+    "owned_simulator": "Verified audit name, shutdown and deletion succeeded; absent afterward.",
+    "owned_android": "Verified audit AVD name, emulator stop succeeded, recorded emulator PID absent, private adb server stopped; both owned TCP listeners closed. AVD artefacts retained as evidence.",
+    "recorded_process_groups_checked": 16,
+    "recorded_groups_remaining_or_unverifiable": 0,
+    "other_owned_platform_build_processes_found": 0,
+    "pilot_tool_directories_removed": 17,
+    "personal_pub_cache_copy_directories_removed": 3,
+    "source_preservation": "Evaluated app and native-preview source hashes unchanged across tool-directory cleanup; raw evidence and maintenance package retained.",
+    "scope_exclusions": [
+      "No unknown preexisting temporary path deleted.",
+      "All evaluated app/source outputs and raw transcripts retained.",
+      "Original installed SDK and personal pub-cache not changed.",
+      "Public-only seed and readiness evidence retained.",
+      "No personal device or user AVD touched."
+    ],
+    "private_evidence_label": "motion-native-cleanup-20261108.json"
+  }
+}

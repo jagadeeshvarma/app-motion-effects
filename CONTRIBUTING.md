@@ -37,18 +37,20 @@ Maintainers review and merge contributions. No CLA or mandatory purchase is requ
 
 Edit `docs/full-repo-prompt.txt`, then run `npm run sync:prompt` and `npm run format`. This keeps the README code block and the page’s copyable prompt identical. GitHub supplies its own copy control for fenced code blocks; the static website implements the clipboard button and an honest manual fallback. Browser tests verify the full copied text.
 
-## Package and installation changes
+## Skill behaviour and package changes
 
-The reviewed runtime file list is `scripts/skill-manifest.json`. Add resources deliberately; unexpected files and symlinks fail packaging. `npm test` includes package containment and disposable installation regressions. Development scripts and test artefacts belong outside the installed skill.
+The reviewed runtime file list is `scripts/skill-manifest.json`. Add a resource there deliberately; unexpected files and symlinks fail packaging. `npm test` includes package containment and disposable installation regressions. Audit fixtures, logs and development scripts belong outside the installed skill.
 
-For an existing local skill, review the diff and keep a backup outside discovery directories before replacement. Confirm the intended version is discovered and restore the backup if verification fails. Preserve unrelated local customisations.
+Behavioural changes should include equal-budget fresh-context comparisons against the previous skill and an agent without it when practical. Keep graders outside the evaluated context, freeze criteria first, use synthetic data, and report blocked tools rather than counting them as passes. Web/mobile guidance, builds and actual native playback are different evidence levels. The reproducible corpus is documented in `evals/README.md`; running model evaluations uses authenticated quota and is intentionally not an ordinary contribution CI prerequisite.
+
+For an existing local skill, review the diff and make a backup before replacement. Keep the backup outside discovery directories to avoid loading two versions. Confirm the intended version is discovered; restore the backup if verification fails. Do not overwrite unrelated local customisations.
 
 ## Maintainer releases
 
 Use semantic versions. Keep `SKILL.md` metadata, `package.json`, the lockfile, changelog and website download URL aligned. A distribution-only patch can preserve the runtime workflow; instruction changes require behavioural evidence as well as format checks. Do not describe blocked native or agent-runtime checks as passing.
 
 1. Prepare a focused PR from an isolated branch and record the release scope, checks and rollback. Main requires the current **Structure and browser checks** result and an up-to-date branch. Do not bypass these protections.
-2. Validate installation, runtime file manifest and relevant behavioural/visual gates. If a required capability gate fails, leave that candidate unreleased; separately verified maintenance may proceed with its narrower claims.
+2. Validate installation, runtime file manifest and relevant behavioural/visual gates. By default, leave a candidate unreleased if a required capability gate fails; separately verified maintenance may proceed with narrower claims. The one-off owner authorisation for 2.1.0 is recorded in `docs/audit/release-authorization-2.1.0.json`. It accepts documented limitations without changing test results, CI protections or native execution controls, and is not standing permission for future releases.
 3. Merge through the protected PR workflow. In a clean checkout of the actual merge commit, run `npm ci`, the browser installation command above, `npm test` and `npm run package`. Confirm the archive version, `dist/integrity.json`, `dist/SHA256SUMS` and intended file list.
 4. Use the existing GitHub Releases flow to create an immutable `v<version>` tag at that verified commit and attach the versioned ZIP, `integrity.json` and `SHA256SUMS`. Release notes must identify tested scope and material limitations. Download the published assets again and verify their hashes. Never silently replace assets under an existing release.
 5. The Pages workflow builds and deploys only main. Wait for its actual success, then open the live homepage, examples, verification page and download. A pushed commit or successful build alone is not a verified deployment.

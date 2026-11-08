@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "verifiedUtc": "2026-11-08T19:40:30.459401+00:00",
+  "auditCandidate": {
+    "version": "2.1.0",
+    "status": "BLOCKED",
+    "pullRequest": "https://github.com/jagadeeshvarma/app-motion-effects/pull/8",
+    "draft": true,
+    "merged": false,
+    "published": false,
+    "evaluatedRuntimeSHA256": "0b2d445f0e75dde2b075c507c02b71ef437e9009b0d411231737c735471f45f3",
+    "sourceParentCommit": "67ef80caec2e66728adf618a5ef80831c3251328",
+    "infrastructureCI": {
+      "status": "PASS",
+      "url": "https://github.com/jagadeeshvarma/app-motion-effects/actions/runs/42515766031"
+    },
+    "reason": [
+      "I observable-animation assertion FAIL",
+      "H/J/M/N manual evidence-honesty gates FAIL; generation timeouts remain recorded",
+      "Strict trusted native grading admission BLOCKED",
+      "Claude runtime authentication absent"
+    ],
+    "manualReviewAmendment": "H/J prior scores retained in final-manual-review.v1 files; current scores apply the frozen no-zero rule consistently with M/N."
+  },
+  "maintenance": {
+    "version": "2.0.1",
+    "status": "PASS",
+    "local": true,
+    "pushed": true,
+    "merged": true,
+    "published": true,
+    "live": true,
+    "releaseCommit": "ef239bd78341ee4ab9c5e781b2e7f5a28cf6c2e5",
+    "pullRequest": "https://github.com/jagadeeshvarma/app-motion-effects/pull/9",
+    "runtimeFiles": 9,
+    "workflowUnchangedFrom": "v2.0.0",
+    "archiveSHA256": "1a36585938872983a9ea9569886e2a6a5e4c17732b903f36c019987eff0da2c5",
+    "integritySHA256": "d7437db492949836d88e43953f4a2d5cf197d98b109d3aabdb37f3bda1326136",
+    "releasedAssetDownloadAndPerFileHashes": "PASS",
+    "tagTargetsReleaseCommit": "PASS",
+    "cleanFinalCommitChecks": {
+      "status": "PASS",
+      "dependencyInstall": "npm ci --ignore-scripts --offline; 4 cached pinned packages",
+      "formatAndStructure": "PASS",
+      "packageTests": 27,
+      "installTests": 2,
+      "browserTests": 33,
+      "localBrowser": "installed Chrome158; PREVIEW_URL points at byte-identical maintenance sources"
+    },
+    "CI": {
+      "pullRequest": {
+        "status": "PASS",
+        "url": "https://github.com/jagadeeshvarma/app-motion-effects/actions/runs/42515548172"
+      },
+      "main": {
+        "status": "PASS",
+        "url": "https://github.com/jagadeeshvarma/app-motion-effects/actions/runs/42515677595"
+      }
+    },
+    "release": "https://github.com/jagadeeshvarma/app-motion-effects/releases/tag/v2.0.1",
+    "publishedAt": "2026-11-08T19:36:06Z",
+    "deployment": {
+      "status": "PASS",
+      "url": "https://github.com/jagadeeshvarma/app-motion-effects/actions/runs/42515678502",
+      "target": "https://jagadeeshvarma.github.io/app-motion-effects/",
+      "commit": "ef239bd78341ee4ab9c5e781b2e7f5a28cf6c2e5"
+    },
+    "liveVerification": {
+      "status": "PASS",
+      "browserTests": 33,
+      "elapsedSeconds": 28.5,
+      "sourceRoutesByteMatched": 7,
+      "sourceManifest": "release-evidence/live-source.json",
+      "chromeWalkthrough": "Observed Saving then confirmed Saved in live compare; verified published download link and evidence/limits page; both tabs retained",
+      "captures": "release-evidence/manifest.json"
+    }
+  },
+  "releaseBoundary": {
+    "branchProtectionBypassed": false,
+    "futureAppReleaseAuthorityAdded": false,
+    "installedGlobalSkillsReplaced": false,
+    "advancedRuntimeIncludedInMaintenance": false,
+    "applicationProductionChanges": false
+  },
+  "remainingLimits": {
+    "web": "Chrome synthetic fixtures and website only; not all frameworks/browsers/real backends",
+    "iOS": "Exploratory Flutter build/simulator/control playback; clean comparison BLOCKED",
+    "Android": "Exploratory Flutter build/owned emulator/control playback; clean comparison BLOCKED",
+    "ClaudeCode": "File installation/format only; runtime BLOCKED by authentication",
+    "otherAgentsAndNativeFrameworks": "NOT RUN beyond source guidance",
+    "physicalDeviceAccessibilityAndSustainedPerformance": "NOT RUN"
+  },
+  "rollback": {
+    "skill": "Previous immutable v2.0.0 ZIP or preserved local backup",
+    "website": "Checked protected-main revert of PR9; prior site commit ce5f55a8c2a9b4319a76d793b46eef9a41d5a541"
+  },
+  "failuresRetained": [
+    "Initial default-sandbox browser/loopback failures and absent local bundled Chromium are environment limits; installed Chrome rerun passes.",
+    "First hosted narrow-layout attempts failed at320px; root cause fixed with wrapping and wider-metric regression; original assertions retained.",
+    "All measured candidate functional failures, timeouts and invalid native cohorts remain in results."
+  ],
+  "cleanup": {
+    "native": "Owned devices/groups/tools cleaned as recorded in native-runtime.json; original SDK/user devices preserved",
+    "localPreviewServers": "Two confirmed audit-owned4173/4175 servers stopped after live verification; source/worktrees/evidence retained"
+  }
+}

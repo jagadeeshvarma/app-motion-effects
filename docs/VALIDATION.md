@@ -14,7 +14,7 @@ The current gallery contains ten interactions: content loading, an indeterminate
 
 The page has a full-viewport workbench, desktop left navigation, a large After preview, optional Before/Compare modes and a compact mobile selector. The hero uses the same saving primitive. The visual contract retains the paper/green tokens and system typography, with no decorative eyebrow labels or arrow links.
 
-Twenty-nine browser tests cover the current workbench and retained fixtures: actual animation sampling, row geometry, cancellation, honest retries, draft and error preservation, paused progress, keyboard modal/tab behaviour, notification dwell/fading, five responsive widths, reduced motion, full prompt equality and a real clipboard round trip. Clipboard-denial coverage checks the selected-text fallback and honest feedback. Results are in [GitHub Actions](https://github.com/jagadeeshvarma/app-motion-effects/actions).
+Thirty-three browser tests cover the current workbench and retained fixtures: actual animation sampling, row geometry, cancellation, honest retries, draft and error preservation, paused progress, keyboard modal/tab behaviour, notification dwell/fading, five responsive widths, reduced motion, full prompt equality and a real clipboard round trip. Clipboard-denial coverage checks the selected-text fallback and honest feedback. Results are in [GitHub Actions](https://github.com/jagadeeshvarma/app-motion-effects/actions).
 
 Timer-focused checks use Playwright’s virtual clock after observing the corresponding state. Playback, screenshots and recordings use real browser time. Screenshots establish appearance; played interactions establish motion. Mobile widths are web previews, not native device certification.
 
@@ -22,7 +22,7 @@ The full-repo invocation prompt has one canonical text file. `scripts/sync-promp
 
 Original CSS, SVG, native Web Animations and native dialog semantics are sufficient; no new runtime dependency or animation engine was added. References: [Clipboard writeText](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText), [native dialog](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog), [tabs pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/). No external implementation or asset was copied.
 
-Run `npm test` for verification, `npm run screenshots` for actual renders and `node scripts/record.mjs` for loading/saving playback when Playwright’s optional recording helper is installed. Required CI must pass before merging; Pages reruns checks before deployment. Skill instructions and the v2.0.0 downloadable package remain unchanged.
+Run `npm test` for verification, `npm run screenshots` for actual renders and `node scripts/record.mjs` for loading/saving playback when Playwright’s optional recording helper is installed. Required CI must pass before merging; Pages reruns checks before deployment. Version 2.1.0 adds the audited skill guidance. Its comparative failures and unverified platforms remain explicit; see the maintainer evaluation below.
 
 ## Explicit limits
 
@@ -33,3 +33,7 @@ Run `npm test` for verification, `npm run screenshots` for actual renders and `n
 - The reference catalogue is a research shortlist, not a complete or perpetual licence/maintenance audit.
 - Before versions intentionally retain baseline limitations for comparison. They are not recommended production snippets.
 - Automated checks are bounded regression evidence, not proof that all visual or interaction defects are absent.
+
+## Maintainer evaluation
+
+The [maintainer audit](audit/SKILL_AUDIT.md) preserves this earlier validation as the baseline and separates structural checks, authored website tests, comparative agent-generated outputs and native runtime evidence. See its explicit result states and limitations before interpreting support claims. The dependency-free installed package excludes audit logs and evaluation projects.

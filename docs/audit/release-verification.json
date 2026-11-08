@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "version": "2.1.0",
+  "status": "PENDING",
+  "previousReleaseRecord": "release-verification-2.0.1.json",
+  "ownerAuthorisation": "release-authorization-2.1.0.json",
+  "originalAuditAcceptance": "FAIL",
+  "knownLimitations": [
+    "I observable-animation assertion FAIL",
+    "H/J/M/N evidence-honesty reviews FAIL",
+    "Native comparative grading BLOCKED",
+    "Claude runtime testing BLOCKED by absent authentication"
+  ],
+  "sourceRuntimeFreezeSHA256": "0b2d445f0e75dde2b075c507c02b71ef437e9009b0d411231737c735471f45f3",
+  "requiredGitHubCI": "ENFORCED; no bypass",
+  "merged": false,
+  "published": false,
+  "live": false
+}

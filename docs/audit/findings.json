@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "baseline": "ce5f55a8c2a9b4319a76d793b46eef9a41d5a541",
+  "findings": [
+    {
+      "id": "SR-001",
+      "severity": "medium",
+      "title": "Release assembly accepts hidden files and dereferences file symlinks outside the package",
+      "status": "FIXED",
+      "locations": [
+        {
+          "file": "scripts/package.py",
+          "lines": "14-24"
+        },
+        {
+          "file": "scripts/validate.mjs",
+          "lines": "5-9,38-50"
+        }
+      ],
+      "evidence": {
+        "baseline": "ce5f55a8c2a9b4319a76d793b46eef9a41d5a541",
+        "method": "Isolated git-archive copy; synthetic data only",
+        "mutations": [
+          "Create skills/app-motion-effects/.env.audit containing AUDIT_TOKEN=SYNTHETIC_CONFIG_CANARY_NO_REAL_SECRET",
+          "Create linked-canary.md symlink to a synthetic-canary.txt file outside the repository copy, containing SYNTHETIC_EXTERNAL_CANARY_NO_REAL_SECRET"
+        ],
+        "commands": [
+          "node scripts/validate.mjs",
+          "python3 scripts/package.py"
+        ],
+        "observed": [
+          "Validator exit 0: Structure passed: v2.0.0, 63 category IDs, 32 valid local references, portable files and synthetic demos.",
+          "Packager exit 0: Packaged 11 files in app-motion-effects-2.0.0.zip; SHA256SUMS written.",
+          "ZIP member app-motion-effects/.env.audit contains the synthetic configuration canary.",
+          "ZIP member app-motion-effects/linked-canary.md contains bytes from the external synthetic file."
+        ]
+      },
+      "root_cause": "Packaging enumerates every regular-looking path with rglob/is_file/read_bytes. is_file and the validator statSync follow symlinks; there is no package file allowlist or exclusion of ignored/hidden configuration files. Credential-pattern scanning cannot establish safe artifact membership.",
+      "impact": "A local release can unintentionally distribute ignored configuration or external file contents. A contributor-added link could reference a file on the release machine. This is an artifact containment failure, not an agent sandbox escape, and no real secret exposure was observed.",
+      "acceptance_test": [
+        "A clean package contains exactly the reviewed, approved manifest.",
+        "A file symlink, directory symlink, broken symlink and special file anywhere below the package root fail before any archive/manifests are replaced.",
+        "An unexpected hidden configuration or unknown resource fails closed; updating the approved file list requires an explicit reviewed change.",
+        "Check that every archive member is under one safe app-motion-effects/ root and contains expected bytes, and that manifests match."
+      ],
+      "baseline_status": "open_at_baseline",
+      "fix": "Explicit11-file manifest, symlink/special-file rejection and staged packaging.",
+      "validation": "tests/package-safety.py",
+      "dependencies": [],
+      "release_status": "NOT RELEASED"
+    },
+    {
+      "id": "SR-002",
+      "severity": "medium",
+      "title": "Portable local-link validation accepts references outside the installable package",
+      "status": "FIXED",
+      "locations": [
+        {
+          "file": "scripts/validate.mjs",
+          "lines": "52-65"
+        }
+      ],
+      "evidence": {
+        "method": "Isolated baseline copy with synthetic target",
+        "mutation": "Append [External synthetic canary](../../../synthetic-canary.txt) to skills/app-motion-effects/README.md; create that synthetic target outside the repository copy.",
+        "command": "node scripts/validate.mjs",
+        "observed": "Exit 0: Structure passed: v2.0.0, 63 category IDs, 33 valid local references, portable files and synthetic demos. The reference target is not present in the installable ZIP."
+      },
+      "root_cause": "The validator resolves references relative to a source file and checks existence on the current machine. It does not require skill-local links to stay within the skill root, or repository documentation links to stay within the repository.",
+      "impact": "Validation can certify a package as portable even though its supporting reference only exists on the maintainer machine. This is a portability false positive, not evidence that the present nine-file package contains such a link.",
+      "acceptance_test": [
+        "Reject absolute filesystem links, path traversal escaping the owning root, encoded escapes, and links resolving through symlinks outside that root.",
+        "For installed skill files, require local references to remain inside the installable skill; repository-only docs may refer within the repository.",
+        "Validate the extracted ZIP in an otherwise empty temporary directory so source-checkout files cannot satisfy missing package references."
+      ],
+      "baseline_status": "open_at_baseline",
+      "fix": "Contained local refs and symlink-aware targets in validator and packager.",
+      "validation": "tests/package-safety.py",
+      "dependencies": [],
+      "release_status": "NOT RELEASED"
+    },
+    {
+      "id": "SR-003",
+      "severity": "low",
+      "title": "The no-service regression guard does not cover browser request mechanisms",
+      "status": "FIXED",
+      "locations": [
+        {
+          "file": "scripts/validate.mjs",
+          "lines": "75-98"
+        },
+        {
+          "file": "SECURITY.md",
+          "lines": "13"
+        },
+        {
+          "file": "tests/loading.spec.mjs",
+          "lines": "1-479"
+        }
+      ],
+      "evidence": {
+        "method": "Isolated baseline mutation; no outbound request sent",
+        "mutation": "Prepend navigator.sendBeacon(\"/__audit_canary__\", \"SYNTHETIC_ONLY\"); to docs/demos/interaction.js.",
+        "command": "node scripts/validate.mjs",
+        "observed": "Exit 0; the synthetic-demo/locality message still passes. Browser request-capture proof was attempted with routes restricted to an artificial loopback origin, but Chrome launch was denied by the execution sandbox. No browser execution is claimed."
+      },
+      "root_cause": "Three lexical request names are checked in four legacy HTML files and interaction.js. Other browser requests, indirect calls, imported scripts, the website shell and feedback.js are not constrained by this guard. Existing browser tests do not assert a request allowlist.",
+      "impact": "A future regression could add service calls without this check noticing. Inspection found no such service call in current fixtures. Source modification is not itself a sandbox bypass, and this lexical check should not be represented as an isolation boundary.",
+      "acceptance_test": [
+        "Use browser request interception/fulfilment to permit only an explicit list of static fixture assets and fail on unexpected requests, service mutations, navigation, workers and sockets as relevant.",
+        "A synthetic sendBeacon canary and a disallowed static remote asset must fail verification without reaching any real service.",
+        "Keep the structural scan described as a bounded guard; document actual browser evidence and limits accurately."
+      ],
+      "baseline_status": "open_at_baseline",
+      "fix": "Local-only CSP, static request-path allowlist and synthetic blocked beacon/remote-image checks. Lexical scan remains a heuristic.",
+      "validation": "tests/network-policy.spec.mjs",
+      "dependencies": [],
+      "release_status": "NOT RELEASED"
+    },
+    {
+      "id": "SR-004",
+      "severity": "low",
+      "title": "The portable full-repository prompt imposes a global visual-copy restriction",
+      "status": "FIXED",
+      "locations": [
+        {
+          "file": "docs/full-repo-prompt.txt",
+          "lines": "55-59"
+        },
+        {
+          "file": "skills/app-motion-effects/SKILL.md",
+          "lines": "23-29"
+        }
+      ],
+      "evidence": {
+        "method": "Instruction/source comparison, not model execution",
+        "observed": "The copied prompt unconditionally prohibits decorative eyebrow labels. The skill instead derives allowed visual/copy patterns from the target project and prohibits carrying another product defaults into it. This generic prompt is copied into both the README and public page."
+      },
+      "root_cause": "A particular presentation restriction is embedded in the portable invocation instead of being conditional on the target visual contract.",
+      "impact": "For a target whose approved visual system uses contextual category labels, the invocation can silently add a foreign copy/style rule. Redundant headings and unnecessary controls can still be avoided without universally prohibiting a specific pattern.",
+      "acceptance_test": [
+        "The canonical invocation derives copy/layout restrictions from the target contract or explicitly labels them as user-selected preferences.",
+        "Compare a target that forbids eyebrow labels and one that explicitly permits them: existing target rules govern in each case. Label this as a source-level acceptance scenario unless a real agent run is performed.",
+        "Regenerate the README/page and verify full prompt equality after changing canonical text."
+      ],
+      "baseline_status": "open_at_baseline",
+      "fix": "Canonical prompt now follows target visual contract; website retains its own no-eyebrow presentation.",
+      "validation": "docs/full-repo-prompt.txt; tests/loading.spec.mjs",
+      "dependencies": [],
+      "release_status": "NOT RELEASED"
+    },
+    {
+      "id": "SR-005",
+      "severity": "low",
+      "title": "Manual Pages dispatch is not source-restricted to main as the security policy claims",
+      "status": "FIXED",
+      "locations": [
+        {
+          "file": ".github/workflows/pages.yml",
+          "lines": "2-5,11-44"
+        },
+        {
+          "file": "SECURITY.md",
+          "lines": "13"
+        }
+      ],
+      "evidence": {
+        "method": "Workflow source review and official GitHub documentation; no workflow dispatch performed",
+        "observed": "The push trigger filters main, but workflow_dispatch is also enabled and neither build nor deploy has a main-ref condition. GitHub supports selecting another branch when manually dispatching a workflow.",
+        "source": "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow"
+      },
+      "root_cause": "The push-branch filter is treated as if it also constrained manual dispatch. Repository environment branch protection may add a separate guard, but those settings were not inspected.",
+      "impact": "The workflow source alone does not enforce the documented main-only publication boundary. This is a maintainer release-policy gap; it does not establish that an untrusted pull request can deploy or that the live environment lacks protection.",
+      "acceptance_test": [
+        "Explicitly require refs/heads/main for publishing jobs or update the documented policy to match the intended release boundary.",
+        "Statically verify a non-main dispatch cannot reach artifact upload/deployment under the source-controlled policy.",
+        "If relying on environment restrictions, verify and record their actual saved configuration without triggering a deployment."
+      ],
+      "baseline_status": "open_at_baseline",
+      "fix": "Tracked main-ref guards on Pages build/deploy; actual environment already restricted to main.",
+      "validation": ".github/workflows/pages.yml",
+      "dependencies": [],
+      "release_status": "NOT RELEASED"
+    },
+    {
+      "id": "ME-001",
+      "severity": "medium",
+      "category": "evidence-gap",
+      "title": "No three-condition executed skill benchmark at baseline",
+      "affected_files": [
+        "docs/VALIDATION.md"
+      ],
+      "root_cause": "Previous validation consists of decisions, source reviews and authored browser fixtures, not agent-generated comparative outputs.",
+      "developer_impact": "Website tests cannot establish that skill invocation improves generated application work.",
+      "proposed_fix": "Frozen twelve-case comparison plus separate held-out and independent rendered review.",
+      "acceptance_test": [
+        "AC05",
+        "AC09"
+      ],
+      "dependencies": [
+        "Authenticated Codex quota",
+        "browser/native tools"
+      ],
+      "status": "EVALUATED; REQUIRED CAPABILITY GATE FAIL",
+      "evidence": "comparison-results.json; results.json; final-manual-review.json"
+    },
+    {
+      "id": "ME-002",
+      "severity": "low",
+      "category": "guidance-gap",
+      "title": "Native lifecycle and platform reduced-motion guidance too general",
+      "affected_files": [
+        "skills/app-motion-effects/SKILL.md",
+        "skills/app-motion-effects/references/native.md"
+      ],
+      "root_cause": "Stack references exist but lack progressive native implementation checkpoints.",
+      "developer_impact": "A browser or widget check can be confused with native verification; platform accessibility APIs differ.",
+      "proposed_fix": "Shared native contract and selected stack guidance, verified against installed SDK and official references.",
+      "acceptance_test": [
+        "AC08",
+        "AC10"
+      ],
+      "dependencies": [],
+      "status": "GUIDANCE IMPLEMENTED; NATIVE COMPARISON BLOCKED",
+      "evidence": "native-runtime.json; native-grading-readiness.md"
+    },
+    {
+      "id": "ME-003",
+      "severity": "low",
+      "category": "security-hardening",
+      "title": "Untrusted data and rendering boundaries need explicit operational guidance",
+      "affected_files": [
+        "skills/app-motion-effects/SKILL.md",
+        "skills/app-motion-effects/references/trust-boundaries.md"
+      ],
+      "root_cause": "External sources are labelled reference data but repository text/markup and execution boundaries are less explicit.",
+      "developer_impact": "Adapting a reveal example must preserve safe text rendering and must not run source-provided commands.",
+      "proposed_fix": "Progressive trust guide with actual host controls, synthetic tests and scope boundaries.",
+      "acceptance_test": [
+        "AC06"
+      ],
+      "dependencies": [],
+      "status": "IMPLEMENTED; CONTROLLED WEB SECURITY CASES PASS",
+      "evidence": "comparison-results.json; evals/GRADING_AMENDMENT_GA02.md"
+    },
+    {
+      "id": "ME-004",
+      "severity": "low",
+      "category": "workflow-reliability",
+      "title": "Late evidence recording leaves deadline-limited work without a review record",
+      "affected_files": [
+        "skills/app-motion-effects/SKILL.md"
+      ],
+      "root_cause": "Development A/E runs spent their fixed budget implementing/checking before recording final evidence. Some working artifacts had no evidence file when interrupted.",
+      "developer_impact": "A developer cannot readily distinguish verified work from blocked checks after interruption.",
+      "proposed_fix": "Maintain a brief truthful project-local note incrementally and bound repeated denied-tool diagnosis within current authority.",
+      "acceptance_test": [
+        "A/E final-candidate reruns at unchanged240s budget",
+        "Independent source review confirms no verification requirement weakened"
+      ],
+      "dependencies": [],
+      "status": "IMPLEMENTED; MIXED WORKFLOW OUTCOMES RETAINED",
+      "evidence": "final-web E now has evidence; I motion still FAIL; some tasks timed out"
+    },
+    {
+      "id": "HA-001",
+      "severity": "medium",
+      "category": "harness-security",
+      "title": "Grader could read/serve submitted links outside app root",
+      "affected_files": [
+        "evals/containment.py",
+        "evals/graders/web.mjs",
+        "evals/tests/test_containment.py"
+      ],
+      "root_cause": "Submitted trees were consumed before all file metadata and transport paths were constrained.",
+      "developer_impact": "A generated symlink could expose host files to grading or the browser.",
+      "proposed_fix": "Reject links/special files before reads; constrain static requests to the reviewed app root.",
+      "acceptance_test": [
+        "Synthetic external symlink and traversal inputs fail before reads.",
+        "Contained transport allows fixture assets and rejects escaped/static network paths."
+      ],
+      "dependencies": [],
+      "status": "FIXED",
+      "evidence": "evals/GRADING_AMENDMENT_GA02.md; evals/tests/test_containment.py"
+    },
+    {
+      "id": "HA-002",
+      "severity": "medium",
+      "category": "harness-security",
+      "title": "Cached original inputs trusted marker without checking extracted bytes",
+      "affected_files": [
+        "evals/run.py",
+        "evals/tests/test_runner.py"
+      ],
+      "root_cause": "A cache completion marker was treated as proof of the pinned original skill bytes.",
+      "developer_impact": "A contaminated cache could invalidate the original/improved comparison.",
+      "proposed_fix": "Recompare complete extracted file hashes to the pinned v2.0.0 Git tree before reuse.",
+      "acceptance_test": [
+        "Modify cached skill after its completion marker; reuse must be refused.",
+        "Verify all 20 recorded original inputs against the immutable tag."
+      ],
+      "dependencies": [],
+      "status": "FIXED",
+      "evidence": "evals/tests/test_runner.py; docs/audit/original-input-verification.json"
+    },
+    {
+      "id": "HA-003",
+      "severity": "medium",
+      "category": "harness-security",
+      "title": "Mutable model SDK reused as authoritative native grading runtime",
+      "affected_files": [
+        "evals/native_grading.py",
+        "evals/run.py"
+      ],
+      "root_cause": "The native grader could inherit a toolchain writable by the model task.",
+      "developer_impact": "Evaluation results could depend on model-modified grading tools.",
+      "proposed_fix": "Require a fresh protected trusted grading SDK plus a successful strict containment proof before scheduling native tasks.",
+      "acceptance_test": [
+        "Read/write to outside canaries is denied while required owned SDK files and loopback work.",
+        "Missing or failed trusted runtime proof blocks scheduling before any native model call."
+      ],
+      "dependencies": [],
+      "status": "BLOCKED",
+      "evidence": "docs/audit/native-grading-readiness.json; evals/native_grading.py"
+    },
+    {
+      "id": "HA-004",
+      "severity": "high",
+      "category": "harness-security",
+      "title": "Generated native code could execute in unconfined host grading subprocess",
+      "affected_files": [
+        "evals/graders/grade.py",
+        "evals/graders/grade_with_containment.py",
+        "evals/GRADING_AMENDMENT_GA03.md"
+      ],
+      "root_cause": "Legacy grader entry points executed generated Dart using a host subprocess without an enforced execution boundary.",
+      "developer_impact": "Untrusted evaluation output could perform host operations outside the intended fixture.",
+      "proposed_fix": "Quarantine exact legacy source bytes; guard all supported entry points and fail closed without strict native proof.",
+      "acceptance_test": [
+        "Direct legacy/frontdoor invocation cannot execute native code without admitted strict runtime.",
+        "No permissive fallback or bypass flag exists.",
+        "Web regression assertions remain callable through contained transport."
+      ],
+      "dependencies": [],
+      "status": "CONTAINED; CAPABILITY BLOCKED",
+      "evidence": "evals/GRADING_AMENDMENT_GA03.md; evals/tests/test_containment.py"
+    },
+    {
+      "id": "HA-005",
+      "severity": "low",
+      "category": "harness-security",
+      "title": "Native build timeout could leave process groups running",
+      "affected_files": [
+        "evals/tools/native-runtime.py",
+        "evals/tools/test_native_process.py"
+      ],
+      "root_cause": "Timeout handling did not consistently own and reap descendant process groups.",
+      "developer_impact": "A failed native probe could leave build or guest control processes running.",
+      "proposed_fix": "Start owned groups and apply bounded TERM/KILL/reap cleanup without targeting user processes.",
+      "acceptance_test": [
+        "Controlled child processes are terminated/reaped on deadline.",
+        "Cleanup refuses unowned/mismatched process metadata.",
+        "Final cleanup verifies 16 owned groups absent and preserves source hashes."
+      ],
+      "dependencies": [],
+      "status": "FIXED",
+      "evidence": "evals/tools/test_native_process.py; docs/audit/native-runtime.json"
+    },
+    {
+      "id": "QA-001",
+      "severity": "medium",
+      "category": "behavioural-evaluation",
+      "title": "Final candidate I did not demonstrate the required filter animation",
+      "affected_files": [
+        "evals/outputs-final/I/packages/warehouse/public/app.js",
+        "docs/audit/final-manual-review.md"
+      ],
+      "root_cause": "The final generated implementation did not provide observable running state-change animation required by the task.",
+      "developer_impact": "One required motion workflow is not demonstrated; average scores would hide that gap.",
+      "proposed_fix": "Keep the candidate unreleased; revise a separately versioned candidate using a measured browser-capable workflow and rerun affected frozen gates.",
+      "acceptance_test": [
+        "Final I passes the unchanged observable-animation assertion.",
+        "Reduced motion, state preservation and monorepo scope assertions still pass.",
+        "Independent manual review and task completion are recorded separately."
+      ],
+      "dependencies": [],
+      "status": "FAIL; CAPABILITY RELEASE BLOCKED",
+      "evidence": "docs/audit/results.json; docs/audit/final-manual-review.md"
+    },
+    {
+      "id": "QA-002",
+      "severity": "medium",
+      "category": "behavioural-evaluation",
+      "title": "Generated outputs reported command failures absent from their retained execution traces",
+      "affected_files": [
+        "docs/audit/final-manual-review.md",
+        "docs/audit/heldout-manual-review.md",
+        "skills/app-motion-effects/SKILL.md"
+      ],
+      "root_cause": "The measured agent workflow allowed an unexecuted diagnostic to be presented as an observed failed check. Intent is undetermined.",
+      "developer_impact": "Developers cannot rely on that verification account despite passing browser behavior.",
+      "proposed_fix": "Keep the candidate unreleased; require evidence references for reported checks and evaluate a separately versioned correction without repairing frozen outputs.",
+      "acceptance_test": [
+        "An independent reviewer matches every claimed executed check to retained tool evidence.",
+        "The frozen evidence-honesty dimension has no zero.",
+        "Existing runtime gates and process statuses remain separate and unmodified."
+      ],
+      "dependencies": [],
+      "status": "FAIL; CAPABILITY RELEASE BLOCKED",
+      "evidence": [
+        "docs/audit/heldout-manual-review.md",
+        "docs/audit/heldout-manual-review.json",
+        "docs/audit/final-manual-review.json",
+        "docs/audit/final-manual-review.v1.json"
+      ],
+      "evaluated_output_locations": [
+        "H/REVIEW.md",
+        "J/REVIEW.md",
+        "M/REVIEW.md:15",
+        "N/REVIEW.md:14"
+      ]
+    },
+    {
+      "id": "SR-006",
+      "severity": "low",
+      "category": "regression",
+      "title": "Added verification footer link overflowed 320px on Linux",
+      "affected_files": [
+        "docs/index.html",
+        "docs/styles.css",
+        "tests/loading.spec.mjs"
+      ],
+      "root_cause": "The added third footer action remained in a nonwrapping flex row whose intrinsic width exceeded the viewport under Linux font metrics.",
+      "developer_impact": "The new maintenance page link introduced horizontal scrolling on narrow screens; local macOS system-font checks alone missed it.",
+      "proposed_fix": "Wrap the footer action row within its container and exercise wider fallback font metrics without hiding overflow.",
+      "acceptance_test": [
+        "All ten example layouts fit at320px in hosted Chromium.",
+        "All three footer links are visible and within the320px viewport using wider monospace metrics.",
+        "Existing browser assertions remain unchanged."
+      ],
+      "dependencies": [],
+      "status": "FIXED",
+      "evidence": [
+        "GitHub Actions42515179053 and42515264881 failure traces",
+        "tests/loading.spec.mjs footer regression",
+        "Final PR/main/Pages checks and33 live browser checks PASS; release-verification.json"
+      ]
+    }
+  ]
+}

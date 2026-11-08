@@ -1,0 +1,2 @@
+window.__repoStats={attempts:0,successes:0};
+export async function updateAddress(address,role){window.__repoStats.attempts++;await new Promise(resolve=>setTimeout(resolve,300));if(role!=='editor'){const error=Error(role==='expired'?'Session expired. Sign in again.':'You do not have permission to save.');error.code=role==='expired'?401:403;throw error}window.__repoStats.successes++;localStorage.setItem('delivery-address',address);return {address}}

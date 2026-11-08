@@ -1,0 +1,21 @@
+{
+  "version": "2.1.0",
+  "candidate": 2,
+  "sha256": "0b2d445f0e75dde2b075c507c02b71ef437e9009b0d411231737c735471f45f3",
+  "files": {
+    "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+    "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+    "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+    "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+    "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+    "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+    "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+    "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+    "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+    "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+    "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+  },
+  "reason": "Development A/E deadline outcomes lacked final evidence notes. Add concise incremental truthful records and bounded diagnosis; no task, grader, assertion, timeout or threshold changed.",
+  "heldOut": "M/N unseen by root; no held-out outputs inspected or used for this change.",
+  "precisionRevision": "Before any candidate2 run, independent review clarified current authority, avoiding implied repeated approval. Earlier draft freeze2a preserved."
+}
