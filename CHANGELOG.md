@@ -7,6 +7,7 @@
 - Added local-only example CSP and browser request checks, including blocked synthetic beacon and remote-asset probes.
 - Restricted manual Pages publishing to main in workflow source.
 - Made the reusable prompt follow each target app’s visual contract and published evidence/compatibility limits.
+- Fixed narrow footer wrapping across platform font metrics and added a focused regression.
 - Preserved the 2.0.0 runtime workflow. The advanced 2.1.0 guidance remains unreleased and is not included.
 
 ## Full-screen examples and full-repo prompt · 2026-11-08
