@@ -103,7 +103,7 @@ test("system reduced motion keeps static feedback and immediate reset", async ({
 test("review controls preserve drafts and apply reduced motion to live frames", async ({
   page,
 }) => {
-  await page.goto("./");
+  await page.goto("./?example=studio");
   const after = page.frameLocator("#after");
   await after
     .getByLabel("Composition caption")
@@ -122,14 +122,14 @@ test("review controls preserve drafts and apply reduced motion to live frames", 
     }),
   ).toBe(100);
   await page
-    .getByRole("button", { name: "Business workflow", exact: true })
+    .getByRole("button", { name: "Saving changes", exact: true })
     .click();
   await expect(after.getByLabel("Handling note")).toBeVisible();
-  await page.getByRole("button", { name: /Compare save/ }).click();
+  await page.getByRole("button", { name: /Save both notes/ }).click();
   await expect(after.locator("#feedback")).toHaveText("Handling note saved");
 });
 
-for (const width of [390, 768, 1440])
+for (const width of [320, 390, 768, 1440])
   test(`gallery and both examples fit ${width}px without horizontal overflow`, async ({
     page,
   }) => {
@@ -137,7 +137,14 @@ for (const width of [390, 768, 1440])
     page.on("pageerror", (e) => errors.push(e.message));
     await page.setViewportSize({ width, height: 900 });
     await page.goto("./");
-    for (const name of ["Creative canvas", "Business workflow"]) {
+    for (const name of [
+      "Loading content",
+      "Slow connection",
+      "Lost connection",
+      "Uploading a file",
+      "Saving changes",
+      "Moving an object",
+    ]) {
       await page.getByRole("button", { name, exact: true }).click();
       await expect(page.frameLocator("#after").locator("main")).toBeVisible();
       expect(
@@ -145,26 +152,33 @@ for (const width of [390, 768, 1440])
           () => document.documentElement.scrollWidth <= innerWidth,
         ),
       ).toBe(true);
-      for (const id of ["before", "after"])
-        expect(
+      for (const id of ["before", "after"]) {
+        if (width < 761)
           await page
-            .locator(`#${id}`)
-            .evaluate(
+            .getByRole("group", { name: "Preview version" })
+            .getByRole("button", {
+              name: id === "before" ? "Before" : "After",
+              exact: true,
+            })
+            .click();
+        const frame = page.locator(`#${id}`);
+        await expect
+          .poll(() =>
+            frame.evaluate(
               (el) =>
                 el.contentDocument.querySelector("main").getBoundingClientRect()
                   .bottom <= el.clientHeight,
             ),
-        ).toBe(true);
-      for (const id of ["before", "after"])
+          )
+          .toBe(true);
         expect(
-          await page
-            .locator(`#${id}`)
-            .evaluate(
-              (el) =>
-                el.contentDocument.documentElement.scrollWidth <=
-                el.contentWindow.innerWidth,
-            ),
+          await frame.evaluate(
+            (el) =>
+              el.contentDocument.documentElement.scrollWidth <=
+              el.contentWindow.innerWidth,
+          ),
         ).toBe(true);
+      }
     }
     expect(errors).toEqual([]);
   });

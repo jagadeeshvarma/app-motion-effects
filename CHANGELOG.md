@@ -1,5 +1,12 @@
 # Changelog
 
+## Website improvements · 2026-11-08
+
+- Added loading, slow-connection, connection-loss and upload examples alongside the existing save and canvas fixtures.
+- Simplified the gallery with direct controls, a mobile Before/After switch and no decorative eyebrow labels.
+- Added actual loading playback and seventeen browser checks for state, interruption, reduced motion and responsive layouts.
+- Kept the installable skill and its version unchanged.
+
 ## 2.0.0
 
 First public release of the product-aware skill.
