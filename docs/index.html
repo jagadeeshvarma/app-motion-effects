@@ -3,183 +3,389 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light" />
     <meta
       name="description"
-      content="Try six clear before-and-after examples: loading, slow connections, offline recovery, uploading, saving and direct manipulation. A product-aware skill for coding agents."
+      content="A product-aware coding-agent skill for complete app audits and purposeful animation. Try ten full-screen examples and copy the full-repository prompt."
     />
-    <meta name="color-scheme" content="light" />
-    <title>App Motion & Effects — Interactive examples</title>
+    <title>App Motion & Effects</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="app.js" defer></script>
+    <script type="module" src="app.js"></script>
   </head>
   <body>
     <a class="skip" href="#playground">Skip to examples</a>
     <header class="site-header">
-      <a class="wordmark" href="./">App Motion & Effects</a>
+      <a class="wordmark" href="#top">App Motion & Effects</a>
       <nav aria-label="Main navigation">
-        <a href="#install">Install</a
-        ><a href="https://github.com/jagadeeshvarma/app-motion-effects"
-          >GitHub ↗</a
+        <a class="button quiet" href="#playground">Examples</a
+        ><a class="button quiet" href="#full-repo-prompt">Full-repo prompt</a
+        ><a
+          class="button outlined"
+          href="https://github.com/jagadeeshvarma/app-motion-effects"
+          >GitHub</a
         >
       </nav>
     </header>
-    <main>
-      <section class="intro">
-        <h1>Small details.<br />Better experiences.</h1>
-        <div>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Better motion.<br />Still your app.</h1>
           <p>
-            Try everyday moments with and without useful motion. The same
-            content, the same wait, a clearer experience.
+            A skill that gives your coding agent the judgement to audit your
+            whole app and build useful animations, transitions and effects. Your
+            brand and workflows stay yours.
           </p>
-          <a
-            href="https://github.com/jagadeeshvarma/app-motion-effects#quick-start"
-            >Get the skill for your coding agent ↗</a
-          >
+          <div class="hero-actions">
+            <a
+              class="button primary"
+              href="https://github.com/jagadeeshvarma/app-motion-effects/releases/download/v2.0.0/app-motion-effects-2.0.0.zip"
+              >Download skill</a
+            ><a class="button outlined" href="#playground">See the examples</a>
+          </div>
+          <p class="compatibility">
+            For Codex, Claude Code and compatible coding agents. Open source,
+            MIT licensed.
+          </p>
+        </div>
+        <div class="hero-study">
+          <iframe
+            id="hero-preview"
+            src="demos/interaction.html?example=save&amp;variant=after&amp;hero=1"
+            title="Interactive saving preview"
+          ></iframe>
+          <p>Try saving a change. The details do the talking.</p>
         </div>
       </section>
       <section
         id="playground"
-        class="playground"
+        class="workspace"
         aria-label="Interactive examples"
       >
-        <nav class="example-nav" aria-label="Choose an example">
-          <button type="button" data-example="loading" aria-pressed="true">
-            <strong>Loading content</strong>
-          </button>
-          <button type="button" data-example="slow" aria-pressed="false">
-            <strong>Slow connection</strong>
-          </button>
-          <button type="button" data-example="offline" aria-pressed="false">
-            <strong>Lost connection</strong>
-          </button>
-          <button type="button" data-example="upload" aria-pressed="false">
-            <strong>Uploading a file</strong>
-          </button>
-          <button type="button" data-example="dispatch" aria-pressed="false">
-            <strong>Saving changes</strong>
-          </button>
-          <button type="button" data-example="studio" aria-pressed="false">
-            <strong>Moving an object</strong>
-          </button>
-        </nav>
-        <div class="demo-area">
-          <div class="explanation">
+        <aside class="sidebar">
+          <a class="wordmark" href="#top">App Motion & Effects</a>
+          <nav id="example-nav" aria-label="Choose an example">
+            <button type="button" data-example="loading" aria-pressed="true">
+              Loading content
+            </button>
+            <button type="button" data-example="loader" aria-pressed="false">
+              Loading indicator
+            </button>
+            <button type="button" data-example="slow" aria-pressed="false">
+              Slow connection
+            </button>
+            <button type="button" data-example="offline" aria-pressed="false">
+              Connection recovery
+            </button>
+            <button type="button" data-example="upload" aria-pressed="false">
+              File upload
+            </button>
+            <button type="button" data-example="save" aria-pressed="false">
+              Saving changes
+            </button>
+            <button type="button" data-example="filter" aria-pressed="false">
+              List filtering
+            </button>
+            <button type="button" data-example="toast" aria-pressed="false">
+              Notifications
+            </button>
+            <button type="button" data-example="panel" aria-pressed="false">
+              Side panel
+            </button>
+            <button type="button" data-example="tabs" aria-pressed="false">
+              Tab transitions
+            </button>
+          </nav>
+          <div class="sidebar-bottom">
+            <a class="button outlined" href="#full-repo-prompt"
+              >Use on your whole repo</a
+            >
+            <p>Ten everyday interactions.<br />One considered motion system.</p>
+          </div>
+        </aside>
+        <div class="workspace-main">
+          <div class="mobile-menu">
+            <label class="sr-only" for="example-select">Choose an example</label
+            ><select id="example-select">
+              <option value="loading">Loading content</option>
+              <option value="loader">Loading indicator</option>
+              <option value="slow">Slow connection</option>
+              <option value="offline">Connection recovery</option>
+              <option value="upload">File upload</option>
+              <option value="save">Saving changes</option>
+              <option value="filter">List filtering</option>
+              <option value="toast">Notifications</option>
+              <option value="panel">Side panel</option>
+              <option value="tabs">Tab transitions</option></select
+            ><a class="button quiet" href="#top">Home</a>
+          </div>
+          <header class="demo-header">
             <div>
-              <h2 id="example-title">A clearer wait.</h2>
-              <p id="example-benefit">
-                A blank area gives no clue what is coming. A skeleton holds the
-                layout while the same content loads.
+              <h2 id="example-title">Loading content</h2>
+              <p id="example-description">
+                Keep the layout in place while content arrives.
               </p>
             </div>
-          </div>
-          <div class="run-controls">
-            <button type="button" class="primary" id="replay" disabled>
-              Load projects</button
-            ><button type="button" id="reconnect" hidden>
-              Restore connection
-            </button>
-            <div class="review-options">
-              <label><input id="reduce" type="checkbox" /> Reduce motion</label
-              ><label class="narrow-option"
-                ><input id="mobile" type="checkbox" /> Narrow preview</label
+            <a
+              id="source"
+              class="button outlined small"
+              href="https://github.com/jagadeeshvarma/app-motion-effects/blob/main/docs/demos/interaction.js"
+              >Source</a
+            >
+          </header>
+          <div class="demo-toolbar">
+            <div class="mode-control" role="group" aria-label="Preview mode">
+              <button type="button" data-mode="before" aria-pressed="false">
+                Before</button
+              ><button type="button" data-mode="after" aria-pressed="true">
+                After</button
+              ><button
+                type="button"
+                class="compare-control"
+                data-mode="compare"
+                aria-pressed="false"
               >
+                Compare
+              </button>
+            </div>
+            <div class="playback-controls">
+              <label class="motion-option"
+                ><input type="checkbox" id="reduce" />Reduce motion</label
+              ><button
+                type="button"
+                id="restore"
+                class="button outlined"
+                hidden
+              >
+                Restore connection</button
+              ><button
+                type="button"
+                id="replay"
+                class="button primary"
+                disabled
+              >
+                Load projects
+              </button>
             </div>
           </div>
-          <p id="instructions" class="instructions">
-            Click Load projects. Both sides take 2.4 seconds. Watch the right
-            side keep its shape, then reveal the content.
+          <p id="demo-hint" class="demo-hint">
+            Load the projects. Both versions take 2.4 seconds.
           </p>
-          <div
-            class="mobile-comparison"
-            role="group"
-            aria-label="Preview version"
-          >
-            <button type="button" data-panel="before" aria-pressed="false">
-              Before</button
-            ><button type="button" data-panel="after" aria-pressed="true">
-              After
-            </button>
-          </div>
-          <div class="comparison" id="comparison" data-mobile-panel="after">
-            <section class="example">
-              <div class="frame-caption">
-                <strong>Before</strong
-                ><span id="before-label">An empty wait</span>
-              </div>
+          <div class="stage" id="stage" data-mode="after">
+            <div class="preview-pane" data-variant="before">
+              <div class="pane-label">Before</div>
               <iframe
                 id="before"
-                title="Loading content before improvement"
-                src="demos/feedback.html?scenario=loading&amp;variant=before"
-              ></iframe
-              ><a
-                id="before-source"
-                href="https://github.com/jagadeeshvarma/app-motion-effects/blob/main/docs/demos/feedback.js"
-                >View source ↗</a
-              >
-            </section>
-            <section class="example">
-              <div class="frame-caption">
-                <strong>After</strong
-                ><span id="after-label">A layout that stays in place</span>
-              </div>
+                title="Loading content: before"
+                src="demos/interaction.html?example=loading&amp;variant=before"
+              ></iframe>
+            </div>
+            <div class="preview-pane" data-variant="after">
+              <div class="pane-label">After</div>
               <iframe
                 id="after"
-                title="Loading content after improvement"
-                src="demos/feedback.html?scenario=loading&amp;variant=after"
-              ></iframe
-              ><a
-                id="after-source"
-                href="https://github.com/jagadeeshvarma/app-motion-effects/blob/main/docs/demos/feedback.js"
-                >View source ↗</a
-              >
-            </section>
+                title="Loading content: after"
+                src="demos/interaction.html?example=loading&amp;variant=after"
+              ></iframe>
+            </div>
           </div>
-          <p id="review-status" class="review-status" role="status">
-            Ready. Start the example to compare both sides.
-          </p>
-          <div class="takeaway">
-            <h3>What to notice</h3>
-            <p id="notice">
-              The wait is not shorter. It is easier to understand, and the page
-              does not jump when the projects arrive.
+          <footer class="demo-footer">
+            <p id="benefit">
+              A recognisable layout makes the wait understandable and prevents
+              content from jumping.
             </p>
-            <p id="mechanism">
-              CSS skeleton pulse and a short content reveal. Reduced motion
-              keeps a static skeleton. No animation library.
-            </p>
-          </div>
-          <p class="simulation-note">
-            All waits, connections and uploads are simulated here. Nothing is
-            sent. System reduced-motion settings are respected. Switching
-            examples restarts the previews.
-          </p>
+            <span>Local demos. Nothing is sent.</span>
+          </footer>
+          <p id="review-status" class="sr-only">Ready to play.</p>
         </div>
       </section>
-      <section id="install" class="install">
-        <div>
-          <h2>Use it in your app.</h2>
+      <section
+        id="full-repo-prompt"
+        class="prompt-section"
+        aria-labelledby="prompt-title"
+      >
+        <div class="prompt-intro">
+          <h2 id="prompt-title">One prompt.<br />The whole application.</h2>
           <p>
-            The skill starts with your customers, workflows and existing design.
-            It chooses a suitable mechanism, preserves your branding and tests
-            the result.
+            Install the skill, paste this into your coding agent, and let it
+            audit, implement and verify every justified improvement across your
+            repository.
           </p>
-          <a
-            href="https://github.com/jagadeeshvarma/app-motion-effects#quick-start"
-            >Installation and documentation ↗</a
-          >
+          <p>
+            It covers all 63 categories, preserves your visual system and asks
+            for evidence. You keep control of release permissions.
+          </p>
+          <div class="prompt-actions">
+            <button type="button" class="button primary" id="copy-prompt">
+              Copy full prompt</button
+            ><a
+              class="button outlined"
+              href="https://github.com/jagadeeshvarma/app-motion-effects#quick-start"
+              >Installation guide</a
+            >
+          </div>
+          <p id="copy-status" role="status">
+            Works with the installed app-motion-effects skill.
+          </p>
         </div>
-        <pre><code>Use $app-motion-effects to improve loading,
-slow connections and recovery in this app.
-Preserve our design and business behaviour.
-Build and verify a preview. Do not deploy.</code></pre>
+        <div class="prompt-text">
+          <label class="sr-only" for="full-prompt"
+            >Full-repository audit and implementation prompt</label
+          ><textarea id="full-prompt" readonly spellcheck="false">
+Use the installed app-motion-effects skill to perform a complete, application-wide audit, implementation and verification pass across this repository.
+
+Apply the skill thoroughly, including its adaptation guide, complete 63-category taxonomy, source catalogue, verification guidance and review template. Follow its product-awareness, brand-preservation, source-adaptation and evidence requirements.
+
+This is an implementation assignment. Complete the authorised work autonomously and report back when finished. Do not stop at an audit, recommendations, a few mockups or an initial batch of improvements.
+
+SCOPE: THE COMPLETE ACTIVE PRODUCT
+
+Discover every active application, supported platform and shared UI package in this repository.
+
+Inspect all relevant feature areas, routes, screen families, layouts, components, major journeys, roles, permission boundaries, subscriptions and feature flags. Distinguish implemented, planned, incomplete, archived and inaccessible areas.
+
+Inspect both the source and running application where available. Understand the actual customers, tasks, usage frequency, devices and consequences of mistakes before choosing treatments.
+
+Do not restrict the work to the current screen, the most visible pages or one or two interactions.
+
+EXHAUSTIVE COVERAGE, PURPOSEFUL IMPLEMENTATION
+
+Use the skill’s entire taxonomy as a coverage checklist. Assess all 63 categories against the actual product, including animations, transitions, microinteractions, visual and graphic effects, orchestration, interruption behaviour and appropriate sensory feedback.
+
+Identify every place where missing, inconsistent, misleading or poorly implemented behaviour creates a meaningful gap.
+
+Implement every justified improvement within the authorised scope. Do not impose an arbitrary limit on the number of improvements or leave equivalent gaps in secondary screens after fixing the main example.
+
+Preserve good existing behaviour. Mark categories that are irrelevant or would reduce usability as not applicable, with a brief reason. Exhaustive coverage means making an evidenced decision everywhere, rather than forcing every effect into the app.
+
+PAY PARTICULAR ATTENTION TO EVERYDAY STATES
+
+Across every applicable feature, inspect and improve:
+- Navigation, content replacement, overlays and responsive changes.
+- Loading, skeletons, content reveal and background refresh.
+- Slow connections, prolonged waits and timeouts.
+- Offline access, connection loss, reconnection and recovery.
+- Empty, partial, disabled, permission-denied and expired-session states.
+- Forms, validation, saving, success and failure.
+- Editing while a request is pending.
+- Uploads and genuinely measurable progress.
+- Cancellation, explicit retries and uncertain outcomes.
+- Optimistic updates and rollback.
+- Filtering, sorting, pagination and live data changes.
+- Dragging, gestures, direct manipulation and accessible alternatives.
+- Repeated input, interrupted playback, stale responses and rapid navigation.
+- Foreground/background changes, restoration and cleanup.
+
+Follow the app’s existing business and request semantics. Keep progress and success feedback truthful. Do not invent backend capabilities or present a simulated response as a real result.
+
+Distinguish a cancelled interface wait from a confirmed cancellation of server work. Keep uncertain outcomes honest.
+
+Use percentages only when progress is actually measurable. Use clear indeterminate states when duration or progress is unknown.
+
+Place feedback near the activity. Avoid covering controls or adding duplicate banners. Keep actionable errors visible; give transient confirmations readable dwell time and gradual dismissal where appropriate.
+
+PRESERVE THE APP’S IDENTITY
+
+Establish and verify the visual contract required by the skill.
+
+Use existing branding, tokens, typography, component geometry, iconography, layouts, copy conventions and approved interaction patterns.
+
+Do not introduce decorative eyebrow labels, redundant headings or unnecessary interface elements. Preserve functional field labels, accessible names and useful instructions.
+
+Tailor the motion direction to this product and its customers. Different journeys may need different emphasis while remaining one coherent application.
+
+Use existing dependencies wherever suitable. Research the mechanisms needed for identified problems using the skill’s source catalogue and additional authoritative sources when useful.
+
+Adapt suitable examples into maintainable app-specific code. Author original implementations where they provide a better fit. Follow the skill’s compatibility, licensing, attribution and provenance requirements.
+
+IMPLEMENT CONSISTENTLY ACROSS THE REPOSITORY
+
+Improve shared primitives and apply them to every relevant consumer. Inspect specialised exceptions instead of assuming one shared change is safe everywhere.
+
+Preserve business behaviour, permissions, drafts, focus, selection, scroll position, record identity and request ownership.
+
+Keep business correctness independent of animation completion. Implement interruption, cancellation, reduced motion and cleanup as part of the interaction.
+
+Preserve unrelated and uncommitted work. Use an isolated branch, worktree or suitable preview area, following repository instructions.
+
+Use synthetic data or authorised test services for demonstrations. Keep prototype controls and simulated operations separate from production services.
+
+VERIFY WHAT USERS ACTUALLY EXPERIENCE
+
+Follow the skill’s verification guidance for all implemented improvements.
+
+Render and play the actual interfaces. Inspect start, intermediate, final, error, recovery and interrupted states. Fix visual and behavioural defects found during review.
+
+Check relevant roles, approved themes, languages, keyboard, pointer, touch, reduced motion and responsive layouts. Verify native behaviour in an actual native runtime where available; state any approximation or limitation.
+
+Check text and button placement, hierarchy, focus, contrast, overlap, clipping, stacking, scrolling, layout shifts and duplicated feedback.
+
+Test slow/offline conditions in isolated test contexts. Verify that cancellation, retries and late responses cannot corrupt current work.
+
+Run the project’s applicable quality gates. Add focused regression tests for meaningful risks without weakening existing checks.
+
+Compare representative performance with the baseline, including rendering work, dependencies, assets and lifecycle cleanup. Report measured results and their limits.
+
+Capture actual screenshots and recordings for important changes. Provide a runnable preview with clear replay steps so the improvements are easy to understand.
+
+MAINTAIN A COMPLETE COVERAGE RECORD
+
+Use the skill’s review template proportionately and maintain a project-local inventory throughout the work.
+
+Give every relevant area and meaningful opportunity a disposition:
+- Improved and verified.
+- Existing behaviour retained, with evidence.
+- Not applicable or not beneficial, with a reason.
+- Blocked or unverified, with the exact limitation.
+
+Representative verification is acceptable for genuinely equivalent shared patterns. Identify all affected consumers and separately verify material differences.
+
+Do not claim inaccessible screens were inspected or call the work exhaustive while material coverage gaps remain.
+
+For a large repository, maintain durable checkpoints and continue through context changes. Do not finish after the first batch merely because the task is substantial.
+
+AUTONOMY AND RELEASE BOUNDARIES
+
+Proceed through discovery, research, implementation and verification without asking me to approve routine phases.
+
+Ask only about an unavoidable material ambiguity, missing authority or genuinely blocking access issue. Continue independent work while waiting.
+
+Honour existing explicit release authorisation. Otherwise complete the implementation and verified preview for review without merging or deploying.
+
+COMPLETION AND FINAL RESPONSE
+
+Before finishing, reconcile the completed work against the entire inventory and taxonomy. Address all remaining justified implementation gaps within reach.
+
+Return a concise summary containing:
+1. What changed across the product.
+2. The preview URL or exact launch instructions.
+3. The most useful interactions and states to try.
+4. Screenshot and recording links.
+5. Coverage totals and a link to the detailed coverage record.
+6. Quality-check and representative performance results.
+7. Exact blockers, omissions and unverified platforms or roles.
+8. The actual release status, when release was authorised.
+
+Keep detailed working notes in project-local files. Let the implemented interfaces and observable evidence carry the review.
+
+Start now and carry this full application-wide pass through to completion.
+</textarea>
+        </div>
       </section>
     </main>
-    <footer>
-      <span>MIT licensed · Codex, Claude Code and compatible agents</span
-      ><a
-        href="https://github.com/jagadeeshvarma/app-motion-effects/blob/main/CONTRIBUTING.md"
-        >Contribute ↗</a
-      >
+    <footer class="site-footer">
+      <span>App Motion & Effects. A little more considered.</span>
+      <div>
+        <a
+          class="button quiet"
+          href="https://github.com/jagadeeshvarma/app-motion-effects/blob/main/CONTRIBUTING.md"
+          >Contribute</a
+        ><a
+          class="button quiet"
+          href="https://github.com/jagadeeshvarma/app-motion-effects/blob/main/LICENSE"
+          >MIT licence</a
+        >
+      </div>
     </footer>
   </body>
 </html>

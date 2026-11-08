@@ -1,0 +1,137 @@
+Use the installed app-motion-effects skill to perform a complete, application-wide audit, implementation and verification pass across this repository.
+
+Apply the skill thoroughly, including its adaptation guide, complete 63-category taxonomy, source catalogue, verification guidance and review template. Follow its product-awareness, brand-preservation, source-adaptation and evidence requirements.
+
+This is an implementation assignment. Complete the authorised work autonomously and report back when finished. Do not stop at an audit, recommendations, a few mockups or an initial batch of improvements.
+
+SCOPE: THE COMPLETE ACTIVE PRODUCT
+
+Discover every active application, supported platform and shared UI package in this repository.
+
+Inspect all relevant feature areas, routes, screen families, layouts, components, major journeys, roles, permission boundaries, subscriptions and feature flags. Distinguish implemented, planned, incomplete, archived and inaccessible areas.
+
+Inspect both the source and running application where available. Understand the actual customers, tasks, usage frequency, devices and consequences of mistakes before choosing treatments.
+
+Do not restrict the work to the current screen, the most visible pages or one or two interactions.
+
+EXHAUSTIVE COVERAGE, PURPOSEFUL IMPLEMENTATION
+
+Use the skill’s entire taxonomy as a coverage checklist. Assess all 63 categories against the actual product, including animations, transitions, microinteractions, visual and graphic effects, orchestration, interruption behaviour and appropriate sensory feedback.
+
+Identify every place where missing, inconsistent, misleading or poorly implemented behaviour creates a meaningful gap.
+
+Implement every justified improvement within the authorised scope. Do not impose an arbitrary limit on the number of improvements or leave equivalent gaps in secondary screens after fixing the main example.
+
+Preserve good existing behaviour. Mark categories that are irrelevant or would reduce usability as not applicable, with a brief reason. Exhaustive coverage means making an evidenced decision everywhere, rather than forcing every effect into the app.
+
+PAY PARTICULAR ATTENTION TO EVERYDAY STATES
+
+Across every applicable feature, inspect and improve:
+- Navigation, content replacement, overlays and responsive changes.
+- Loading, skeletons, content reveal and background refresh.
+- Slow connections, prolonged waits and timeouts.
+- Offline access, connection loss, reconnection and recovery.
+- Empty, partial, disabled, permission-denied and expired-session states.
+- Forms, validation, saving, success and failure.
+- Editing while a request is pending.
+- Uploads and genuinely measurable progress.
+- Cancellation, explicit retries and uncertain outcomes.
+- Optimistic updates and rollback.
+- Filtering, sorting, pagination and live data changes.
+- Dragging, gestures, direct manipulation and accessible alternatives.
+- Repeated input, interrupted playback, stale responses and rapid navigation.
+- Foreground/background changes, restoration and cleanup.
+
+Follow the app’s existing business and request semantics. Keep progress and success feedback truthful. Do not invent backend capabilities or present a simulated response as a real result.
+
+Distinguish a cancelled interface wait from a confirmed cancellation of server work. Keep uncertain outcomes honest.
+
+Use percentages only when progress is actually measurable. Use clear indeterminate states when duration or progress is unknown.
+
+Place feedback near the activity. Avoid covering controls or adding duplicate banners. Keep actionable errors visible; give transient confirmations readable dwell time and gradual dismissal where appropriate.
+
+PRESERVE THE APP’S IDENTITY
+
+Establish and verify the visual contract required by the skill.
+
+Use existing branding, tokens, typography, component geometry, iconography, layouts, copy conventions and approved interaction patterns.
+
+Do not introduce decorative eyebrow labels, redundant headings or unnecessary interface elements. Preserve functional field labels, accessible names and useful instructions.
+
+Tailor the motion direction to this product and its customers. Different journeys may need different emphasis while remaining one coherent application.
+
+Use existing dependencies wherever suitable. Research the mechanisms needed for identified problems using the skill’s source catalogue and additional authoritative sources when useful.
+
+Adapt suitable examples into maintainable app-specific code. Author original implementations where they provide a better fit. Follow the skill’s compatibility, licensing, attribution and provenance requirements.
+
+IMPLEMENT CONSISTENTLY ACROSS THE REPOSITORY
+
+Improve shared primitives and apply them to every relevant consumer. Inspect specialised exceptions instead of assuming one shared change is safe everywhere.
+
+Preserve business behaviour, permissions, drafts, focus, selection, scroll position, record identity and request ownership.
+
+Keep business correctness independent of animation completion. Implement interruption, cancellation, reduced motion and cleanup as part of the interaction.
+
+Preserve unrelated and uncommitted work. Use an isolated branch, worktree or suitable preview area, following repository instructions.
+
+Use synthetic data or authorised test services for demonstrations. Keep prototype controls and simulated operations separate from production services.
+
+VERIFY WHAT USERS ACTUALLY EXPERIENCE
+
+Follow the skill’s verification guidance for all implemented improvements.
+
+Render and play the actual interfaces. Inspect start, intermediate, final, error, recovery and interrupted states. Fix visual and behavioural defects found during review.
+
+Check relevant roles, approved themes, languages, keyboard, pointer, touch, reduced motion and responsive layouts. Verify native behaviour in an actual native runtime where available; state any approximation or limitation.
+
+Check text and button placement, hierarchy, focus, contrast, overlap, clipping, stacking, scrolling, layout shifts and duplicated feedback.
+
+Test slow/offline conditions in isolated test contexts. Verify that cancellation, retries and late responses cannot corrupt current work.
+
+Run the project’s applicable quality gates. Add focused regression tests for meaningful risks without weakening existing checks.
+
+Compare representative performance with the baseline, including rendering work, dependencies, assets and lifecycle cleanup. Report measured results and their limits.
+
+Capture actual screenshots and recordings for important changes. Provide a runnable preview with clear replay steps so the improvements are easy to understand.
+
+MAINTAIN A COMPLETE COVERAGE RECORD
+
+Use the skill’s review template proportionately and maintain a project-local inventory throughout the work.
+
+Give every relevant area and meaningful opportunity a disposition:
+- Improved and verified.
+- Existing behaviour retained, with evidence.
+- Not applicable or not beneficial, with a reason.
+- Blocked or unverified, with the exact limitation.
+
+Representative verification is acceptable for genuinely equivalent shared patterns. Identify all affected consumers and separately verify material differences.
+
+Do not claim inaccessible screens were inspected or call the work exhaustive while material coverage gaps remain.
+
+For a large repository, maintain durable checkpoints and continue through context changes. Do not finish after the first batch merely because the task is substantial.
+
+AUTONOMY AND RELEASE BOUNDARIES
+
+Proceed through discovery, research, implementation and verification without asking me to approve routine phases.
+
+Ask only about an unavoidable material ambiguity, missing authority or genuinely blocking access issue. Continue independent work while waiting.
+
+Honour existing explicit release authorisation. Otherwise complete the implementation and verified preview for review without merging or deploying.
+
+COMPLETION AND FINAL RESPONSE
+
+Before finishing, reconcile the completed work against the entire inventory and taxonomy. Address all remaining justified implementation gaps within reach.
+
+Return a concise summary containing:
+1. What changed across the product.
+2. The preview URL or exact launch instructions.
+3. The most useful interactions and states to try.
+4. Screenshot and recording links.
+5. Coverage totals and a link to the detailed coverage record.
+6. Quality-check and representative performance results.
+7. Exact blockers, omissions and unverified platforms or roles.
+8. The actual release status, when release was authorised.
+
+Keep detailed working notes in project-local files. Let the implemented interfaces and observable evidence carry the review.
+
+Start now and carry this full application-wide pass through to completion.
