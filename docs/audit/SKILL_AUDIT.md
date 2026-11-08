@@ -1,6 +1,6 @@
 # Maintainer audit
 
-Status: **audit evaluated; original capability acceptance FAIL; owner authorised release with known limitations**. The subsequent owner instruction is recorded in [release authorisation](release-authorization-2.1.0.json). Required GitHub CI remains enforced. Frozen assertions and measured FAIL/BLOCKED outcomes are unchanged. Independently verified maintenance 2.0.1 was merged, published and verified live separately; publication state is recorded in `release-verification.json`. Baseline source: `ce5f55a8c2a9b4319a76d793b46eef9a41d5a541`, released skill `v2.0.0`. The preceding website update was completed separately in PR #7 and verified live before this audit began.
+Status: **audit evaluated; original capability acceptance FAIL;2.1.0 merged, published and verified live under owner authorisation with known limitations**. The subsequent owner instruction is recorded in [release authorisation](release-authorization-2.1.0.json). Required GitHub CI remains enforced. Frozen assertions and measured FAIL/BLOCKED outcomes are unchanged. Independently verified maintenance 2.0.1 was merged, published and verified live separately; publication state is recorded in `release-verification.json`. Baseline source: `ce5f55a8c2a9b4319a76d793b46eef9a41d5a541`, released skill `v2.0.0`. The preceding website update was completed separately in PR #7 and verified live before this audit began.
 
 ## Scope and contract
 
