@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "protocol": "supplementary-event-controlled-native-v1",
+  "frozen_at_unix": 1794161632.5053031,
+  "files": {
+    "C.dart": "aa180057902344db256050eee8190e67ccb3361edbc4fe92496de82ee8c93b0b",
+    "D.dart": "eec18e5e3c4cf1588564ba596c1f11a84535f19f7df7948670e481f268c567c6"
+  },
+  "backend_semantics": "Test-only subclasses retain original public store API and response semantics; Completers resolve only at driver-declared events. No real300/400ms timing or performance claim.",
+  "source_mutation": false,
+  "frozen_graders_replaced": false,
+  "criteria": "Additional platform evidence only. Retain all original grades, timed native failures and setup blockers. Exact app/store source copies remain unchanged.",
+  "negative_controls": {
+    "C": "Incomplete workflow must fail when add/draft/save controls are missing.",
+    "D": "Known stale-callback baseline must fail after cancelled old completion resolves while new request remains unresolved."
+  }
+}

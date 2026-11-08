@@ -25,7 +25,7 @@ test("hero explains the skill and examples open a full-viewport workspace", asyn
     page.getByRole("link", { name: "Download skill", exact: true }),
   ).toHaveAttribute(
     "href",
-    /releases\/download\/v2.0.0\/app-motion-effects-2.0.0.zip$/,
+    /releases\/download\/v2.0.1\/app-motion-effects-2.0.1.zip$/,
   );
   await page
     .getByRole("link", { name: "See the examples", exact: true })

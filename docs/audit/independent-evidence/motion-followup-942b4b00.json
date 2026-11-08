@@ -1,0 +1,163 @@
+{
+  "942b4b00": [
+    {
+      "reducedMotion": "no-preference",
+      "samples": [
+        {
+          "time": 152.5999999642372,
+          "target": "record-title",
+          "progress": 0,
+          "opacity": "0.65",
+          "transform": "matrix(1, 0, 0, 1, 0, 3)",
+          "duration": 140
+        },
+        {
+          "time": 160.5999999642372,
+          "target": "record-title",
+          "progress": 0.4224988455150294,
+          "opacity": "0.797875",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.7325)",
+          "duration": 140
+        },
+        {
+          "time": 169.69999998807907,
+          "target": "record-title",
+          "progress": 0.4224988455150294,
+          "opacity": "0.797875",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.7325)",
+          "duration": 140
+        },
+        {
+          "time": 176.30000001192093,
+          "target": "record-title",
+          "progress": 0.708491268022992,
+          "opacity": "0.897972",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.874526)",
+          "duration": 140
+        },
+        {
+          "time": 184.5999999642372,
+          "target": "record-title",
+          "progress": 0.708491268022992,
+          "opacity": "0.897972",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.874526)",
+          "duration": 140
+        },
+        {
+          "time": 193.19999998807907,
+          "target": "record-title",
+          "progress": 0.8472269847803874,
+          "opacity": "0.946529",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.458319)",
+          "duration": 140
+        },
+        {
+          "time": 200,
+          "target": "record-title",
+          "progress": 0.8472269847803874,
+          "opacity": "0.946529",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.458319)",
+          "duration": 140
+        },
+        {
+          "time": 210.0999999642372,
+          "target": "record-title",
+          "progress": 0.9195176104044377,
+          "opacity": "0.971831",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.241447)",
+          "duration": 140
+        },
+        {
+          "time": 217.80000001192093,
+          "target": "record-title",
+          "progress": 0.9195176104044377,
+          "opacity": "0.971831",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.241447)",
+          "duration": 140
+        },
+        {
+          "time": 225.0999999642372,
+          "target": "record-title",
+          "progress": 0.9195176104044377,
+          "opacity": "0.971831",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.241447)",
+          "duration": 140
+        },
+        {
+          "time": 232.80000001192093,
+          "target": "record-title",
+          "progress": 0.9601031092356188,
+          "opacity": "0.986036",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.119691)",
+          "duration": 140
+        },
+        {
+          "time": 241.5999999642372,
+          "target": "record-title",
+          "progress": 0.9601031092356188,
+          "opacity": "0.986036",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.119691)",
+          "duration": 140
+        },
+        {
+          "time": 248.89999997615814,
+          "target": "record-title",
+          "progress": 0.982958323513433,
+          "opacity": "0.994035",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.051125)",
+          "duration": 140
+        },
+        {
+          "time": 257.0999999642372,
+          "target": "record-title",
+          "progress": 0.982958323513433,
+          "opacity": "0.994035",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.051125)",
+          "duration": 140
+        },
+        {
+          "time": 264.39999997615814,
+          "target": "record-title",
+          "progress": 0.9949072008710338,
+          "opacity": "0.998218",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0152784)",
+          "duration": 140
+        },
+        {
+          "time": 272.19999998807907,
+          "target": "record-title",
+          "progress": 0.9949072008710338,
+          "opacity": "0.998218",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0152784)",
+          "duration": 140
+        },
+        {
+          "time": 280.5,
+          "target": "record-title",
+          "progress": 0.9996213729663088,
+          "opacity": "0.999867",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.00113588)",
+          "duration": 140
+        },
+        {
+          "time": 289.0999999642372,
+          "target": "record-title",
+          "progress": 0.9996213729663088,
+          "opacity": "0.999867",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.00113588)",
+          "duration": 140
+        }
+      ],
+      "feedback": "",
+      "liveReducedAfter40ms": {
+        "matches": true,
+        "active": 0
+      }
+    },
+    {
+      "reducedMotion": "reduce",
+      "samples": [],
+      "feedback": ""
+    }
+  ]
+}

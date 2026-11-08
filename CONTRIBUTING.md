@@ -36,3 +36,11 @@ Maintainers review and merge contributions. No CLA or mandatory purchase is requ
 ## Updating the full-repository prompt
 
 Edit `docs/full-repo-prompt.txt`, then run `npm run sync:prompt` and `npm run format`. This keeps the README code block and the page’s copyable prompt identical. GitHub supplies its own copy control for fenced code blocks; the static website implements the clipboard button and an honest manual fallback. Browser tests verify the full copied text.
+
+## Skill behaviour and package changes
+
+The reviewed runtime file list is `scripts/skill-manifest.json`. Add a resource there deliberately; unexpected files and symlinks fail packaging. `npm test` includes package containment and disposable installation regressions. Audit fixtures, logs and development scripts belong outside the installed skill.
+
+Behavioural changes should include equal-budget fresh-context comparisons against the previous skill and an agent without it when practical. Keep graders outside the evaluated context, freeze criteria first, use synthetic data, and report blocked tools rather than counting them as passes. Web/mobile guidance, builds and actual native playback are different evidence levels. The reproducible corpus is documented in `evals/README.md`; running model evaluations uses authenticated quota and is intentionally not an ordinary contribution CI prerequisite.
+
+For an existing local skill, review the diff and make a backup before replacement. Keep the backup outside discovery directories to avoid loading two versions. Confirm the intended version is discovered; restore the backup if verification fails. Do not overwrite unrelated local customisations.

@@ -1,0 +1,28 @@
+[
+  {
+    "scenario": "M",
+    "run_id": "721af40a9821",
+    "snapshot_matches_retained_result": true,
+    "runtime_hashes": {
+      "public/index.html": "b89056629c2cab8bfa89fb80da9ef36ee87a9cdaae805c63740ccd1ef7cb8e7d",
+      "public/styles.css": "251529a19441af2454a8c4c7882d62bfd09485761141aa4bbdb1d3bbb93bfb70",
+      "public/model.js": "6ab4bab642b111b9d54d2a25f525c44ab5f0bb5c27bef54951289267d23d110a",
+      "public/app.js": "2db39a7a8e9ddcefe85c1755234d2ff8ba9f003a1dbd6c9b95a098a25f026d44"
+    },
+    "review_note_sha256": "2fbea9f62f5379bf838b8cba6b83631fc955ae4f19ed8ab2b7757ceb91aac832",
+    "transcript_sha256": "c90be23daf7324dfad51e9a2f0fbb440552865442bd894a8953aca0a5fcc78d4"
+  },
+  {
+    "scenario": "N",
+    "run_id": "a88aa5099cd9",
+    "snapshot_matches_retained_result": true,
+    "runtime_hashes": {
+      "public/index.html": "e0c8f9e93df79415b3fed7e3130a01e2e9210b0f91e592cf40c74fa8f92b4419",
+      "public/styles.css": "927a3a09ab28993b04997059ff400ce1b1ff0cdced83b4cefb8c5a4fe0b87ce2",
+      "public/receipts.js": "7d68bba4a733c3a7d3624919c4845f060f26f7e9e4ff0df9c36610a4c1461199",
+      "public/app.js": "fba23b7a8813da3a047aae6046b2de31bdfee63be4b7c4498dd35a7a9bbe4775"
+    },
+    "review_note_sha256": "330d85b6d5458f799dd56121bc2622f4b48b2f7d5c1aff739d89eee74a31aa8d",
+    "transcript_sha256": "561abb76d55497678d16843540be20a2a9ac5c3936fd6d4e4eab904159c9684b"
+  }
+]

@@ -1,0 +1,672 @@
+{
+  "browser": "158.0.8127.18",
+  "reviewedAt": "2026-11-08T17:07:55.234Z",
+  "outputs": {
+    "bbd34f48": {
+      "task": "A",
+      "cases": [
+        {
+          "size": "desktop",
+          "colorScheme": "light",
+          "reducedMotion": "no-preference",
+          "errors": [],
+          "empty": {
+            "feedback": "Enter a note.",
+            "focused": "draft",
+            "stats": {
+              "attempts": 0,
+              "successes": 0
+            }
+          },
+          "pending": {
+            "feedback": "Saving note…",
+            "disabled": false,
+            "ariaDisabled": "true",
+            "draftReadOnly": true,
+            "focus": "save",
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "failed": {
+            "feedback": "Save failed. Your note is still here. Select Save note to retry.",
+            "draft": "First packing note",
+            "notes": 0,
+            "failSwitch": false,
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "saved": {
+            "feedback": "Note saved.",
+            "draft": "",
+            "notes": [
+              "First packing note"
+            ],
+            "stats": {
+              "attempts": 2,
+              "successes": 1
+            }
+          },
+          "reloadNotes": [
+            "First packing note"
+          ],
+          "pendingEditAttempt": {
+            "blocked": true,
+            "valueAfterAttempt": "Submitted packing note"
+          },
+          "editedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "pendingRevertAttempts": [
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            },
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            }
+          ],
+          "revertedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "render": {
+            "width": 1280,
+            "scrollWidth": 1280,
+            "bg": "rgb(247, 246, 242)",
+            "ink": "rgb(36, 43, 40)",
+            "labels": [
+              "Note",
+              "Simulate failed save"
+            ],
+            "animations": []
+          },
+          "liveReducedMotionActiveAnimations": 0,
+          "video": "bbd34f48-desktop-playback.webm"
+        },
+        {
+          "size": "desktop",
+          "colorScheme": "light",
+          "reducedMotion": "reduce",
+          "errors": [],
+          "empty": {
+            "feedback": "Enter a note.",
+            "focused": "draft",
+            "stats": {
+              "attempts": 0,
+              "successes": 0
+            }
+          },
+          "pending": {
+            "feedback": "Saving note…",
+            "disabled": false,
+            "ariaDisabled": "true",
+            "draftReadOnly": true,
+            "focus": "save",
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "failed": {
+            "feedback": "Save failed. Your note is still here. Select Save note to retry.",
+            "draft": "First packing note",
+            "notes": 0,
+            "failSwitch": false,
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "saved": {
+            "feedback": "Note saved.",
+            "draft": "",
+            "notes": [
+              "First packing note"
+            ],
+            "stats": {
+              "attempts": 2,
+              "successes": 1
+            }
+          },
+          "reloadNotes": [
+            "First packing note"
+          ],
+          "pendingEditAttempt": {
+            "blocked": true,
+            "valueAfterAttempt": "Submitted packing note"
+          },
+          "editedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "pendingRevertAttempts": [
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            },
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            }
+          ],
+          "revertedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "render": {
+            "width": 1280,
+            "scrollWidth": 1280,
+            "bg": "rgb(247, 246, 242)",
+            "ink": "rgb(36, 43, 40)",
+            "labels": [
+              "Note",
+              "Simulate failed save"
+            ],
+            "animations": []
+          }
+        },
+        {
+          "size": "desktop",
+          "colorScheme": "dark",
+          "reducedMotion": "no-preference",
+          "errors": [],
+          "empty": {
+            "feedback": "Enter a note.",
+            "focused": "draft",
+            "stats": {
+              "attempts": 0,
+              "successes": 0
+            }
+          },
+          "pending": {
+            "feedback": "Saving note…",
+            "disabled": false,
+            "ariaDisabled": "true",
+            "draftReadOnly": true,
+            "focus": "save",
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "failed": {
+            "feedback": "Save failed. Your note is still here. Select Save note to retry.",
+            "draft": "First packing note",
+            "notes": 0,
+            "failSwitch": false,
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "saved": {
+            "feedback": "Note saved.",
+            "draft": "",
+            "notes": [
+              "First packing note"
+            ],
+            "stats": {
+              "attempts": 2,
+              "successes": 1
+            }
+          },
+          "reloadNotes": [
+            "First packing note"
+          ],
+          "pendingEditAttempt": {
+            "blocked": true,
+            "valueAfterAttempt": "Submitted packing note"
+          },
+          "editedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "pendingRevertAttempts": [
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            },
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            }
+          ],
+          "revertedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "render": {
+            "width": 1280,
+            "scrollWidth": 1280,
+            "bg": "rgb(32, 38, 35)",
+            "ink": "rgb(242, 243, 239)",
+            "labels": [
+              "Note",
+              "Simulate failed save"
+            ],
+            "animations": []
+          },
+          "liveReducedMotionActiveAnimations": 0
+        },
+        {
+          "size": "desktop",
+          "colorScheme": "dark",
+          "reducedMotion": "reduce",
+          "errors": [],
+          "empty": {
+            "feedback": "Enter a note.",
+            "focused": "draft",
+            "stats": {
+              "attempts": 0,
+              "successes": 0
+            }
+          },
+          "pending": {
+            "feedback": "Saving note…",
+            "disabled": false,
+            "ariaDisabled": "true",
+            "draftReadOnly": true,
+            "focus": "save",
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "failed": {
+            "feedback": "Save failed. Your note is still here. Select Save note to retry.",
+            "draft": "First packing note",
+            "notes": 0,
+            "failSwitch": false,
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "saved": {
+            "feedback": "Note saved.",
+            "draft": "",
+            "notes": [
+              "First packing note"
+            ],
+            "stats": {
+              "attempts": 2,
+              "successes": 1
+            }
+          },
+          "reloadNotes": [
+            "First packing note"
+          ],
+          "pendingEditAttempt": {
+            "blocked": true,
+            "valueAfterAttempt": "Submitted packing note"
+          },
+          "editedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "pendingRevertAttempts": [
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            },
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            }
+          ],
+          "revertedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "render": {
+            "width": 1280,
+            "scrollWidth": 1280,
+            "bg": "rgb(32, 38, 35)",
+            "ink": "rgb(242, 243, 239)",
+            "labels": [
+              "Note",
+              "Simulate failed save"
+            ],
+            "animations": []
+          }
+        },
+        {
+          "size": "mobile",
+          "colorScheme": "light",
+          "reducedMotion": "no-preference",
+          "errors": [],
+          "empty": {
+            "feedback": "Enter a note.",
+            "focused": "draft",
+            "stats": {
+              "attempts": 0,
+              "successes": 0
+            }
+          },
+          "pending": {
+            "feedback": "Saving note…",
+            "disabled": false,
+            "ariaDisabled": "true",
+            "draftReadOnly": true,
+            "focus": "save",
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "failed": {
+            "feedback": "Save failed. Your note is still here. Select Save note to retry.",
+            "draft": "First packing note",
+            "notes": 0,
+            "failSwitch": false,
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "saved": {
+            "feedback": "Note saved.",
+            "draft": "",
+            "notes": [
+              "First packing note"
+            ],
+            "stats": {
+              "attempts": 2,
+              "successes": 1
+            }
+          },
+          "reloadNotes": [
+            "First packing note"
+          ],
+          "pendingEditAttempt": {
+            "blocked": true,
+            "valueAfterAttempt": "Submitted packing note"
+          },
+          "editedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "pendingRevertAttempts": [
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            },
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            }
+          ],
+          "revertedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "render": {
+            "width": 390,
+            "scrollWidth": 390,
+            "bg": "rgb(247, 246, 242)",
+            "ink": "rgb(36, 43, 40)",
+            "labels": [
+              "Note",
+              "Simulate failed save"
+            ],
+            "animations": []
+          },
+          "liveReducedMotionActiveAnimations": 0
+        },
+        {
+          "size": "mobile",
+          "colorScheme": "light",
+          "reducedMotion": "reduce",
+          "errors": [],
+          "empty": {
+            "feedback": "Enter a note.",
+            "focused": "draft",
+            "stats": {
+              "attempts": 0,
+              "successes": 0
+            }
+          },
+          "pending": {
+            "feedback": "Saving note…",
+            "disabled": false,
+            "ariaDisabled": "true",
+            "draftReadOnly": true,
+            "focus": "save",
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "failed": {
+            "feedback": "Save failed. Your note is still here. Select Save note to retry.",
+            "draft": "First packing note",
+            "notes": 0,
+            "failSwitch": false,
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "saved": {
+            "feedback": "Note saved.",
+            "draft": "",
+            "notes": [
+              "First packing note"
+            ],
+            "stats": {
+              "attempts": 2,
+              "successes": 1
+            }
+          },
+          "reloadNotes": [
+            "First packing note"
+          ],
+          "pendingEditAttempt": {
+            "blocked": true,
+            "valueAfterAttempt": "Submitted packing note"
+          },
+          "editedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "pendingRevertAttempts": [
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            },
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            }
+          ],
+          "revertedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "render": {
+            "width": 390,
+            "scrollWidth": 390,
+            "bg": "rgb(247, 246, 242)",
+            "ink": "rgb(36, 43, 40)",
+            "labels": [
+              "Note",
+              "Simulate failed save"
+            ],
+            "animations": []
+          }
+        },
+        {
+          "size": "mobile",
+          "colorScheme": "dark",
+          "reducedMotion": "no-preference",
+          "errors": [],
+          "empty": {
+            "feedback": "Enter a note.",
+            "focused": "draft",
+            "stats": {
+              "attempts": 0,
+              "successes": 0
+            }
+          },
+          "pending": {
+            "feedback": "Saving note…",
+            "disabled": false,
+            "ariaDisabled": "true",
+            "draftReadOnly": true,
+            "focus": "save",
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "failed": {
+            "feedback": "Save failed. Your note is still here. Select Save note to retry.",
+            "draft": "First packing note",
+            "notes": 0,
+            "failSwitch": false,
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "saved": {
+            "feedback": "Note saved.",
+            "draft": "",
+            "notes": [
+              "First packing note"
+            ],
+            "stats": {
+              "attempts": 2,
+              "successes": 1
+            }
+          },
+          "reloadNotes": [
+            "First packing note"
+          ],
+          "pendingEditAttempt": {
+            "blocked": true,
+            "valueAfterAttempt": "Submitted packing note"
+          },
+          "editedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "pendingRevertAttempts": [
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            },
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            }
+          ],
+          "revertedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "render": {
+            "width": 390,
+            "scrollWidth": 390,
+            "bg": "rgb(32, 38, 35)",
+            "ink": "rgb(242, 243, 239)",
+            "labels": [
+              "Note",
+              "Simulate failed save"
+            ],
+            "animations": []
+          },
+          "liveReducedMotionActiveAnimations": 0
+        },
+        {
+          "size": "mobile",
+          "colorScheme": "dark",
+          "reducedMotion": "reduce",
+          "errors": [],
+          "empty": {
+            "feedback": "Enter a note.",
+            "focused": "draft",
+            "stats": {
+              "attempts": 0,
+              "successes": 0
+            }
+          },
+          "pending": {
+            "feedback": "Saving note…",
+            "disabled": false,
+            "ariaDisabled": "true",
+            "draftReadOnly": true,
+            "focus": "save",
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "failed": {
+            "feedback": "Save failed. Your note is still here. Select Save note to retry.",
+            "draft": "First packing note",
+            "notes": 0,
+            "failSwitch": false,
+            "stats": {
+              "attempts": 1,
+              "successes": 0
+            }
+          },
+          "saved": {
+            "feedback": "Note saved.",
+            "draft": "",
+            "notes": [
+              "First packing note"
+            ],
+            "stats": {
+              "attempts": 2,
+              "successes": 1
+            }
+          },
+          "reloadNotes": [
+            "First packing note"
+          ],
+          "pendingEditAttempt": {
+            "blocked": true,
+            "valueAfterAttempt": "Submitted packing note"
+          },
+          "editedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "pendingRevertAttempts": [
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            },
+            {
+              "blocked": true,
+              "valueAfterAttempt": "Reentered text"
+            }
+          ],
+          "revertedWhilePending": {
+            "feedback": "Note saved.",
+            "draft": ""
+          },
+          "render": {
+            "width": 390,
+            "scrollWidth": 390,
+            "bg": "rgb(32, 38, 35)",
+            "ink": "rgb(242, 243, 239)",
+            "labels": [
+              "Note",
+              "Simulate failed save"
+            ],
+            "animations": []
+          }
+        }
+      ]
+    }
+  }
+}

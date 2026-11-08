@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "supplemental": true,
+  "candidate_freeze_sha256": "ef8a65d8bdfd7f41be3a727d2f9161ccb219ecd4eefc048b74aaa5776baa00ff",
+  "authoring_phase": "after-candidate-freeze-before-model-outputs",
+  "cases": [
+    {
+      "id": "M",
+      "split": "held-out-after-candidate-freeze",
+      "task": "tasks/M.md",
+      "fixture": "fixtures/M",
+      "app_root": "public",
+      "platform": "web",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "M",
+          "--workspace",
+          "{workspace}"
+        ]
+      },
+      "limits": {
+        "model_task_timeout_seconds": 240,
+        "network": "off",
+        "new_dependencies": false,
+        "external_mutations": false
+      },
+      "trigger_cases": {
+        "positive": "Maintenance staff reorder this short round frequently. Add a brief useful transition that helps them track the row they have just moved, within the current tokens and layout. Preserve immediate ordering, existing edge-disabled controls, persisted order, mounted row/input identity, notes, checkboxes, caret selection and the appropriate focused control. Rapid repeated/opposite moves must work while an earlier movement is running. Reduced motion must work immediately, including when the preference changes during a movement. Keep this a small refinement of the existing list, with no dependency or new navigation/control scheme. Deliver the runnable interaction and a concise record of observed checks and limitations.",
+        "negative": "Correct the spelling of one existing label without changing its style or behaviour.",
+        "ambiguous": "This interaction occasionally feels confusing. Inspect the cause and explain it before changing anything."
+      }
+    },
+    {
+      "id": "N",
+      "split": "held-out-after-candidate-freeze",
+      "task": "tasks/N.md",
+      "fixture": "fixtures/N",
+      "app_root": "public",
+      "platform": "web",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "N",
+          "--workspace",
+          "{workspace}"
+        ]
+      },
+      "limits": {
+        "model_task_timeout_seconds": 240,
+        "network": "off",
+        "new_dependencies": false,
+        "external_mutations": false
+      },
+      "trigger_cases": {
+        "positive": "The Receipt desk filter drawer sometimes keeps the page blocked after dismissal, especially when reduced motion changes while it is closing. Repair the existing motion lifecycle using its visual style and controls. Keep a brief useful entrance/exit where appropriate, but complete open/apply/cancel/Escape promptly even when an animation is cancelled or no transitionend arrives. Preserve the applied versus draft filter, initial focus, focus return, background scroll position and scroll locking only while the dialog is actually active. Repeated open/close must remain usable at desktop and 320px. Keep this a focused UI repair with no new engine or backend work, and record actual playback/accessibility checks and any limitations.",
+        "negative": "Correct the spelling of one existing label without changing its style or behaviour.",
+        "ambiguous": "This interaction occasionally feels confusing. Inspect the cause and explain it before changing anything."
+      }
+    }
+  ],
+  "conditions": [
+    "no-skill",
+    "original-v2.0.0",
+    "improved"
+  ],
+  "controls": "same pinned model/tools/limits and normal host loading as primary corpus; fresh contexts; hide criteria and other tasks"
+}

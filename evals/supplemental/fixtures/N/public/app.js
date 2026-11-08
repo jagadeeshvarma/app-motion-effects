@@ -1,0 +1,6 @@
+import {receipts} from './receipts.js';
+const panel=document.querySelector('#panel');let activeUnpaid=false;let priorOverflow='';let returnFocus=null;
+function render(){document.querySelector('#receipts').replaceChildren(...receipts.filter(item=>!activeUnpaid||!item.paid).map(item=>{const li=document.createElement('li');li.dataset.paid=String(item.paid);li.textContent=`Receipt ${item.id}: ${item.paid?'paid':'unpaid'}`;return li}));document.querySelector('#feedback').textContent=activeUnpaid?'Unpaid receipts':'All receipts';}
+function open(){if(panel.open)return;returnFocus=document.activeElement;priorOverflow=document.body.style.overflow;document.body.style.overflow='hidden';document.querySelector('#unpaid').checked=activeUnpaid;panel.showModal();requestAnimationFrame(()=>panel.classList.add('shown'));}
+function close(){panel.classList.remove('shown');panel.addEventListener('transitionend',()=>{panel.close();document.body.style.overflow=priorOverflow;returnFocus?.focus({preventScroll:true})},{once:true});}
+document.querySelector('#filters').onclick=open;document.querySelector('#cancel').onclick=close;document.querySelector('#apply').onclick=()=>{activeUnpaid=document.querySelector('#unpaid').checked;render();close()};panel.addEventListener('cancel',event=>{event.preventDefault();close()});render();

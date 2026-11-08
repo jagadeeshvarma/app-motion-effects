@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "tag": "v2.0.0",
+  "tagCommit": "52969d43d327275b37c47cc842a46a875d843468",
+  "expectedFiles": {
+    "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+    "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+    "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+    "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+    "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+    "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+    "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+    "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+    "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+  },
+  "checked": [
+    {
+      "outputId": "64f520e69dda",
+      "scenario": "J",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "4c36fa392320",
+      "scenario": "G",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "4632aac6b819",
+      "scenario": "B",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "5652265c60dc",
+      "scenario": "K",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "433306eb0855",
+      "scenario": "E",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "534a9b90a0ab",
+      "scenario": "C",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "46d3a3141cc0",
+      "scenario": "I",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "460105a7cadc",
+      "scenario": "L",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "98385e1521b3",
+      "scenario": "A",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "2f4d38e1a126",
+      "scenario": "F",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "32df6d45ede9",
+      "scenario": "H",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "db3a507d41ea",
+      "scenario": "D",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "f4344849a792",
+      "scenario": "D",
+      "trial": 2,
+      "status": "PASS"
+    },
+    {
+      "outputId": "217e487d5b45",
+      "scenario": "C",
+      "trial": 2,
+      "status": "PASS"
+    },
+    {
+      "outputId": "af92adaf54e8",
+      "scenario": "M",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "e9441c810517",
+      "scenario": "N",
+      "trial": 1,
+      "status": "PASS"
+    },
+    {
+      "outputId": "e329556b4570",
+      "scenario": "B",
+      "trial": 3,
+      "status": "PASS"
+    },
+    {
+      "outputId": "5b5dd3616eaa",
+      "scenario": "K",
+      "trial": 3,
+      "status": "PASS"
+    },
+    {
+      "outputId": "21f7a82c5323",
+      "scenario": "K",
+      "trial": 4,
+      "status": "PASS"
+    },
+    {
+      "outputId": "80bf981d9bda",
+      "scenario": "B",
+      "trial": 4,
+      "status": "PASS"
+    }
+  ],
+  "limit": "Verifies recorded per-run source maps against tag; does not turn unrun checks into passes."
+}

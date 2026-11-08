@@ -1,0 +1,16 @@
+{
+  "name": "app-motion-effects",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "SKILL.md",
+    "agents/openai.yaml",
+    "assets/review-template.md",
+    "references/adaptation.md",
+    "references/native.md",
+    "references/sources.md",
+    "references/taxonomy.md",
+    "references/trust-boundaries.md",
+    "references/verification.md"
+  ]
+}

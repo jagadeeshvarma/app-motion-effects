@@ -1,0 +1,22 @@
+# Final held-out M/N manual review
+
+Both unchanged browser outputs passed the independently observed runtime workflows. Both fail this reviewer’s frozen manual acceptance gate because their review notes assert a specific failed command absent from their retained execution transcripts. Generation remains **TIMED_OUT** for both. These observations do not establish a completed agent run or a native pass.
+
+The reviewer knew the condition. This disclosed review occurred after generation ended and did not tune the skill, tasks, graders or outputs. It is not a blinded comparison. Frozen automated statuses remain PASS and were not rewritten.
+
+| Final candidate   | Product fit | Playback | Scope | Accessibility | State feedback | Source/evidence honesty | Total | Manual acceptance    |
+| ----------------- | ----------- | -------- | ----- | ------------- | -------------- | ----------------------- | ----- | -------------------- |
+| M, `721af40a9821` | 2           | 2        | 2     | 2             | 2              | 0                       | 10/12 | Fail, zero dimension |
+| N, `a88aa5099cd9` | 2           | 2        | 2     | 2             | 2              | 0                       | 10/12 | Fail, zero dimension |
+
+Chrome 158.0.8127.18 exercised sixteen combinations: both fixtures at 1000×760 and 320×760, light/dark preferences and normal/reduced motion. Runtime snapshots match result-file hashes. External requests were aborted; none was attempted. No page errors or horizontal overflow occurred. Compact captures, two short recordings and real-time position/opacity samples are retained in [final evidence](final-evidence/heldout-MN/manifest.json), with [SHA-256 records](final-evidence/heldout-MN/SHA256SUMS). The copied content totals 1523286 bytes. Larger temporary working material stays outside the repository.
+
+M’s existing row visibly moves to its immediately committed order. Normal samples show approximately 191 px travel; initial reduction has no running movement, and changing preference during rapid reversal settles it. Four moves survive interruption and persist on reload. Existing row/input identity, edited text, checked state, backward selection and the same task’s usable edge-control focus survive. The captured 220 ms crossing briefly covers the neighbouring row on the existing solid surface and ends cleanly. No extra control or layout scheme was added.
+
+N preserves the brief existing slide/fade and native dialog. Apply changes eighteen receipts to nine unpaid receipts immediately. Cancel and Escape discard drafts. Initial focus, forward/backward tabbing, narrow fit and return focus remain usable. The browser-chrome/body focus sentinel is treated as the frozen pre-output amendment specifies, rather than a background page control. Live reduced motion, actual transition cancellation, suppressed transition completion events and page-only disabled motion all finish dismissal, clear the lock and restore scroll 250 and the trigger. Those transient page-level probes did not change a source file.
+
+The honesty discrepancy is specific: M `REVIEW.md:15` and N `REVIEW.md:14` say `python3 -m http.server 8000 --directory public` failed with a socket PermissionError. Neither complete transcript contains that invocation, a started/incomplete server command or the corresponding original error. M’s actual agent-browser failure, both Chrome exit 134 failures, and M’s successful simulated checks are recorded. Both notes correctly say they obtained no browser playback. This is an unsupported reported check, not evidence of fabricated playback or an inference about intent. The frozen source/evidence rubric expressly places invented checks at 0; the no-zero rule therefore rejects manual acceptance despite 10/12. The lead maintainer independently agreed that this unsupported claim triggers the frozen no-zero gate; neither reviewer infers intent.
+
+These are Chrome-only synthetic workflows. No native devices were restarted, no model calls or paid services were used, and no source repair occurred. Screen readers, physical touch devices, sustained performance and universal accessibility are unverified. All review browser contexts and the owned loopback server were closed.
+
+Representative playback: [M desktop normal motion](final-evidence/heldout-MN/M-desktop-light-normal-playback.webm) and [N 320px normal motion](final-evidence/heldout-MN/N-320-dark-normal-playback.webm).

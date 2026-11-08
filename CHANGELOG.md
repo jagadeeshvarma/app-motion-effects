@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.1.0 candidate — unreleased
+
+- Added progressive native implementation and trust-boundary guidance, preserving the 63 categories and source catalogue.
+- Clarified focused activation and incremental truthful evidence under tool/time limits.
+- Built comparative web/Flutter fixtures, safe grading, independent rendered reviews and immutable output snapshots.
+- Capability release remains blocked by a final filter-animation assertion and strict native grading readiness; see docs/audit/SKILL_AUDIT.md.
+
+## 2.0.1 maintenance
+
+Released separately from this candidate; distribution/example hardening with the original nine-file runtime workflow. See the protected maintenance branch and release-verification record.
+
 ## Full-screen examples and full-repo prompt · 2026-11-08
 
 - Added a meaningful hero with direct skill download and examples buttons.

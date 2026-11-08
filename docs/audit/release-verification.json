@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "auditCandidate": {
+    "version": "2.1.0",
+    "status": "BLOCKED",
+    "reason": [
+      "I observable-animation assertion FAIL",
+      "Strict native grading admission BLOCKED",
+      "Claude runtime authentication absent"
+    ]
+  },
+  "maintenance": {
+    "version": "2.0.1",
+    "status": "LOCAL; CHECKED; NOT YET PUSHED",
+    "runtimeFiles": 9,
+    "workflowUnchangedFrom": "v2.0.0",
+    "archiveSHA256": "1a36585938872983a9ea9569886e2a6a5e4c17732b903f36c019987eff0da2c5",
+    "CI": "NOT RUN on final commit yet",
+    "published": "NOT RUN",
+    "liveVerification": "NOT RUN"
+  },
+  "rollback": {
+    "skill": "Previous immutable v2.0.0 release and backup local installation",
+    "website": "Revert maintenance merge through protected main/required checks; prior website commit ce5f55a8c2a9b4319a76d793b46eef9a41d5a541"
+  },
+  "noApplicationProductionChanges": true
+}

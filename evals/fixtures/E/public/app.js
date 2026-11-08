@@ -1,0 +1,1 @@
+const editor=document.querySelector('#editor');document.querySelector('#open').onclick=()=>editor.hidden=false;document.querySelector('#cancel').onclick=()=>editor.hidden=true;document.querySelector('#confirm').onclick=()=>{document.querySelector('#feedback').textContent=`Count saved: ${document.querySelector('#count').value}`;editor.hidden=true};

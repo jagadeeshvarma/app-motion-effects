@@ -1,0 +1,1 @@
+The Refresh queue button colour transition feels much too slow. Make this one interaction use the existing fast motion vocabulary and keep reduced motion working. Keep the task tiny: preserve all content, markup, JavaScript and other styles. Do not run a broad app audit or introduce a review gallery. Record a short check of the changed interaction.

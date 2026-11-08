@@ -4,19 +4,21 @@
 
 ### Motion that belongs in your app.
 
-A product-aware skill for coding agents that designs, implements and verifies meaningful animations, transitions and effects **within your existing brand and visual system**.
+A product-aware skill that guides coding agents to design, implement and verify meaningful animations, transitions and effects **within your existing brand and visual system**.
 
 [**Try the live playground**](https://jagadeeshvarma.github.io/app-motion-effects/) · [Install](#quick-start) · [Full-repo prompt](#full-repository-audit-and-implementation) · [Read the skill](skills/app-motion-effects/SKILL.md) · [Contribute](CONTRIBUTING.md)
 
 [![Checks](https://github.com/jagadeeshvarma/app-motion-effects/actions/workflows/checks.yml/badge.svg)](https://github.com/jagadeeshvarma/app-motion-effects/actions/workflows/checks.yml)
 [![Pages](https://github.com/jagadeeshvarma/app-motion-effects/actions/workflows/pages.yml/badge.svg)](https://github.com/jagadeeshvarma/app-motion-effects/actions/workflows/pages.yml)
 
-**Codex · Claude Code · compatible Agent Skills clients**<br>
+**Portable Agent Skills format**<br>
 MIT licensed · 63 technical categories · 31 source groups · No skill runtime dependencies
 
 </div>
 
 [![Interactive before/after playground](docs/media/playground-desktop.png)](https://jagadeeshvarma.github.io/app-motion-effects/)
+
+This audit branch contains an **unreleased 2.1 candidate**. Its capability gate is blocked; the stable 2.0.1 maintenance release is separate. [Measured audit](docs/audit/SKILL_AUDIT.md) · [Rendered evidence](docs/audit/EVIDENCE.md) · [Unchanged runnable outputs](evals/outputs-final/README.md).
 
 ## What it does
 
@@ -76,6 +78,7 @@ The installable skill is **`skills/app-motion-effects/`**. Copy the whole folder
 ```sh
 mkdir -p ~/.agents/skills
 test ! -e ~/.agents/skills/app-motion-effects && \
+  test ! -L ~/.agents/skills/app-motion-effects && \
   cp -R skills/app-motion-effects ~/.agents/skills/app-motion-effects
 ```
 
@@ -84,6 +87,7 @@ test ! -e ~/.agents/skills/app-motion-effects && \
 ```sh
 mkdir -p ~/.claude/skills
 test ! -e ~/.claude/skills/app-motion-effects && \
+  test ! -L ~/.claude/skills/app-motion-effects && \
   cp -R skills/app-motion-effects ~/.claude/skills/app-motion-effects
 ```
 
@@ -193,7 +197,7 @@ Establish and verify the visual contract required by the skill.
 
 Use existing branding, tokens, typography, component geometry, iconography, layouts, copy conventions and approved interaction patterns.
 
-Do not introduce decorative eyebrow labels, redundant headings or unnecessary interface elements. Preserve functional field labels, accessible names and useful instructions.
+Follow the target app’s approved rules for headings, labels and information density. Do not import this skill website’s visual preferences into another product. Remove redundant elements only when justified by the app’s own contract; preserve functional field labels, accessible names and useful instructions.
 
 Tailor the motion direction to this product and its customers. Different journeys may need different emphasis while remaining one coherent application.
 

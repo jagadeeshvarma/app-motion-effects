@@ -1,0 +1,115 @@
+{
+  "status": "FAIL",
+  "reason": "Final I observable-animation assertion failed; held-out M/N evidence-honesty manual gates failed; native comparison BLOCKED. No aggregate waives these gates.",
+  "comparison": [
+    {
+      "condition": "no-skill",
+      "webTasks": 12,
+      "artifactPasses": 10,
+      "completedWithinBudget": 11,
+      "nativeStatus": "BLOCKED",
+      "sampleNote": "One scored output per each of12heterogeneous webtasks; repeats separate."
+    },
+    {
+      "condition": "original-v2.0.0",
+      "webTasks": 12,
+      "artifactPasses": 9,
+      "completedWithinBudget": 8,
+      "nativeStatus": "BLOCKED",
+      "sampleNote": "One scored output per each of12heterogeneous webtasks; repeats separate."
+    },
+    {
+      "condition": "improved",
+      "webTasks": 12,
+      "artifactPasses": 11,
+      "completedWithinBudget": 8,
+      "nativeStatus": "BLOCKED",
+      "sampleNote": "One scored output per each of12heterogeneous webtasks; repeats separate."
+    }
+  ],
+  "repeats": [
+    {
+      "scenario": "B",
+      "condition": "no-skill",
+      "trials": 3,
+      "passes": 3,
+      "completed": 3,
+      "elapsedMedianSeconds": 131.924,
+      "elapsedRangeSeconds": [
+        128.801,
+        145.746
+      ]
+    },
+    {
+      "scenario": "B",
+      "condition": "original-v2.0.0",
+      "trials": 3,
+      "passes": 3,
+      "completed": 3,
+      "elapsedMedianSeconds": 180.452,
+      "elapsedRangeSeconds": [
+        166.118,
+        183.191
+      ]
+    },
+    {
+      "scenario": "B",
+      "condition": "improved",
+      "trials": 3,
+      "passes": 3,
+      "completed": 3,
+      "elapsedMedianSeconds": 142.732,
+      "elapsedRangeSeconds": [
+        128.528,
+        164.986
+      ]
+    },
+    {
+      "scenario": "K",
+      "condition": "no-skill",
+      "trials": 3,
+      "passes": 3,
+      "completed": 3,
+      "elapsedMedianSeconds": 157.652,
+      "elapsedRangeSeconds": [
+        132.769,
+        197.083
+      ]
+    },
+    {
+      "scenario": "K",
+      "condition": "original-v2.0.0",
+      "trials": 3,
+      "passes": 3,
+      "completed": 3,
+      "elapsedMedianSeconds": 214.759,
+      "elapsedRangeSeconds": [
+        171.89,
+        215.455
+      ]
+    },
+    {
+      "scenario": "K",
+      "condition": "improved",
+      "trials": 3,
+      "passes": 3,
+      "completed": 3,
+      "elapsedMedianSeconds": 191.435,
+      "elapsedRangeSeconds": [
+        184.571,
+        205.515
+      ]
+    }
+  ],
+  "agentTasksStarted": 67,
+  "routingTasksStarted": 6,
+  "setupOnlyRecords": 3,
+  "monetaryCost": null,
+  "limits": [
+    "Same advertised gpt-6.1-sol/high; immutable provider revision unavailable.",
+    "RestrictedCLIcontexts lacked in-agent browser playback; independent Chrome grading/manual reviews are separate.",
+    "Initial and audited harness versions, owned native tooling failures and chronology/blinding amendments are retained.",
+    "Single primary samples and heterogeneous tasks do not support universal superiority.",
+    "B/K have3trials per condition; D repeats are BLOCKED by strict native grading, not counted as passes."
+  ]
+}

@@ -1,0 +1,1 @@
+document.querySelector('#show').onclick=()=>{document.querySelector('#handover-content').textContent=document.querySelector('#handover').value;document.querySelector('#handover-panel').hidden=false};document.querySelector('#hide').onclick=()=>document.querySelector('#handover-panel').hidden=true;

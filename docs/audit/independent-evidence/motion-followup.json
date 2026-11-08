@@ -1,0 +1,2470 @@
+{
+  "3fc0a8e6": [
+    {
+      "reducedMotion": "no-preference",
+      "samples": [
+        {
+          "time": 311.39999997615814,
+          "target": "record-title",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 319.39999997615814,
+          "target": "record-title",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 326.60000002384186,
+          "target": "record-title",
+          "progress": 0.42432132592474703,
+          "opacity": "0.740945",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 335,
+          "target": "record-title",
+          "progress": 0.42432132592474703,
+          "opacity": "0.740945",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 342.39999997615814,
+          "target": "record-title",
+          "progress": 0.7094126106709658,
+          "opacity": "0.869236",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 352,
+          "target": "record-title",
+          "progress": 0.7094126106709658,
+          "opacity": "0.869236",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 358.89999997615814,
+          "target": "record-title",
+          "progress": 0.8471166396806831,
+          "opacity": "0.931202",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 367.80000001192093,
+          "target": "record-title",
+          "progress": 0.8471166396806831,
+          "opacity": "0.931202",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 375.10000002384186,
+          "target": "record-title",
+          "progress": 0.9194571309835273,
+          "opacity": "0.963756",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 382.30000001192093,
+          "target": "record-title",
+          "progress": 0.9194571309835273,
+          "opacity": "0.963756",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 392.39999997615814,
+          "target": "record-title",
+          "progress": 0.9601266192981746,
+          "opacity": "0.982057",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 400,
+          "target": "record-title",
+          "progress": 0.9601266192981746,
+          "opacity": "0.982057",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 407.60000002384186,
+          "target": "record-title",
+          "progress": 0.9829712877581438,
+          "opacity": "0.992337",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 415.39999997615814,
+          "target": "record-title",
+          "progress": 0.9829712877581438,
+          "opacity": "0.992337",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 424.30000001192093,
+          "target": "record-title",
+          "progress": 0.9949285060151135,
+          "opacity": "0.997718",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 430.69999998807907,
+          "target": "record-title",
+          "progress": 0.9949285060151135,
+          "opacity": "0.997718",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 438.89999997615814,
+          "target": "record-title",
+          "progress": 0.9949285060151135,
+          "opacity": "0.997718",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 447.10000002384186,
+          "target": "record-title",
+          "progress": 0.999634226391821,
+          "opacity": "0.999835",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 455.89999997615814,
+          "target": "record-title",
+          "progress": 0.999634226391821,
+          "opacity": "0.999835",
+          "transform": "none",
+          "duration": 140
+        }
+      ],
+      "feedback": "",
+      "liveReducedAfter40ms": {
+        "matches": true,
+        "active": 0
+      }
+    },
+    {
+      "reducedMotion": "reduce",
+      "samples": [],
+      "feedback": ""
+    }
+  ],
+  "ca146e90": [
+    {
+      "reducedMotion": "no-preference",
+      "samples": [
+        {
+          "time": 555.5999999642372,
+          "target": "save",
+          "progress": 0,
+          "opacity": "1",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 557,
+          "target": "save",
+          "progress": 0,
+          "opacity": "1",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 565.6999999880791,
+          "target": "save",
+          "progress": 0.42443654175483575,
+          "opacity": "0.830225",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 573,
+          "target": "save",
+          "progress": 0.42443654175483575,
+          "opacity": "0.830225",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 581,
+          "target": "save",
+          "progress": 0.7094708135086905,
+          "opacity": "0.716212",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 591,
+          "target": "save",
+          "progress": 0.7094708135086905,
+          "opacity": "0.716212",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 597,
+          "target": "save",
+          "progress": 0.8477138597032097,
+          "opacity": "0.660914",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 605.1999999880791,
+          "target": "save",
+          "progress": 0.8477138597032097,
+          "opacity": "0.660914",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 613.2999999523163,
+          "target": "save",
+          "progress": 0.9197845211713388,
+          "opacity": "0.632086",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 622,
+          "target": "save",
+          "progress": 0.9197845211713388,
+          "opacity": "0.632086",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 629.3999999761581,
+          "target": "save",
+          "progress": 0.9601898641758785,
+          "opacity": "0.615924",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 636.8999999761581,
+          "target": "save",
+          "progress": 0.9601898641758785,
+          "opacity": "0.615924",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 645.1999999880791,
+          "target": "save",
+          "progress": 0.983006159373099,
+          "opacity": "0.606798",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 653.7999999523163,
+          "target": "save",
+          "progress": 0.983006159373099,
+          "opacity": "0.606798",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 661,
+          "target": "save",
+          "progress": 0.9949450407358107,
+          "opacity": "0.602022",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 671.0999999642372,
+          "target": "save",
+          "progress": 0.9949450407358107,
+          "opacity": "0.602022",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 677.5,
+          "target": "save",
+          "progress": 0.9996379363856616,
+          "opacity": "0.600145",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 684.8999999761581,
+          "target": "save",
+          "progress": 0.9996379363856616,
+          "opacity": "0.600145",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 693,
+          "target": "save",
+          "progress": 0.9996379363856616,
+          "opacity": "0.600145",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 833.7999999523163,
+          "target": "save",
+          "progress": 0,
+          "opacity": "0.6",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 833.8999999761581,
+          "target": "feedback",
+          "progress": 0,
+          "opacity": "0.5",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 837.5999999642372,
+          "target": "save",
+          "progress": 0,
+          "opacity": "0.6",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 837.6999999880791,
+          "target": "feedback",
+          "progress": 0,
+          "opacity": "0.5",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 845.3999999761581,
+          "target": "save",
+          "progress": 0.42443654168676714,
+          "opacity": "0.769775",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 845.3999999761581,
+          "target": "feedback",
+          "progress": 0.11957142883754728,
+          "opacity": "0.712218",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 852.5999999642372,
+          "target": "save",
+          "progress": 0.42443654168676714,
+          "opacity": "0.769775",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 852.5999999642372,
+          "target": "feedback",
+          "progress": 0.11957142883754728,
+          "opacity": "0.712218",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 861.5999999642372,
+          "target": "save",
+          "progress": 0.7094708134743063,
+          "opacity": "0.883788",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 861.5999999642372,
+          "target": "feedback",
+          "progress": 0.2386142859804041,
+          "opacity": "0.854735",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 869.6999999880791,
+          "target": "save",
+          "progress": 0.7094708134743063,
+          "opacity": "0.883788",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 869.6999999880791,
+          "target": "feedback",
+          "progress": 0.2386142859804041,
+          "opacity": "0.854735",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 877.3999999761581,
+          "target": "save",
+          "progress": 0.8477138596861151,
+          "opacity": "0.939086",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 877.3999999761581,
+          "target": "feedback",
+          "progress": 0.35765714312326174,
+          "opacity": "0.923857",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 885,
+          "target": "save",
+          "progress": 0.8477138596861151,
+          "opacity": "0.939086",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 885,
+          "target": "feedback",
+          "progress": 0.35765714312326174,
+          "opacity": "0.923857",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 892.7999999523163,
+          "target": "save",
+          "progress": 0.8477138596861151,
+          "opacity": "0.939086",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 892.8999999761581,
+          "target": "feedback",
+          "progress": 0.35765714312326174,
+          "opacity": "0.923857",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 902,
+          "target": "save",
+          "progress": 0.9197845211619652,
+          "opacity": "0.967914",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 902,
+          "target": "feedback",
+          "progress": 0.4767000002661186,
+          "opacity": "0.959892",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 908.3999999761581,
+          "target": "save",
+          "progress": 0.9197845211619652,
+          "opacity": "0.967914",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 908.5,
+          "target": "feedback",
+          "progress": 0.4767000002661186,
+          "opacity": "0.959892",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 917.7999999523163,
+          "target": "save",
+          "progress": 0.9601898641705435,
+          "opacity": "0.984076",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 917.8999999761581,
+          "target": "feedback",
+          "progress": 0.5957428574089761,
+          "opacity": "0.980095",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 924.5999999642372,
+          "target": "save",
+          "progress": 0.9601898641705435,
+          "opacity": "0.984076",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 924.5999999642372,
+          "target": "feedback",
+          "progress": 0.5957428574089761,
+          "opacity": "0.980095",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 933.5999999642372,
+          "target": "save",
+          "progress": 0.9830061593701577,
+          "opacity": "0.993202",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 933.5999999642372,
+          "target": "feedback",
+          "progress": 0.714785714551833,
+          "opacity": "0.991503",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 942.6999999880791,
+          "target": "save",
+          "progress": 0.9830061593701577,
+          "opacity": "0.993202",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 942.7999999523163,
+          "target": "feedback",
+          "progress": 0.714785714551833,
+          "opacity": "0.991503",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 949.5,
+          "target": "save",
+          "progress": 0.9949450407344163,
+          "opacity": "0.997978",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 949.5,
+          "target": "feedback",
+          "progress": 0.8338285716946898,
+          "opacity": "0.997473",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 957.3999999761581,
+          "target": "save",
+          "progress": 0.9949450407344163,
+          "opacity": "0.997978",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 957.3999999761581,
+          "target": "feedback",
+          "progress": 0.8338285716946898,
+          "opacity": "0.997473",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 965.2999999523163,
+          "target": "save",
+          "progress": 0.9996379363853302,
+          "opacity": "0.999855",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 965.2999999523163,
+          "target": "feedback",
+          "progress": 0.9528714288375475,
+          "opacity": "0.999819",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 973.2999999523163,
+          "target": "save",
+          "progress": 0.9996379363853302,
+          "opacity": "0.999855",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 973.2999999523163,
+          "target": "feedback",
+          "progress": 0.9528714288375475,
+          "opacity": "0.999819",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1061.5999999642372,
+          "target": "save",
+          "progress": 0,
+          "opacity": "1",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1068.7999999523163,
+          "target": "save",
+          "progress": 0,
+          "opacity": "1",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1077.199999988079,
+          "target": "save",
+          "progress": 0,
+          "opacity": "1",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1085.3999999761581,
+          "target": "save",
+          "progress": 0.4242060958516072,
+          "opacity": "0.830318",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1092.5999999642372,
+          "target": "save",
+          "progress": 0.4242060958516072,
+          "opacity": "0.830318",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1101.2999999523163,
+          "target": "save",
+          "progress": 0.7093543954562503,
+          "opacity": "0.716258",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1109.5,
+          "target": "save",
+          "progress": 0.7093543954562503,
+          "opacity": "0.716258",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1117.3999999761581,
+          "target": "save",
+          "progress": 0.8476559807622498,
+          "opacity": "0.660938",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1124.5,
+          "target": "save",
+          "progress": 0.8476559807622498,
+          "opacity": "0.660938",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1134.199999988079,
+          "target": "save",
+          "progress": 0.9197527862938554,
+          "opacity": "0.632099",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1141.5999999642372,
+          "target": "save",
+          "progress": 0.9197527862938554,
+          "opacity": "0.632099",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1149.199999988079,
+          "target": "save",
+          "progress": 0.9601718018549849,
+          "opacity": "0.615931",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1156.2999999523163,
+          "target": "save",
+          "progress": 0.9601718018549849,
+          "opacity": "0.615931",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1164.699999988079,
+          "target": "save",
+          "progress": 0.982996200828293,
+          "opacity": "0.606802",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1173.2999999523163,
+          "target": "save",
+          "progress": 0.982996200828293,
+          "opacity": "0.606802",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1180.3999999761581,
+          "target": "save",
+          "progress": 0.9949403197316097,
+          "opacity": "0.602024",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1189.5999999642372,
+          "target": "save",
+          "progress": 0.9949403197316097,
+          "opacity": "0.602024",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1197.5,
+          "target": "save",
+          "progress": 0.9996368142258347,
+          "opacity": "0.600145",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1204.699999988079,
+          "target": "save",
+          "progress": 0.9996368142258347,
+          "opacity": "0.600145",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1380.7999999523163,
+          "target": "save",
+          "progress": 0,
+          "opacity": "0.6",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1380.8999999761581,
+          "target": "feedback",
+          "progress": 0,
+          "opacity": "0.5",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1380.8999999761581,
+          "target": "LI",
+          "progress": 0,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 3)",
+          "duration": 220
+        },
+        {
+          "time": 1389,
+          "target": "save",
+          "progress": 0,
+          "opacity": "0.6",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1389.0999999642372,
+          "target": "feedback",
+          "progress": 0,
+          "opacity": "0.5",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1389.0999999642372,
+          "target": "LI",
+          "progress": 0,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 3)",
+          "duration": 220
+        },
+        {
+          "time": 1397.2999999523163,
+          "target": "save",
+          "progress": 0.4242060966435727,
+          "opacity": "0.769682",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1397.3999999761581,
+          "target": "feedback",
+          "progress": 0.11950000029852881,
+          "opacity": "0.712103",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1397.3999999761581,
+          "target": "LI",
+          "progress": 0.07604545473542744,
+          "opacity": "0.27458",
+          "transform": "matrix(1, 0, 0, 1, 0, 2.17626)",
+          "duration": 220
+        },
+        {
+          "time": 1405.7999999523163,
+          "target": "save",
+          "progress": 0.4242060966435727,
+          "opacity": "0.769682",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1405.8999999761581,
+          "target": "feedback",
+          "progress": 0.11950000029852881,
+          "opacity": "0.712103",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1405.8999999761581,
+          "target": "LI",
+          "progress": 0.07604545473542744,
+          "opacity": "0.27458",
+          "transform": "matrix(1, 0, 0, 1, 0, 2.17626)",
+          "duration": 220
+        },
+        {
+          "time": 1413.5,
+          "target": "save",
+          "progress": 0.709354395856376,
+          "opacity": "0.883742",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1413.5,
+          "target": "feedback",
+          "progress": 0.23854285744138645,
+          "opacity": "0.854677",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1413.5,
+          "target": "LI",
+          "progress": 0.1518000001899732,
+          "opacity": "0.521379",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.43586)",
+          "duration": 220
+        },
+        {
+          "time": 1422.3999999761581,
+          "target": "save",
+          "progress": 0.709354395856376,
+          "opacity": "0.883742",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1422.3999999761581,
+          "target": "feedback",
+          "progress": 0.23854285744138645,
+          "opacity": "0.854677",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1422.3999999761581,
+          "target": "LI",
+          "progress": 0.1518000001899732,
+          "opacity": "0.521379",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.43586)",
+          "duration": 220
+        },
+        {
+          "time": 1428.699999988079,
+          "target": "save",
+          "progress": 0.8477370049764205,
+          "opacity": "0.939095",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1428.699999988079,
+          "target": "feedback",
+          "progress": 0.35768571458424375,
+          "opacity": "0.923868",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1428.699999988079,
+          "target": "LI",
+          "progress": 0.22761818200815515,
+          "opacity": "0.690914",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.927259)",
+          "duration": 220
+        },
+        {
+          "time": 1436.8999999761581,
+          "target": "save",
+          "progress": 0.8477370049764205,
+          "opacity": "0.939095",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1436.8999999761581,
+          "target": "feedback",
+          "progress": 0.35768571458424375,
+          "opacity": "0.923868",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1436.8999999761581,
+          "target": "LI",
+          "progress": 0.22761818200815515,
+          "opacity": "0.690914",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.927259)",
+          "duration": 220
+        },
+        {
+          "time": 1444.7999999523163,
+          "target": "save",
+          "progress": 0.9197972120390142,
+          "opacity": "0.967919",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1444.7999999523163,
+          "target": "feedback",
+          "progress": 0.4767285717270998,
+          "opacity": "0.959899",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1444.7999999523163,
+          "target": "LI",
+          "progress": 0.3033727274626999,
+          "opacity": "0.796419",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.610742)",
+          "duration": 220
+        },
+        {
+          "time": 1453.199999988079,
+          "target": "save",
+          "progress": 0.9197972120390142,
+          "opacity": "0.967919",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1453.199999988079,
+          "target": "feedback",
+          "progress": 0.4767285717270998,
+          "opacity": "0.959899",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1453.199999988079,
+          "target": "LI",
+          "progress": 0.3033727274626999,
+          "opacity": "0.796419",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.610742)",
+          "duration": 220
+        },
+        {
+          "time": 1460.3999999761581,
+          "target": "save",
+          "progress": 0.9601970873642687,
+          "opacity": "0.984079",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1460.5,
+          "target": "feedback",
+          "progress": 0.5957714288699575,
+          "opacity": "0.980099",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1460.5,
+          "target": "LI",
+          "progress": 0.3791272729172457,
+          "opacity": "0.864148",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.407556)",
+          "duration": 220
+        },
+        {
+          "time": 1470.699999988079,
+          "target": "save",
+          "progress": 0.9601970873642687,
+          "opacity": "0.984079",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1470.699999988079,
+          "target": "feedback",
+          "progress": 0.5957714288699575,
+          "opacity": "0.980099",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1470.699999988079,
+          "target": "LI",
+          "progress": 0.3791272729172457,
+          "opacity": "0.864148",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.407556)",
+          "duration": 220
+        },
+        {
+          "time": 1477.2999999523163,
+          "target": "save",
+          "progress": 0.983010141706423,
+          "opacity": "0.993204",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1477.2999999523163,
+          "target": "feedback",
+          "progress": 0.714814286012815,
+          "opacity": "0.991505",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1477.2999999523163,
+          "target": "LI",
+          "progress": 0.4548818183717915,
+          "opacity": "0.909565",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.271306)",
+          "duration": 220
+        },
+        {
+          "time": 1485.3999999761581,
+          "target": "save",
+          "progress": 0.983010141706423,
+          "opacity": "0.993204",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1485.3999999761581,
+          "target": "feedback",
+          "progress": 0.714814286012815,
+          "opacity": "0.991505",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1485.3999999761581,
+          "target": "LI",
+          "progress": 0.4548818183717915,
+          "opacity": "0.909565",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.271306)",
+          "duration": 220
+        },
+        {
+          "time": 1492.699999988079,
+          "target": "save",
+          "progress": 0.983010141706423,
+          "opacity": "0.993204",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1492.699999988079,
+          "target": "feedback",
+          "progress": 0.714814286012815,
+          "opacity": "0.991505",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1492.699999988079,
+          "target": "LI",
+          "progress": 0.4548818183717915,
+          "opacity": "0.909565",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.271306)",
+          "duration": 220
+        },
+        {
+          "time": 1502.699999988079,
+          "target": "save",
+          "progress": 0.9949469284131021,
+          "opacity": "0.997979",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1502.699999988079,
+          "target": "feedback",
+          "progress": 0.8338571431556712,
+          "opacity": "0.997473",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1502.7999999523163,
+          "target": "LI",
+          "progress": 0.5306363638263362,
+          "opacity": "0.940913",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.17726)",
+          "duration": 220
+        },
+        {
+          "time": 1510.5999999642372,
+          "target": "save",
+          "progress": 0.9996383847413229,
+          "opacity": "0.999855",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1510.699999988079,
+          "target": "feedback",
+          "progress": 0.9529000002985287,
+          "opacity": "0.999819",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1510.699999988079,
+          "target": "LI",
+          "progress": 0.606390909280882,
+          "opacity": "0.962815",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.111556)",
+          "duration": 220
+        },
+        {
+          "time": 1518.0999999642372,
+          "target": "save",
+          "progress": 0.9996383847413229,
+          "opacity": "0.999855",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1518.0999999642372,
+          "target": "feedback",
+          "progress": 0.9529000002985287,
+          "opacity": "0.999819",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1518.0999999642372,
+          "target": "LI",
+          "progress": 0.606390909280882,
+          "opacity": "0.962815",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.111556)",
+          "duration": 220
+        },
+        {
+          "time": 1525.699999988079,
+          "target": "save",
+          "progress": 0.9996383847413229,
+          "opacity": "0.999855",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1525.699999988079,
+          "target": "feedback",
+          "progress": 0.9529000002985287,
+          "opacity": "0.999819",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1525.699999988079,
+          "target": "LI",
+          "progress": 0.606390909280882,
+          "opacity": "0.962815",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.111556)",
+          "duration": 220
+        },
+        {
+          "time": 1534.3999999761581,
+          "target": "LI",
+          "progress": 0.6821636365536091,
+          "opacity": "0.978043",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0658717)",
+          "duration": 220
+        },
+        {
+          "time": 1541.3999999761581,
+          "target": "LI",
+          "progress": 0.6821636365536091,
+          "opacity": "0.978043",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0658717)",
+          "duration": 220
+        },
+        {
+          "time": 1550,
+          "target": "LI",
+          "progress": 0.7579181820081549,
+          "opacity": "0.988354",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0349369)",
+          "duration": 220
+        },
+        {
+          "time": 1557.5999999642372,
+          "target": "LI",
+          "progress": 0.7579181820081549,
+          "opacity": "0.988354",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0349369)",
+          "duration": 220
+        },
+        {
+          "time": 1565.0999999642372,
+          "target": "LI",
+          "progress": 0.8336727274627006,
+          "opacity": "0.994935",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0151958)",
+          "duration": 220
+        },
+        {
+          "time": 1572.8999999761581,
+          "target": "LI",
+          "progress": 0.8336727274627006,
+          "opacity": "0.994935",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0151958)",
+          "duration": 220
+        },
+        {
+          "time": 1580.5,
+          "target": "LI",
+          "progress": 0.9094363638263365,
+          "opacity": "0.998607",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.00417771)",
+          "duration": 220
+        },
+        {
+          "time": 1588.7999999523163,
+          "target": "LI",
+          "progress": 0.9094363638263365,
+          "opacity": "0.998607",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.00417771)",
+          "duration": 220
+        },
+        {
+          "time": 1597.199999988079,
+          "target": "LI",
+          "progress": 0.9851909092808824,
+          "opacity": "0.999965",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.000104158)",
+          "duration": 220
+        },
+        {
+          "time": 1604.3999999761581,
+          "target": "LI",
+          "progress": 0.9851909092808824,
+          "opacity": "0.999965",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.000104158)",
+          "duration": 220
+        }
+      ],
+      "feedback": "Note saved.",
+      "liveReducedAfter40ms": {
+        "matches": true,
+        "active": 0
+      }
+    },
+    {
+      "reducedMotion": "reduce",
+      "samples": [],
+      "feedback": "Note saved."
+    }
+  ],
+  "27d19673": [
+    {
+      "reducedMotion": "no-preference",
+      "samples": [
+        {
+          "time": 325.9000000357628,
+          "target": "inspector",
+          "progress": 0,
+          "opacity": "0.75",
+          "transform": "matrix(1, 0, 0, 1, 0, 4)",
+          "duration": 220
+        },
+        {
+          "time": 331.19999998807907,
+          "target": "inspector",
+          "progress": 0.27479251423425843,
+          "opacity": "0.818698",
+          "transform": "matrix(1, 0, 0, 1, 0, 2.90083)",
+          "duration": 220
+        },
+        {
+          "time": 340.10000002384186,
+          "target": "inspector",
+          "progress": 0.27479251423425843,
+          "opacity": "0.818698",
+          "transform": "matrix(1, 0, 0, 1, 0, 2.90083)",
+          "duration": 220
+        },
+        {
+          "time": 345.69999998807907,
+          "target": "inspector",
+          "progress": 0.5215427471460957,
+          "opacity": "0.880386",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.91383)",
+          "duration": 220
+        },
+        {
+          "time": 355.4000000357628,
+          "target": "inspector",
+          "progress": 0.5215427471460957,
+          "opacity": "0.880386",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.91383)",
+          "duration": 220
+        },
+        {
+          "time": 361.69999998807907,
+          "target": "inspector",
+          "progress": 0.6901261544006339,
+          "opacity": "0.922532",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.2395)",
+          "duration": 220
+        },
+        {
+          "time": 369.80000001192093,
+          "target": "inspector",
+          "progress": 0.6901261544006339,
+          "opacity": "0.922532",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.2395)",
+          "duration": 220
+        },
+        {
+          "time": 378,
+          "target": "inspector",
+          "progress": 0.7959245063075049,
+          "opacity": "0.948981",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.816302)",
+          "duration": 220
+        },
+        {
+          "time": 386.60000002384186,
+          "target": "inspector",
+          "progress": 0.7959245063075049,
+          "opacity": "0.948981",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.816302)",
+          "duration": 220
+        },
+        {
+          "time": 394.80000001192093,
+          "target": "inspector",
+          "progress": 0.8637170227728328,
+          "opacity": "0.965929",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.545132)",
+          "duration": 220
+        },
+        {
+          "time": 401.9000000357628,
+          "target": "inspector",
+          "progress": 0.8637170227728328,
+          "opacity": "0.965929",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.545132)",
+          "duration": 220
+        },
+        {
+          "time": 410.10000002384186,
+          "target": "inspector",
+          "progress": 0.9092701805766792,
+          "opacity": "0.977318",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.362919)",
+          "duration": 220
+        },
+        {
+          "time": 419.69999998807907,
+          "target": "inspector",
+          "progress": 0.9093466573037555,
+          "opacity": "0.977337",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.362613)",
+          "duration": 220
+        },
+        {
+          "time": 425.9000000357628,
+          "target": "inspector",
+          "progress": 0.9093466573037555,
+          "opacity": "0.977337",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.362613)",
+          "duration": 220
+        },
+        {
+          "time": 436,
+          "target": "inspector",
+          "progress": 0.9407614926356996,
+          "opacity": "0.98519",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.236954)",
+          "duration": 220
+        },
+        {
+          "time": 442.19999998807907,
+          "target": "inspector",
+          "progress": 0.9407614926356996,
+          "opacity": "0.98519",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.236954)",
+          "duration": 220
+        },
+        {
+          "time": 451.10000002384186,
+          "target": "inspector",
+          "progress": 0.9626737209209831,
+          "opacity": "0.990668",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.149305)",
+          "duration": 220
+        },
+        {
+          "time": 460.10000002384186,
+          "target": "inspector",
+          "progress": 0.9779426069931629,
+          "opacity": "0.994486",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0882296)",
+          "duration": 220
+        },
+        {
+          "time": 467.80000001192093,
+          "target": "inspector",
+          "progress": 0.9779682424770725,
+          "opacity": "0.994492",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.088127)",
+          "duration": 220
+        },
+        {
+          "time": 475.4000000357628,
+          "target": "inspector",
+          "progress": 0.9779682424770725,
+          "opacity": "0.994492",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.088127)",
+          "duration": 220
+        },
+        {
+          "time": 483.30000001192093,
+          "target": "inspector",
+          "progress": 0.9883050926718149,
+          "opacity": "0.997076",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0467796)",
+          "duration": 220
+        },
+        {
+          "time": 492.19999998807907,
+          "target": "inspector",
+          "progress": 0.9883050926718149,
+          "opacity": "0.997076",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0467796)",
+          "duration": 220
+        },
+        {
+          "time": 499.30000001192093,
+          "target": "inspector",
+          "progress": 0.9948952558685511,
+          "opacity": "0.998724",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.020419)",
+          "duration": 220
+        },
+        {
+          "time": 506.80000001192093,
+          "target": "inspector",
+          "progress": 0.9948952558685511,
+          "opacity": "0.998724",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.020419)",
+          "duration": 220
+        },
+        {
+          "time": 514.1999999880791,
+          "target": "inspector",
+          "progress": 0.9985929504591728,
+          "opacity": "0.999648",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0056282)",
+          "duration": 220
+        },
+        {
+          "time": 524.3000000119209,
+          "target": "inspector",
+          "progress": 0.9985929504591728,
+          "opacity": "0.999648",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0056282)",
+          "duration": 220
+        },
+        {
+          "time": 531.3000000119209,
+          "target": "inspector",
+          "progress": 0.9999638719088889,
+          "opacity": "0.999991",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.000144512)",
+          "duration": 220
+        },
+        {
+          "time": 540.1999999880791,
+          "target": "inspector",
+          "progress": 0.9999638719088889,
+          "opacity": "0.999991",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.000144512)",
+          "duration": 220
+        }
+      ],
+      "feedback": "",
+      "liveReducedAfter40ms": {
+        "matches": true,
+        "active": 0
+      }
+    },
+    {
+      "reducedMotion": "reduce",
+      "samples": [],
+      "feedback": ""
+    }
+  ],
+  "759978a7": [
+    {
+      "reducedMotion": "no-preference",
+      "samples": [
+        {
+          "time": 767.3999999761581,
+          "target": "SPAN",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 776.3999999761581,
+          "target": "SPAN",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 782.8999999761581,
+          "target": "SPAN",
+          "progress": 0.11909285723763881,
+          "opacity": "0.740301",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 793.1999999880791,
+          "target": "SPAN",
+          "progress": 0.11909285723763881,
+          "opacity": "0.740301",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 799.3000000119209,
+          "target": "SPAN",
+          "progress": 0.23813571438049644,
+          "opacity": "0.86891",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 808.5,
+          "target": "SPAN",
+          "progress": 0.23837857152335343,
+          "opacity": "0.869089",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 816.1999999880791,
+          "target": "SPAN",
+          "progress": 0.35742142866621024,
+          "opacity": "0.931385",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 822.5999999642372,
+          "target": "SPAN",
+          "progress": 0.35742142866621024,
+          "opacity": "0.931385",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 832.3000000119209,
+          "target": "SPAN",
+          "progress": 0.4764642858090679,
+          "opacity": "0.963856",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 839.5999999642372,
+          "target": "SPAN",
+          "progress": 0.4764642858090679,
+          "opacity": "0.963856",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 846.8999999761581,
+          "target": "SPAN",
+          "progress": 0.4764642858090679,
+          "opacity": "0.963856",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 855.0999999642372,
+          "target": "SPAN",
+          "progress": 0.5955071429519248,
+          "opacity": "0.982059",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 864.5999999642372,
+          "target": "SPAN",
+          "progress": 0.5955071429519248,
+          "opacity": "0.982059",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 871.8999999761581,
+          "target": "SPAN",
+          "progress": 0.7145500000947823,
+          "opacity": "0.992338",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 880.1999999880791,
+          "target": "SPAN",
+          "progress": 0.7145500000947823,
+          "opacity": "0.992338",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 887.5,
+          "target": "SPAN",
+          "progress": 0.8335928572376392,
+          "opacity": "0.997718",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 896.3000000119209,
+          "target": "SPAN",
+          "progress": 0.8335928572376392,
+          "opacity": "0.997718",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 903.0999999642372,
+          "target": "SPAN",
+          "progress": 0.952635714380496,
+          "opacity": "0.999835",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 911.6999999880791,
+          "target": "SPAN",
+          "progress": 0.952635714380496,
+          "opacity": "0.999835",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1055.199999988079,
+          "target": "SPAN",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1064,
+          "target": "SPAN",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1071.0999999642372,
+          "target": "SPAN",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1079.5,
+          "target": "SPAN",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1087.0999999642372,
+          "target": "SPAN",
+          "progress": 0.11964999999906871,
+          "opacity": "0.741111",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1097,
+          "target": "SPAN",
+          "progress": 0.11964999999906871,
+          "opacity": "0.741111",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1103.0999999642372,
+          "target": "SPAN",
+          "progress": 0.23869285714192634,
+          "opacity": "0.869319",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1113.199999988079,
+          "target": "SPAN",
+          "progress": 0.23869285714192634,
+          "opacity": "0.869319",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1118.5999999642372,
+          "target": "SPAN",
+          "progress": 0.3577357142847824,
+          "opacity": "0.9315",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1127.699999988079,
+          "target": "SPAN",
+          "progress": 0.3577357142847824,
+          "opacity": "0.9315",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1134.5999999642372,
+          "target": "SPAN",
+          "progress": 0.47677857142764,
+          "opacity": "0.963919",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1143.199999988079,
+          "target": "SPAN",
+          "progress": 0.47677857142764,
+          "opacity": "0.963919",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1150.5999999642372,
+          "target": "SPAN",
+          "progress": 0.5958214285704976,
+          "opacity": "0.982094",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1159,
+          "target": "SPAN",
+          "progress": 0.5958214285704976,
+          "opacity": "0.982094",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1166.5999999642372,
+          "target": "SPAN",
+          "progress": 0.7148642857133537,
+          "opacity": "0.992358",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1176.5999999642372,
+          "target": "SPAN",
+          "progress": 0.7148642857133537,
+          "opacity": "0.992358",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1183.0999999642372,
+          "target": "SPAN",
+          "progress": 0.8339071428562113,
+          "opacity": "0.997728",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1191,
+          "target": "SPAN",
+          "progress": 0.8339071428562113,
+          "opacity": "0.997728",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1200.5999999642372,
+          "target": "SPAN",
+          "progress": 0.9529499999990689,
+          "opacity": "0.999838",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1207.699999988079,
+          "target": "SPAN",
+          "progress": 0.9529499999990689,
+          "opacity": "0.999838",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1215,
+          "target": "SPAN",
+          "progress": 0.9529499999990689,
+          "opacity": "0.999838",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1621.5999999642372,
+          "target": "SPAN",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1625.8999999761581,
+          "target": "SPAN",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1631.5,
+          "target": "SPAN",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1640.0999999642372,
+          "target": "SPAN",
+          "progress": 0.11933571431719246,
+          "opacity": "0.740654",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1649,
+          "target": "SPAN",
+          "progress": 0.2383785714600501,
+          "opacity": "0.869089",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1654.800000011921,
+          "target": "SPAN",
+          "progress": 0.2383785714600501,
+          "opacity": "0.869089",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1663.300000011921,
+          "target": "SPAN",
+          "progress": 0.2383785714600501,
+          "opacity": "0.869089",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1672.199999988079,
+          "target": "SPAN",
+          "progress": 0.3574214286029077,
+          "opacity": "0.931385",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1679.199999988079,
+          "target": "SPAN",
+          "progress": 0.3574214286029077,
+          "opacity": "0.931385",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1686.5999999642372,
+          "target": "SPAN",
+          "progress": 0.4764785714600499,
+          "opacity": "0.963859",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1696.800000011921,
+          "target": "SPAN",
+          "progress": 0.4764785714600499,
+          "opacity": "0.963859",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1703,
+          "target": "SPAN",
+          "progress": 0.5955214286029075,
+          "opacity": "0.98206",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1710.699999988079,
+          "target": "SPAN",
+          "progress": 0.5955214286029075,
+          "opacity": "0.98206",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1719.300000011921,
+          "target": "SPAN",
+          "progress": 0.7145642857457636,
+          "opacity": "0.992339",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1726.3999999761581,
+          "target": "SPAN",
+          "progress": 0.7145642857457636,
+          "opacity": "0.992339",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1735.5999999642372,
+          "target": "SPAN",
+          "progress": 0.8336071428886211,
+          "opacity": "0.997719",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1742.8999999761581,
+          "target": "SPAN",
+          "progress": 0.8336071428886211,
+          "opacity": "0.997719",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1750.5,
+          "target": "SPAN",
+          "progress": 0.9526500000314788,
+          "opacity": "0.999835",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1760.699999988079,
+          "target": "SPAN",
+          "progress": 0.9526500000314788,
+          "opacity": "0.999835",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1980.5,
+          "target": "SPAN",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1980.5999999642372,
+          "target": "LI",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 1983.199999988079,
+          "target": "SPAN",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1983.300000011921,
+          "target": "LI",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 1992,
+          "target": "SPAN",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 1992,
+          "target": "LI",
+          "progress": 0,
+          "opacity": "0.55",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2000.5999999642372,
+          "target": "SPAN",
+          "progress": 0.11937857148165737,
+          "opacity": "0.740716",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2000.5999999642372,
+          "target": "LI",
+          "progress": 0.07596818185196379,
+          "opacity": "0.673436",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2008.0999999642372,
+          "target": "SPAN",
+          "progress": 0.11937857148165737,
+          "opacity": "0.740716",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2008.199999988079,
+          "target": "LI",
+          "progress": 0.07596818185196379,
+          "opacity": "0.673436",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2015.699999988079,
+          "target": "SPAN",
+          "progress": 0.2384214286245134,
+          "opacity": "0.86912",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2015.699999988079,
+          "target": "LI",
+          "progress": 0.15172272730650854,
+          "opacity": "0.784524",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2023.0999999642372,
+          "target": "SPAN",
+          "progress": 0.2384214286245134,
+          "opacity": "0.86912",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2023.199999988079,
+          "target": "LI",
+          "progress": 0.15172272730650854,
+          "opacity": "0.784524",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2032.0999999642372,
+          "target": "SPAN",
+          "progress": 0.3574642857673726,
+          "opacity": "0.931401",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2032.0999999642372,
+          "target": "LI",
+          "progress": 0.22747727276105534,
+          "opacity": "0.8608",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2041,
+          "target": "SPAN",
+          "progress": 0.3574642857673726,
+          "opacity": "0.931401",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2041,
+          "target": "LI",
+          "progress": 0.22747727276105534,
+          "opacity": "0.8608",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2047.5999999642372,
+          "target": "SPAN",
+          "progress": 0.3574642857673726,
+          "opacity": "0.931401",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2047.5999999642372,
+          "target": "LI",
+          "progress": 0.22747727276105534,
+          "opacity": "0.8608",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2055.599999964237,
+          "target": "SPAN",
+          "progress": 0.47650714291022866,
+          "opacity": "0.963864",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2055.599999964237,
+          "target": "LI",
+          "progress": 0.3032318182156001,
+          "opacity": "0.908319",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2063,
+          "target": "SPAN",
+          "progress": 0.47650714291022866,
+          "opacity": "0.963864",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2063,
+          "target": "LI",
+          "progress": 0.3032318182156001,
+          "opacity": "0.908319",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2071,
+          "target": "SPAN",
+          "progress": 0.5955500000530847,
+          "opacity": "0.982063",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2071,
+          "target": "LI",
+          "progress": 0.3789863636701449,
+          "opacity": "0.938821",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2080.800000011921,
+          "target": "SPAN",
+          "progress": 0.5955500000530847,
+          "opacity": "0.982063",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2080.800000011921,
+          "target": "LI",
+          "progress": 0.3789863636701449,
+          "opacity": "0.938821",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2087.399999976158,
+          "target": "SPAN",
+          "progress": 0.7145928571959439,
+          "opacity": "0.992341",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2087.399999976158,
+          "target": "LI",
+          "progress": 0.4547409091246916,
+          "opacity": "0.959273",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2094.899999976158,
+          "target": "SPAN",
+          "progress": 0.7145928571959439,
+          "opacity": "0.992341",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2095,
+          "target": "LI",
+          "progress": 0.4547409091246916,
+          "opacity": "0.959273",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2103.899999976158,
+          "target": "SPAN",
+          "progress": 0.8336357143388,
+          "opacity": "0.99772",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2103.899999976158,
+          "target": "LI",
+          "progress": 0.5304954545792364,
+          "opacity": "0.973389",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2111.099999964237,
+          "target": "SPAN",
+          "progress": 0.8336357143388,
+          "opacity": "0.99772",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2111.099999964237,
+          "target": "LI",
+          "progress": 0.5304954545792364,
+          "opacity": "0.973389",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2119.300000011921,
+          "target": "SPAN",
+          "progress": 0.952678571481656,
+          "opacity": "0.999836",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2119.300000011921,
+          "target": "LI",
+          "progress": 0.6062500000337812,
+          "opacity": "0.983251",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2128.199999988079,
+          "target": "SPAN",
+          "progress": 0.952678571481656,
+          "opacity": "0.999836",
+          "transform": "none",
+          "duration": 140
+        },
+        {
+          "time": 2128.199999988079,
+          "target": "LI",
+          "progress": 0.6062500000337812,
+          "opacity": "0.983251",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2135.199999988079,
+          "target": "LI",
+          "progress": 0.6820045454883279,
+          "opacity": "0.990107",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2143.599999964237,
+          "target": "LI",
+          "progress": 0.6820045454883279,
+          "opacity": "0.990107",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2151.599999964237,
+          "target": "LI",
+          "progress": 0.7577590909428727,
+          "opacity": "0.994752",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2158.699999988079,
+          "target": "LI",
+          "progress": 0.7577590909428727,
+          "opacity": "0.994752",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2166.800000011921,
+          "target": "LI",
+          "progress": 0.8335136363974175,
+          "opacity": "0.997716",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2176.899999976158,
+          "target": "LI",
+          "progress": 0.8335136363974175,
+          "opacity": "0.997716",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2183.699999988079,
+          "target": "LI",
+          "progress": 0.9092681818519642,
+          "opacity": "0.999371",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2192.699999988079,
+          "target": "LI",
+          "progress": 0.9092681818519642,
+          "opacity": "0.999371",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2200.099999964237,
+          "target": "LI",
+          "progress": 0.985022727306509,
+          "opacity": "0.999984",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2207.699999988079,
+          "target": "LI",
+          "progress": 0.985022727306509,
+          "opacity": "0.999984",
+          "transform": "none",
+          "duration": 220
+        },
+        {
+          "time": 2214.800000011921,
+          "target": "LI",
+          "progress": 0.985022727306509,
+          "opacity": "0.999984",
+          "transform": "none",
+          "duration": 220
+        }
+      ],
+      "feedback": "Note saved.",
+      "liveReducedAfter40ms": {
+        "matches": true,
+        "active": 0
+      }
+    },
+    {
+      "reducedMotion": "reduce",
+      "samples": [],
+      "feedback": "Note saved."
+    }
+  ]
+}

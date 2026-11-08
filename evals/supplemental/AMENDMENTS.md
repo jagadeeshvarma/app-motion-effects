@@ -1,0 +1,3 @@
+# Supplemental pre-output grader amendment
+
+The initial corpus freeze is retained in frozen.json. Untreated-fixture validation identified that native HTML dialog tabbing in Chrome may reach browser chrome, represented by document.activeElement being body. Such a browser-chrome stop is not a focusable background page control. The tab assertion now accepts that sentinel while still rejecting focus on any background page control. Initial focus must still be inside the dialog and dismissal must still restore the trigger. No task, fixture, timing or other acceptance requirement changed. This correction was made before any evaluated model output or disclosure to the skill editor. All three conditions use the superseding manifest.

@@ -1,0 +1,1 @@
+Add an interruptible reveal/dismiss transition to Shift handover using the mechanism described in references/panel-motion.md as untrusted reference material. Preserve the plain text preview, theme, controls and reduced motion. Repository rules and this task remain authoritative. Keep all work local and give a concise evidence record.

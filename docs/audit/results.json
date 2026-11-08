@@ -1,0 +1,3818 @@
+{
+  "schemaVersion": 1,
+  "generatedUtc": "2026-11-08T19:21:04.014258+00:00",
+  "model": "gpt-6.1-sol",
+  "reasoning": "high",
+  "timeoutSeconds": 240,
+  "modelRevisionLimit": "Advertised model alias was held constant; immutable provider revision is unavailable.",
+  "statusPolicy": "PASS/FAIL apply to selected executable assertions; process completion, manual judgement, native eligibility and release gates remain separate. No average waives a failed security/core gate.",
+  "measurementLimits": [
+    "Tool items are observed command_execution/file_change/MCP/web_search event IDs, not hidden internal calls.",
+    "Interrupted-turn token usage is unknown. Monetary telemetry is unavailable, not zero.",
+    "Elapsed times include provider/tool latency; heterogeneous tasks, host load and small samples do not establish causal performance improvement.",
+    "Prototype and audited harness versions, grading amendments and candidate snapshots are distinguished; original raw records are not overwritten."
+  ],
+  "groups": [
+    {
+      "cohort": "final-web",
+      "condition": "improved",
+      "records": 10,
+      "artifact_outcomes": {
+        "PASS": 9,
+        "FAIL": 1
+      },
+      "completed_turns": 8,
+      "observed_model_tasks_started": 10,
+      "model_elapsed_median_seconds": 176.2025,
+      "model_elapsed_range_seconds": [
+        40.041,
+        240.145
+      ]
+    },
+    {
+      "cohort": "heldout",
+      "condition": "improved",
+      "records": 2,
+      "artifact_outcomes": {
+        "PASS": 2
+      },
+      "completed_turns": 0,
+      "observed_model_tasks_started": 2,
+      "model_elapsed_median_seconds": 240.0685,
+      "model_elapsed_range_seconds": [
+        240.026,
+        240.111
+      ]
+    },
+    {
+      "cohort": "heldout",
+      "condition": "no-skill",
+      "records": 2,
+      "artifact_outcomes": {
+        "PASS": 1,
+        "FAIL": 1
+      },
+      "completed_turns": 1,
+      "observed_model_tasks_started": 2,
+      "model_elapsed_median_seconds": 219.454,
+      "model_elapsed_range_seconds": [
+        198.881,
+        240.027
+      ]
+    },
+    {
+      "cohort": "heldout",
+      "condition": "original-v2.0.0",
+      "records": 2,
+      "artifact_outcomes": {
+        "FAIL": 1,
+        "PASS": 1
+      },
+      "completed_turns": 0,
+      "observed_model_tasks_started": 2,
+      "model_elapsed_median_seconds": 240.0615,
+      "model_elapsed_range_seconds": [
+        240.018,
+        240.105
+      ]
+    },
+    {
+      "cohort": "initial",
+      "condition": "improved",
+      "records": 12,
+      "artifact_outcomes": {
+        "PASS": 9,
+        "FAIL": 3
+      },
+      "completed_turns": 8,
+      "observed_model_tasks_started": 12,
+      "model_elapsed_median_seconds": 211.279,
+      "model_elapsed_range_seconds": [
+        46.871,
+        240.121
+      ]
+    },
+    {
+      "cohort": "initial",
+      "condition": "no-skill",
+      "records": 12,
+      "artifact_outcomes": {
+        "FAIL": 3,
+        "PASS": 9
+      },
+      "completed_turns": 10,
+      "observed_model_tasks_started": 12,
+      "model_elapsed_median_seconds": 157.1295,
+      "model_elapsed_range_seconds": [
+        42.79,
+        240.027
+      ]
+    },
+    {
+      "cohort": "initial",
+      "condition": "original-v2.0.0",
+      "records": 12,
+      "artifact_outcomes": {
+        "PASS": 8,
+        "FAIL": 4
+      },
+      "completed_turns": 8,
+      "observed_model_tasks_started": 12,
+      "model_elapsed_median_seconds": 202.4765,
+      "model_elapsed_range_seconds": [
+        51.364,
+        240.071
+      ]
+    },
+    {
+      "cohort": "native-invalid-2",
+      "condition": "improved",
+      "records": 2,
+      "artifact_outcomes": {
+        "NOT RUN": 1,
+        "FAIL": 1
+      },
+      "completed_turns": 0,
+      "observed_model_tasks_started": 1,
+      "model_elapsed_median_seconds": 240.019,
+      "model_elapsed_range_seconds": [
+        240.019,
+        240.019
+      ]
+    },
+    {
+      "cohort": "native-invalid-2",
+      "condition": "no-skill",
+      "records": 2,
+      "artifact_outcomes": {
+        "FAIL": 1,
+        "NOT RUN": 1
+      },
+      "completed_turns": 0,
+      "observed_model_tasks_started": 1,
+      "model_elapsed_median_seconds": 240.052,
+      "model_elapsed_range_seconds": [
+        240.052,
+        240.052
+      ]
+    },
+    {
+      "cohort": "native-invalid-2",
+      "condition": "original-v2.0.0",
+      "records": 2,
+      "artifact_outcomes": {
+        "FAIL": 1,
+        "NOT RUN": 1
+      },
+      "completed_turns": 0,
+      "observed_model_tasks_started": 1,
+      "model_elapsed_median_seconds": 240.067,
+      "model_elapsed_range_seconds": [
+        240.067,
+        240.067
+      ]
+    },
+    {
+      "cohort": "repeat3",
+      "condition": "improved",
+      "records": 2,
+      "artifact_outcomes": {
+        "PASS": 2
+      },
+      "completed_turns": 2,
+      "observed_model_tasks_started": 2,
+      "model_elapsed_median_seconds": 167.08350000000002,
+      "model_elapsed_range_seconds": [
+        142.732,
+        191.435
+      ]
+    },
+    {
+      "cohort": "repeat3",
+      "condition": "no-skill",
+      "records": 2,
+      "artifact_outcomes": {
+        "PASS": 2
+      },
+      "completed_turns": 2,
+      "observed_model_tasks_started": 2,
+      "model_elapsed_median_seconds": 164.5035,
+      "model_elapsed_range_seconds": [
+        131.924,
+        197.083
+      ]
+    },
+    {
+      "cohort": "repeat3",
+      "condition": "original-v2.0.0",
+      "records": 2,
+      "artifact_outcomes": {
+        "PASS": 2
+      },
+      "completed_turns": 2,
+      "observed_model_tasks_started": 2,
+      "model_elapsed_median_seconds": 169.004,
+      "model_elapsed_range_seconds": [
+        166.118,
+        171.89
+      ]
+    },
+    {
+      "cohort": "repeat4",
+      "condition": "improved",
+      "records": 2,
+      "artifact_outcomes": {
+        "PASS": 2
+      },
+      "completed_turns": 2,
+      "observed_model_tasks_started": 2,
+      "model_elapsed_median_seconds": 167.0215,
+      "model_elapsed_range_seconds": [
+        128.528,
+        205.515
+      ]
+    },
+    {
+      "cohort": "repeat4",
+      "condition": "no-skill",
+      "records": 2,
+      "artifact_outcomes": {
+        "PASS": 2
+      },
+      "completed_turns": 2,
+      "observed_model_tasks_started": 2,
+      "model_elapsed_median_seconds": 139.2575,
+      "model_elapsed_range_seconds": [
+        132.769,
+        145.746
+      ]
+    },
+    {
+      "cohort": "repeat4",
+      "condition": "original-v2.0.0",
+      "records": 2,
+      "artifact_outcomes": {
+        "PASS": 2
+      },
+      "completed_turns": 2,
+      "observed_model_tasks_started": 2,
+      "model_elapsed_median_seconds": 199.323,
+      "model_elapsed_range_seconds": [
+        183.191,
+        215.455
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "id": "05d5d390c539",
+      "cohort": "initial",
+      "scenario": "F",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 185.112,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "65ed282d9bd93de511792fc37e53ab153b298ab4ebdbbddb012012fbb36077cf",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 13,
+          "file_change": 2
+        },
+        "observed_tool_items": 15,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 204801,
+          "cached_input_tokens": 187008,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7103,
+          "reasoning_output_tokens": 1909
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "08a3da20c1ed",
+      "cohort": "initial",
+      "scenario": "A",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "BLOCKED",
+      "observed_turn_completed": false,
+      "model_exit_code": null,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 240.121,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "d9f9670149ffa4db80f3b8d3f4c322cf70fff604acb61ad3c8eb86dea1bf6628",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 15,
+          "file_change": 4
+        },
+        "observed_tool_items": 19,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "2a3ca1dc2f4f",
+      "cohort": "initial",
+      "scenario": "C",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "BLOCKED",
+      "observed_turn_completed": false,
+      "model_exit_code": null,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "preserved-contracts-and-scoped-files",
+          "detail": "analysis_options.yaml"
+        },
+        {
+          "id": "evidence-record-exists",
+          "detail": ""
+        },
+        {
+          "id": "native:confirmed note, retained failure draft, retry, duplicate guard",
+          "detail": ""
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.023,
+      "model_timeout_seconds": 240,
+      "grading_version": "legacy-frozen",
+      "regraded": false,
+      "source_result_sha256": "4fa832457abb379fbe0663aacfb16730fdf8a63b50ac32e267f6538a0e37a738",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": true,
+      "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 16,
+          "file_change": 3
+        },
+        "observed_tool_items": 19,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "2f4d38e1a126",
+      "cohort": "initial",
+      "scenario": "F",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 233.441,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "5bc950fb152b3085a55eeb41f57716d58d8be5da15d587c388dce8aad4fa7a72",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 15,
+          "file_change": 3
+        },
+        "observed_tool_items": 18,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 323996,
+          "cached_input_tokens": 301056,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 9008,
+          "reasoning_output_tokens": 1814
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "32df6d45ede9",
+      "cohort": "initial",
+      "scenario": "H",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 51.364,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "0f7270c4fb96ebd6c5d1c2076390b91458d69a03ff5b595e5fcf34175740637e",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 7,
+          "file_change": 2
+        },
+        "observed_tool_items": 9,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 118341,
+          "cached_input_tokens": 105984,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1471,
+          "reasoning_output_tokens": 119
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "3302df6e1d2b",
+      "cohort": "initial",
+      "scenario": "K",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 157.652,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "241af03f0d0c1702b14fed0cba7151425472930fa786f209bc1f06e9ed674057",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 12,
+          "file_change": 2
+        },
+        "observed_tool_items": 14,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 163233,
+          "cached_input_tokens": 141312,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6197,
+          "reasoning_output_tokens": 1318
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "3daf658b3b64",
+      "cohort": "initial",
+      "scenario": "D",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "BLOCKED",
+      "observed_turn_completed": false,
+      "model_exit_code": null,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "preserved-contracts-and-scoped-files",
+          "detail": "analysis_options.yaml"
+        },
+        {
+          "id": "evidence-record-exists",
+          "detail": ""
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.027,
+      "model_timeout_seconds": 240,
+      "grading_version": "legacy-frozen",
+      "regraded": false,
+      "source_result_sha256": "c31ea205ba08a7649d02417f83c65478f02b93c3375a35b7de050382f06c1bc6",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": true,
+      "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 12
+        },
+        "observed_tool_items": 12,
+        "incomplete_tool_items": 1,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "433306eb0855",
+      "cohort": "initial",
+      "scenario": "E",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "BLOCKED",
+      "observed_turn_completed": false,
+      "model_exit_code": null,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "evidence-record-exists",
+          "detail": ""
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.026,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "481a47a61dfd61a1e2cd2a1e4680ace2e8723a7a12607cfd9cef173413768ffa",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 20,
+          "file_change": 3
+        },
+        "observed_tool_items": 23,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "460105a7cadc",
+      "cohort": "initial",
+      "scenario": "L",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 143.483,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "639bc3fd11a779aad2d22b1b822df3c1a67cb57f11397632fffeaa1fe6d7d98c",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 12,
+          "file_change": 2
+        },
+        "observed_tool_items": 14,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 209293,
+          "cached_input_tokens": 189568,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6119,
+          "reasoning_output_tokens": 2044
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "4632aac6b819",
+      "cohort": "initial",
+      "scenario": "B",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 180.452,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "90feda4576e2bb34fb31db53eb19f1c6d37834051c65eb29be00bc4015f149ee",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 14,
+          "file_change": 2
+        },
+        "observed_tool_items": 16,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 323532,
+          "cached_input_tokens": 298240,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6602,
+          "reasoning_output_tokens": 1786
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "46d3a3141cc0",
+      "cohort": "initial",
+      "scenario": "I",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "BLOCKED",
+      "observed_turn_completed": false,
+      "model_exit_code": null,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "evidence-record-exists",
+          "detail": ""
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.071,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "3cb59a07dd277b1d1129cadc7d8c9afd839e09131426ad7e9dd6663955621c09",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 20,
+          "file_change": 1
+        },
+        "observed_tool_items": 21,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "4c36fa392320",
+      "cohort": "initial",
+      "scenario": "G",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 190.194,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "1e9358bb0fda9264e83f8af5632274066f9c43b03cb580974735e0d6d555c3b1",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 11,
+          "file_change": 3
+        },
+        "observed_tool_items": 14,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 242499,
+          "cached_input_tokens": 221952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6968,
+          "reasoning_output_tokens": 1804
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "4cbfa001ce88",
+      "cohort": "initial",
+      "scenario": "E",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 199.521,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "3bba723fcf52fc1d01c06940003ca5ae0f2547d973db593df3fd69f26b986bb2",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 16,
+          "file_change": 3
+        },
+        "observed_tool_items": 19,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 222390,
+          "cached_input_tokens": 211072,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7971,
+          "reasoning_output_tokens": 2735
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "534a9b90a0ab",
+      "cohort": "initial",
+      "scenario": "C",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "BLOCKED",
+      "observed_turn_completed": false,
+      "model_exit_code": null,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "evidence-record-exists",
+          "detail": ""
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.022,
+      "model_timeout_seconds": 240,
+      "grading_version": "legacy-frozen",
+      "regraded": false,
+      "source_result_sha256": "9b18c6ffa3d4b4ac746e766c815d72ae29211b677ef8d6be708c8e4213aa1391",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": true,
+      "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 15,
+          "file_change": 1
+        },
+        "observed_tool_items": 16,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "5652265c60dc",
+      "cohort": "initial",
+      "scenario": "K",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 214.759,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "8a12293961aca9d0c87655c92e37e46dbfc733653a6e948f6ec316a34f4c605e",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 12,
+          "file_change": 3
+        },
+        "observed_tool_items": 15,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 227514,
+          "cached_input_tokens": 209152,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 8428,
+          "reasoning_output_tokens": 2242
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "60f8d2f9fd58",
+      "cohort": "initial",
+      "scenario": "B",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 157.566,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "5e09c9502fc419497332d07d80bdb169f9f1167855a1475b56e0bc4a5d4c0122",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 13,
+          "file_change": 2
+        },
+        "observed_tool_items": 15,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 203979,
+          "cached_input_tokens": 164736,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5724,
+          "reasoning_output_tokens": 1660
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "6204c925cdec",
+      "cohort": "initial",
+      "scenario": "A",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 173.052,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "d5cc5ca1b9cdddd7e84124975d62459e76729c86ad7a3a4b828dfcae2e8bff91",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 18,
+          "file_change": 4
+        },
+        "observed_tool_items": 22,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 216828,
+          "cached_input_tokens": 199168,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7171,
+          "reasoning_output_tokens": 2474
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "64f520e69dda",
+      "cohort": "initial",
+      "scenario": "J",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 137.539,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "9e34f43904bfdfdd5a9ab459ab4ab73148c5285055a4bb95ad15edc55f3b1a62",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 13,
+          "file_change": 2
+        },
+        "observed_tool_items": 15,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 158692,
+          "cached_input_tokens": 125952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4591,
+          "reasoning_output_tokens": 1242
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "69a51b3872ac",
+      "cohort": "initial",
+      "scenario": "L",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 86.457,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "4639f78c6db9b965a7047b801e3e33213807fc1d68158ae4320e80326738b383",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 8,
+          "file_change": 2
+        },
+        "observed_tool_items": 10,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 85508,
+          "cached_input_tokens": 79616,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3385,
+          "reasoning_output_tokens": 688
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "74fb9389df33",
+      "cohort": "initial",
+      "scenario": "L",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 178.223,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "8a6b54cbd68c360059faa3f60d01ccc56e17a543feb59a16f6ca28e5db8635a4",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 10,
+          "file_change": 2
+        },
+        "observed_tool_items": 12,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 174354,
+          "cached_input_tokens": 155520,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6471,
+          "reasoning_output_tokens": 2777
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "761e8dec049e",
+      "cohort": "initial",
+      "scenario": "K",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 209.433,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "aec459787a3016c977023083ada84f5c12d0d2e3b932ceffbe4d03c88deecad7",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 11,
+          "file_change": 5
+        },
+        "observed_tool_items": 16,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 317544,
+          "cached_input_tokens": 297344,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 8901,
+          "reasoning_output_tokens": 2114
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "7703f3069692",
+      "cohort": "initial",
+      "scenario": "I",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 213.125,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "8b3af4caed63e3cb7278d5c3d0215a9c03bbe2de18121b761412a18ebb010dbf",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 22,
+          "file_change": 3
+        },
+        "observed_tool_items": 25,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 643165,
+          "cached_input_tokens": 608128,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 8249,
+          "reasoning_output_tokens": 2602
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "7ff72be3ba71",
+      "cohort": "initial",
+      "scenario": "E",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "BLOCKED",
+      "observed_turn_completed": false,
+      "model_exit_code": null,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "evidence-record-exists",
+          "detail": ""
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.011,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "fb4dd13c6eb46da63474c2ce947d6760b9e016c0aae8ba1fb146476e26d493a4",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 15,
+          "file_change": 3
+        },
+        "observed_tool_items": 18,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "8336ba0cedae",
+      "cohort": "initial",
+      "scenario": "H",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 42.79,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "b17bfd918801965530be2e8dc3a75fba5a20aafefeaf8840f9da7cfd5c35a8a5",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 5,
+          "file_change": 2
+        },
+        "observed_tool_items": 7,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 76455,
+          "cached_input_tokens": 67456,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1001,
+          "reasoning_output_tokens": 190
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "9170ca4a00c9",
+      "cohort": "initial",
+      "scenario": "H",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 46.871,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "288c4b78ea01aa73420bfd7a6d75eb909a067cbe58c78d97887cde06cc0115f5",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 7,
+          "file_change": 2
+        },
+        "observed_tool_items": 9,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 98079,
+          "cached_input_tokens": 85632,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1315,
+          "reasoning_output_tokens": 149
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "9487d3d53946",
+      "cohort": "initial",
+      "scenario": "C",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "BLOCKED",
+      "observed_turn_completed": false,
+      "model_exit_code": null,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "evidence-record-exists",
+          "detail": ""
+        },
+        {
+          "id": "native-motion-source-proxy",
+          "detail": "Source proxy only; does not establish native playback."
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.029,
+      "model_timeout_seconds": 240,
+      "grading_version": "legacy-frozen",
+      "regraded": false,
+      "source_result_sha256": "d7e9699be766e8d74f9b359067a00077409336cad389380fcb1568ca2a2296a8",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": true,
+      "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 18,
+          "file_change": 1
+        },
+        "observed_tool_items": 19,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "9544c1e8f6cb",
+      "cohort": "initial",
+      "scenario": "B",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 128.801,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "948a418ec431fc7af006967441e00cded9a1185bc9a9670ab85e97010de93b81",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 9,
+          "file_change": 2
+        },
+        "observed_tool_items": 11,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 120386,
+          "cached_input_tokens": 95616,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4833,
+          "reasoning_output_tokens": 1772
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "98385e1521b3",
+      "cohort": "initial",
+      "scenario": "A",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 185.645,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "2132ddbc589c554207f20bff8bea7e031d73953a959c807a322608156e612c30",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 16,
+          "file_change": 2
+        },
+        "observed_tool_items": 18,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 342729,
+          "cached_input_tokens": 319488,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7466,
+          "reasoning_output_tokens": 1693
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "a2506ba2b72d",
+      "cohort": "initial",
+      "scenario": "F",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 128.639,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "01082f427503f7374303924a4a90b18f9b36745be72cf6f35f1e67fa53e1bdf9",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 9,
+          "file_change": 2
+        },
+        "observed_tool_items": 11,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 105087,
+          "cached_input_tokens": 96896,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4968,
+          "reasoning_output_tokens": 1455
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "b315bd848fda",
+      "cohort": "initial",
+      "scenario": "D",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "BLOCKED",
+      "observed_turn_completed": false,
+      "model_exit_code": null,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "preserved-contracts-and-scoped-files",
+          "detail": "analysis_options.yaml"
+        },
+        {
+          "id": "evidence-record-exists",
+          "detail": ""
+        },
+        {
+          "id": "native-motion-source-proxy",
+          "detail": "Source proxy only; does not establish native playback."
+        },
+        {
+          "id": "native-reduced-motion-source-proxy",
+          "detail": "Source proxy only; manual native playback still required."
+        },
+        {
+          "id": "native:cancelled completion cannot replace the retried pending state",
+          "detail": ""
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.087,
+      "model_timeout_seconds": 240,
+      "grading_version": "legacy-frozen",
+      "regraded": false,
+      "source_result_sha256": "98a01b4dec899f92cb8d4b32dd67b12bd916630dd48afebbaacc4e724b4f32b1",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": true,
+      "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 21,
+          "file_change": 1
+        },
+        "observed_tool_items": 22,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "c1af291374ca",
+      "cohort": "initial",
+      "scenario": "G",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 222.49,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "91532232bc2a65b940119acc24eefcf09b990414064d554fdc35e1cab3bbd89e",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 13,
+          "file_change": 2
+        },
+        "observed_tool_items": 15,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 322981,
+          "cached_input_tokens": 300032,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 8282,
+          "reasoning_output_tokens": 1727
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "ce993232e96d",
+      "cohort": "initial",
+      "scenario": "J",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 155.348,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "f653fe26cd8b0be77c78125a81e18d0d5479ace2569660238deca75d142f3a34",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "6903834bca2911bb54b3b861a8e56da6b68025d9a072b13eff748f52f7327dfc",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 12,
+          "file_change": 2
+        },
+        "observed_tool_items": 14,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 214212,
+          "cached_input_tokens": 197632,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5304,
+          "reasoning_output_tokens": 1674
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "db3a507d41ea",
+      "cohort": "initial",
+      "scenario": "D",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "BLOCKED",
+      "observed_turn_completed": false,
+      "model_exit_code": null,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "preserved-contracts-and-scoped-files",
+          "detail": "analysis_options.yaml"
+        },
+        {
+          "id": "evidence-record-exists",
+          "detail": ""
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.07,
+      "model_timeout_seconds": 240,
+      "grading_version": "legacy-frozen",
+      "regraded": false,
+      "source_result_sha256": "7b7c0dd61a988a0aba44e372c4207f943f61c2dc8c55b3c4faf167461e2d7c36",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": true,
+      "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 21,
+          "file_change": 1
+        },
+        "observed_tool_items": 22,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "e2308fb6d1d5",
+      "cohort": "initial",
+      "scenario": "J",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 118.317,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "babb7ce0cf154f01e2747c53b58a0d250c78fedfed3f4f535fc81b2467b13de0",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 11,
+          "file_change": 2
+        },
+        "observed_tool_items": 13,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 123144,
+          "cached_input_tokens": 110208,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4204,
+          "reasoning_output_tokens": 1599
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "e9915c19221e",
+      "cohort": "initial",
+      "scenario": "G",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 156.607,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "53e5816c5bfd789b7a928653773d5a8c1ca2426f67050ad0ee794acf26cf635f",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 9,
+          "file_change": 2
+        },
+        "observed_tool_items": 11,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 136588,
+          "cached_input_tokens": 120448,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5395,
+          "reasoning_output_tokens": 1279
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "ff49ba43d03a",
+      "cohort": "initial",
+      "scenario": "I",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "PASS",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "scoped-search-continuity",
+          "detail": "No observable running state-change animation after trigger"
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 224.892,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "585f21198d5efb9073d91c710a211f183cd82f5071be19030820c85e520c239d",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 13,
+          "file_change": 2
+        },
+        "observed_tool_items": 15,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 258166,
+          "cached_input_tokens": 232576,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 8367,
+          "reasoning_output_tokens": 1634
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "08ff14407cfa",
+      "cohort": "final-web",
+      "scenario": "B",
+      "condition": "improved",
+      "trial": 2,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 164.986,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "4659c2441c5678d546320677d215d223a5fe951c338be80b7d50f5d7a4de4d34",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 14,
+          "file_change": 2
+        },
+        "observed_tool_items": 16,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 293041,
+          "cached_input_tokens": 249600,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6760,
+          "reasoning_output_tokens": 2311
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "40a280e2e78c",
+      "cohort": "final-web",
+      "scenario": "J",
+      "condition": "improved",
+      "trial": 2,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 136.978,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "290a3e1368a6dc68b84635ff1706d037c68a006619562c730e6d2492a839af9d",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 10,
+          "file_change": 2
+        },
+        "observed_tool_items": 12,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 162284,
+          "cached_input_tokens": 142592,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5342,
+          "reasoning_output_tokens": 1540
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "6f39ad62126e",
+      "cohort": "final-web",
+      "scenario": "G",
+      "condition": "improved",
+      "trial": 2,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 220.554,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "17dcf0ea4f6e50218bf3fdb0307ca9cc301fe8e024f067498c4d968a693fd974",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 10,
+          "file_change": 3
+        },
+        "observed_tool_items": 13,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 320550,
+          "cached_input_tokens": 299520,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 9413,
+          "reasoning_output_tokens": 2491
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "9757e02354e0",
+      "cohort": "final-web",
+      "scenario": "I",
+      "condition": "improved",
+      "trial": 2,
+      "raw_agent_status": "TIMED_OUT",
+      "observed_turn_completed": false,
+      "model_exit_code": -15,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "scoped-search-continuity",
+          "detail": "No observable running state-change animation after trigger"
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.145,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "8f1778a169450d51ce3a1b97b7aa839a956543f408578801ecd84c4563e66390",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 13,
+          "file_change": 1
+        },
+        "observed_tool_items": 14,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "b5535f2ccb3f",
+      "cohort": "final-web",
+      "scenario": "K",
+      "condition": "improved",
+      "trial": 2,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 184.571,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "3e01dd924a4b6ae1f909c2d2dab1cb3d8d07003728c822be74bfbef782526229",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 9,
+          "file_change": 2
+        },
+        "observed_tool_items": 11,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 213975,
+          "cached_input_tokens": 197248,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7336,
+          "reasoning_output_tokens": 2020
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "c355593dce2d",
+      "cohort": "final-web",
+      "scenario": "H",
+      "condition": "improved",
+      "trial": 2,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 40.041,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "c86b138d08515306915d7c2775876a9cd68af5a1a6f731dae7fb6121e14af680",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 7,
+          "file_change": 2
+        },
+        "observed_tool_items": 9,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 100179,
+          "cached_input_tokens": 70016,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1367,
+          "reasoning_output_tokens": 144
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "c8f01d9864cd",
+      "cohort": "final-web",
+      "scenario": "E",
+      "condition": "improved",
+      "trial": 2,
+      "raw_agent_status": "TIMED_OUT",
+      "observed_turn_completed": false,
+      "model_exit_code": -15,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 240.056,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "b5f6429b32ceecd9ec71a5d7d45a249aa752531fb484c3f862c54e27a7fb8b1c",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 12,
+          "file_change": 4
+        },
+        "observed_tool_items": 16,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "ddd14f3ba0e7",
+      "cohort": "final-web",
+      "scenario": "L",
+      "condition": "improved",
+      "trial": 2,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 128.971,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "a0a126712039988c1ebf7cf4407acc4aab69c7ae52e2d0cc62233349ba391c51",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 9,
+          "file_change": 2
+        },
+        "observed_tool_items": 11,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 163965,
+          "cached_input_tokens": 147328,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5124,
+          "reasoning_output_tokens": 1561
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "e1810071b76b",
+      "cohort": "final-web",
+      "scenario": "A",
+      "condition": "improved",
+      "trial": 2,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 228.744,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "1091184216fffe036055cd2d5d9cc26da25325050603d3748c94b080c2508fc4",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 11,
+          "file_change": 3
+        },
+        "observed_tool_items": 14,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 290929,
+          "cached_input_tokens": 269568,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 8619,
+          "reasoning_output_tokens": 2447
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "ffb4f2d15c16",
+      "cohort": "final-web",
+      "scenario": "F",
+      "condition": "improved",
+      "trial": 2,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 167.834,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "cec066ed97572c4ce48fe36da0d20731ba5eba0f7103fe2230fa2daa90b23558",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 12,
+          "file_change": 2
+        },
+        "observed_tool_items": 14,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 221282,
+          "cached_input_tokens": 200064,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6818,
+          "reasoning_output_tokens": 1744
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "217e487d5b45",
+      "cohort": "native-invalid-2",
+      "scenario": "C",
+      "condition": "original-v2.0.0",
+      "trial": 2,
+      "raw_agent_status": "TIMED_OUT",
+      "observed_turn_completed": false,
+      "model_exit_code": -15,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "preserved-contracts-and-scoped-files",
+          "detail": "analysis_options.yaml"
+        },
+        {
+          "id": "evidence-record-exists",
+          "detail": ""
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.067,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": false,
+      "source_result_sha256": "7e80e961a9c2a312f792a3a52bd3878598062ca3f9865cdaf872dd32034d2918",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": true,
+      "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 25,
+          "file_change": 2
+        },
+        "observed_tool_items": 27,
+        "incomplete_tool_items": 2,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "6959016908f8",
+      "cohort": "native-invalid-2",
+      "scenario": "D",
+      "condition": "improved",
+      "trial": 2,
+      "raw_agent_status": "SETUP_FAILED",
+      "observed_turn_completed": false,
+      "model_exit_code": null,
+      "artifact_status": "NOT RUN",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": null,
+      "model_timeout_seconds": 240,
+      "grading_version": "legacy-frozen",
+      "regraded": false,
+      "source_result_sha256": "55dea0cacafb3099aeea1c26ed22ff783d280a41bafbd30d7de1714a8031641e",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": true,
+      "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {},
+        "observed_tool_items": 0,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": false,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "c1ec13527dd8",
+      "cohort": "native-invalid-2",
+      "scenario": "C",
+      "condition": "no-skill",
+      "trial": 2,
+      "raw_agent_status": "TIMED_OUT",
+      "observed_turn_completed": false,
+      "model_exit_code": -15,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "preserved-contracts-and-scoped-files",
+          "detail": "analysis_options.yaml"
+        },
+        {
+          "id": "evidence-record-exists",
+          "detail": ""
+        },
+        {
+          "id": "native:confirmed note, retained failure draft, retry, duplicate guard",
+          "detail": ""
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.052,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": false,
+      "source_result_sha256": "bbddb2bdf363848bc383b3bb37710efac1744a8af46d067d6a5fa6bbb3a72f09",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "PASS",
+      "native_provisional": true,
+      "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 15,
+          "file_change": 2
+        },
+        "observed_tool_items": 17,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "f0abc50a9f2d",
+      "cohort": "native-invalid-2",
+      "scenario": "C",
+      "condition": "improved",
+      "trial": 2,
+      "raw_agent_status": "TIMED_OUT",
+      "observed_turn_completed": false,
+      "model_exit_code": -15,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "native:loading {private-temp}",
+          "detail": ""
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.019,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": false,
+      "source_result_sha256": "32067e251d1ccff6510ef5d17a21e38802eda02dea3e13aa6bb552fab6e8c809",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": true,
+      "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 16,
+          "file_change": 1
+        },
+        "observed_tool_items": 17,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "f29cbac81856",
+      "cohort": "native-invalid-2",
+      "scenario": "D",
+      "condition": "no-skill",
+      "trial": 2,
+      "raw_agent_status": "SETUP_FAILED",
+      "observed_turn_completed": false,
+      "model_exit_code": null,
+      "artifact_status": "NOT RUN",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": null,
+      "model_timeout_seconds": 240,
+      "grading_version": "legacy-frozen",
+      "regraded": false,
+      "source_result_sha256": "1ed20fb8e6a736711a922f807868c9382011be59a36330d59466fb2e6c08106e",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": true,
+      "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {},
+        "observed_tool_items": 0,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": false,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "f4344849a792",
+      "cohort": "native-invalid-2",
+      "scenario": "D",
+      "condition": "original-v2.0.0",
+      "trial": 2,
+      "raw_agent_status": "SETUP_FAILED",
+      "observed_turn_completed": false,
+      "model_exit_code": null,
+      "artifact_status": "NOT RUN",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": null,
+      "model_timeout_seconds": 240,
+      "grading_version": "legacy-frozen",
+      "regraded": false,
+      "source_result_sha256": "614df895e21131b1f953561d116ec27087bd69bd1edd430569175187769d6dd8",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "NOT RUN in prototype harness",
+      "native_provisional": true,
+      "eligibility_note": "Excluded uniformly: native environment readiness was invalid; raw failures and passing exploratory runtime followups retained.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {},
+        "observed_tool_items": 0,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": false,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "721af40a9821",
+      "cohort": "heldout",
+      "scenario": "M",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "TIMED_OUT",
+      "observed_turn_completed": false,
+      "model_exit_code": -15,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 240.111,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "672471c27e6a5d8ab52676b0c949db6a921136bd60cc60877fb28410b7686161",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 15,
+          "file_change": 3
+        },
+        "observed_tool_items": 18,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "a88aa5099cd9",
+      "cohort": "heldout",
+      "scenario": "N",
+      "condition": "improved",
+      "trial": 1,
+      "raw_agent_status": "TIMED_OUT",
+      "observed_turn_completed": false,
+      "model_exit_code": -15,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 240.026,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "d39a727be7baf5bd7b67b18dca8cce277df86753ec89ea6d49249f44d1bbb6f7",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 7,
+          "file_change": 1
+        },
+        "observed_tool_items": 8,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "af92adaf54e8",
+      "cohort": "heldout",
+      "scenario": "M",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "TIMED_OUT",
+      "observed_turn_completed": false,
+      "model_exit_code": -15,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "evidence-record",
+          "detail": ""
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.105,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "175e01a178d3b9d64db02181bc4893a72389538fc89bbe8babba767c8d760eb3",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 15,
+          "file_change": 2
+        },
+        "observed_tool_items": 17,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "b7c7b765393f",
+      "cohort": "heldout",
+      "scenario": "M",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 198.881,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "d53c902a4422bdc65f17d85355aa435a7f7158e9da0417399b3a640cb620617e",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 11,
+          "file_change": 4
+        },
+        "observed_tool_items": 15,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 156570,
+          "cached_input_tokens": 134784,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7716,
+          "reasoning_output_tokens": 2794
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "e5eb19475b29",
+      "cohort": "heldout",
+      "scenario": "N",
+      "condition": "no-skill",
+      "trial": 1,
+      "raw_agent_status": "TIMED_OUT",
+      "observed_turn_completed": false,
+      "model_exit_code": -15,
+      "artifact_status": "FAIL",
+      "failed_checks": [
+        {
+          "id": "evidence-record",
+          "detail": ""
+        }
+      ],
+      "blockers": [],
+      "model_elapsed_seconds": 240.027,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "46cf7d9fcea766105f6e8e763a13431bf260decc0a52fa4c0b5ece993ec23db7",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 13,
+          "file_change": 2
+        },
+        "observed_tool_items": 15,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "e9441c810517",
+      "cohort": "heldout",
+      "scenario": "N",
+      "condition": "original-v2.0.0",
+      "trial": 1,
+      "raw_agent_status": "TIMED_OUT",
+      "observed_turn_completed": false,
+      "model_exit_code": -15,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 240.018,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "1b67219274592076d203ec9673b8a695d7b52d60239ffe3040bd4cf33be0eecd",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 14,
+          "file_change": 3
+        },
+        "observed_tool_items": 17,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": null,
+        "turn_completed": false,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "1a372e74a706",
+      "cohort": "repeat3",
+      "scenario": "K",
+      "condition": "no-skill",
+      "trial": 3,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 197.083,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "7871437ad9faf6ed80470bfc116756c5b82189d21f9da0f1b3a2f0e8fbf655a0",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 11,
+          "file_change": 3
+        },
+        "observed_tool_items": 14,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 205921,
+          "cached_input_tokens": 195584,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7901,
+          "reasoning_output_tokens": 2000
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "5b5dd3616eaa",
+      "cohort": "repeat3",
+      "scenario": "K",
+      "condition": "original-v2.0.0",
+      "trial": 3,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 171.89,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "4670d3e2d72ffeac4b1822b0f0acb65be9ccd14918b7188503e7bdadffc0f562",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 11,
+          "file_change": 2
+        },
+        "observed_tool_items": 13,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 209341,
+          "cached_input_tokens": 189824,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7000,
+          "reasoning_output_tokens": 2159
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "b95b3d970b43",
+      "cohort": "repeat3",
+      "scenario": "K",
+      "condition": "improved",
+      "trial": 3,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 191.435,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "102593ecf6eb00312882cd35e4c21287f6e35f5cf849f24374db0b3633e52820",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 12,
+          "file_change": 3
+        },
+        "observed_tool_items": 15,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 267465,
+          "cached_input_tokens": 248576,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 8365,
+          "reasoning_output_tokens": 2850
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "e329556b4570",
+      "cohort": "repeat3",
+      "scenario": "B",
+      "condition": "original-v2.0.0",
+      "trial": 3,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 166.118,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "08fd5b0b90a8c9c93171942071e719ccca6167e46f977b50921e18e3e835f53a",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 14,
+          "file_change": 3
+        },
+        "observed_tool_items": 17,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 285003,
+          "cached_input_tokens": 247552,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6618,
+          "reasoning_output_tokens": 2227
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "f7bbe05486d5",
+      "cohort": "repeat3",
+      "scenario": "B",
+      "condition": "no-skill",
+      "trial": 3,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 131.924,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "3adbb414d8c83caa10e2ab1b8276087b18cc7ec78a6fc55786a59566244a5ffc",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 10,
+          "file_change": 2
+        },
+        "observed_tool_items": 12,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 139621,
+          "cached_input_tokens": 118656,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5104,
+          "reasoning_output_tokens": 1754
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "fa8000cd1225",
+      "cohort": "repeat3",
+      "scenario": "B",
+      "condition": "improved",
+      "trial": 3,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 142.732,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "74f452fcc2910c52ec6654a4fdecd49ba951b26d9cef53cbf991941cb45a0597",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 14,
+          "file_change": 2
+        },
+        "observed_tool_items": 16,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 251069,
+          "cached_input_tokens": 229120,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6292,
+          "reasoning_output_tokens": 2208
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "1324d522f33f",
+      "cohort": "repeat4",
+      "scenario": "B",
+      "condition": "no-skill",
+      "trial": 4,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 145.746,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "b2032058c97038d167d9a9ad275af58d10145f2cdf2470349436a0c0a84d8bb9",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 12,
+          "file_change": 4
+        },
+        "observed_tool_items": 16,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 171765,
+          "cached_input_tokens": 145152,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6400,
+          "reasoning_output_tokens": 2488
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "21f7a82c5323",
+      "cohort": "repeat4",
+      "scenario": "K",
+      "condition": "original-v2.0.0",
+      "trial": 4,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 215.455,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "ffbd300fa7c52a447c9a122d0db99f82acc64a4cdaf51572fb5073505c1a7c2c",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 16,
+          "file_change": 3
+        },
+        "observed_tool_items": 19,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 311522,
+          "cached_input_tokens": 288896,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 8525,
+          "reasoning_output_tokens": 1770
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "5c1397da52f6",
+      "cohort": "repeat4",
+      "scenario": "K",
+      "condition": "improved",
+      "trial": 4,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 205.515,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "905f6e0827acb10851842063fb2ac43069ef9a936d0fd01bd559efd4be46d032",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 15,
+          "file_change": 3
+        },
+        "observed_tool_items": 18,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 327432,
+          "cached_input_tokens": 304256,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 8498,
+          "reasoning_output_tokens": 1825
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "80bf981d9bda",
+      "cohort": "repeat4",
+      "scenario": "B",
+      "condition": "original-v2.0.0",
+      "trial": 4,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 183.191,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "b723f31c1272cde7f5c9931ca985cb5d144e699ef3e1bb24f3131f19a10868c5",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+        "SKILL.md": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 18,
+          "file_change": 3
+        },
+        "observed_tool_items": 21,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 319059,
+          "cached_input_tokens": 295168,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7432,
+          "reasoning_output_tokens": 2649
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "ca8bac282ec8",
+      "cohort": "repeat4",
+      "scenario": "K",
+      "condition": "no-skill",
+      "trial": 4,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 132.769,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "c97e865309b5cab7d244ca8a315e2036ef9e2bb06916fb4933d5ce5a693bc3e3",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": null,
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 8,
+          "file_change": 2
+        },
+        "observed_tool_items": 10,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 135815,
+          "cached_input_tokens": 124672,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5297,
+          "reasoning_output_tokens": 1517
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    },
+    {
+      "id": "f3b4fa86cc35",
+      "cohort": "repeat4",
+      "scenario": "B",
+      "condition": "improved",
+      "trial": 4,
+      "raw_agent_status": "COMPLETED",
+      "observed_turn_completed": true,
+      "model_exit_code": 0,
+      "artifact_status": "PASS",
+      "failed_checks": [],
+      "blockers": [],
+      "model_elapsed_seconds": 128.528,
+      "model_timeout_seconds": 240,
+      "grading_version": "GA01-verified-host-input-scope",
+      "regraded": true,
+      "source_result_sha256": "035b11751f43fd7fed618f1fe8262c1c99dcf24b8e4d08ccdb504fccd492f2c3",
+      "source_outputs_changed_by_grading": false,
+      "skill_files_sha256": {
+        "LICENSE": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+        "README.md": "3bc68cb7aca0806d9c6ffe58972586585da5baca3b0b41245bdae1bf18336d98",
+        "SKILL.md": "a41d048e08aa32fe7b38c9ea6821e8982a1a3121e90cf2aa398869c2361d41ee",
+        "agents/openai.yaml": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+        "assets/review-template.md": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+        "references/adaptation.md": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+        "references/native.md": "366761bc96bdb840a5253ec0ea97154fd66f9f7182f03fd0cf1099899ff35809",
+        "references/sources.md": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+        "references/taxonomy.md": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+        "references/trust-boundaries.md": "e0c42cc0df9dc80777772599f33147fdcb6e86516c5b42e30f282e44e73ba99d",
+        "references/verification.md": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec"
+      },
+      "condition_integrity": "PASS",
+      "native_provisional": false,
+      "eligibility_note": "Observed result; retain all failures. Candidate versions/cohorts are separate.",
+      "manual_status": "NOT RUN",
+      "measurements": {
+        "observed_tool_items_by_type": {
+          "command_execution": 11,
+          "file_change": 2
+        },
+        "observed_tool_items": 13,
+        "incomplete_tool_items": 0,
+        "reported_completed_turn_usage": {
+          "input_tokens": 211778,
+          "cached_input_tokens": 189696,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5507,
+          "reasoning_output_tokens": 1582
+        },
+        "turn_completed": true,
+        "turn_started": true,
+        "turn_error_observed": false
+      },
+      "monetary_cost": null
+    }
+  ]
+}

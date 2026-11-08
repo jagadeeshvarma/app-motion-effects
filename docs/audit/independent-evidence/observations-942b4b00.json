@@ -1,0 +1,2698 @@
+{
+  "browser": "158.0.8127.18",
+  "reviewedAt": "2026-11-08T17:06:00.839Z",
+  "outputs": {
+    "942b4b00": {
+      "task": "B",
+      "cases": [
+        {
+          "size": "desktop",
+          "colorScheme": "light",
+          "reducedMotion": "no-preference",
+          "errors": [],
+          "midState": {
+            "title": "Chair 4",
+            "draft": "Inspect the joint",
+            "priority": true,
+            "focus": "<button data-record=\"two\" type=\"button\" aria-pressed=\"true\">Chair 4</button>"
+          },
+          "returned": {
+            "draft": "Lamp draft retained",
+            "priority": true,
+            "start": 19,
+            "end": 19,
+            "nodePreserved": true,
+            "inspectorPreserved": true,
+            "pressed": [
+              [
+                "one",
+                "true"
+              ],
+              [
+                "two",
+                "false"
+              ]
+            ]
+          },
+          "reselect": {
+            "start": 2,
+            "end": 4,
+            "focus": true
+          },
+          "render": {
+            "width": 1280,
+            "scrollWidth": 1280,
+            "bg": "rgb(247, 246, 242)",
+            "ink": "rgb(36, 43, 40)",
+            "labels": [
+              "Repair notes",
+              "Priority"
+            ],
+            "animations": [
+              {
+                "time": 527.2999999523163,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 530.3999999761581,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 546.3999999761581,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 16.692000019069788,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.798165",
+                    "transform": "matrix(1, 0, 0, 1, 0, 1.73001)"
+                  }
+                ]
+              },
+              {
+                "time": 562.2999999523163,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 33.35800001906974,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.898119",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.873265)"
+                  }
+                ]
+              },
+              {
+                "time": 578.5,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 50.02400001906982,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.946603",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.457692)"
+                  }
+                ]
+              },
+              {
+                "time": 594.2999999523163,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 66.72600001906982,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.971911",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.240761)"
+                  }
+                ]
+              },
+              {
+                "time": 610.2999999523163,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 83.39200001906977,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.986059",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.119495)"
+                  }
+                ]
+              },
+              {
+                "time": 625.6999999880791,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 100.05800001906972,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.994048",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.0510174)"
+                  }
+                ]
+              },
+              {
+                "time": 642.5999999642372,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 116.72400001906979,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.998229",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.0151819)"
+                  }
+                ]
+              },
+              {
+                "time": 659.1999999880791,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 133.3260000190698,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.99987",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.00111191)"
+                  }
+                ]
+              },
+              {
+                "time": 677.5,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 693.5999999642372,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 706.1999999880791,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 722,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 16.697999972820288,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.798214",
+                    "transform": "matrix(1, 0, 0, 1, 0, 1.7296)"
+                  }
+                ]
+              },
+              {
+                "time": 739.8999999761581,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 33.363999972820245,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.898144",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.873055)"
+                  }
+                ]
+              },
+              {
+                "time": 754.5,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 50.02999997282031,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.946615",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.457588)"
+                  }
+                ]
+              },
+              {
+                "time": 771.1999999880791,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 66.69599997282027,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.971878",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.241047)"
+                  }
+                ]
+              },
+              {
+                "time": 786.1999999880791,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 83.36199997282023,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.98604",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.119658)"
+                  }
+                ]
+              },
+              {
+                "time": 803.5999999642372,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 100.06599997282028,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.994051",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.0509935)"
+                  }
+                ]
+              },
+              {
+                "time": 818.8999999761581,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 116.73199997282025,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.99823",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.0151705)"
+                  }
+                ]
+              },
+              {
+                "time": 835.2999999523163,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 133.39799997282032,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.999873",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.00108754)"
+                  }
+                ]
+              }
+            ]
+          },
+          "liveReducedMotionActiveAnimations": 1,
+          "video": "942b4b00-desktop-playback.webm"
+        },
+        {
+          "size": "desktop",
+          "colorScheme": "light",
+          "reducedMotion": "reduce",
+          "errors": [],
+          "midState": {
+            "title": "Chair 4",
+            "draft": "Inspect the joint",
+            "priority": true,
+            "focus": "<button data-record=\"two\" type=\"button\" aria-pressed=\"true\">Chair 4</button>"
+          },
+          "returned": {
+            "draft": "Lamp draft retained",
+            "priority": true,
+            "start": 19,
+            "end": 19,
+            "nodePreserved": true,
+            "inspectorPreserved": true,
+            "pressed": [
+              [
+                "one",
+                "true"
+              ],
+              [
+                "two",
+                "false"
+              ]
+            ]
+          },
+          "reselect": {
+            "start": 2,
+            "end": 4,
+            "focus": true
+          },
+          "render": {
+            "width": 1280,
+            "scrollWidth": 1280,
+            "bg": "rgb(247, 246, 242)",
+            "ink": "rgb(36, 43, 40)",
+            "labels": [
+              "Repair notes",
+              "Priority"
+            ],
+            "animations": []
+          }
+        },
+        {
+          "size": "desktop",
+          "colorScheme": "dark",
+          "reducedMotion": "no-preference",
+          "errors": [],
+          "midState": {
+            "title": "Chair 4",
+            "draft": "Inspect the joint",
+            "priority": true,
+            "focus": "<button data-record=\"two\" type=\"button\" aria-pressed=\"true\">Chair 4</button>"
+          },
+          "returned": {
+            "draft": "Lamp draft retained",
+            "priority": true,
+            "start": 19,
+            "end": 19,
+            "nodePreserved": true,
+            "inspectorPreserved": true,
+            "pressed": [
+              [
+                "one",
+                "true"
+              ],
+              [
+                "two",
+                "false"
+              ]
+            ]
+          },
+          "reselect": {
+            "start": 2,
+            "end": 4,
+            "focus": true
+          },
+          "render": {
+            "width": 1280,
+            "scrollWidth": 1280,
+            "bg": "rgb(32, 38, 35)",
+            "ink": "rgb(242, 243, 239)",
+            "labels": [
+              "Repair notes",
+              "Priority"
+            ],
+            "animations": [
+              {
+                "time": 126,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 140.60000002384186,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 16.746999960720544,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.798609",
+                    "transform": "matrix(1, 0, 0, 1, 0, 1.72621)"
+                  }
+                ]
+              },
+              {
+                "time": 156.70000004768372,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 33.412999960720526,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.898343",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.871343)"
+                  }
+                ]
+              },
+              {
+                "time": 171.20000004768372,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 50.078999960720544,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.946714",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.456737)"
+                  }
+                ]
+              },
+              {
+                "time": 188.10000002384186,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 66.74499996072053,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.971932",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.24058)"
+                  }
+                ]
+              },
+              {
+                "time": 218.20000004768372,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 219.70000004768372,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 236.20000004768372,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 16.653000014461572,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.79785",
+                    "transform": "matrix(1, 0, 0, 1, 0, 1.73271)"
+                  }
+                ]
+              },
+              {
+                "time": 251.60000002384186,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 267.7000000476837,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 284.30000001192093,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 16.72099998312443,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.7984",
+                    "transform": "matrix(1, 0, 0, 1, 0, 1.728)"
+                  }
+                ]
+              },
+              {
+                "time": 300.4000000357628,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 33.38699998312444,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.898237",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.872251)"
+                  }
+                ]
+              },
+              {
+                "time": 317.30000001192093,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 50.05299998312446,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.946661",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.457188)"
+                  }
+                ]
+              },
+              {
+                "time": 332.9000000357628,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 66.72099998312441,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.971906",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.240808)"
+                  }
+                ]
+              },
+              {
+                "time": 350.2000000476837,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 83.38699998312443,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.986056",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.119523)"
+                  }
+                ]
+              },
+              {
+                "time": 364.9000000357628,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 83.38699998312443,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.986056",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.119523)"
+                  }
+                ]
+              },
+              {
+                "time": 379.60000002384186,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 100.05299998312445,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.994046",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.0510323)"
+                  }
+                ]
+              },
+              {
+                "time": 396.10000002384186,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 116.71899998312446,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.998228",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.015189)"
+                  }
+                ]
+              },
+              {
+                "time": 413.30000001192093,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 133.38499998312443,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.999873",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.00109192)"
+                  }
+                ]
+              }
+            ]
+          },
+          "liveReducedMotionActiveAnimations": 1
+        },
+        {
+          "size": "desktop",
+          "colorScheme": "dark",
+          "reducedMotion": "reduce",
+          "errors": [],
+          "midState": {
+            "title": "Chair 4",
+            "draft": "Inspect the joint",
+            "priority": true,
+            "focus": "<button data-record=\"two\" type=\"button\" aria-pressed=\"true\">Chair 4</button>"
+          },
+          "returned": {
+            "draft": "Lamp draft retained",
+            "priority": true,
+            "start": 19,
+            "end": 19,
+            "nodePreserved": true,
+            "inspectorPreserved": true,
+            "pressed": [
+              [
+                "one",
+                "true"
+              ],
+              [
+                "two",
+                "false"
+              ]
+            ]
+          },
+          "reselect": {
+            "start": 2,
+            "end": 4,
+            "focus": true
+          },
+          "render": {
+            "width": 1280,
+            "scrollWidth": 1280,
+            "bg": "rgb(32, 38, 35)",
+            "ink": "rgb(242, 243, 239)",
+            "labels": [
+              "Repair notes",
+              "Priority"
+            ],
+            "animations": []
+          }
+        },
+        {
+          "size": "mobile",
+          "colorScheme": "light",
+          "reducedMotion": "no-preference",
+          "errors": [],
+          "midState": {
+            "title": "Chair 4",
+            "draft": "Inspect the joint",
+            "priority": true,
+            "focus": "<button data-record=\"two\" type=\"button\" aria-pressed=\"true\">Chair 4</button>"
+          },
+          "returned": {
+            "draft": "Lamp draft retained",
+            "priority": true,
+            "start": 19,
+            "end": 19,
+            "nodePreserved": true,
+            "inspectorPreserved": true,
+            "pressed": [
+              [
+                "one",
+                "true"
+              ],
+              [
+                "two",
+                "false"
+              ]
+            ]
+          },
+          "reselect": {
+            "start": 2,
+            "end": 4,
+            "focus": true
+          },
+          "render": {
+            "width": 390,
+            "scrollWidth": 390,
+            "bg": "rgb(247, 246, 242)",
+            "ink": "rgb(36, 43, 40)",
+            "labels": [
+              "Repair notes",
+              "Priority"
+            ],
+            "animations": [
+              {
+                "time": 189.80000001192093,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 206.19999998807907,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 16.68199998641759,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.798085",
+                    "transform": "matrix(1, 0, 0, 1, 0, 1.7307)"
+                  }
+                ]
+              },
+              {
+                "time": 222.5999999642372,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 33.347999986417605,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.898078",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.873615)"
+                  }
+                ]
+              },
+              {
+                "time": 239.0999999642372,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 50.01399998641759,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.946582",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.457866)"
+                  }
+                ]
+              },
+              {
+                "time": 254.39999997615814,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 50.01399998641759,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.946582",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.457866)"
+                  }
+                ]
+              },
+              {
+                "time": 271.19999998807907,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 66.71599998641759,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.9719",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.240856)"
+                  }
+                ]
+              },
+              {
+                "time": 286.69999998807907,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 83.3819999864176,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.986053",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.11955)"
+                  }
+                ]
+              },
+              {
+                "time": 306,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 322,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 338.89999997615814,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 350.89999997615814,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 368.5,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 16.68800000882148,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.798133",
+                    "transform": "matrix(1, 0, 0, 1, 0, 1.73029)"
+                  }
+                ]
+              },
+              {
+                "time": 383.0999999642372,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 33.354000008821494,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.898103",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.873405)"
+                  }
+                ]
+              },
+              {
+                "time": 399,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 50.02200000882151,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.946598",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.457727)"
+                  }
+                ]
+              },
+              {
+                "time": 415.0999999642372,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 66.68800000882146,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.971869",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.241123)"
+                  }
+                ]
+              },
+              {
+                "time": 432.80000001192093,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 83.35400000882149,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.986035",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.119702)"
+                  }
+                ]
+              },
+              {
+                "time": 447.89999997615814,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 100.0200000088215,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.994035",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.051131)"
+                  }
+                ]
+              },
+              {
+                "time": 462.69999998807907,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 116.7220000088215,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.998228",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.0151847)"
+                  }
+                ]
+              },
+              {
+                "time": 478.39999997615814,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 133.3880000088215,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.999873",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.00109091)"
+                  }
+                ]
+              }
+            ]
+          },
+          "liveReducedMotionActiveAnimations": 1
+        },
+        {
+          "size": "mobile",
+          "colorScheme": "light",
+          "reducedMotion": "reduce",
+          "errors": [],
+          "midState": {
+            "title": "Chair 4",
+            "draft": "Inspect the joint",
+            "priority": true,
+            "focus": "<button data-record=\"two\" type=\"button\" aria-pressed=\"true\">Chair 4</button>"
+          },
+          "returned": {
+            "draft": "Lamp draft retained",
+            "priority": true,
+            "start": 19,
+            "end": 19,
+            "nodePreserved": true,
+            "inspectorPreserved": true,
+            "pressed": [
+              [
+                "one",
+                "true"
+              ],
+              [
+                "two",
+                "false"
+              ]
+            ]
+          },
+          "reselect": {
+            "start": 2,
+            "end": 4,
+            "focus": true
+          },
+          "render": {
+            "width": 390,
+            "scrollWidth": 390,
+            "bg": "rgb(247, 246, 242)",
+            "ink": "rgb(36, 43, 40)",
+            "labels": [
+              "Repair notes",
+              "Priority"
+            ],
+            "animations": []
+          }
+        },
+        {
+          "size": "mobile",
+          "colorScheme": "dark",
+          "reducedMotion": "no-preference",
+          "errors": [],
+          "midState": {
+            "title": "Chair 4",
+            "draft": "Inspect the joint",
+            "priority": true,
+            "focus": "<button data-record=\"two\" type=\"button\" aria-pressed=\"true\">Chair 4</button>"
+          },
+          "returned": {
+            "draft": "Lamp draft retained",
+            "priority": true,
+            "start": 19,
+            "end": 19,
+            "nodePreserved": true,
+            "inspectorPreserved": true,
+            "pressed": [
+              [
+                "one",
+                "true"
+              ],
+              [
+                "two",
+                "false"
+              ]
+            ]
+          },
+          "reselect": {
+            "start": 2,
+            "end": 4,
+            "focus": true
+          },
+          "render": {
+            "width": 390,
+            "scrollWidth": 390,
+            "bg": "rgb(32, 38, 35)",
+            "ink": "rgb(242, 243, 239)",
+            "labels": [
+              "Repair notes",
+              "Priority"
+            ],
+            "animations": [
+              {
+                "time": 111.10000002384186,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 119.69999998807907,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 16.74600000288337,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.798601",
+                    "transform": "matrix(1, 0, 0, 1, 0, 1.72628)"
+                  }
+                ]
+              },
+              {
+                "time": 136.30000001192093,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 33.41200000288339,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.898339",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.871378)"
+                  }
+                ]
+              },
+              {
+                "time": 151.69999998807907,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 50.07800000288337,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.946712",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.456754)"
+                  }
+                ]
+              },
+              {
+                "time": 167,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 66.74400000288338,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.971931",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.240589)"
+                  }
+                ]
+              },
+              {
+                "time": 183,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 83.34600000288336,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.98603",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.119745)"
+                  }
+                ]
+              },
+              {
+                "time": 199.30000001192093,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 216.19999998807907,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 232.80000001192093,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 247.9000000357628,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 0,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.65",
+                    "transform": "matrix(1, 0, 0, 1, 0, 3)"
+                  }
+                ]
+              },
+              {
+                "time": 263.30000001192093,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 16.749999977525327,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.798633",
+                    "transform": "matrix(1, 0, 0, 1, 0, 1.726)"
+                  }
+                ]
+              },
+              {
+                "time": 280.4000000357628,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 33.41599997752531,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.898355",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.871238)"
+                  }
+                ]
+              },
+              {
+                "time": 297.69999998807907,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 50.08199997752533,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.94672",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.456685)"
+                  }
+                ]
+              },
+              {
+                "time": 311.69999998807907,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 66.74799997752534,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.971936",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.240551)"
+                  }
+                ]
+              },
+              {
+                "time": 328.30000001192093,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 83.4139999775253,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.986073",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.119376)"
+                  }
+                ]
+              },
+              {
+                "time": 343.30000001192093,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 100.07999997752532,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.994056",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.0509517)"
+                  }
+                ]
+              },
+              {
+                "time": 359.69999998807907,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 116.74599997752533,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.998232",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.0151507)"
+                  }
+                ]
+              },
+              {
+                "time": 376.9000000357628,
+                "animations": [
+                  {
+                    "target": "record-title",
+                    "time": 133.41199997752534,
+                    "duration": 140,
+                    "keyframes": [
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(3px)",
+                        "opacity": "0.65",
+                        "computedOffset": 0
+                      },
+                      {
+                        "offset": null,
+                        "easing": "linear",
+                        "composite": "auto",
+                        "transform": "translateY(0px)",
+                        "opacity": "1",
+                        "computedOffset": 1
+                      }
+                    ],
+                    "opacity": "0.999874",
+                    "transform": "matrix(1, 0, 0, 1, 0, 0.00108283)"
+                  }
+                ]
+              }
+            ]
+          },
+          "liveReducedMotionActiveAnimations": 1
+        },
+        {
+          "size": "mobile",
+          "colorScheme": "dark",
+          "reducedMotion": "reduce",
+          "errors": [],
+          "midState": {
+            "title": "Chair 4",
+            "draft": "Inspect the joint",
+            "priority": true,
+            "focus": "<button data-record=\"two\" type=\"button\" aria-pressed=\"true\">Chair 4</button>"
+          },
+          "returned": {
+            "draft": "Lamp draft retained",
+            "priority": true,
+            "start": 19,
+            "end": 19,
+            "nodePreserved": true,
+            "inspectorPreserved": true,
+            "pressed": [
+              [
+                "one",
+                "true"
+              ],
+              [
+                "two",
+                "false"
+              ]
+            ]
+          },
+          "reselect": {
+            "start": 2,
+            "end": 4,
+            "focus": true
+          },
+          "render": {
+            "width": 390,
+            "scrollWidth": 390,
+            "bg": "rgb(32, 38, 35)",
+            "ink": "rgb(242, 243, 239)",
+            "labels": [
+              "Repair notes",
+              "Priority"
+            ],
+            "animations": []
+          }
+        }
+      ]
+    }
+  }
+}

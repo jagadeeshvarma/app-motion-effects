@@ -1,0 +1,1 @@
+document.querySelector('#preview').onclick=()=>{document.querySelector('#message-content').textContent=document.querySelector('#message').value;document.querySelector('#preview-panel').hidden=false};document.querySelector('#close').onclick=()=>document.querySelector('#preview-panel').hidden=true;

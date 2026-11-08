@@ -1,0 +1,470 @@
+{
+  "schema_version": 1,
+  "review": "independent-source-and-trust-review",
+  "review_date": "2026-11-08",
+  "baseline_commit": "ce5f55a8c2a9b4319a76d793b46eef9a41d5a541",
+  "baseline_branch": "audit/verified-skill-maintenance",
+  "current_fix_status": "This report records baseline findings. Maintainer remediation and retests belong in the audit ledger; open_at_baseline does not assert that later working-tree changes remain unfixed.",
+  "severity_policy": "No critical/high issue confirmed. Medium denotes artifact containment or materially misleading portability validation; low denotes bounded regression/policy/portability guidance gaps.",
+  "findings": [
+    {
+      "id": "SR-001",
+      "severity": "medium",
+      "title": "Release assembly accepts hidden files and dereferences file symlinks outside the package",
+      "status": "open_at_baseline",
+      "locations": [
+        {
+          "file": "scripts/package.py",
+          "lines": "14-24"
+        },
+        {
+          "file": "scripts/validate.mjs",
+          "lines": "5-9,38-50"
+        }
+      ],
+      "evidence": {
+        "baseline": "ce5f55a8c2a9b4319a76d793b46eef9a41d5a541",
+        "method": "Isolated git-archive copy; synthetic data only",
+        "mutations": [
+          "Create skills/app-motion-effects/.env.audit containing AUDIT_TOKEN=SYNTHETIC_CONFIG_CANARY_NO_REAL_SECRET",
+          "Create linked-canary.md symlink to a synthetic-canary.txt file outside the repository copy, containing SYNTHETIC_EXTERNAL_CANARY_NO_REAL_SECRET"
+        ],
+        "commands": [
+          "node scripts/validate.mjs",
+          "python3 scripts/package.py"
+        ],
+        "observed": [
+          "Validator exit 0: Structure passed: v2.0.0, 63 category IDs, 32 valid local references, portable files and synthetic demos.",
+          "Packager exit 0: Packaged 11 files in app-motion-effects-2.0.0.zip; SHA256SUMS written.",
+          "ZIP member app-motion-effects/.env.audit contains the synthetic configuration canary.",
+          "ZIP member app-motion-effects/linked-canary.md contains bytes from the external synthetic file."
+        ]
+      },
+      "root_cause": "Packaging enumerates every regular-looking path with rglob/is_file/read_bytes. is_file and the validator statSync follow symlinks; there is no package file allowlist or exclusion of ignored/hidden configuration files. Credential-pattern scanning cannot establish safe artifact membership.",
+      "impact": "A local release can unintentionally distribute ignored configuration or external file contents. A contributor-added link could reference a file on the release machine. This is an artifact containment failure, not an agent sandbox escape, and no real secret exposure was observed.",
+      "acceptance_test": [
+        "A clean package contains exactly the reviewed, approved manifest.",
+        "A file symlink, directory symlink, broken symlink and special file anywhere below the package root fail before any archive/manifests are replaced.",
+        "An unexpected hidden configuration or unknown resource fails closed; updating the approved file list requires an explicit reviewed change.",
+        "Check that every archive member is under one safe app-motion-effects/ root and contains expected bytes, and that manifests match."
+      ]
+    },
+    {
+      "id": "SR-002",
+      "severity": "medium",
+      "title": "Portable local-link validation accepts references outside the installable package",
+      "status": "open_at_baseline",
+      "locations": [
+        {
+          "file": "scripts/validate.mjs",
+          "lines": "52-65"
+        }
+      ],
+      "evidence": {
+        "method": "Isolated baseline copy with synthetic target",
+        "mutation": "Append [External synthetic canary](../../../synthetic-canary.txt) to skills/app-motion-effects/README.md; create that synthetic target outside the repository copy.",
+        "command": "node scripts/validate.mjs",
+        "observed": "Exit 0: Structure passed: v2.0.0, 63 category IDs, 33 valid local references, portable files and synthetic demos. The reference target is not present in the installable ZIP."
+      },
+      "root_cause": "The validator resolves references relative to a source file and checks existence on the current machine. It does not require skill-local links to stay within the skill root, or repository documentation links to stay within the repository.",
+      "impact": "Validation can certify a package as portable even though its supporting reference only exists on the maintainer machine. This is a portability false positive, not evidence that the present nine-file package contains such a link.",
+      "acceptance_test": [
+        "Reject absolute filesystem links, path traversal escaping the owning root, encoded escapes, and links resolving through symlinks outside that root.",
+        "For installed skill files, require local references to remain inside the installable skill; repository-only docs may refer within the repository.",
+        "Validate the extracted ZIP in an otherwise empty temporary directory so source-checkout files cannot satisfy missing package references."
+      ]
+    },
+    {
+      "id": "SR-003",
+      "severity": "low",
+      "title": "The no-service regression guard does not cover browser request mechanisms",
+      "status": "open_at_baseline",
+      "locations": [
+        {
+          "file": "scripts/validate.mjs",
+          "lines": "75-98"
+        },
+        {
+          "file": "SECURITY.md",
+          "lines": "13"
+        },
+        {
+          "file": "tests/loading.spec.mjs",
+          "lines": "1-479"
+        }
+      ],
+      "evidence": {
+        "method": "Isolated baseline mutation; no outbound request sent",
+        "mutation": "Prepend navigator.sendBeacon(\"/__audit_canary__\", \"SYNTHETIC_ONLY\"); to docs/demos/interaction.js.",
+        "command": "node scripts/validate.mjs",
+        "observed": "Exit 0; the synthetic-demo/locality message still passes. Browser request-capture proof was attempted with routes restricted to an artificial loopback origin, but Chrome launch was denied by the execution sandbox. No browser execution is claimed."
+      },
+      "root_cause": "Three lexical request names are checked in four legacy HTML files and interaction.js. Other browser requests, indirect calls, imported scripts, the website shell and feedback.js are not constrained by this guard. Existing browser tests do not assert a request allowlist.",
+      "impact": "A future regression could add service calls without this check noticing. Inspection found no such service call in current fixtures. Source modification is not itself a sandbox bypass, and this lexical check should not be represented as an isolation boundary.",
+      "acceptance_test": [
+        "Use browser request interception/fulfilment to permit only an explicit list of static fixture assets and fail on unexpected requests, service mutations, navigation, workers and sockets as relevant.",
+        "A synthetic sendBeacon canary and a disallowed static remote asset must fail verification without reaching any real service.",
+        "Keep the structural scan described as a bounded guard; document actual browser evidence and limits accurately."
+      ]
+    },
+    {
+      "id": "SR-004",
+      "severity": "low",
+      "title": "The portable full-repository prompt imposes a global visual-copy restriction",
+      "status": "open_at_baseline",
+      "locations": [
+        {
+          "file": "docs/full-repo-prompt.txt",
+          "lines": "55-59"
+        },
+        {
+          "file": "skills/app-motion-effects/SKILL.md",
+          "lines": "23-29"
+        }
+      ],
+      "evidence": {
+        "method": "Instruction/source comparison, not model execution",
+        "observed": "The copied prompt unconditionally prohibits decorative eyebrow labels. The skill instead derives allowed visual/copy patterns from the target project and prohibits carrying another product defaults into it. This generic prompt is copied into both the README and public page."
+      },
+      "root_cause": "A particular presentation restriction is embedded in the portable invocation instead of being conditional on the target visual contract.",
+      "impact": "For a target whose approved visual system uses contextual category labels, the invocation can silently add a foreign copy/style rule. Redundant headings and unnecessary controls can still be avoided without universally prohibiting a specific pattern.",
+      "acceptance_test": [
+        "The canonical invocation derives copy/layout restrictions from the target contract or explicitly labels them as user-selected preferences.",
+        "Compare a target that forbids eyebrow labels and one that explicitly permits them: existing target rules govern in each case. Label this as a source-level acceptance scenario unless a real agent run is performed.",
+        "Regenerate the README/page and verify full prompt equality after changing canonical text."
+      ]
+    },
+    {
+      "id": "SR-005",
+      "severity": "low",
+      "title": "Manual Pages dispatch is not source-restricted to main as the security policy claims",
+      "status": "open_at_baseline",
+      "locations": [
+        {
+          "file": ".github/workflows/pages.yml",
+          "lines": "2-5,11-44"
+        },
+        {
+          "file": "SECURITY.md",
+          "lines": "13"
+        }
+      ],
+      "evidence": {
+        "method": "Workflow source review and official GitHub documentation; no workflow dispatch performed",
+        "observed": "The push trigger filters main, but workflow_dispatch is also enabled and neither build nor deploy has a main-ref condition. GitHub supports selecting another branch when manually dispatching a workflow.",
+        "source": "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow"
+      },
+      "root_cause": "The push-branch filter is treated as if it also constrained manual dispatch. Repository environment branch protection may add a separate guard, but those settings were not inspected.",
+      "impact": "The workflow source alone does not enforce the documented main-only publication boundary. This is a maintainer release-policy gap; it does not establish that an untrusted pull request can deploy or that the live environment lacks protection.",
+      "acceptance_test": [
+        "Explicitly require refs/heads/main for publishing jobs or update the documented policy to match the intended release boundary.",
+        "Statically verify a non-main dispatch cannot reach artifact upload/deployment under the source-controlled policy.",
+        "If relying on environment restrictions, verify and record their actual saved configuration without triggering a deployment."
+      ]
+    }
+  ],
+  "reviewed_files": [
+    {
+      "path": ".editorconfig",
+      "sha256": "0236baaa876eef2fbe3d4a9b01aac87d148b925fac3f58e1bc0cc9819ed88dab",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "bf8abf9f8238e03760396259d4716e971c1531d95e3aaf1d5e04995e4adf3587",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug.yml",
+      "sha256": "1b782cb48a57e168a781105e3f92838247f139611434f311d6703b011bd90b06",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "13064e7bea658e01e718b414fbb7b3b244f36411fe25ee2055c151f7b534547a",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/improvement.yml",
+      "sha256": "22d91b8645759aeeed3f6fb88035c4914066fa40f73463f68f4ff92648460d35",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "3a4d9daee9d7b3f0f4d9298525d63942acfcfb98291f5de0d50d636a6fd2b1c3",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "sha256": "8e768ad8f0bf3ba94f75f6b46a42afb0406f5ff164530dc884aa92b2f7c83920",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": ".github/workflows/checks.yml",
+      "sha256": "825ff86d0fd6f60a2a57efcf74850efa8606337832a90bd837b014cc743b3a65",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "sha256": "0141d2c21b29f255af036c24b275bd225b9f2a3884b471bdb193937bcf5ceedc",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "6606e298b54757173028fea58d0fc1988035b8651d77669d0357d125dbdc7db0",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "8ce032d95e9f763d18a7c5e8097bd62b3de1c5f85edac653b2674cd4f0f59b27",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "0c243a929372ed8a2593419229948eb3becbe422fcb81ace7453ea56f30ff268",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "56696bb809b7cbb6e8637f668cecb3b1f31050d1461606a994a937706246c789",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "README.md",
+      "sha256": "3f44666d799a990819d38c7f533255412abde8be64196308c1a4067c49de7451",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "662116a154bcdc474ec2da9b08024934386c7bf043fd1955664560fdbd2e4873",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "25e4211794a1ae8d97d7eae76509a2136c3aaf81bbd7ee9b4decf814308af29c",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/.nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "sha256": "94bcc7c38d5ac48ee0c52efaa4d3edb0a9df15a35faced2b7d6eba14f94cf3f1",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/app.js",
+      "sha256": "a7f01959a0d3584c21d4f8e0a84c13916f4acd633aa5b43ec90325de555cf810",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/demos/dispatch-after.html",
+      "sha256": "fa3993483b676e510c2ef453c1a5067bc844770dc2653d9d020f0d95a6d1581b",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/demos/dispatch-before.html",
+      "sha256": "99a755766e244f0ccc0c1545220fa6c9030865e2513e506e2c0be37882448c76",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/demos/feedback.css",
+      "sha256": "5ad55c34d7a5d137b93822f7d6c34d41711c9d89c22ea46c58171ea5f5198782",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/demos/feedback.html",
+      "sha256": "54bb3032a4d109115197215f576be008a48739d628b3f5836eb1f922c47c583b",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/demos/feedback.js",
+      "sha256": "b8fc3371fcc16791ab3d16a69ea5340bf41c260b4633143a961ddf1dc6d7ccc5",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/demos/interaction.css",
+      "sha256": "05002ab5983ead55f4487aa84aca992d5d5f6584075b14f8984b614727e0dfb0",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/demos/interaction.html",
+      "sha256": "12e112b8c3417fb4c64e1ff7749b59dd5a97ada1e05dc03b258e9b6260b6a5cc",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/demos/interaction.js",
+      "sha256": "9072b90c320d5390b140032a3963467b4f47a427590252067713d90ca2795225",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/demos/studio-after.html",
+      "sha256": "b1cda13a50b941cb06fa839b0e425b0a2f94a082cd477fcbc7b7ba6563e52831",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/demos/studio-before.html",
+      "sha256": "96ff609c6c543e538d8d806c23a3f1d2ba70d0d108b70373ad69b08186e30d7d",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/examples.js",
+      "sha256": "844fcdf4e1b2de6973996406651798c73d94783d6f583e38325c96e9b30a7c04",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/favicon.svg",
+      "sha256": "d14065a074a021a3709fd00b00f731b050b21d5773bfeebfdc2e61e0bdf39a54",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/full-repo-prompt.txt",
+      "sha256": "b4b3f2bd0b57680efb1e7d8368b478cc148efee85eacc59b679dade98c2eb583",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/index.html",
+      "sha256": "6494a8f658ce60b4edaa4211b917d9e68cb230e5a256b5577151aed95a077951",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "docs/styles.css",
+      "sha256": "eea1c84bb850d8c05f7c4fbed216b7bfcac4cb70d6b23a2bd06d1f915fd6b857",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "31af2b9c01049876b27ba91a6e698228573d5de1cf6856da6e12adb02452b3c8",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "package.json",
+      "sha256": "f2e224629ce797ce2171b5f1ad057ca0c5f67e3d0a0a94677d785a447785309a",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "playwright.config.mjs",
+      "sha256": "62e745c9b1d86d60184a413faa58e7438592f99e639a399b0109ba25a8ef0229",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "scripts/capture.mjs",
+      "sha256": "c1b73a56478639d13a83275ca13c133b73afdb169ab530cc3b26a35a8a464a22",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "scripts/package.py",
+      "sha256": "754667672044e60f5715675df2e6d0b2ee183c790643eca6152ea078d24fb772",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "scripts/record.mjs",
+      "sha256": "42330718fd4d0a8e3d29930496f637a8bd247d9e1b088ef4fa225fc0ad335084",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "scripts/sync-prompt.mjs",
+      "sha256": "d4e5b140e3c4bc4c680822d15afb0f5a86fa9e82773afe388267bc4fad363f1b",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "scripts/validate.mjs",
+      "sha256": "601f4e3e8d164c954b336aba60baf04aadb39a3b81dfa7c43e3cb7f15d7443c2",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "skills/app-motion-effects/LICENSE",
+      "sha256": "e32d086d97d6d0b36cb5a87ab15b4d4ad05cb143b0fe6857240c4709c09ea3dd",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "skills/app-motion-effects/README.md",
+      "sha256": "a88327159970c48fde2870a81ef88ea1460026effb3e9464fb410e0c88fc1e41",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "skills/app-motion-effects/SKILL.md",
+      "sha256": "ce9102213a1567bb91597a17bdc4ea290f3540dd0a86dae75f12a94ff9cb988b",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "skills/app-motion-effects/agents/openai.yaml",
+      "sha256": "6c124e26a7314e0f8583896605e0684b64a148adcd698bddc07a324c84128518",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "skills/app-motion-effects/assets/review-template.md",
+      "sha256": "0c9894697e36cc5b445c3f723f1f3833e471500f5e1698d4122126d1ebb7bc77",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "skills/app-motion-effects/references/adaptation.md",
+      "sha256": "a54426f16c1537fa4e426ac1881e1c2bacf130164bee0085fd1cceb4f1c169ea",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "skills/app-motion-effects/references/sources.md",
+      "sha256": "ff6e114f9b92dfd9b6ee9490638bdabe828bfafe2522e4e6db18a01a1d52b189",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "skills/app-motion-effects/references/taxonomy.md",
+      "sha256": "ac99bb8391ef9dea9cd29ce378763dc46bcdb861103c7b3d293cbb56da2cf482",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "skills/app-motion-effects/references/verification.md",
+      "sha256": "af16c84f08c8d3bb3b7f78f542e073d58b2f4265bab1929f14aae0c51c6312ec",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "tests/legacy-fixtures.spec.mjs",
+      "sha256": "143c51f344da625b086e9729ea831965bfa190fe1c18159e4939f81e2daed5b4",
+      "review": "source reviewed; media referenced but not re-rendered"
+    },
+    {
+      "path": "tests/loading.spec.mjs",
+      "sha256": "c7061e83631064859ef55674a3167d98e88ddd11af6991f24fee6bae13457fad",
+      "review": "source reviewed; media referenced but not re-rendered"
+    }
+  ],
+  "media_scope": {
+    "paths": "docs/media/*",
+    "status": "References/inclusion checked; existing binary imagery/playback not independently re-rendered in this source review."
+  },
+  "official_documentation_checked": [
+    {
+      "url": "https://agentskills.io/specification",
+      "result": "Current package frontmatter and relative reference layout match the relevant portable format requirements."
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills",
+      "result": "Documented .agents/skills user/project paths support the installation guidance; this is documentation verification, not a runtime discovery test."
+    },
+    {
+      "url": "https://code.claude.com/docs/en/skills",
+      "result": "Documented local personal/project paths support the installation guidance; local files do not imply Cowork/cloud installation."
+    },
+    {
+      "url": "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow",
+      "result": "Manual dispatch permits branch selection; no remote action was performed."
+    }
+  ],
+  "excluded": [
+    "Real project/customer data or credentials",
+    "External mutations, release/push/deploy/issue/message actions",
+    "Paid services and model calls",
+    "Actual Codex/Claude skill activation and behavioural runs",
+    "Native iOS/Android/desktop runtimes, screen readers, sustained performance/battery certification",
+    "A complete current licence/maintenance audit of every catalogue URL",
+    "Independent visual redesign or re-certification of already-published website",
+    "Remote GitHub branch/environment protection and private reporting settings"
+  ]
+}

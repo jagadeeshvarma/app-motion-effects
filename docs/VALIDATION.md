@@ -33,3 +33,7 @@ Run `npm test` for verification, `npm run screenshots` for actual renders and `n
 - The reference catalogue is a research shortlist, not a complete or perpetual licence/maintenance audit.
 - Before versions intentionally retain baseline limitations for comparison. They are not recommended production snippets.
 - Automated checks are bounded regression evidence, not proof that all visual or interaction defects are absent.
+
+## Maintainer evaluation
+
+The [maintainer audit](audit/SKILL_AUDIT.md) preserves this earlier validation as the baseline and separates structural checks, authored website tests, comparative agent-generated outputs and native runtime evidence. See its explicit result states and limitations before interpreting support claims. The dependency-free installed package excludes audit logs and evaluation projects.

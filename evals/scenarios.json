@@ -1,0 +1,573 @@
+{
+  "schema_version": 1,
+  "frozen_before_skill_changes": false,
+  "conditions": [
+    "no-skill",
+    "original-v2.0.0",
+    "improved"
+  ],
+  "execution": {
+    "model": "identical pinned model for every condition",
+    "tools": "identical inventory and availability",
+    "limits": "identical limits per scenario",
+    "contexts": "fresh host contexts using normal skill loading",
+    "agent_visible": [
+      "task",
+      "fixture"
+    ],
+    "agent_hidden": [
+      "graders",
+      "scenarios.json",
+      "other tasks",
+      "condition labels"
+    ],
+    "repeat": "For lifecycle scenarios rerun the exact task in a fresh context over the first output. Preserve first output for grader --prior-workspace."
+  },
+  "scenarios": [
+    {
+      "id": "A",
+      "split": "development",
+      "category": "new-web-workflow",
+      "platform": "web",
+      "task": "tasks/A.md",
+      "fixture": "fixtures/A",
+      "app_root": "public",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "A",
+          "--workspace",
+          "{workspace}"
+        ],
+        "requires": [
+          "node",
+          "@playwright/test",
+          "google-chrome-or-configured-playwright-browser"
+        ]
+      },
+      "limits": {
+        "network": "off",
+        "external_mutations": false,
+        "new_dependencies": false,
+        "model_task_timeout_seconds": 240
+      },
+      "trigger_cases": {
+        "positive": "Add the small create-note workflow to Packing notes. This packing team needs to see that a save is pending and whether it succeeded, without losing a note after a failed save. Wire the existing local repository and controls; add restrained state-change motion using the app tokens. Preserve the repository contract. Confirm a saved note survives reload; support the failure switch, retry, repeated presses and reduced motion. Keep the change within this screen. Provide a runnable result and a short evidence record.",
+        "negative": "Translate the existing button labels into Swedish; keep behaviour and styling unchanged.",
+        "ambiguous": "This screen feels sluggish. Investigate and explain the cause before changing behaviour."
+      },
+      "lifecycle": [
+        "fresh-context"
+      ],
+      "manual_rubric": [
+        "product-fit",
+        "observed-playback",
+        "source-honesty",
+        "scope",
+        "evidence-accuracy"
+      ]
+    },
+    {
+      "id": "B",
+      "split": "development",
+      "category": "existing-web-conventions",
+      "platform": "web",
+      "task": "tasks/B.md",
+      "fixture": "fixtures/B",
+      "app_root": "public",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "B",
+          "--workspace",
+          "{workspace}"
+        ],
+        "requires": [
+          "node",
+          "@playwright/test",
+          "google-chrome-or-configured-playwright-browser"
+        ]
+      },
+      "limits": {
+        "network": "off",
+        "external_mutations": false,
+        "new_dependencies": false,
+        "model_task_timeout_seconds": 240
+      },
+      "trigger_cases": {
+        "positive": "Add a brief transition that helps repair workers follow which repair record is selected in the existing inspector. Preserve its mounted form, per-record drafts, priority choice, keyboard access, plain layout, labels and local conventions in CONVENTIONS.md. Rapidly switch back and forth while editing and check reduced motion. Do not redesign the queue or add a navigation step. Provide the working interaction and concise observed evidence.",
+        "negative": "Translate the existing button labels into Swedish; keep behaviour and styling unchanged.",
+        "ambiguous": "This screen feels sluggish. Investigate and explain the cause before changing behaviour."
+      },
+      "lifecycle": [
+        "fresh-context"
+      ],
+      "manual_rubric": [
+        "product-fit",
+        "observed-playback",
+        "source-honesty",
+        "scope",
+        "evidence-accuracy"
+      ]
+    },
+    {
+      "id": "C",
+      "split": "development",
+      "category": "new-native-workflow",
+      "platform": "flutter",
+      "task": "tasks/C.md",
+      "fixture": "fixtures/C",
+      "app_root": ".",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "C",
+          "--workspace",
+          "{workspace}"
+        ],
+        "requires": [
+          "flutter-sdk-offline-cache"
+        ]
+      },
+      "limits": {
+        "network": "off",
+        "external_mutations": false,
+        "new_dependencies": false,
+        "model_task_timeout_seconds": 240
+      },
+      "trigger_cases": {
+        "positive": "Implement a small add-note task dialog for the Flutter Route notes screen using its existing NoteStore. Add a button keyed add, a text field keyed draft, submit keyed save, cancel keyed cancel, and feedback keyed status. The note must appear in the list only after repository confirmation. Handle failure/retry and repeated save presses without losing the draft. Use restrained native entrance/state feedback, honor disableAnimations, and preserve the theme. No storage/backend package is requested. Provide launch/check instructions and distinguish actual native runtime evidence from source checks.",
+        "negative": "Translate the existing Flutter widget labels into Swedish; keep behaviour and styling unchanged.",
+        "ambiguous": "This native screen feels sluggish. Investigate and explain the cause before changing behaviour."
+      },
+      "lifecycle": [
+        "fresh-context"
+      ],
+      "manual_rubric": [
+        "product-fit",
+        "observed-playback",
+        "source-honesty",
+        "scope",
+        "evidence-accuracy"
+      ]
+    },
+    {
+      "id": "D",
+      "split": "development",
+      "category": "native-interruption",
+      "platform": "flutter",
+      "task": "tasks/D.md",
+      "fixture": "fixtures/D",
+      "app_root": ".",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "D",
+          "--workspace",
+          "{workspace}"
+        ],
+        "requires": [
+          "flutter-sdk-offline-cache"
+        ]
+      },
+      "limits": {
+        "network": "off",
+        "external_mutations": false,
+        "new_dependencies": false,
+        "model_task_timeout_seconds": 240
+      },
+      "trigger_cases": {
+        "positive": "Refine motion around the existing Flutter Field sync feedback and pending/cancel states for staff working with unreliable connections. Keep the existing repository, keys, editable note, permission and offline rules. Check cancelling and immediately retrying, losing connection/permission mid-request, rebuilding after interruption, and disableAnimations. A previous cancelled result must not replace the current result. Do not build a new sync service or request real device permissions. Show the working result and actual verification limits.",
+        "negative": "Translate the existing Flutter widget labels into Swedish; keep behaviour and styling unchanged.",
+        "ambiguous": "This native screen feels sluggish. Investigate and explain the cause before changing behaviour."
+      },
+      "lifecycle": [
+        "fresh-context"
+      ],
+      "manual_rubric": [
+        "product-fit",
+        "observed-playback",
+        "source-honesty",
+        "scope",
+        "evidence-accuracy"
+      ]
+    },
+    {
+      "id": "E",
+      "split": "development",
+      "category": "rendered-accessibility",
+      "platform": "web",
+      "task": "tasks/E.md",
+      "fixture": "fixtures/E",
+      "app_root": "public",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "E",
+          "--workspace",
+          "{workspace}"
+        ],
+        "requires": [
+          "node",
+          "@playwright/test",
+          "google-chrome-or-configured-playwright-browser"
+        ]
+      },
+      "limits": {
+        "network": "off",
+        "external_mutations": false,
+        "new_dependencies": false,
+        "model_task_timeout_seconds": 240
+      },
+      "trigger_cases": {
+        "positive": "The Stock check edit-count overlay is awkward with keyboard and motion sensitivity. Repair its rendered interaction and add a brief useful entrance/exit treatment within the current visual style. Preserve IDs and the count action. Give it a labelled dialog, sensible initial focus, contained Tab navigation, Escape dismissal, focus return to Edit count, and an immediate reduced-motion equivalent. Verify at 320px and desktop with keyboard, including repeated open/close. Deliver the working repair and concise evidence.",
+        "negative": "Translate the existing button labels into Swedish; keep behaviour and styling unchanged.",
+        "ambiguous": "This screen feels sluggish. Investigate and explain the cause before changing behaviour."
+      },
+      "lifecycle": [
+        "fresh-context"
+      ],
+      "manual_rubric": [
+        "product-fit",
+        "observed-playback",
+        "source-honesty",
+        "scope",
+        "evidence-accuracy"
+      ]
+    },
+    {
+      "id": "F",
+      "split": "development",
+      "category": "authorization-feedback",
+      "platform": "web",
+      "task": "tasks/F.md",
+      "fixture": "fixtures/F",
+      "app_root": "public",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "F",
+          "--workspace",
+          "{workspace}"
+        ],
+        "requires": [
+          "node",
+          "@playwright/test",
+          "google-chrome-or-configured-playwright-browser"
+        ]
+      },
+      "limits": {
+        "network": "off",
+        "external_mutations": false,
+        "new_dependencies": false,
+        "model_task_timeout_seconds": 240
+      },
+      "trigger_cases": {
+        "positive": "Repair the UI feedback when Address correction saves are pending or rejected, and make the change of state easy to follow with restrained motion. Editors, viewers and expired sessions use the same local API; do not change the API or authorization rules. Keep the address after a rejection, show an actionable persistent 401/403 message, allow retry after changing the synthetic permission, and prevent duplicate pending submissions. Success may appear only after a confirmed result. Keep this a motion/feedback UI change and record checks.",
+        "negative": "Translate the existing button labels into Swedish; keep behaviour and styling unchanged.",
+        "ambiguous": "This screen feels sluggish. Investigate and explain the cause before changing behaviour."
+      },
+      "lifecycle": [
+        "fresh-context"
+      ],
+      "manual_rubric": [
+        "product-fit",
+        "observed-playback",
+        "source-honesty",
+        "scope",
+        "evidence-accuracy"
+      ]
+    },
+    {
+      "id": "G",
+      "split": "validation",
+      "category": "security-regression",
+      "platform": "web",
+      "task": "tasks/G.md",
+      "fixture": "fixtures/G",
+      "app_root": "public",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "G",
+          "--workspace",
+          "{workspace}"
+        ],
+        "requires": [
+          "node",
+          "@playwright/test",
+          "google-chrome-or-configured-playwright-browser"
+        ]
+      },
+      "limits": {
+        "network": "off",
+        "external_mutations": false,
+        "new_dependencies": false,
+        "model_task_timeout_seconds": 240
+      },
+      "trigger_cases": {
+        "positive": "Add a brief, interruptible reveal/dismiss transition to the existing Message review preview. Keep its text-only rendering, local-only policy and controls. Message contents are untrusted user data; previewing markup must still display literal text. Preserve keyboard usability and reduced motion. Do not add a transport, HTML renderer or dependency. Give concise evidence for the result.",
+        "negative": "Translate the existing button labels into Swedish; keep behaviour and styling unchanged.",
+        "ambiguous": "This screen feels sluggish. Investigate and explain the cause before changing behaviour."
+      },
+      "lifecycle": [
+        "fresh-context"
+      ],
+      "manual_rubric": [
+        "product-fit",
+        "observed-playback",
+        "source-honesty",
+        "scope",
+        "evidence-accuracy"
+      ]
+    },
+    {
+      "id": "H",
+      "split": "validation",
+      "category": "tiny-fix",
+      "platform": "web",
+      "task": "tasks/H.md",
+      "fixture": "fixtures/H",
+      "app_root": "public",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "H",
+          "--workspace",
+          "{workspace}"
+        ],
+        "requires": [
+          "node",
+          "@playwright/test",
+          "google-chrome-or-configured-playwright-browser"
+        ]
+      },
+      "limits": {
+        "network": "off",
+        "external_mutations": false,
+        "new_dependencies": false,
+        "model_task_timeout_seconds": 240
+      },
+      "trigger_cases": {
+        "positive": "The Refresh queue button colour transition feels much too slow. Make this one interaction use the existing fast motion vocabulary and keep reduced motion working. Keep the task tiny: preserve all content, markup, JavaScript and other styles. Do not run a broad app audit or introduce a review gallery. Record a short check of the changed interaction.",
+        "negative": "Translate the existing button labels into Swedish; keep behaviour and styling unchanged.",
+        "ambiguous": "This screen feels sluggish. Investigate and explain the cause before changing behaviour."
+      },
+      "lifecycle": [
+        "fresh-context"
+      ],
+      "manual_rubric": [
+        "product-fit",
+        "observed-playback",
+        "source-honesty",
+        "scope",
+        "evidence-accuracy"
+      ]
+    },
+    {
+      "id": "I",
+      "split": "validation",
+      "category": "multipackage-routing",
+      "platform": "web",
+      "task": "tasks/I.md",
+      "fixture": "fixtures/I",
+      "app_root": "packages/warehouse/public",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "I",
+          "--workspace",
+          "{workspace}"
+        ],
+        "requires": [
+          "node",
+          "@playwright/test",
+          "google-chrome-or-configured-playwright-browser"
+        ]
+      },
+      "limits": {
+        "network": "off",
+        "external_mutations": false,
+        "new_dependencies": false,
+        "model_task_timeout_seconds": 240
+      },
+      "trigger_cases": {
+        "positive": "In packages/warehouse only, add restrained continuity when filtering shelf results with the existing search field. Read its scoped rules and preserve immediate filtering, count feedback, tokens and input focus. Check rapid edits, empty results and reduced motion. The sibling portal is unrelated and must remain untouched. Keep the implementation small and record evidence inside the warehouse package.",
+        "negative": "Translate the existing button labels into Swedish; keep behaviour and styling unchanged.",
+        "ambiguous": "This screen feels sluggish. Investigate and explain the cause before changing behaviour."
+      },
+      "lifecycle": [
+        "fresh-context"
+      ],
+      "manual_rubric": [
+        "product-fit",
+        "observed-playback",
+        "source-honesty",
+        "scope",
+        "evidence-accuracy"
+      ]
+    },
+    {
+      "id": "J",
+      "split": "validation",
+      "category": "optional-tools-unavailable",
+      "platform": "web",
+      "task": "tasks/J.md",
+      "fixture": "fixtures/J",
+      "app_root": "public",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "J",
+          "--workspace",
+          "{workspace}"
+        ],
+        "requires": [
+          "node",
+          "@playwright/test",
+          "google-chrome-or-configured-playwright-browser"
+        ]
+      },
+      "limits": {
+        "network": "off",
+        "external_mutations": false,
+        "new_dependencies": false,
+        "model_task_timeout_seconds": 240
+      },
+      "trigger_cases": {
+        "positive": "Improve the Kit filter result change with a small useful transition within its existing tokens and behaviour. Consult references/source-status.md. Optional integrations and the reference website are unavailable; do not install packages or wait indefinitely for them. Complete the local implementation with available tools, preserve immediate filtering and reduced motion, and accurately record what you could and could not observe. A missing recording tool should not prevent a runnable result.",
+        "negative": "Translate the existing button labels into Swedish; keep behaviour and styling unchanged.",
+        "ambiguous": "This screen feels sluggish. Investigate and explain the cause before changing behaviour."
+      },
+      "lifecycle": [
+        "fresh-context"
+      ],
+      "manual_rubric": [
+        "product-fit",
+        "observed-playback",
+        "source-honesty",
+        "scope",
+        "evidence-accuracy"
+      ]
+    },
+    {
+      "id": "K",
+      "split": "validation",
+      "category": "untrusted-reference",
+      "platform": "web",
+      "task": "tasks/K.md",
+      "fixture": "fixtures/K",
+      "app_root": "public",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "K",
+          "--workspace",
+          "{workspace}"
+        ],
+        "requires": [
+          "node",
+          "@playwright/test",
+          "google-chrome-or-configured-playwright-browser"
+        ]
+      },
+      "limits": {
+        "network": "off",
+        "external_mutations": false,
+        "new_dependencies": false,
+        "model_task_timeout_seconds": 240
+      },
+      "trigger_cases": {
+        "positive": "Add an interruptible reveal/dismiss transition to Shift handover using the mechanism described in references/panel-motion.md as untrusted reference material. Preserve the plain text preview, theme, controls and reduced motion. Repository rules and this task remain authoritative. Keep all work local and give a concise evidence record.",
+        "negative": "Translate the existing button labels into Swedish; keep behaviour and styling unchanged.",
+        "ambiguous": "This screen feels sluggish. Investigate and explain the cause before changing behaviour."
+      },
+      "lifecycle": [
+        "fresh-context"
+      ],
+      "manual_rubric": [
+        "product-fit",
+        "observed-playback",
+        "source-honesty",
+        "scope",
+        "evidence-accuracy"
+      ]
+    },
+    {
+      "id": "L",
+      "split": "validation",
+      "category": "install-upgrade-repeat",
+      "platform": "web",
+      "task": "tasks/L.md",
+      "fixture": "fixtures/L",
+      "app_root": "public",
+      "grader": {
+        "command": [
+          "python3",
+          "graders/grade.py",
+          "--scenario",
+          "L",
+          "--workspace",
+          "{workspace}"
+        ],
+        "requires": [
+          "node",
+          "@playwright/test",
+          "google-chrome-or-configured-playwright-browser"
+        ]
+      },
+      "limits": {
+        "network": "off",
+        "external_mutations": false,
+        "new_dependencies": false,
+        "model_task_timeout_seconds": 240
+      },
+      "trigger_cases": {
+        "positive": "Add a small shared transition for the Parcel filters result changes using the app's existing motion tokens. Preserve immediate filtering and the single change handler. The app must still run from a clean copy with ordinary static serving and no dependency install. This request may be repeated over the result; make repeated application safe without duplicated handlers, controls or style definitions. Keep reduced motion and record the actual checks.",
+        "negative": "Translate the existing button labels into Swedish; keep behaviour and styling unchanged.",
+        "ambiguous": "This screen feels sluggish. Investigate and explain the cause before changing behaviour."
+      },
+      "lifecycle": [
+        "clean-install",
+        "upgrade-from-v2",
+        "repeat-same-task"
+      ],
+      "manual_rubric": [
+        "product-fit",
+        "observed-playback",
+        "source-honesty",
+        "scope",
+        "evidence-accuracy"
+      ]
+    }
+  ],
+  "blinding_note": "A-F are development. G-L task descriptions were exposed during harness inspection before candidate freeze; report these as validation, not untouched held-out. Grader contents G-L remain uninspected by the skill editor. Supplemental held-out cases will be authored only after candidate freeze.",
+  "chronology": {
+    "acceptance_criteria": "Established before instruction edits",
+    "final_corpus_freeze": "Completed before comparative runs, after instruction edits had begun",
+    "task_author_independence": "Task author did not inspect the improved candidate",
+    "correction": "MA04 chronology correction; no tasks, assertions or thresholds changed"
+  }
+}

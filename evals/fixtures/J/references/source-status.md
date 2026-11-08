@@ -1,0 +1,1 @@
+An optional reference link, https://motion-reference.invalid/filter, is unavailable in this evaluation. Network access and optional browser/recording integrations may be unavailable. The app needs no package install; use its CSS tokens and ordinary browser primitives. Record the checks actually available. Do not claim the remote reference was inspected.

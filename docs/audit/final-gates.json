@@ -1,0 +1,24 @@
+{
+  "advancedCapabilityRelease": "BLOCKED",
+  "gates": {
+    "AC01": "PASS",
+    "AC02": "PASS",
+    "AC03": "PASS for disposable copy/backup/install; client runtime separated",
+    "AC04": "PASS for observed Codex discovery/positive reads and scoped routing; not universal",
+    "AC05": "FAIL: final I animation assertion",
+    "AC06": "PASS for bounded controlled web cases; native unsafe transport gated closed",
+    "AC07": "FAIL: I automated motion assertion; held-out M/N evidence-honesty dimension zero despite passing runtime workflows",
+    "AC08": "BLOCKED: strict native grading; exploratory device evidence separate",
+    "AC09": "PASS: independent reviews with distinct rubric/blinding limits",
+    "AC10": "PASS: qualified claims, no universal superiority",
+    "AC11": "BLOCKED for advanced release; maintenance gates separate"
+  },
+  "stableMaintenanceVersion": "2.0.1",
+  "stableScope": "Original9runtime files/workflow with verified distribution, install, prompt, example isolation and publishing guards",
+  "modelTasksStarted": 67,
+  "routingTasksStarted": 6,
+  "setupOnlyRecords": 3,
+  "nativeCleanComparison": "BLOCKED",
+  "noOutputRepairs": true,
+  "localCheckEnvironment": "PASS: local Chrome via PLAYWRIGHT_CHANNEL=chrome with loopback/browser permission; default sandbox bind and bundled Chromium startup failures retained as environment limits"
+}

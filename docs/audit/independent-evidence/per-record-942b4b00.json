@@ -1,0 +1,15 @@
+{
+  "method": "Independent edit both records, switch away and return, inspect current draft and priority",
+  "states": {
+    "one": {
+      "title": "Lamp 12",
+      "draft": "Lamp independent draft",
+      "priority": true
+    },
+    "two": {
+      "title": "Chair 4",
+      "draft": "Chair independent draft",
+      "priority": false
+    }
+  }
+}

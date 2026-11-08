@@ -1,0 +1,1 @@
+document.querySelector('#search').addEventListener('input',event=>{let count=0;document.querySelectorAll('#shelves li').forEach(item=>{item.hidden=!item.textContent.toLowerCase().includes(event.target.value.toLowerCase());if(!item.hidden)count++});document.querySelector('#feedback').textContent=`${count} shelves shown`});

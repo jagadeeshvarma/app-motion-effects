@@ -1,0 +1,41 @@
+{
+  "reviewDate": "2026-11-08",
+  "baselineCommit": "ce5f55a8c2a9b4319a76d793b46eef9a41d5a541",
+  "candidateSkillVersion": "2.1.0",
+  "environment": {
+    "os": "Darwin",
+    "osRelease": "25.5.0",
+    "architecture": "arm64",
+    "node": "v26.7.0",
+    "npm": "11.19.0",
+    "python": "3.14.7",
+    "codex": "codex-cli 0.167.0-alpha.3.2",
+    "claude": "2.1.296 (Claude Code)",
+    "playwright": "1.65.0",
+    "prettier": "3.9.10",
+    "flutter": "3.47.0",
+    "dart": "3.13.0",
+    "xcode": "26.6"
+  },
+  "dependencyAudit": {
+    "status": "PASS",
+    "method": "npm audit --json against pinned lockfile",
+    "totalAdvisories": 0,
+    "scope": "Development dependency graph; no claim about all future app dependencies"
+  },
+  "savedGitHubSettings": {
+    "branch": "main",
+    "requiredCheck": "Structure and browser checks",
+    "strict": true,
+    "enforceAdmins": true,
+    "pagesDeploymentBranches": [
+      "main"
+    ],
+    "privateVulnerabilityReporting": true
+  },
+  "hostAvailability": {
+    "Codex": "Authenticated ChatGPT CLI; per-run monetary telemetry unavailable",
+    "ClaudeCode": "BLOCKED: installed CLI is unauthenticated",
+    "otherAgents": "NOT RUN: portable text/manual loading is guidance, not runtime certification"
+  }
+}

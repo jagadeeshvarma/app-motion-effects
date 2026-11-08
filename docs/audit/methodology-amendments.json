@@ -1,0 +1,41 @@
+{
+  "acceptanceCriteriaUnchanged": true,
+  "amendments": [
+    {
+      "id": "MA01",
+      "timing": "Before evaluated model tasks",
+      "change": "G\u2013L task descriptions were inadvertently printed by root during metadata inspection. Relabelled validation, not untouched held-out. Added unseen M/N only after candidate freeze.",
+      "reason": "Prevent overstated hold-out evidence."
+    },
+    {
+      "id": "MA02",
+      "timing": "Before C/D evaluated model tasks",
+      "change": "Native grader fake-time drain corrected and corpus superseded with immutable amendment manifest.",
+      "reason": "Avoid pending delayed-timer false negatives; original freeze retained."
+    },
+    {
+      "id": "MA03",
+      "timing": "Before candidate comparative tasks",
+      "change": "Registry probe with an arbitrary enabled path found zero skills; retested documented .agents/skills installation and verified exactly one intended skill.",
+      "reason": "Enabling a path is not itself discovery."
+    },
+    {
+      "id": "MA04",
+      "timing": "Chronology correction, before held-out runs",
+      "change": "Acceptance criteria were frozen before instruction edits. A\u2013L corpus finalisation overlapped instruction editing by an independent task author who did not inspect the candidate. Corpus was frozen before model comparisons, not before all edits; earlier stronger metadata corrected through a retained amendment. M/N remained unseen and were created after candidate freeze.",
+      "reason": "Accurate distinction between pre-edit criteria, independent task authoring and pre-run corpus freeze."
+    },
+    {
+      "id": "MA05",
+      "timing": "After six provisional native pilot model runs",
+      "change": "Native model sandbox could not write SDK caches or bind loopback. Added public-only per-run SDK/cache clones and a sandboxed exact-loopback proxy profile, tested to reject a synthetic disallowed destination. Native pilot trial1 is provisional, not clean comparative native evidence; uniform serialized rerun required.",
+      "reason": "Equivalent functional tool readiness without changing tasks, thresholds or budget."
+    },
+    {
+      "id": "MA06",
+      "timing": "Independent review second batch",
+      "change": "First4 anonymous outputs were condition-blinded. Later2 labels were withheld but scheduling language could reveal their condition; independence remains, full blinding is not claimed.",
+      "reason": "Avoid overstating experimental masking."
+    }
+  ]
+}
