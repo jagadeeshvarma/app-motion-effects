@@ -16,8 +16,8 @@
     "sync:prompt": "node scripts/sync-prompt.mjs"
   },
   "devDependencies": {
-    "@playwright/test": "1.65.0",
-    "prettier": "3.9.10"
+    "@playwright/test": "1.65.1",
+    "prettier": "3.10.1"
   },
   "engines": {
     "node": ">=22"
